@@ -15,8 +15,8 @@ jobs:
         shell: bash {0}
         run: |
           B="https://$DOMAIN"
-          for p in / /camping/telte/ /8-personers-telt/ /gaskoeleskab/ /luftpistol/ /baalhytte/ /shelter/ /parasol-med-tilt/ /terrassevarmer/ /bedste-luftmadras-test/ /koebsguide/ /viden/ /?s=telt /robots.txt /wp-sitemap.xml; do
-            out=$(curl -s -o body.html -w "%{http_code} %{redirect_url}" --max-time 60 "$B$p")
+          for p in /koebsguide/ /koebsguide/ /viden/ /; do
+            out=$(curl -s -o body.html -w "%{http_code} %{redirect_url} %{time_total}s" --max-time 120 "$B$p")
             theme=$(grep -o 'themes/[a-z0-9_-]*' body.html | head -1)
             robots=$(grep -o '<meta name=.robots.[^>]*>' body.html | head -1)
             prods=$(grep -o '[0-9.]* produkter' body.html | head -1)
