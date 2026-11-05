@@ -228,6 +228,10 @@ function playform_run_upgrades(): void {
 			wp_schedule_single_event( time() + 60, 'playform_reclassify' );
 		}
 	}
+	// Er der aldrig kørt en fuld import (kun "Kør import nu" for enkelte butikker), køres den via cron med det samme.
+	if ( class_exists( '\\Playform\\Feeds\\Cron' ) && ! get_option( 'playform_feeds_last_run' ) && ! wp_next_scheduled( \Playform\Feeds\Cron::HOOK, [ 'first' ] ) ) {
+		wp_schedule_single_event( time() + 300, \Playform\Feeds\Cron::HOOK, [ 'first' ] );
+	}
 	playform_import_legacy_posts();
 	if ( function_exists( 'playform_best_check' ) && ! get_option( 'playform_best_checked' ) ) {
 		playform_best_check( false ); // første rapport med det samme
