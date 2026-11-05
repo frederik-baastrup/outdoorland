@@ -1462,7 +1462,7 @@ body { background: #FAFAF6; }
 
 /* Mere luft om logoet på mobil */
 @media (max-width: 1080px) {
-	.site-header__row { padding: 16px 0 18px; }
+	.site-header__row { padding: 12px 0 14px; }
 }
 
 /* Sæsonens udstyr */
