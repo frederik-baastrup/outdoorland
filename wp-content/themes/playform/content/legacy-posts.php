@@ -17,15 +17,14 @@ return [
 	'saadan-bygger-du-en-toemmerflaade'                  => [ 'hidden' => false ],
 	'vandretur-med-din-hund-dette-udstyr-skal-du-have-med' => [ 'hidden' => false ],
 	'guide-saadan-vaelger-du-den-rigtige-festivalstol'   => [ 'hidden' => false ],
-	// Gamle købsguides uden produkter i feedsne (samme adresse, samme tekst)
+	// Gamle købsguides uden produkter i feedsne (samme adresse, samme tekst). Babyhængekøje og udendørs pejs er
+	// skrevet om i content/best/ med produkter fra feedsne.
 	'baalhytte'                                          => [ 'hidden' => false, 'cat' => 'Købsguides' ],
 	'shelter'                                            => [ 'hidden' => false, 'cat' => 'Købsguides' ],
 	'uv-telt-baby'                                       => [ 'hidden' => false, 'image' => false, 'cat' => 'Købsguides' ],
-	'baby-haengekoeje'                                   => [ 'hidden' => false, 'image' => false, 'cat' => 'Købsguides' ],
 	'parasol-firkantet'                                  => [ 'hidden' => false, 'image' => false, 'cat' => 'Købsguides' ],
 	'parasol-med-tilt'                                   => [ 'hidden' => false, 'image' => false, 'cat' => 'Købsguides' ],
 	'terrassevarmer'                                     => [ 'hidden' => false, 'cat' => 'Købsguides' ],
-	'udendoers-pejs-med-skorsten'                        => [ 'hidden' => false, 'cat' => 'Købsguides' ],
 	// Solgte artikler (2023 og senere) – outdoor-emner vises, andre emner skjules
 	'vandring-i-naturen-en-guide-til-uforglemmelige-oplevelser' => [ 'hidden' => false, 'image' => false ],
 	'faa-store-udendoersoplevelser-ogsaa-selvom-du-ikke-kan-bevaege-dig-udenfor' => [ 'hidden' => false ],

@@ -459,6 +459,11 @@ function playform_seed_best(): void {
 		];
 		if ( $existing ) {
 			$post = $existing[0];
+			// En gammel artikel, der er flyttet 1:1 fra det gamle site, erstattes af den omskrevne guide på samme adresse.
+			if ( get_post_meta( $post->ID, '_pf_legacy_post', true ) && ! get_post_meta( $post->ID, '_pf_hidden', true ) ) {
+				delete_post_meta( $post->ID, '_pf_legacy_post' );
+				update_post_meta( $post->ID, '_pf_seed_hash', md5( $post->post_content ) );
+			}
 			if ( get_post_meta( $post->ID, '_pf_seed_hash', true ) !== md5( $post->post_content ) ) {
 				$id = $post->ID; // redaktøren har rettet teksten – lad den være
 			} else {
