@@ -9,7 +9,7 @@
 	--soft: #F4F4F1;
 	--img: #F1F1EE;
 	--tile: #EDECE8;
-	--accent: #5D714A; /* Outdoorland-grøn fra logoet (nyt logo 5. nov. 2026) */
+	--accent: #627358; /* Outdoorland-grøn fra logoet (logo v3, 5. nov. 2026) */
 	--on-accent: #FFFFFF;
 	--sale: #B42318;
 	--ok: #1E9E4A;
@@ -1418,7 +1418,7 @@ ul.guide__facts { display: inline-flex; flex-wrap: wrap; align-items: center; ma
 .site-header__row::before { border-top-color: #E2E6DC !important; }
 
 /* Outdoorland: topbar og kampagnebar i mørk skovgrøn (matcher logoet) i stedet for sort. */
-:root { --forest: #1E2819; --forest-2: #2A3623; --sage: #A9BB95; }
+:root { --forest: #1E2819; --forest-2: #3E4A38; --sage: #A9BB95; }
 .topbar { background: #161D12; }
 .campaign-bar { background: var(--forest); }
 .campaign-bar__track, .campaign-bar__track:hover, .campaign-bar__track:focus { color: #DDE3D5; }
