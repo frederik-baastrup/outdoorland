@@ -12,10 +12,10 @@ $cat_link = static function ( string $slug ): string {
 // Sæsonens udstyr: skifter automatisk med måneden.
 $m       = (int) wp_date( 'n' );
 $seasons = [
-	'vinter' => [ [ 12, 1, 2 ], 'Vinter', 'snow', 'Kolde nætter og korte dage kræver varmt udstyr: en sovepose til frost, uldundertøj og en god pandelampe.', [ 'soveposer' => [ 'Soveposer', 600 ], 'uldundertoej' => [ 'Uldundertøj', 300 ], 'pandelamper' => [ 'Pandelamper', 250 ], 'jakker' => [ 'Jakker', 900 ] ] ],
+	'vinter' => [ [ 12, 1, 2 ], 'Vinter', 'snow', 'Kolde nætter og korte dage kræver varmt udstyr: en sovepose til frost, uldundertøj og en god pandelampe.', [ 'vintersoveposer' => [ 'Vintersoveposer', 600 ], 'vinterliggeunderlag' => [ 'Vinterliggeunderlag', 400 ], 'uldundertoej' => [ 'Uldundertøj', 300 ], 'pandelamper' => [ 'Pandelamper', 250 ], 'jakker' => [ 'Jakker', 900 ] ] ],
 	'foraar' => [ [ 3, 4, 5 ], 'Forår', 'leaf', 'Sæsonen starter: gå de nye vandrestøvler til, tjek teltet, og find regntøjet frem til aprilsbygerne.', [ 'vandrestoevler' => [ 'Vandrestøvler', 900 ], 'telte' => [ 'Telte', 1000 ], 'regntoej' => [ 'Regntøj', 400 ], 'vandrerygsaekke' => [ 'Vandrerygsække', 700 ] ] ],
 	'sommer' => [ [ 6, 7, 8 ], 'Sommer', 'sun', 'Lange lyse aftener i telt og hængekøje, på vandet og ved bålet. Husk køletasken og myggenettet.', [ 'telte' => [ 'Telte', 800 ], 'haengekoejer' => [ 'Hængekøjer', 200 ], 'sup' => [ 'SUP-boards', 1500 ], 'koeletasker' => [ 'Køletasker', 300 ] ] ],
-	'efteraar' => [ [ 9, 10, 11 ], 'Efterår', 'leaf', 'Svampeture, fiskeri og blæsende vandreture. Varme lag, regntøj og en god pandelampe til de mørke aftener.', [ 'regntoej' => [ 'Regntøj', 400 ], 'fleece' => [ 'Fleece & mellemlag', 300 ], 'pandelamper' => [ 'Pandelamper', 250 ], 'fiskestaenger' => [ 'Fiskestænger', 400 ] ] ],
+	'efteraar' => [ [ 9, 10, 11 ], 'Efterår', 'leaf', 'Svampeture, fiskeri og blæsende vandreture. Varme lag, regntøj og en god pandelampe til de mørke aftener.', [ 'regntoej' => [ 'Regntøj', 400 ], 'fleece' => [ 'Fleece & mellemlag', 300 ], 'pandelamper' => [ 'Pandelamper', 250 ], 'fiskestaenger' => [ 'Fiskestænger', 400 ], 'vintersoveposer' => [ 'Vintersoveposer', 600 ], 'vinterliggeunderlag' => [ 'Vinterliggeunderlag', 400 ] ] ],
 ];
 foreach ( $seasons as $key => [ $months, $name, $icon, $text, $cats ] ) {
 	if ( in_array( $m, $months, true ) ) {

@@ -122,6 +122,9 @@ final class Config {
 				'tarp-shelter'     => [ 'name' => 'Tarp & shelter', 'match' => '\btarp\b|shelter|bivi\b|bivvy' ],
 				'soveposer'        => [ 'name' => 'Soveposer', 'match' => 'sovepose|sleeping ?bag|lagenpose|quilt' ],
 				'liggeunderlag'    => [ 'name' => 'Liggeunderlag', 'match' => 'liggeunderlag|sovemåtte|luftmadras|selvoppustelig|sleeping ?pad|oppusteligt? underlag|feltseng|campingseng' ],
+				// Vinterudgaver (står også under Soveposer/Liggeunderlag): navnet skal sige vinter, frostgrad eller høj R-værdi.
+				'vintersoveposer'      => [ 'name' => 'Vintersoveposer', 'match' => '^(?=.*(sovepose|sleeping ?bag)).*(vinter|winter|arctic|polar|ekspedition|expedition|-\s?(1[0-9]|[2-4][0-9]|[5-9])\s?°|komfort\s?-\s?\d)', 'not' => 'underlag|måtte|madras|lagen' ],
+				'vinterliggeunderlag'  => [ 'name' => 'Vinterliggeunderlag', 'match' => '^(?=.*(liggeunderlag|sovemåtte|sleeping ?(pad|mat)|selvoppustelig|oppusteligt? underlag)).*(vinter|winter|xtherm|x-therm|downmat|4[- ]?sæson|4[- ]?season|\br[- ]?(værdi|value)?:?\s?[4-9])' ],
 				'haengekoejer'     => [ 'name' => 'Hængekøjer', 'match' => 'hængekøje|hammock' ],
 				'campingmoebler'   => [ 'name' => 'Campingmøbler', 'match' => 'campingstol|campingbord|campingmøbel|klapstol|foldestol|festivalstol|\bstol\b|\bbord\b' ],
 				'telttilbehoer'    => [ 'name' => 'Telttilbehør', 'match' => 'pløk|bardun|footprint|teltunderlag|teltstang|myggenet|ydertelt|indertelt' ],

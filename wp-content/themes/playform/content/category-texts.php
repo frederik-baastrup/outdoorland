@@ -24,6 +24,8 @@ return [
 	// Underkategorier.
 	'telte'           => [ 'intro' => 'Telte til en til otte personer: lette telte til vandring, tunneltelte med plads og familietelte til campingpladsen. Kig på vægt, vandsøjle og hvor hurtigt teltet er slået op.' ],
 	'soveposer'       => [ 'intro' => 'Dun- og fibersoveposer til sommer, forår, efterår og vinter. Vælg efter komforttemperaturen – ikke ekstremtemperaturen – og efter vægt og pakstørrelse.' ],
+	'vintersoveposer' => [ 'intro' => 'Soveposer til vinter og frost i dun og fiber. Vælg en komforttemperatur et par grader under den koldeste nat, du forventer – og husk et isolerende liggeunderlag.' ],
+	'vinterliggeunderlag' => [ 'intro' => 'Liggeunderlag til vinter med høj R-værdi, så kulden fra frossen jord eller sne ikke trænger op. Til vintercamping bør R-værdien være mindst 4–5.' ],
 	'liggeunderlag'   => [ 'intro' => 'Liggeunderlag, selvoppustelige måtter og luftmadrasser. R-værdien fortæller, hvor godt underlaget isolerer mod kulden fra jorden.' ],
 	'haengekoejer'    => [ 'intro' => 'Hængekøjer til haven og turen – med og uden myggenet, plus stropper og tarp til at sove ude.' ],
 	'vandrerygsaekke' => [ 'intro' => 'Vandrerygsække til ture over flere dage. Et justerbart bæresystem og et godt hoftebælte flytter vægten fra skuldrene til hofterne.' ],
