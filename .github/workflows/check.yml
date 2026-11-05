@@ -12,6 +12,7 @@ jobs:
       - name: Tjek sider
         env:
           DOMAIN: ${{ vars.CHECK_DOMAIN || 'frederikb12.sg-host.com' }}
+        shell: bash {0}
         run: |
           B="https://$DOMAIN"
           for p in / /camping/telte/ /8-personers-telt/ /gaskoeleskab/ /luftpistol/ /baalhytte/ /shelter/ /parasol-med-tilt/ /terrassevarmer/ /bedste-luftmadras-test/ /koebsguide/ /viden/ /?s=telt /robots.txt /wp-sitemap.xml; do
