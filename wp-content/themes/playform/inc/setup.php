@@ -811,6 +811,18 @@ const PLAYFORM_LEGACY_SOURCE = 'https://outdoorland.dk';
  * Titel, tekst med alle links, dato og billede flyttes 1:1 til samme adresse. Artikler i kategorien "Sponsoreret"
  * fra før 2023 springes over (ejerens valg 5. nov. 2026). En kopi af den hentede HTML gemmes i uploads/playform/legacy-posts/.
  */
+/**
+ * Henter et billede fra det gamle site til en midlertidig fil: først direkte (det gamle site leverer stadig sine
+ * filer, selv om WordPress fejler), ellers Internet Archives kopi.
+ */
+function playform_legacy_download( string $url ) {
+	$tmp = download_url( $url, 45 );
+	if ( is_wp_error( $tmp ) && preg_match( '#^https?://(?:www\.)?outdoorland\.dk/#i', $url ) ) {
+		$tmp = download_url( 'https://web.archive.org/web/2026im_/' . $url, 45 );
+	}
+	return $tmp;
+}
+
 function playform_legacy_fetch( string $url ): string {
 	$res = wp_remote_get( 'https://web.archive.org/web/2026id_/' . $url, [ 'timeout' => 45, 'redirection' => 5, 'user-agent' => 'Mozilla/5.0 (compatible; OutdoorlandImport/1.0)' ] );
 	return is_wp_error( $res ) || 200 !== (int) wp_remote_retrieve_response_code( $res ) ? '' : (string) wp_remote_retrieve_body( $res );
@@ -860,14 +872,21 @@ function playform_legacy_parse( string $raw ): array {
 			break;
 		}
 	}
-	// Billeder i teksten peger på det gamle site, som ikke svarer – brug Internet Archives kopi.
-	$out['html'] = preg_replace( '#(<img[^>]+src=")(https?://(?:www\.)?outdoorland\.dk/[^"]+)#i', '$1https://web.archive.org/web/2026im_/$2', $out['html'] );
 	$out['html'] = preg_replace( '#\s(?:srcset|sizes|data-srcset|data-lazy-srcset)="[^"]*"#i', '', $out['html'] );
 	return $out;
 }
 
 /** Fjerner indlæg fra det gamle site, der ikke skal med (fx WordPress' tomme eksempelindlæg). */
 function playform_legacy_cleanup(): void {
+	// Version 2 (5. nov. 2026): billederne hentes nu direkte fra det gamle site. Artiklerne fra første import manglede
+	// billeder, så de slettes og hentes igen (ingen er redigeret endnu).
+	if ( (int) get_option( 'playform_legacy_v' ) < 2 ) {
+		foreach ( get_posts( [ 'post_type' => 'post', 'post_status' => 'any', 'numberposts' => 100, 'meta_key' => '_pf_legacy_post', 'meta_value' => 1, 'fields' => 'ids' ] ) as $pid ) { // phpcs:ignore
+			wp_delete_post( (int) $pid, true );
+		}
+		delete_option( 'playform_legacy_posts' );
+		update_option( 'playform_legacy_v', 2, false );
+	}
 	foreach ( get_posts( [ 'post_type' => 'post', 'post_status' => 'any', 'numberposts' => 20, 'meta_key' => '_pf_legacy_post', 'meta_value' => 1 ] ) as $p ) { // phpcs:ignore
 		if ( str_contains( $p->post_content, 'Welcome to WordPress' ) ) {
 			wp_delete_post( $p->ID, true );
@@ -943,10 +962,10 @@ function playform_import_legacy_posts( int $limit = 3 ): void {
 		}
 		update_post_meta( $id, '_pf_legacy_post', 1 );
 		// Billeder i teksten hentes til vores egen server (ingen kald til tredjepart fra den offentlige side).
-		if ( preg_match_all( '#https://web\.archive\.org/web/2026im_/[^"\'\s>]+#', $p['html'], $mm ) ) {
+		if ( preg_match_all( '#(?<=src=")https?://(?:www\.)?outdoorland\.dk/[^"]+#i', $p['html'], $mm ) ) {
 			$html = $p['html'];
 			foreach ( array_unique( $mm[0] ) as $remote ) {
-				$tmp = download_url( $remote, 45 );
+				$tmp = playform_legacy_download( $remote );
 				$att = is_wp_error( $tmp ) ? $tmp : media_handle_sideload( [ 'name' => basename( (string) wp_parse_url( $remote, PHP_URL_PATH ) ), 'tmp_name' => $tmp ], $id );
 				$html = is_wp_error( $att ) ? preg_replace( '#<img[^>]+' . preg_quote( $remote, '#' ) . '[^>]*>#', '', $html ) : str_replace( $remote, (string) wp_get_attachment_url( $att ), $html );
 			}
@@ -956,9 +975,10 @@ function playform_import_legacy_posts( int $limit = 3 ): void {
 			update_post_meta( $id, '_pf_hidden', 1 );
 			delete_transient( 'playform_hidden_posts' );
 		}
-		if ( $p['image'] ) {
-			$img = preg_match( '#^https?://(?:www\.)?outdoorland\.dk/#i', $p['image'] ) ? 'https://web.archive.org/web/2026im_/' . $p['image'] : $p['image'];
-			$tmp = download_url( $img, 45 );
+		// 'image' => false: det gamle udvalgte billede passer ikke til artiklen (fx samme billede på flere sider) – så
+		// sætter playform_article_images() et billede fra Pexels i stedet.
+		if ( $p['image'] && false !== ( $opt['image'] ?? true ) ) {
+			$tmp = playform_legacy_download( $p['image'] );
 			if ( ! is_wp_error( $tmp ) ) {
 				$att = media_handle_sideload( [ 'name' => basename( (string) wp_parse_url( $p['image'], PHP_URL_PATH ) ), 'tmp_name' => $tmp ], $id );
 				if ( ! is_wp_error( $att ) ) {
