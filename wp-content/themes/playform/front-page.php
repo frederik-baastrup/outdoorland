@@ -142,7 +142,6 @@ $has_deals = count( $deals ) >= 4;
 </section>
 
 <?php
-get_template_part( 'template-parts/outdoor-front', null, [ 'part' => 'activities' ] );
 get_template_part( 'template-parts/slider', null, [ 'title' => 'Populære produkter', 'products' => playform_front_products( 'popular' ), 'id' => 'slider-pop' ] );
 get_template_part( 'template-parts/outdoor-front', null, [ 'part' => 'season' ] );
 get_template_part(

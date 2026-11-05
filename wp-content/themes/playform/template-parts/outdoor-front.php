@@ -1,51 +1,13 @@
 <?php
 /**
- * Outdoorland-forsiden: "Find udstyr til din tur" (aktiviteter) og "Sæsonens udstyr" (skifter med måneden).
- * $args['part']: 'activities' eller 'season'.
+ * Outdoorland-forsiden: "Sæsonens udstyr" (skifter med måneden). ("Find udstyr til din tur" er fjernet efter
+ * ejerens ønske 5. nov. 2026.)
  */
 defined( 'ABSPATH' ) || exit;
 
 $cat_link = static function ( string $slug ): string {
 	return playform_category_url( $slug );
 };
-
-if ( 'activities' === ( $args['part'] ?? '' ) ) :
-	$acts = [
-		[ 'vandring', 'Vandring', 'mountain', [ [ 'Vandrerygsække', $cat_link( 'vandrerygsaekke' ) ], [ 'Vandrestøvler', $cat_link( 'vandrestoevler' ) ], [ 'Vandrestave', $cat_link( 'vandrestave' ) ], [ 'Guide: Vandrerygsæk', home_url( '/vandrerygsaek/' ) ] ] ],
-		[ 'camping', 'Camping', 'tent', [ [ 'Telte', $cat_link( 'telte' ) ], [ 'Soveposer', $cat_link( 'soveposer' ) ], [ 'Liggeunderlag', $cat_link( 'liggeunderlag' ) ], [ 'Guide: 2 personers telt', home_url( '/2-personers-telt/' ) ] ] ],
-		[ 'baal', 'Bål & friluftskøkken', 'fire', [ [ 'Stormkøkkener', $cat_link( 'stormkoekken' ) ], [ 'Gryder & kogegrej', $cat_link( 'kogegrej' ) ], [ 'Bål & ildsted', $cat_link( 'baal' ) ], [ 'Guide: Bålgryde', home_url( '/baalgryde-grydesaet-baal/' ) ] ] ],
-		[ 'fiskeri', 'Fiskeri', 'fish', [ [ 'Fiskestænger', $cat_link( 'fiskestaenger' ) ], [ 'Fiskehjul', $cat_link( 'fiskehjul' ) ], [ 'Endegrej & agn', $cat_link( 'endegrej' ) ], [ 'Waders', $cat_link( 'waders' ) ] ] ],
-		[ 'vandsport', 'Kajak & SUP', 'kayak', [ [ 'Kajak & kano', $cat_link( 'kajak-kano' ) ], [ 'SUP-boards', $cat_link( 'sup' ) ], [ 'Redningsveste', $cat_link( 'redningsveste' ) ], [ 'Våddragter', $cat_link( 'vaaddragter' ) ] ] ],
-		[ 'vinter', 'Vintertur', 'snow', [ [ 'Soveposer', $cat_link( 'soveposer' ) ], [ 'Uldundertøj', $cat_link( 'uldundertoej' ) ], [ 'Pandelamper', $cat_link( 'pandelamper' ) ], [ 'Guide: Letvægtstelt', home_url( '/letvaegtstelt/' ) ] ] ],
-	];
-	?>
-	<section class="wrap section acts">
-		<div class="section__head">
-			<h2>Find udstyr til din tur</h2>
-			<span class="section__line"></span>
-		</div>
-		<div class="acts__grid">
-			<?php foreach ( $acts as [ $slug, $title, $icon, $links ] ) : ?>
-				<div class="act">
-					<img class="act__img" src="<?php echo esc_url( playform_asset( "act-$slug.jpg" ) ); ?>" alt="" loading="lazy" width="640" height="800">
-					<span class="act__shade"></span>
-					<a class="act__main" href="<?php echo esc_url( $links[0][1] ); ?>" aria-label="<?php echo esc_attr( $title ); ?>"></a>
-					<div class="act__body">
-						<span class="act__icon"><?php echo playform_icon( $icon, 20, 1.5 ); // phpcs:ignore ?></span>
-						<span class="act__title"><?php echo esc_html( $title ); ?></span>
-						<nav class="act__links" aria-label="<?php echo esc_attr( $title ); ?>">
-							<?php foreach ( $links as [ $label, $url ] ) : ?>
-								<a href="<?php echo esc_url( $url ); ?>"><?php echo esc_html( $label ); ?></a>
-							<?php endforeach; ?>
-						</nav>
-					</div>
-				</div>
-			<?php endforeach; ?>
-		</div>
-	</section>
-	<?php
-	return;
-endif;
 
 // Sæsonens udstyr: skifter automatisk med måneden.
 $m       = (int) wp_date( 'n' );
