@@ -1419,7 +1419,6 @@ ul.guide__facts { display: inline-flex; flex-wrap: wrap; align-items: center; ma
 
 /* Outdoorland: topbar og kampagnebar i mørk skovgrøn (matcher logoet) i stedet for sort. */
 :root { --forest: #1E2819; --forest-2: #3E4A38; --sage: #A9BB95; }
-.topbar { background: #161D12; }
 .campaign-bar { background: var(--forest); }
 .campaign-bar__track, .campaign-bar__track:hover, .campaign-bar__track:focus { color: #DDE3D5; }
 .campaign-bar__item i { background: var(--sage); }
@@ -1435,3 +1434,13 @@ ul.guide__facts { display: inline-flex; flex-wrap: wrap; align-items: center; ma
 .knowledge a:not(.knowledge__sale) { color: var(--forest-2); transition: color .2s ease; }
 .knowledge a:not(.knowledge__sale):hover { color: var(--accent); }
 .mm__title { color: var(--accent); }
+
+/* Outdoorland: lys topbar, en anelse mørkere end headeren (ejerens ønske 5. nov. 2026). */
+.topbar { background: #E6EAE0; color: #5E6A57; border-bottom: 1px solid #DDE2D6; }
+.topbar b { color: #3E4A38; }
+.topbar svg { color: #3E4A38; }
+.topbar__usp li + li { border-left-color: rgba(62, 74, 56, .16); }
+.topbar__ad { color: #5E6A57; }
+.topbar__ad:hover { color: #3E4A38; }
+.topbar__tag { border-color: rgba(62, 74, 56, .3); color: #3E4A38; }
+.topbar__mob, .topbar__mob a { color: #5E6A57; }
