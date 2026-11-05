@@ -1412,10 +1412,10 @@ ul.guide__facts { display: inline-flex; flex-wrap: wrap; align-items: center; ma
 .how .note { font-size: 13px; color: var(--ink-3, var(--ink-2)); }
 
 /* Outdoorland: headeren har en meget lys, dæmpet grågrøn baggrund (ejerens ønske 5. nov. 2026). */
-:root { --header-bg: #F1F3EE; }
-.site-header { background: var(--header-bg); border-bottom-color: #E2E6DC; }
-.site-header .search { background: #fff; border-color: #DDE2D6; }
-.site-header__row::before { border-top-color: #E2E6DC !important; }
+:root { --header-bg: #E6EAE0; }
+.site-header { background: var(--header-bg); border-bottom-color: #D7DDCD; }
+.site-header .search { background: #fff; border-color: #D2D8C8; }
+.site-header__row::before { border-top-color: #D7DDCD !important; }
 
 /* Outdoorland: topbar og kampagnebar i mørk skovgrøn (matcher logoet) i stedet for sort. */
 :root { --forest: #1E2819; --forest-2: #3E4A38; --sage: #A9BB95; }
@@ -1436,7 +1436,7 @@ ul.guide__facts { display: inline-flex; flex-wrap: wrap; align-items: center; ma
 .mm__title { color: var(--accent); }
 
 /* Outdoorland: lys topbar, en anelse mørkere end headeren (ejerens ønske 5. nov. 2026). */
-.topbar { background: #E6EAE0; color: #5E6A57; border-bottom: 1px solid #DDE2D6; }
+.topbar { background: #DBE1D2; color: #4F5B48; border-bottom: 1px solid #D0D7C6; }
 .topbar b { color: #3E4A38; }
 .topbar svg { color: #3E4A38; }
 .topbar__usp li + li { border-left-color: rgba(62, 74, 56, .16); }
