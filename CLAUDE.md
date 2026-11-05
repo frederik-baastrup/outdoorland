@@ -11,8 +11,8 @@ Alt, der er særligt for nichen, ligger i `wp-content/plugins/playform-feeds/src
 ## Opbygning (det, der er særligt for Outdoorland)
 
 - `Config.php`
-  - 32 shops (partnerid 14854), godkendt 5. nov. 2026. Seks programmer kræver en begrundelse og søges, når sitet er online: Outdoortid.dk, Northern Nights, Survivalstore, Jagt Jakt, Thehuntingshop, Sportdres Fiskegrej. SurfMore (paddleboards) og Zeejuu (metaldetektorer) er ikke med – uden for nichen.
-  - Kategorier: `camping`, `friluftskoekken`, `rygsaekke`, `outdoortoej`, `fodtoej`, `udstyr`, `fiskeri`, `jagt` – med underkategorier. Rækkefølgen betyder noget (specifikt udstyr før tøj).
+  - 33 shops (partnerid 14854), godkendt 5. nov. 2026. Seks programmer kræver en begrundelse og søges, når sitet er online: Outdoortid.dk, Northern Nights, Survivalstore, Jagt Jakt, Thehuntingshop, Sportdres Fiskegrej. Zeejuu (metaldetektorer) er ikke med – uden for nichen.
+  - Kategorier: `camping`, `friluftskoekken`, `rygsaekke`, `outdoortoej`, `fodtoej`, `udstyr`, `fiskeri`, `vandsport` (SurfMore + kajakker/SUP fra fiskebutikkerne), `jagt` – med underkategorier. Rækkefølgen betyder noget (specifikt udstyr før tøj).
   - `skip_uncategorized()` = true: varer, der ikke passer i en kategori, kommer slet ikke med (ikke "ukategoriseret").
   - `create_out_of_stock()` = false: nye, udsolgte varer oprettes ikke (tøjbutikkerne har titusindvis). Kendte varer bliver liggende som "ikke på lager".
   - `group_variants` + `variant_strip`: butikker med én række pr. størrelse/farve (Friluftsland, Outdoornu, Pro Outdoor, Friluftslageret, Wolf Tactical …) samles til ét produkt. `variant_strip` er regex, der fjerner størrelse/farve fra navnet (`Importer::strip_variant()`).
@@ -22,7 +22,7 @@ Alt, der er særligt for nichen, ligger i `wp-content/plugins/playform-feeds/src
 - `content/legacy-posts.php` + `playform_import_legacy_posts()` (`inc/setup.php`): det gamle outdoorland.dk kan ikke vise sine sider (WordPress-fejl), så artiklerne hentes fra **Internet Archive** (`web.archive.org/web/2026id_/…`): samme adresse, tekst, links, dato og billede (billeder hentes til egen server). Sponsorerede artikler fra før 2023 springes over (ejerens valg). Solgte artikler fra 2023+: tekst og links må aldrig ændres. `hidden` = vises ikke i lister. En kopi af den hentede HTML gemmes i `uploads/playform/legacy-posts/`.
 - Købsguides (`content/best/<slug>.php`) ligger på de gamle adresser uden "bedste-" (fx `/gaskoeleskab/`, `/luftpistol/`, `/8-personers-telt/`, `/lille-grill-transportabel/`) – de ranker i dag (ejerens ønske). Kun `/bedste-luftmadras-test/` → `/bedste-luftmadras/`. Gamle guides uden produkter i feedsne (bålhytte, shelter, parasoller, terrassevarmer, udendørs pejs, UV-telt, babyhængekøje) flyttes 1:1 fra Internet Archive. Nye telt-guides: 1–6 personers, familietelt, kuppeltelt, tunneltelt, tipitelt, bomuldstelt, letvægtstelt, festivaltelt. Gaskøleskab: ingen gaskøleskabe i feedsne endnu – guiden viser kompressor- og 12/230 V-kølebokse som alternativ.
 - Accentfarve `#5D714A` (grøn fra logoet, nyt logo 5. nov. 2026) med hvid tekst. Logoet er bredt (ca. 10:1), så det har lav højde i CSS (sidst i `main.css`).
-- Kategoribilleder fra Pexels: camping 4268094, friluftskoekken 4909071, rygsaekke 34207690, outdoortoej 35746663, fodtoej 32189248, udstyr 12106791, fiskeri 36917549, jagt 6204831.
+- Kategoribilleder fra Pexels: camping 4268094, friluftskoekken 4909071, rygsaekke 34207690, outdoortoej 35746663, fodtoej 32189248, udstyr 12106791, fiskeri 36917549, jagt 6204831, vandsport 5704472.
 - Søgemaskiner er slået fra på det midlertidige domæne (`playform_launch()`) og slås til, når `playform_move_domain()` flytter sitet til outdoorland.dk.
 
 ## Vigtige regler

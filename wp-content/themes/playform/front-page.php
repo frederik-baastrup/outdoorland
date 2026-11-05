@@ -87,7 +87,7 @@ $hero = [
 ];
 // Desktop: det store kort til venstre og tre kort til højre. Mobil: karrusel med alle 8 hovedkategorier.
 $mob = array_values( array_filter(
-	[ 'camping', 'rygsaekke', 'outdoortoej', 'fodtoej', 'fiskeri', 'jagt', 'friluftskoekken', 'udstyr' ],
+	[ 'camping', 'rygsaekke', 'outdoortoej', 'fodtoej', 'fiskeri', 'vandsport', 'jagt', 'friluftskoekken', 'udstyr' ],
 	static function ( $c ) {
 		$t = get_term_by( 'slug', $c, 'product_cat' );
 		return $t && ( $t->count > 0 || get_term_children( $t->term_id, 'product_cat' ) );

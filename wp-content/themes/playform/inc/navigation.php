@@ -137,6 +137,7 @@ function playform_menu_spec(): array {
 		[ 'fodtoej', null ],
 		[ 'udstyr', null ],
 		[ 'fiskeri', null ],
+		[ 'vandsport', null ],
 		[ 'jagt', null ],
 	];
 }
@@ -153,6 +154,7 @@ function playform_menu_labels(): array {
 		'fodtoej'          => 'Fodtøj',
 		'udstyr'           => 'Udstyr',
 		'fiskeri'          => 'Fiskeri',
+		'vandsport'        => 'Vandsport',
 		'jagt'             => 'Jagt',
 	];
 	foreach ( playform_menu_spec() as [ $slug, $cats ] ) {

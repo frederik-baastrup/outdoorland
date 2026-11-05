@@ -19,6 +19,7 @@ return [
 	'fodtoej'         => [ 'intro' => 'Vandrestøvler, vandresko, trailsko, gummistøvler og sandaler til tur og terræn. Se udvalget fra danske outdoorbutikker samlet ét sted.' ],
 	'udstyr'          => [ 'intro' => 'Pandelamper, lommelygter, knive, multitools, kikkerter, vandrestave og førstehjælp – det små udstyr, der gør turen tryggere. Se udvalget fra danske webshops.' ],
 	'fiskeri'         => [ 'intro' => 'Fiskestænger, fiskehjul, liner, endegrej, waders og alt til fluebinding fra danske fiskeforhandlere. Se udvalget samlet ét sted.' ],
+	'vandsport'       => [ 'intro' => 'Kajakker, kanoer, SUP-boards, pagajer, redningsveste og våddragter – alt til livet på vandet. Se udvalget fra danske webshops samlet ét sted.' ],
 	'jagt'            => [ 'intro' => 'Jagttøj, jagtstøvler, optik, vildtkameraer og udstyr til jagthunden fra danske jagt- og outdoorbutikker. Se udvalget samlet ét sted.' ],
 	// Underkategorier.
 	'telte'           => [ 'intro' => 'Telte til en til otte personer: lette telte til vandring, tunneltelte med plads og familietelte til campingpladsen. Kig på vægt, vandsøjle og hvor hurtigt teltet er slået op.' ],
