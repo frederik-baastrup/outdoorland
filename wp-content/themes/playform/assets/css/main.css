@@ -1417,9 +1417,21 @@ ul.guide__facts { display: inline-flex; flex-wrap: wrap; align-items: center; ma
 .site-header .search { background: #fff; border-color: #DDE2D6; }
 .site-header__row::before { border-top-color: #E2E6DC !important; }
 
-/* Outdoorland: kampagnebaren i dyb skovgrøn (matcher logoet) i stedet for sort. */
-.campaign-bar { background: #2B3624; }
+/* Outdoorland: topbar og kampagnebar i mørk skovgrøn (matcher logoet) i stedet for sort. */
+:root { --forest: #1E2819; --forest-2: #2A3623; --sage: #A9BB95; }
+.topbar { background: #161D12; }
+.campaign-bar { background: var(--forest); }
 .campaign-bar__track, .campaign-bar__track:hover, .campaign-bar__track:focus { color: #DDE3D5; }
-.campaign-bar__item i { background: #A9BB95; }
-.campaign-bar__btn { background: #F1F3EE; color: #1F2819; }
-.campaign-bar__btn:hover, .campaign-bar__btn:focus-visible { background: #fff; color: #1F2819; }
+.campaign-bar__item i { background: var(--sage); }
+.campaign-bar__btn { background: #F1F3EE; color: var(--forest); }
+.campaign-bar__btn:hover, .campaign-bar__btn:focus-visible { background: #fff; color: var(--forest); }
+
+/* Menuen: skovgrønne links med grøn understregning og hover. */
+.mm__link { color: var(--forest-2); transition: color .2s ease; }
+.mm__link::after { height: 3px; border-radius: 3px 3px 0 0; background: var(--accent); }
+.mm__item:hover > .mm__link, .mm__item:focus-within > .mm__link, .mm__link.is-active { color: var(--accent); }
+.mm__link--sale, .mm__item:hover > .mm__link--sale { color: var(--sale); }
+.mm__link--sale::after { background: var(--sale); }
+.knowledge a:not(.knowledge__sale) { color: var(--forest-2); transition: color .2s ease; }
+.knowledge a:not(.knowledge__sale):hover { color: var(--accent); }
+.mm__title { color: var(--accent); }
