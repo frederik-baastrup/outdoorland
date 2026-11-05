@@ -215,6 +215,7 @@ function playform_run_upgrades(): void {
 	playform_seed_articles();
 	playform_fix_author_name();
 	playform_seed_best();
+	playform_legacy_cleanup();
 	playform_import_legacy_posts();
 	if ( function_exists( 'playform_best_check' ) && ! get_option( 'playform_best_checked' ) ) {
 		playform_best_check( false ); // første rapport med det samme
@@ -858,6 +859,15 @@ function playform_legacy_parse( string $raw ): array {
 	return $out;
 }
 
+/** Fjerner indlæg fra det gamle site, der ikke skal med (fx WordPress' tomme eksempelindlæg). */
+function playform_legacy_cleanup(): void {
+	foreach ( get_posts( [ 'post_type' => 'post', 'post_status' => 'any', 'numberposts' => 20, 'meta_key' => '_pf_legacy_post', 'meta_value' => 1 ] ) as $p ) { // phpcs:ignore
+		if ( str_contains( $p->post_content, 'Welcome to WordPress' ) ) {
+			wp_delete_post( $p->ID, true );
+		}
+	}
+}
+
 function playform_import_legacy_posts( int $limit = 3 ): void {
 	$file = get_template_directory() . '/content/legacy-posts.php';
 	$list = is_readable( $file ) ? (array) require $file : [];
@@ -885,6 +895,11 @@ function playform_import_legacy_posts( int $limit = 3 ): void {
 		}
 		$raw = playform_legacy_fetch( PLAYFORM_LEGACY_SOURCE . '/' . $slug . '/' );
 		$p   = playform_legacy_parse( $raw );
+		if ( str_contains( $p['html'], 'Welcome to WordPress' ) ) { // WordPress' tomme eksempelindlæg
+			$done[ $slug ] = 'sprunget over';
+			update_option( 'playform_legacy_posts', $done, false );
+			continue;
+		}
 		if ( $p['html'] === '' || $p['title'] === '' ) {
 			continue;
 		}

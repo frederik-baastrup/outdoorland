@@ -358,31 +358,13 @@ add_filter(
 
 /**
  * Gamle adresser fra det tidligere outdoorland.dk, der ikke findes mere: sti => ny adresse (301) eller 410 (fjernet).
- * De gamle købsguides peger på den kategori, der passer bedst, indtil de er skrevet om som /bedste-…/ (content/best/).
- * Emner, Outdoorland ikke længere dækker (parasoller, terrassevarmere, luftpistoler …), går til forsiden.
+ * De gamle købsguides ligger på deres gamle adresser: skrevet om i content/best/ eller flyttet 1:1 (content/legacy-posts.php).
  * Artiklerne beholder deres adresser (de importeres 1:1, se playform_import_legacy_posts()), så de står ikke her.
  */
 function playform_legacy_redirects(): array {
 	return [
-		// Købsguides fra det gamle site (Internet Archive, 5. nov. 2026)
-		'5-personers-telt'                  => '/camping/telte/',
-		'8-personers-telt'                  => '/camping/telte/',
-		'uv-telt-baby'                      => '/camping/telte/',
-		'shelter'                           => '/camping/tarp-shelter/',
-		'baalhytte'                         => '/camping/tarp-shelter/',
-		'bedste-luftmadras-test'            => '/camping/liggeunderlag/',
-		'baby-haengekoeje'                  => '/camping/haengekoejer/',
-		'outdoor-haengekoeje-med-myggenet'  => '/camping/haengekoejer/',
-		'vandrerygsaek'                     => '/rygsaekke/vandrerygsaekke/',
-		'lommelygte'                        => '/udstyr/lommelygter/',
-		'baalgryde-grydesaet-baal'          => '/friluftskoekken/kogegrej/',
-		'lille-grill-transportabel'         => '/friluftskoekken/',
-		'gaskoeleskab'                      => '/friluftskoekken/koeletasker/',
-		'parasol-firkantet'                 => '/',
-		'parasol-med-tilt'                  => '/',
-		'terrassevarmer'                    => '/',
-		'udendoers-pejs-med-skorsten'       => '/',
-		'luftpistol'                        => '/',
+		// Købsguides fra det gamle site: de fleste ligger på samme adresse (content/best/ eller 1:1 fra Internet Archive).
+		'bedste-luftmadras-test' => '/bedste-luftmadras/',
 		// Sider og kategorier fra det gamle site
 		'outdoor-butikker'      => '/vores-butikker/',
 		'blog'                  => '/viden/',
