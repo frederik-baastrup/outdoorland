@@ -6,6 +6,7 @@ defined( 'ABSPATH' ) || exit;
 
 return [
 	'slug'     => 'baby-haengekoeje',
+	'keyword'  => 'babyhængekøje',
 	'title'    => 'Babyhængekøje og børnehængekøje: Vores bud på de 3 bedste',
 	'excerpt'  => 'En hængekøje til de mindste giver en hyggelig hule at gynge og slappe af i. Her er vores bud på de 3 bedste børnehængekøjer og hængekøjehuler fra danske butikker.',
 	'more_cat' => 'haengekoejer',
