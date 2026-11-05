@@ -1401,10 +1401,10 @@ ul.guide__facts { display: inline-flex; flex-wrap: wrap; align-items: center; ma
 @media (max-width: 640px) { .review-card { padding: 16px; gap: 12px; } .review-card__icon { width: 36px; height: 36px; } .review-card__body b { font-size: 15.5px; } .review-card__go { display: none; } }
 
 /* Outdoorland: logoet er bredt (ca. 10:1), så det får en lav højde. */
-.logo img { height: 26px; width: auto; }
-@media (max-width: 1080px) { .logo img { height: 22px; } }
-@media (max-width: 760px) { .logo img { height: 19px; } }
-.site-footer img[src*="logo-white"] { height: 28px; width: auto; }
+.logo img { height: 32px; width: auto; }
+@media (max-width: 1080px) { .logo img { height: 26px; } }
+@media (max-width: 760px) { .logo img { height: 23px; } }
+.site-footer img[src*="logo-white"] { height: 32px; width: auto; }
 
 /* Sådan fungerer … (inc/how.php) */
 .how .lead { font-size: 17px; line-height: 1.7; color: var(--ink); }
@@ -1444,3 +1444,5 @@ ul.guide__facts { display: inline-flex; flex-wrap: wrap; align-items: center; ma
 .topbar__ad:hover { color: #3E4A38; }
 .topbar__tag { border-color: rgba(62, 74, 56, .3); color: #3E4A38; }
 .topbar__mob, .topbar__mob a { color: #5E6A57; }
+
+.topbar__mob .topbar__tag:hover { color: #3E4A38; }
