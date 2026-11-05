@@ -577,3 +577,47 @@ add_action(
 		echo '</ul></div>';
 	}
 );
+
+/**
+ * Ingen påstand om egne test (projektregel): de gamle guides fra outdoorland.dk (flyttet 1:1) brugte ord som
+ * "bedst i test" og "Test & købsguide". De vises uden – i titel, tekst, SEO-titel og uddrag. Solgte artikler
+ * (skjulte, _pf_hidden) røres ikke: deres tekst må aldrig ændres.
+ */
+function playform_no_test_claims( string $text ): string {
+	$map = [
+		'/\s*[\(\[]\s*test\s*(?:&amp;|&|og|\+)\s*købsguide\s*[\)\]]/iu' => ' (købsguide)',
+		'/\btest\s*(?:&amp;|&|og|\+)\s*købsguide\b/iu'                 => 'Købsguide',
+		'/\bbedst(?:e)? i test(?:en)?\b/iu'                               => 'bedste',
+		'/\s+i test(?:en)?\b/iu'                                         => '',
+		'/\btestvinder(?:en)?\b/iu'                                        => 'vores favorit',
+		'/\bvinder(?:en)? af (?:vores )?test(?:en)?\b/iu'                  => 'vores favorit',
+		'/\bVi har (?:selv )?test(?:et|ede)\b/u'                           => 'Vi har sammenlignet',
+		'/\bvi har (?:selv )?test(?:et|ede)\b/iu'                          => 'vi har sammenlignet',
+		'/\bi vores test\b/iu'                                             => 'i vores sammenligning',
+		'/\bvores test\b/iu'                                               => 'vores sammenligning',
+		'/\btest(?:en)? af\b/iu'                                           => 'guide til',
+		'/\s*[|–-]\s*test\s*(?=[|–-]|$)/iu'                                => '',
+		'/\btest\b/iu'                                                     => 'guide',
+	];
+	// Kun tekst – aldrig inde i HTML-tags (links til andre sites kan have "test" i adressen).
+	return (string) preg_replace_callback(
+		'/(<[^>]*>)|([^<]+)/u',
+		static fn( $m ) => '' !== ( $m[1] ?? '' ) ? $m[1] : (string) preg_replace( array_keys( $map ), array_values( $map ), $m[2] ),
+		$text
+	);
+}
+
+function playform_is_legacy_guide( $post = null ): bool {
+	$post = get_post( $post );
+	return $post && 'post' === $post->post_type && get_post_meta( $post->ID, '_pf_legacy_post', true ) && ! get_post_meta( $post->ID, '_pf_hidden', true );
+}
+
+add_filter( 'the_title', static fn( $title, $id = 0 ) => $id && playform_is_legacy_guide( $id ) ? playform_no_test_claims( (string) $title ) : $title, 10, 2 );
+add_filter( 'the_content', static fn( $c ) => playform_is_legacy_guide() ? playform_no_test_claims( (string) $c ) : $c, 20 );
+add_filter( 'get_the_excerpt', static fn( $e, $post = null ) => playform_is_legacy_guide( $post ) ? playform_no_test_claims( (string) $e ) : $e, 10, 2 );
+add_filter( 'document_title_parts', static function ( array $parts ): array {
+	if ( is_singular( 'post' ) && playform_is_legacy_guide() && isset( $parts['title'] ) ) {
+		$parts['title'] = playform_no_test_claims( (string) $parts['title'] );
+	}
+	return $parts;
+} );

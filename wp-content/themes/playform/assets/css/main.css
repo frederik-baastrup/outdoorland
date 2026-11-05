@@ -1446,3 +1446,67 @@ ul.guide__facts { display: inline-flex; flex-wrap: wrap; align-items: center; ma
 .topbar__mob, .topbar__mob a { color: #5E6A57; }
 
 .topbar__mob .topbar__tag:hover { color: #3E4A38; }
+
+/* ===================== Outdoorland: mere natur (5. nov. 2026) ===================== */
+/* Varm, lys baggrund i stedet for helt hvid */
+body { background: #FAFAF6; }
+
+/* Menuikoner (kun på brede skærme, hvor der er plads) */
+.mm__ico { display: inline-flex; margin-right: 7px; color: var(--accent); transition: transform .25s ease; }
+.mm__item:hover .mm__ico { transform: translateY(-1px); }
+@media (max-width: 1360px) { .mm__ico { display: none; } }
+
+/* Højdekurver i kampagnebaren */
+.campaign-bar { background-image: url('../img/contours.svg'); background-size: 1100px auto; background-position: right -120px center; background-repeat: no-repeat; background-blend-mode: normal; position: relative; }
+.campaign-bar::before { content: ""; position: absolute; inset: 0; background: rgba(30, 40, 25, .9); pointer-events: none; }
+.campaign-bar__in { position: relative; }
+
+/* Sidefoden: mørk skovgrøn med bjergkam foroven og svage højdekurver */
+.site-footer { position: relative; background: #1E2819 url('../img/contours.svg') no-repeat right -200px top 40px / 1400px auto; margin-top: 90px; }
+.site-footer::before { content: ""; position: absolute; left: 0; right: 0; top: -59px; height: 60px; background: url('../img/ridge.svg') repeat-x left bottom / 1200px 60px; pointer-events: none; }
+.site-footer::after { content: ""; position: absolute; inset: 0; background: rgba(30, 40, 25, .93); pointer-events: none; }
+.site-footer > * { position: relative; z-index: 1; }
+.site-footer .foot__title { color: #A9BB95; }
+
+/* Mere luft om logoet på mobil */
+@media (max-width: 1080px) {
+	.site-header__row { padding: 16px 0 18px; }
+}
+
+/* Find udstyr til din tur */
+.acts__grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 14px; }
+.act { position: relative; aspect-ratio: 4 / 5; border-radius: var(--r-l); overflow: hidden; background: var(--img); isolation: isolate; }
+.act__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .6s cubic-bezier(.22,1,.36,1); }
+.act:hover .act__img { transform: scale(1.04); }
+.act__shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20,27,16,0) 30%, rgba(20,27,16,.82) 100%); }
+.act__main { position: absolute; inset: 0; z-index: 1; }
+.act__body { position: absolute; left: 16px; right: 16px; bottom: 16px; z-index: 2; display: flex; flex-direction: column; gap: 8px; color: #fff; pointer-events: none; }
+.act__icon { width: 38px; height: 38px; border-radius: 50%; background: rgba(255,255,255,.16); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); display: inline-flex; align-items: center; justify-content: center; }
+.act__title { font-size: 19px; font-weight: 600; letter-spacing: -.3px; line-height: 1.15; }
+.act__links { display: flex; flex-direction: column; gap: 3px; pointer-events: auto; }
+.act__links a { color: rgba(255,255,255,.82); font-size: 13px; }
+.act__links a:hover { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 1180px) { .acts__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 760px) {
+	.acts__grid { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 10px; margin: 0 -16px; padding: 0 16px; scrollbar-width: none; }
+	.acts__grid::-webkit-scrollbar { display: none; }
+	.act { flex: 0 0 62%; scroll-snap-align: start; }
+}
+
+/* Sæsonens udstyr */
+.season__card { position: relative; overflow: hidden; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 24px; padding: 30px 32px; border-radius: var(--r-l); background: #E9EDE4 url('../img/contours-dark.svg') no-repeat right -160px center / 900px auto; }
+.season__card::before { content: ""; position: absolute; inset: 0; background: rgba(233, 237, 228, .88); }
+.season__card > * { position: relative; }
+.season__icon { width: 56px; height: 56px; border-radius: 50%; background: var(--accent); color: #fff; display: inline-flex; align-items: center; justify-content: center; }
+.season__kicker { display: block; font-size: 12px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase; color: var(--accent); margin-bottom: 4px; }
+.season__text h2 { font-size: 26px; margin-bottom: 6px; color: #2A3623; }
+.season__text p { margin: 0; color: #4A5543; max-width: 560px; }
+.season__chips { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; max-width: 420px; }
+.season__chips a { padding: 9px 14px 8px; border-radius: 999px; background: #fff; border: 1px solid #D6DCCD; font-size: 13.5px; font-weight: 500; color: #2A3623; transition: background-color .2s ease, color .2s ease, border-color .2s ease; }
+.season__chips a:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
+@media (max-width: 900px) {
+	.season__card { grid-template-columns: auto minmax(0, 1fr); padding: 24px 20px; gap: 16px 18px; }
+	.season__chips { grid-column: 1 / -1; justify-content: flex-start; max-width: none; }
+	.season__icon { width: 46px; height: 46px; }
+	.season__text h2 { font-size: 22px; }
+}

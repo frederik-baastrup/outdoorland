@@ -142,6 +142,11 @@ function playform_menu_spec(): array {
 	];
 }
 
+/** Outdoorland: små linjeikoner foran menupunkterne (vises på brede skærme). slug => ikon i playform_icon(). */
+function playform_menu_icons(): array {
+	return [ 'camping' => 'tent', 'friluftskoekken' => 'pot', 'rygsaekke' => 'backpack', 'outdoortoej' => 'jacket', 'fodtoej' => 'boot', 'udstyr' => 'flashlight', 'fiskeri' => 'fish', 'vandsport' => 'kayak', 'jagt' => 'binoculars' ];
+}
+
 /** Visningsnavne fra menuen (fx "Romaskiner" for kategorien "Romaskine"), slug => navn. */
 function playform_menu_labels(): array {
 	// Kategorierne hedder ental (som folk søger), men i menu, faner og "Tilbud på …" læser flertal bedst.
