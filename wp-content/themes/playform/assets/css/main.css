@@ -1416,3 +1416,10 @@ ul.guide__facts { display: inline-flex; flex-wrap: wrap; align-items: center; ma
 .site-header { background: var(--header-bg); border-bottom-color: #E2E6DC; }
 .site-header .search { background: #fff; border-color: #DDE2D6; }
 .site-header__row::before { border-top-color: #E2E6DC !important; }
+
+/* Outdoorland: kampagnebaren i dyb skovgrøn (matcher logoet) i stedet for sort. */
+.campaign-bar { background: #2B3624; }
+.campaign-bar__track, .campaign-bar__track:hover, .campaign-bar__track:focus { color: #DDE3D5; }
+.campaign-bar__item i { background: #A9BB95; }
+.campaign-bar__btn { background: #F1F3EE; color: #1F2819; }
+.campaign-bar__btn:hover, .campaign-bar__btn:focus-visible { background: #fff; color: #1F2819; }
