@@ -321,4 +321,44 @@ final class Importer {
 			( $this->log )( $msg );
 		}
 	}
+
+	/**
+	 * Kører sorteringsreglerne igen på alle tilbud (efter ændringer i Config). Bruges af `wp playform reclassify`
+	 * og automatisk efter en udrulning, hvor Config.php er ændret (se temaets playform_run_upgrades()).
+	 *
+	 * @return array{changed:int,moves:array<string,int>}
+	 */
+	public static function reclassify(): array {
+		global $wpdb;
+		$t       = Offers::table();
+		$rows    = $wpdb->get_results( "SELECT id, product_id, shop, name, brand, shop_category, price, category FROM $t", ARRAY_A );
+		$changed = [];
+		$moves   = [];
+		foreach ( $rows as $r ) {
+			$offer = [ 'shop' => (string) $r['shop'], 'name' => (string) $r['name'], 'brand' => (string) $r['brand'], 'shop_category' => (string) $r['shop_category'], 'price' => (float) $r['price'] ];
+			$cat   = Classifier::classify( $offer );
+			if ( $cat === $r['category'] ) {
+				continue;
+			}
+			$moves[ $r['category'] . ' → ' . $cat ] = ( $moves[ $r['category'] . ' → ' . $cat ] ?? 0 ) + 1;
+			if ( $cat === 'exclude' ) {
+				$wpdb->update( $t, [ 'category' => 'exclude', 'active' => 0 ], [ 'id' => $r['id'] ] );
+			} else {
+				$wpdb->update( $t, [ 'category' => $cat ], [ 'id' => $r['id'] ] );
+			}
+			$changed[ (int) $r['product_id'] ] = true;
+		}
+		$today = current_time( 'Y-m-d' );
+		foreach ( array_keys( $changed ) as $n => $id ) {
+			ProductSync::refresh( $id, $today );
+			if ( ! Offers::for_product( $id ) ) {
+				wp_update_post( [ 'ID' => $id, 'post_status' => 'draft' ] );
+			}
+			if ( $n % 500 === 0 ) {
+				wp_cache_flush();
+			}
+		}
+		arsort( $moves );
+		return [ 'changed' => count( $changed ), 'moves' => $moves ];
+	}
 }

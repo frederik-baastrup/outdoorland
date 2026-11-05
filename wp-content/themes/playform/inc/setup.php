@@ -216,6 +216,13 @@ function playform_run_upgrades(): void {
 	playform_fix_author_name();
 	playform_seed_best();
 	playform_legacy_cleanup();
+	// Er sorteringsreglerne (Config.php) ændret, sorteres alle tilbud igen i baggrunden.
+	if ( class_exists( '\\Playform\\Feeds\\Importer' ) && method_exists( '\\Playform\\Feeds\\Importer', 'reclassify' ) ) {
+		$hash = (string) md5_file( WP_PLUGIN_DIR . '/playform-feeds/src/Config.php' );
+		if ( get_option( 'playform_config_hash' ) !== $hash && ! wp_next_scheduled( 'playform_reclassify' ) ) {
+			wp_schedule_single_event( time() + 60, 'playform_reclassify' );
+		}
+	}
 	playform_import_legacy_posts();
 	if ( function_exists( 'playform_best_check' ) && ! get_option( 'playform_best_checked' ) ) {
 		playform_best_check( false ); // første rapport med det samme
@@ -965,6 +972,16 @@ function playform_import_legacy_posts( int $limit = 3 ): void {
 	}
 }
 add_action( 'playform_legacy_posts', static fn() => playform_import_legacy_posts() );
+
+add_action(
+	'playform_reclassify',
+	static function () {
+		@set_time_limit( 0 ); // phpcs:ignore
+		$res = \Playform\Feeds\Importer::reclassify();
+		update_option( 'playform_config_hash', (string) md5_file( WP_PLUGIN_DIR . '/playform-feeds/src/Config.php' ), false );
+		update_option( 'playform_reclassify_last', [ 'time' => current_time( 'mysql' ) ] + $res, false );
+	}
+);
 
 /**
  * Skjulte artikler (_pf_hidden, se content/legacy-posts.php) vises ikke i lister: Viden & guides, emnesider,
