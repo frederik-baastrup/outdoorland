@@ -208,6 +208,7 @@ function playform_run_upgrades(): void {
 	playform_refresh_multishop();
 	playform_update_legal_pages();
 	playform_ensure_how_page();
+	playform_vary_default_texts();
 	playform_fix_default_site_name();
 	playform_author_profile();
 	playform_hide_imageless_products();
@@ -414,12 +415,12 @@ function playform_guide_topics(): void {
 		}
 	}
 	$texts = [
-		'Købsguides' => 'Vores bud på de bedste modeller, og hvad du skal kigge efter, før du køber telt, sovepose, rygsæk og andet outdoorudstyr.',
+		'Købsguides' => 'Skal du købe telt, sovepose, rygsæk eller andet outdoorudstyr? Her får du vores bud på gode modeller og de ting, der er værd at tjekke inden turen.',
 		'Viden'      => 'Gode råd til livet udendørs: vandring, camping, bål, friluftsmad og turen med hunden.',
 	];
 	foreach ( $texts as $name => $desc ) {
 		$t = get_term_by( 'name', $name, 'category' );
-		if ( $t && trim( $t->description ) === '' ) {
+		if ( $t && ( trim( $t->description ) === '' || ( 'Købsguides' === $name && trim( $t->description ) === 'Vores bud på de bedste modeller, og hvad du skal kigge efter, før du køber telt, sovepose, rygsæk og andet outdoorudstyr.' ) ) ) { // den gamle fælles formulering skiftes også
 			wp_update_term( $t->term_id, 'category', [ 'description' => $desc ] );
 		}
 	}
@@ -486,9 +487,25 @@ function playform_default_text( string $which ): string {
 	$name  = playform_site( 'name' );
 	$niche = playform_site( 'niche' );
 	if ( $which === 'butikker' ) {
-		return "<p>$name samler $niche fra flere danske webshops ét sted. Vi henter produkter, priser og lagerstatus direkte fra butikkerne to gange i døgnet. Når du klikker på \"Gå til butik\", sendes du videre til butikken, hvor du handler som normalt.</p><h2>Butikker på $name</h2>";
+		return '<p>' . "På $name kan du se $niche fra mange danske webshops på ét sted. Butikkernes produkter, priser og lagerstatus opdateres to gange i døgnet direkte fra deres feeds. Vælger du \"Gå til butik\", kommer du over til forhandleren og køber dér, ligesom du plejer." . "</p><h2>Butikker på $name</h2>";
 	}
-	return "<p>$name er gratis at bruge. Når du klikker videre til en butik og handler, får vi en lille provision fra butikken. Det koster ikke dig noget ekstra. Du kan altid sortere efter pris, tilbud eller nyeste.</p><p>Som tilbud viser vi kun butikkernes egne tilbud, og kun i højst 14 dage. Har vi selv fulgt prisen hos butikken i de 30 dage før tilbuddet, viser vi den laveste pris i perioden som førpris. Ellers viser vi butikkens egen førpris, tydeligt mærket som butikkens. Tjek altid den endelige pris hos butikken.</p>";
+	return '<p>' . "Det koster ingenting at bruge $name. Handler du i en butik via vores links, får vi en lille provision fra butikken, og prisen er den samme for dig. Produkterne kan altid sorteres efter pris, tilbud eller nyeste." . '</p><p>' . "Tilbud betyder hos os butikkernes egne tilbud, og de vises i højst 14 dage. Hvis vi har fulgt butikkens pris i de 30 dage, før tilbuddet startede, er førprisen den laveste pris i den periode. Hvis ikke, ser du butikkens egen førpris med en tydelig markering af, at den er butikkens. Tjek den endelige pris i butikken, inden du køber." . '</p>';
+}
+
+/**
+ * Teksterne på "Vores butikker" og "Sådan tjener vi penge" var ens på alle sites (dublet-indhold på tværs af domæner).
+ * Skifter de gamle standardafsnit ud med dette sites egen formulering – kun hvor afsnittet står uændret
+ * (playform_update_text), så redaktørens rettelser vinder. Kan køres igen sikkert.
+ */
+function playform_vary_default_texts(): void {
+	$name  = playform_site( 'name' );
+	$niche = playform_site( 'niche' );
+	if ( '' === $niche ) {
+		return;
+	}
+	playform_update_text( 'vores-butikker', "$name samler $niche fra flere danske webshops ét sted. Vi henter produkter, priser og lagerstatus direkte fra butikkerne to gange i døgnet. Når du klikker på \"Gå til butik\", sendes du videre til butikken, hvor du handler som normalt.", "På $name kan du se $niche fra mange danske webshops på ét sted. Butikkernes produkter, priser og lagerstatus opdateres to gange i døgnet direkte fra deres feeds. Vælger du \"Gå til butik\", kommer du over til forhandleren og køber dér, ligesom du plejer." );
+	playform_update_text( 'saadan-tjener-vi-penge', "$name er gratis at bruge. Når du klikker videre til en butik og handler, får vi en lille provision fra butikken. Det koster ikke dig noget ekstra. Du kan altid sortere efter pris, tilbud eller nyeste.", "Det koster ingenting at bruge $name. Handler du i en butik via vores links, får vi en lille provision fra butikken, og prisen er den samme for dig. Produkterne kan altid sorteres efter pris, tilbud eller nyeste." );
+	playform_update_text( 'saadan-tjener-vi-penge', "Som tilbud viser vi kun butikkernes egne tilbud, og kun i højst 14 dage. Har vi selv fulgt prisen hos butikken i de 30 dage før tilbuddet, viser vi den laveste pris i perioden som førpris. Ellers viser vi butikkens egen førpris, tydeligt mærket som butikkens. Tjek altid den endelige pris hos butikken.", "Tilbud betyder hos os butikkernes egne tilbud, og de vises i højst 14 dage. Hvis vi har fulgt butikkens pris i de 30 dage, før tilbuddet startede, er førprisen den laveste pris i den periode. Hvis ikke, ser du butikkens egen førpris med en tydelig markering af, at den er butikkens. Tjek den endelige pris i butikken, inden du køber." );
 }
 
 /**

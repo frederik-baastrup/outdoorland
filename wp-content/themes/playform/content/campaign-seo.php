@@ -8,7 +8,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'black-friday' => <<<'HTML'
 <h2>Black Friday på outdoorudstyr</h2>
-<p>Black Friday er blevet til en hel måned med tilbud, og outdoorudstyr er ingen undtagelse. Mange danske outdoorbutikker sætter priserne ned på telte, soveposer, jakker og vandrestøvler i løbet af november – og de samme varer findes ofte hos flere butikker til forskellige priser. Her samler vi butikkernes egne tilbud ét sted, så du hurtigt kan se, hvor du sparer mest. Du handler direkte hos butikken.</p>
+<p>Sæsonen for lange vandreture er måske slut, men november er tid til at forberede den næste. Black Friday har bredt sig ud over næsten hele måneden, og her nedsætter mange danske outdoorbutikker telte, soveposer, jakker og vandrestøvler. Det samme telt kan sagtens ligge hos tre forhandlere til tre priser. Vi har derfor samlet de tilbud, butikkerne selv har oprettet, på én side, så du kan holde dem op mod hinanden. Når du har valgt, køber du hos butikken.</p>
 
 <h3>Black Friday-tilbud på camping og telte</h3>
 <p>Telt, sovepose og liggeunderlag er de store poster, når du skal sove ude, og derfor gør tilbuddene den største forskel her. Under {cat:camping|camping} finder du {cat:telte|telte}, {cat:soveposer|soveposer}, {cat:liggeunderlag|liggeunderlag} og {cat:haengekoejer|hængekøjer}.</p>
@@ -22,16 +22,16 @@ return [
 <h3>Fiskeri og jagt</h3>
 <p>Fiskeforhandlerne har ofte tilbud på {cat:fiskestaenger|fiskestænger}, {cat:fiskehjul|fiskehjul} og {cat:endegrej|endegrej} i november, og jagtbutikkerne på {cat:jagttoej|jagttøj} og {cat:jagtoptik|optik}.</p>
 
-<h3>Gode råd til Black Friday</h3>
+<h3>Klar til næste tur: råd før du handler</h3>
 <ul>
-<li>Gør dig klart, hvad du skal bruge udstyret til, før du ser på mærker: vægt betyder mest, når du selv skal bære det.</li>
-<li>Sammenlign prisen hos flere butikker – samme telt eller jakke kan koste forskelligt.</li>
-<li>Køb fodtøj i god tid, så det kan nå at blive gået til før næste tur.</li>
-<li>Tjek leveringstid og returret, hvis det er en julegave.</li>
-<li>Kig på vores <a href="/koebsguide/">købsguides</a>, hvis du er i tvivl om, hvilken model du skal vælge.</li>
+<li>Tænk på turen først og mærket bagefter – skal du selv bære udstyret, er vægten ofte det vigtigste.</li>
+<li>Den samme jakke eller det samme telt kan være billigere hos en anden forhandler, så sammenlign.</li>
+<li>Nye vandrestøvler skal gås til, så køb dem i god tid før sæsonen.</li>
+<li>Er udstyret en julegave, så hold øje med leveringstid og returfrist.</li>
+<li>Vores <a href="/koebsguide/">købsguides</a> kan hjælpe, når du skal vælge mellem flere modeller.</li>
 </ul>
 
-<h3>Hvornår er Black Friday?</h3>
-<p>Black Friday er den sidste fredag i november. Weekenden efter kaldes Black Weekend, og mandagen efter er Cyber Monday. Mange butikker kører dog tilbud hele november, og derfor opdaterer vi siden hele måneden. Tilbuddene skifter løbende, så kig forbi igen – og tjek altid den endelige pris hos butikken, før du køber.</p>
+<h3>Hvilken dag er Black Friday?</h3>
+<p>Dagen kommer fra USA og falder fredagen efter Thanksgiving i slutningen af november. Derefter følger Black Weekend og til sidst Cyber Monday om mandagen. Mange outdoorbutikker begynder dog tidligere og holder tilbud ude hele november, så siden her bliver opdateret gennem hele måneden. Udvalget af tilbud ændrer sig fra dag til dag, så kig gerne ind igen. Inden du betaler, så se den endelige pris hos butikken.</p>
 HTML,
 ];

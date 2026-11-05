@@ -35,7 +35,7 @@ function playform_campaign_defs(): array {
 		'black-friday'    => [
 			'name'   => 'Black Friday',
 			'title'  => "Black Friday – Tilbud på $niche",
-			'intro'  => "Se Black Friday-tilbud på $niche samlet ét sted. Hele november samler vi butikkernes egne tilbud $from, så du nemt kan sammenligne dem. Klik videre og køb direkte hos butikken.",
+			'intro'  => "Gør klar til næste sæson med Black Friday-tilbud på $niche. Gennem hele november henter vi butikkernes egne tilbud $from, så telte, jakker og støvler kan sammenlignes på én side. Du køber direkte hos forhandleren.",
 			'period' => static function ( int $y ): array {
 				$tz  = wp_timezone();
 				$cm  = playform_black_friday( $y )->modify( '+3 days' ); // Cyber Monday
@@ -46,19 +46,19 @@ function playform_campaign_defs(): array {
 		'januarudsalg'    => [
 			'name'   => 'Januarudsalg',
 			'title'  => "Januarudsalg – Tilbud på $niche",
-			'intro'  => "Se januartilbud på $niche samlet ét sted. Vi samler butikkernes udsalg $from, så du nemt kan sammenligne dem. Klik videre og køb direkte hos butikken.",
+			'intro'  => "Januar er tid til at planlægge årets ture. Her finder du udsalg på $niche $from, så du kan sammenligne priserne. Når valget er truffet, handler du hos butikken.",
 			'period' => static fn( int $y ): array => [ new DateTimeImmutable( "$y-01-01", wp_timezone() ), new DateTimeImmutable( "$y-01-31", wp_timezone() ) ],
 		],
 		'sommerudsalg'    => [
 			'name'   => 'Sommerudsalg',
 			'title'  => "Sommerudsalg – Tilbud på $niche",
-			'intro'  => "Se sommertilbud på $niche samlet ét sted. Vi samler butikkernes udsalg $from, så du nemt kan sammenligne dem. Klik videre og køb direkte hos butikken.",
+			'intro'  => "Mangler du noget til sommerens ture? Se sommerudsalget på $niche $from samlet her, fra soveposer til vandresko. Købet sker i webshoppen.",
 			'period' => static fn( int $y ): array => [ new DateTimeImmutable( "$y-06-25", wp_timezone() ), new DateTimeImmutable( "$y-08-10", wp_timezone() ) ],
 		],
 		'efteraarstilbud' => [
 			'name'   => 'Efterårstilbud',
 			'title'  => "Efterårstilbud – Tilbud på $niche",
-			'intro'  => "Se efterårstilbud på $niche samlet ét sted. Vi samler butikkernes egne tilbud $from, så du nemt kan sammenligne dem. Klik videre og køb direkte hos butikken.",
+			'intro'  => "Efteråret byder på klar luft og gode vandredage. Se efterårstilbud på $niche $from, og find det, du mangler, på én side. Du klikker videre og handler hos butikken.",
 			'period' => static fn( int $y ): array => [ new DateTimeImmutable( "$y-09-15", wp_timezone() ), new DateTimeImmutable( "$y-10-31", wp_timezone() ) ],
 		],
 	];
@@ -112,7 +112,7 @@ function playform_campaign_url( string $slug ): string {
 function playform_campaign_bar_text( string $slug, ?DateTimeImmutable $day = null ): array {
 	$day   = $day ?: playform_campaign_today();
 	$niche = playform_site( 'niche' );
-	$pitch = [ "Spar på $niche – tilbud fra danske webshops samlet ét sted", 'Kun friske tilbud – aldrig ældre end 14 dage' ];
+	$pitch = [ "Outdoorudstyr på tilbud hos danske webshops – kig her", 'Tilbuddene er højst 14 dage gamle' ];
 	if ( $slug === 'black-friday' ) {
 		$bf   = playform_black_friday( (int) $day->format( 'Y' ) );
 		$days = (int) $day->diff( $bf )->format( '%r%a' );
@@ -120,21 +120,21 @@ function playform_campaign_bar_text( string $slug, ?DateTimeImmutable $day = nul
 			return [ 'Kæmpe besparelser til Black Month', 'Se de vilde tilbud hos butikkerne her!' ]; // ejerens tekst 4. nov. 2026
 		}
 		if ( $days > 1 ) {
-			return [ "Black Friday om $days dage", [ 'Mange tilbud er allerede startet – kom før de andre', $pitch[1] ] ];
+			return [ "Black Friday om $days dage", [ 'De første tilbud er ude – kig forbi', $pitch[1] ] ];
 		}
 		if ( $days === 1 ) {
-			return [ 'Black Friday i morgen', [ 'Mange tilbud er allerede startet – kom før de andre', $pitch[1] ] ];
+			return [ 'Black Friday i morgen', [ 'De første tilbud er ude – kig forbi', $pitch[1] ] ];
 		}
 		if ( $days === 0 ) {
-			return [ 'Black Friday', [ 'Tilbuddene er i gang – find dem samlet ét sted', $pitch[1] ] ];
+			return [ 'Black Friday', [ 'Det er i dag – tilbuddene står klar', $pitch[1] ] ];
 		}
 		if ( $days >= -2 ) {
-			return [ 'Black Weekend', [ 'Tilbuddene fortsætter hele weekenden', $pitch[0] ] ];
+			return [ 'Black Weekend', [ 'Tilbuddene løber hele weekenden', $pitch[0] ] ];
 		}
 		if ( $days === -3 ) {
-			return [ 'Cyber Monday', [ 'Sidste chance for mange af tilbuddene', $pitch[0] ] ];
+			return [ 'Cyber Monday', [ 'Sidste udkald for mange tilbud', $pitch[0] ] ];
 		}
-		return [ 'Black Month', [ 'De sidste dage med Black Month-tilbud', $pitch[1] ] ];
+		return [ 'Black Month', [ 'Black Month er ved at slutte', $pitch[1] ] ];
 	}
 	$def = playform_campaign_defs()[ $slug ];
 	return [ $def['name'], $pitch ];
@@ -175,7 +175,7 @@ function playform_campaign_page_text( string $slug ): array {
 		$when = $slug === 'black-friday'
 			? 'Black Friday er ' . wp_date( 'j. F Y', playform_black_friday( (int) $s->format( 'Y' ) )->getTimestamp() )
 			: $def['name'] . ' starter ' . wp_date( 'j. F Y', $s->getTimestamp() );
-		$note = $def['name'] . ' er ikke i gang lige nu. ' . $when . '. Indtil da kan du se butikkernes aktuelle tilbud her.';
+		$note = $def['name'] . ' er ikke i gang lige nu. ' . $when . '. Indtil videre kan du finde butikkernes nuværende tilbud her.';
 	}
 	return [ 'title' => $def['title'], 'intro' => $def['intro'], 'note' => $note ];
 }

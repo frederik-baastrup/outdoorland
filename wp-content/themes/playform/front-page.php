@@ -134,10 +134,10 @@ $has_deals = count( $deals ) >= 4;
 	</div>
 
 	<div class="usp">
-		<div class="usp__item"><span class="usp__icon"><?php echo playform_icon( 'grid', 22, 1.4 ); // phpcs:ignore ?></span><span><b>Alt udstyr ét sted</b><span>Produkter fra flere danske shops</span></span></div>
-		<div class="usp__item"><span class="usp__icon"><?php echo playform_icon( 'refresh', 22, 1.4 ); // phpcs:ignore ?></span><span><b>Opdateret 2× dagligt</b><span>Aktuelle priser og lagerstatus</span></span></div>
-		<div class="usp__item"><span class="usp__icon"><?php echo playform_icon( 'store', 22, 1.4 ); // phpcs:ignore ?></span><span><b>Køb direkte i butikken</b><span>Du handler hos shoppen som normalt</span></span></div>
-		<a class="usp__item" href="<?php echo esc_url( playform_tilbud_url() ); ?>"><span class="usp__icon"><?php echo playform_icon( 'tag', 22, 1.4 ); // phpcs:ignore ?></span><span><b>Butikkernes tilbud</b><span>Aktuelle tilbud samlet ét sted</span></span></a>
+		<div class="usp__item"><span class="usp__icon"><?php echo playform_icon( 'grid', 22, 1.4 ); // phpcs:ignore ?></span><span><b>Udstyr til turen</b><span>Fra over 30 danske webshops</span></span></div>
+		<div class="usp__item"><span class="usp__icon"><?php echo playform_icon( 'refresh', 22, 1.4 ); // phpcs:ignore ?></span><span><b>Opdateret 2× dagligt</b><span>Priser og lager hentes løbende</span></span></div>
+		<div class="usp__item"><span class="usp__icon"><?php echo playform_icon( 'store', 22, 1.4 ); // phpcs:ignore ?></span><span><b>Du køber hos butikken</b><span>Vi viser vejen til forhandleren</span></span></div>
+		<a class="usp__item" href="<?php echo esc_url( playform_tilbud_url() ); ?>"><span class="usp__icon"><?php echo playform_icon( 'tag', 22, 1.4 ); // phpcs:ignore ?></span><span><b>Butikkernes tilbud</b><span>Nedsat udstyr på én side</span></span></a>
 	</div>
 </section>
 
@@ -165,7 +165,7 @@ foreach ( playform_front_categories() as $cslug => [ $ctitle, $cmin ] ) {
 	<div class="news">
 		<div>
 			<h2>Få besked, når prisen falder</h2>
-			<p>Ugens bedste tilbud på <?php echo esc_html( playform_site( 'niche' ) ); ?> og nye guides direkte i din indbakke. Ca. én mail om ugen.</p>
+			<p>Tilbud på <?php echo esc_html( playform_site( 'niche' ) ); ?> og nye købsguides til næste tur, samlet i en mail cirka hver uge.</p>
 		</div>
 		<form class="news__form" method="post" action="#" data-newsletter data-endpoint="<?php echo esc_url( rest_url( 'playform/v1/newsletter' ) ); ?>">
 			<input type="text" name="website" tabindex="-1" autocomplete="off" class="sr-only" aria-hidden="true">
@@ -174,7 +174,7 @@ foreach ( playform_front_categories() as $cslug => [ $ctitle, $cmin ] ) {
 				<input id="nl-email" type="email" name="email" placeholder="navn@eksempel.dk" required>
 				<button type="submit">Tilmeld</button>
 			</div>
-			<span class="news__note" role="status" aria-live="polite">Du får en mail, hvor du bekræfter tilmeldingen. Du kan altid afmelde dig igen. Læs vores <a href="<?php echo esc_url( home_url( '/privatlivspolitik/' ) ); ?>">privatlivspolitik</a>.</span>
+			<span class="news__note" role="status" aria-live="polite">Bekræft din tilmelding via linket i den mail, du modtager. Det er altid muligt at melde sig fra igen. Mere i vores <a href="<?php echo esc_url( home_url( '/privatlivspolitik/' ) ); ?>">privatlivspolitik</a>.</span>
 		</form>
 	</div>
 </section>
@@ -236,6 +236,6 @@ if ( $posts ) {
 
 <?php
 $front   = get_post( (int) get_option( 'page_on_front' ) );
-$seo     = $front && trim( $front->post_content ) ? apply_filters( 'the_content', $front->post_content ) : '<h2>Outdoorudstyr fra danske webshops – samlet ét sted</h2><p>' . esc_html( playform_site( 'name' ) ) . ' samler telte, soveposer, rygsække, outdoortøj, vandrestøvler, fiskegrej og jagtudstyr fra over 30 danske webshops ét sted. Vi henter priser og lagerstatus to gange i døgnet, så du hurtigt kan se, hvad udstyret koster, og hvem der har det på lager. Når du har fundet det rigtige, sender vi dig videre til butikken, hvor du handler som normalt.</p><h3>Udstyr til turen</h3><p>Skal du på vandretur eller i telt, er de tunge poster telt, sovepose, liggeunderlag og rygsæk. Vægt og pakstørrelse betyder mest, når du selv skal bære det, mens komfort og plads vinder, når bilen holder ved teltet. Kig efter soveposens komforttemperatur, liggeunderlagets R-værdi og rygsækkens volumen og bæresystem.</p><h3>Tøj og fodtøj efter lag-princippet</h3><p>Uld eller syntetisk inderst, fleece eller dun som mellemlag og en vind- og vandtæt skaljakke yderst. Så kan du tage af og på, efterhånden som vejret og tempoet skifter. Vandrestøvler skal passe godt, før de bliver taget med på en lang tur – køb dem gerne i god tid, så de kan nå at blive gået til.</p><h3>Fiskeri og jagt</h3><p>Under fiskeri finder du stænger, hjul, liner, endegrej, waders og alt til fluebinding fra de danske fiskeforhandlere. Under jagt finder du jagttøj, støvler, optik og udstyr til jagthunden.</p>';
+$seo     = $front && trim( $front->post_content ) ? apply_filters( 'the_content', $front->post_content ) : '<h2>Outdoorudstyr fra danske webshops – samlet ét sted</h2><p>' . esc_html( playform_site( 'name' ) ) . ' giver dig overblik over telte, soveposer, rygsække, outdoortøj, vandrestøvler, fiskegrej og jagtudstyr fra over 30 danske webshops. Morgen og aften opdaterer vi priser og lagerstatus, så du kan se, hvad udstyret koster i dag, og hvilken forhandler der har det klar til afsendelse. Når valget er truffet, følger du linket til butikken og handler dér.</p><h3>Udstyr til turen</h3><p>Skal du på vandretur eller i telt, er de tunge poster telt, sovepose, liggeunderlag og rygsæk. Vægt og pakstørrelse betyder mest, når du selv skal bære det, mens komfort og plads vinder, når bilen holder ved teltet. Kig efter soveposens komforttemperatur, liggeunderlagets R-værdi og rygsækkens volumen og bæresystem.</p><h3>Tøj og fodtøj efter lag-princippet</h3><p>Uld eller syntetisk inderst, fleece eller dun som mellemlag og en vind- og vandtæt skaljakke yderst. Så kan du tage af og på, efterhånden som vejret og tempoet skifter. Vandrestøvler skal passe godt, før de bliver taget med på en lang tur – køb dem gerne i god tid, så de kan nå at blive gået til.</p><h3>Fiskeri og jagt</h3><p>Under fiskeri finder du stænger, hjul, liner, endegrej, waders og alt til fluebinding fra de danske fiskeforhandlere. Under jagt finder du jagttøj, støvler, optik og udstyr til jagthunden.</p>';
 get_template_part( 'template-parts/seo-text', null, [ 'html' => $seo, 'right' => true ] );
 get_footer();
