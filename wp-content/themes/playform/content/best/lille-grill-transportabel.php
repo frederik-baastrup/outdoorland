@@ -19,11 +19,12 @@ HTML,
 			'name'    => 'O-Grill 500',
 			'role'    => 'Bedst samlet',
 			'reviews' => [],
-			'verdict' => 'Letvægts gasgrill i elegant kuffertdesign, 56,7 x 47,5 x 21 cm.',
+			'verdict' => 'Let og flad gasgrill på kun 21 cm i højden – nem at have med og klar til at grille, så snart den er tændt.',
 			'why'     => <<<'HTML'
-<p>O-Grill 500 er en letvægts gasgrill med et elegant design, der lukkes som en kuffert. Med målene 56,7 x 47,5 x 21 cm passer den i bagagerummet og på det lille altanbord.</p><p>Den fås i flere farver, så den også ser godt ud, når den står fremme.</p>
+<p>O-Grill 500 er til dig, der vil have rigtig grillmad med på tur uden at slæbe på en stor grill. Det er en letvægts gasgrill i et elegant design, så den ser lige så godt ud på altanbordet som på campingpladsen.</p>
+<p>Den måler 56,7 × 47,5 cm, og med en højde på kun 21 cm er den flad nok til at ligge i bagagerummet ved siden af kølerboksen og campingstolene. Fordi den kører på gas, skal du ikke vente på gløder eller skaffe dig af med aske bagefter – du tænder, og så kan du gå i gang.</p>
 HTML,
-			'good'    => [ 'Altan og camping', 'Hurtig grillmad' ],
+			'good'    => [ 'Altan og camping', 'Weekendture i bil', 'Hurtig grillmad uden kul' ],
 			'less'    => [ 'Store selskaber' ],
 		],
 		[
@@ -47,7 +48,8 @@ HTML,
 			'reviews' => [],
 			'verdict' => 'Kompakt og alsidig DeLuxe gasgrill til gasdåser.',
 			'why'     => <<<'HTML'
-<p>Safari Chef 30 er en kompakt gasgrill til gasdåser, og Cadac har et stort udvalg af tilbehør til den, fx grillplade, wokpande og pizzasten. Findes også i en LP-udgave til gasflaske med regulator.</p>
+<p>Cadac Safari Chef 30 HP DeLuxe er en lille gasgrill, der kører på gasdåser. Det gør den nem at tage med: Ingen tung gasflaske, ingen kul og ingen aske at slæbe hjem. Du sætter dåsen i, tænder og er klar til at lave mad på stranden, i haven eller på campingpladsen.</p>
+<p>DeLuxe-udgaven er bygget til at være alsidig, så den kan mere end en klassisk engangsgrill. Og fordi den er kompakt, er den hurtigt pakket ned igen, når maden er spist.</p>
 HTML,
 			'good'    => [ 'Camping og madlavning på tur', 'Mange slags mad' ],
 			'less'    => [ 'Store selskaber' ],

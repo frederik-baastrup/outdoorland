@@ -47,11 +47,13 @@ HTML,
 			'name'    => 'NordicHike luftmadras med fodpumpe',
 			'role'    => 'Bedst til vandring og festival',
 			'reviews' => [],
-			'verdict' => 'Let oppusteligt liggeunderlag med indbygget fodpumpe.',
+			'verdict' => 'Ultralet luftmadras i vandtæt polyester med indbygget fodpumpe – fyldt på få sekunder og rullet sammen på ingen tid.',
 			'why'     => <<<'HTML'
-<p>NordicHikes luftmadras kombinerer lav vægt og komfort, og den indbyggede fodpumpe gør den nem at puste op – på fjeldet, til festival eller på roadtrip.</p>
+<p>NordicHikes luftmadras er til dig, der vil sove godt på turen, men ikke vil bære rundt på en tung madras. Den er designet ultralet og rulles sammen til en lille pakke, der kan ligge i rygsækken eller festivaltasken. Den passer lige så godt til vandreturen og fjeldet som til campingpladsen og roadtrippen.</p>
+<p>Den indbyggede fodpumpe gør, at du ikke skal have en ekstra pumpe med – og du slipper for at puste dig svimmel. Madrassen er fyldt på få sekunder, og den hurtige ventil gør det lige så nemt at få luften ud igen om morgenen.</p>
+<p>Stoffet er 190T polyester med vandtæt belægning, så den tåler fugt fra græs og teltbund. Bliver den beskidt, tørrer du den af, og den er hurtigt tør igen.</p>
 HTML,
-			'good'    => [ 'Festival og vandring', 'Lavt budget' ],
+			'good'    => [ 'Festival og vandring', 'Dig, der rejser let', 'Lavt budget' ],
 			'less'    => [ 'Gæsteseng derhjemme' ],
 		],
 		[
