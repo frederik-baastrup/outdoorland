@@ -32,12 +32,14 @@ HTML,
 			'name'    => 'Robens HybridCore 80',
 			'role'    => 'Bedst isoleret',
 			'reviews' => [],
-			'verdict' => 'Isoleret luftmadras med tre isoleringslag og MicroThermo Highloft til tre årstider.',
+			'verdict' => 'R-værdi 3,5 til ned mod -7 °C på kun 630 g – varm søvn, der kan bæres i rygsækken.',
 			'why'     => <<<'HTML'
-<p>Robens HybridCore 80 har tre isoleringslag – to lag genanvendt polyester adskilt af et folielag – og er isoleret med MicroThermo Highloft til brug forår, sommer og efterår.</p>
+<p>Robens HybridCore 80 er til dig, der vil sove varmt i teltet uden at slæbe på en tung madras. Med en R-værdi på 3,5 holder den kulden fra jorden ned mod -7 °C, så den kan bruges forår, sommer og efterår. Alligevel vejer den kun 630 g og pakkes ned til 25 × 12 cm.</p>
+<p>Isoleringen består af to lag MicroThermo Highloft i genanvendt polyester med et folielag imellem. Folien sidder i midten, så madrassen ikke knitrer, når du vender dig. De vandrette luftkamre former sig efter kroppen og giver god støtte, og stoffet i stærk strækpolyester er blødt mod huden.</p>
+<p>Peak Valve-ventilen har envejsteknologi og stort luftflow, så den er hurtig at puste op og tømme. Transporttaske følger med, og madrassen er PFC-fri og lavet af 100 % genanvendt polyester.</p>
 HTML,
-			'good'    => [ 'Kølige nætter i telt', 'Tre årstider' ],
-			'less'    => [ 'Vinter' ],
+			'good'    => [ 'Kølige nætter i telt', 'Vandre- og cykelture', 'Tre årstider' ],
+			'less'    => [ 'Dig, der vil have en bred og høj madras (51 × 8 cm)' ],
 		],
 		[
 			'ean'     => '5740000800198',

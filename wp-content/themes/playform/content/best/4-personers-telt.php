@@ -45,12 +45,14 @@ HTML,
 			'name'    => 'Snow Peak Land Nest Dome Medium',
 			'role'    => 'Bedst til basecamp',
 			'reviews' => [],
-			'verdict' => 'Teknisk avanceret kuppeltelt til familier, der vil have komfort og fleksibilitet.',
+			'verdict' => 'Selvstående kuppeltelt på 450 × 280 cm med aluminiumsstænger og separat sove- og opholdszone.',
 			'why'     => <<<'HTML'
-<p>Snow Peak Land Nest Dome Medium er et kuppeltelt til basecampen, hvor komfort, fleksibilitet og pålidelig beskyttelse vægter højest. Det er designet til op til fire personer.</p>
+<p>Snow Peak Land Nest Dome Medium er til familien, der slår lejr og bliver der et stykke tid. Med ca. 450 × 280 cm og en højde på 160 cm er der plads til at sove fire, opbevare oppakningen og sidde oprejst, når vejret driller. Indretningen kan deles op, så soveområdet er adskilt fra en mindre opholds- eller gearzone.</p>
+<p>Stængerne i stærkt aluminium (A6061) gør teltet selvstående, så det kan stå uden pløkker på fast underlag. Stangsystemet sidder udvendigt, så du kan rejse teltet i regnvejr, uden at inderteltet bliver vådt. Yderteltet i 75D polyester har PU-coating med mindst 1.800 mm vandsøjle og UV-beskyttelse, og bunden er i slidstærk 210D Oxford.</p>
+<p>Mesh-paneler giver god luftcirkulation og mindre kondens. Telt, stænger, barduner, pløkker og transporttasker følger med.</p>
 HTML,
-			'good'    => [ 'Familie-camping', 'Basecamp' ],
-			'less'    => [ 'Lange vandreture' ],
+			'good'    => [ 'Familiecamping', 'Basecamp og længere ophold', 'Opsætning i regnvejr' ],
+			'less'    => [ 'Lange vandreture – vejer ca. 8,7 kg' ],
 		],
 		[
 			'ean'     => '5709388157140',
@@ -58,11 +60,13 @@ HTML,
 			'name'    => 'Easy Camp Pasvik 4',
 			'role'    => 'Bedst til prisen',
 			'reviews' => [],
-			'verdict' => 'Teknisk tunneltelt til fire aktive campister.',
+			'verdict' => 'Tunneltelt på ca. 4,1 kg med 3000 mm vandsøjle og stort forrum – oppe på ca. 3 minutter.',
 			'why'     => <<<'HTML'
-<p>Easy Camp Pasvik 4 er et teknisk tunneltelt til cykel- og vandreture, hvor fire skal sove under samme dug. Det giver meget plads for pengene.</p>
+<p>Easy Camp Pasvik 4 er til den aktive familie eller vennegruppen, der vil have plads uden at slæbe på et tungt telt. Det vejer ca. 4,1 kg og pakkes ned til 41 × 19 cm, så det kan komme med på cykel- og vandreture. Indenfor er der en sovekabine til fire og et stort, lyst opholdsrum med god loftshøjde.</p>
+<p>Yderdugen har 3000 mm vandsøjle og er PFAS-fri og brandhæmmende, og bunden holder til 5000 mm. Stængerne i 7001-aluminium er farvekodede ligesom kanalerne, så teltet står klar på ca. 3 minutter.</p>
+<p>Front- og sidedør gør det nemt at komme ud uden at forstyrre de andre, og det udvidede forrum giver plads til udstyr og madlavning. Ventilation foran og bagpå, gearkroge, tørresnor, lanternestrop og lommer gør hverdagen i teltet nem.</p>
 HTML,
-			'good'    => [ 'Aktive familier', 'Fornuftigt budget' ],
+			'good'    => [ 'Aktive familier', 'Fornuftigt budget', 'Hurtig opsætning' ],
 			'less'    => [ 'Fjeldture i hårdt vejr' ],
 		],
 		[

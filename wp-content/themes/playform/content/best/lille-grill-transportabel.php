@@ -58,11 +58,13 @@ HTML,
 			'name'    => 'Petromax Atago gasgrill',
 			'role'    => 'Bedst til at grille, stege og koge',
 			'reviews' => [],
-			'verdict' => 'Alsidig grill til udendørs madlavning – grill, steg og kog, hvor eventyret fører dig hen.',
+			'verdict' => 'Grill, ovn, komfur og bålfad i én – foldes ud med ét greb og er kun 15 cm høj sammenfoldet.',
 			'why'     => <<<'HTML'
-<p>Petromax Atago er designet til at grille, stege og koge, så den kan bruges til meget mere end pølser og bøffer. Petromax har tilbehør som kulrist og stegeplade, der udvider mulighederne.</p>
+<p>Petromax Atago er til dig, der vil lave rigtig mad udendørs og ikke kun grille pølser. Den kan bruges som grill, ovn, komfur og bålfad, så du kan grille, stege og koge på den samme enhed – på campingpladsen, i haven eller ved sommerhuset.</p>
+<p>Luftforsyningen og temperaturen kan reguleres trinløst, så du selv bestemmer, om der skal høj varme til en sprød skorpe eller lav varme til langsom tilberedning. Den er bygget meget robust og til at stå udendørs.</p>
+<p>Den smarte foldemekanisme gør, at du folder den ud og sammen med ét håndtag. Sammenfoldet er den kun 15 cm høj, så den er nem at have i bagagerummet og gemme væk efter sæsonen.</p>
 HTML,
-			'good'    => [ 'Madlavning på tur', 'Alsidighed' ],
+			'good'    => [ 'Madlavning på tur', 'Dig, der vil grille, bage og koge', 'Nem opbevaring' ],
 			'less'    => [ 'Den, der kun vil have en simpel grill' ],
 		],
 		[
@@ -71,12 +73,14 @@ HTML,
 			'name'    => 'UCO Grilliput',
 			'role'    => 'Bedst til rygsækken',
 			'reviews' => [],
-			'verdict' => 'Bærbar minigrill til kul, der kan pakkes helt sammen.',
+			'verdict' => 'Minigrill i rustfrit stål på 560 g, der pakkes ned i ét rør på 28 cm.',
 			'why'     => <<<'HTML'
-<p>UCO Grilliput er en bærbar campinggrill, der kan pakkes helt sammen og ligge i rygsækken. Den er til kul og perfekt til vandreturen, stranden og picnic.</p>
+<p>UCO Grilliput er til dig, der vil have grillen med på vandreturen, cykelturen eller til stranden uden at mærke det i rygsækken. Den vejer kun 560 g, og alle delene pakkes ned i et rør på 2,2 × 28 cm, der let finder plads i en sidelomme.</p>
+<p>Den er hurtig at pakke ud og samle, og samlet måler den 28 × 27 × 15 cm – en lille, solid grill til frokosten i det fri. Grillen er lavet af rustfrit stål, så den er både holdbar og står stabilt.</p>
+<p>Når I har spist, kan grillen komme i opvaskemaskinen, så den er ren og klar til næste tur.</p>
 HTML,
-			'good'    => [ 'Vandreture og picnic', 'Lavt budget' ],
-			'less'    => [ 'Gas' ],
+			'good'    => [ 'Vandreture og picnic', 'Lavt budget', 'Dig, der tæller gram' ],
+			'less'    => [ 'Store selskaber' ],
 		],
 	],
 	'guide'    => <<<'HTML'
