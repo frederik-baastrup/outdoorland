@@ -19,12 +19,13 @@ HTML,
 			'name'    => 'Robens Seeker 3 LW',
 			'role'    => 'Bedst samlet',
 			'reviews' => [],
-			'verdict' => 'Prisvindende kuppeltelt til tre i ny 2026-udgave – dansk teltudvikling i topklasse.',
+			'verdict' => 'Selvstående kuppeltelt til tre med to indgange, to apsisser på op til 70 cm og FlexPitch til lune sommernætter.',
 			'why'     => <<<'HTML'
-<p>Robens Seeker 3 LW er til dig, der vil have et kuppeltelt med plads til tre og stiller høje krav til dit udstyr. Teltet er udviklet i Danmark, og denne opdaterede 2026-version bygger videre på et kuppeltelt, der allerede har vundet priser.</p>
-<p>Kuppelformen gør teltet selvstående, så du kan finde den bedste plads, før du pløkker det fast. Er I kun to, giver den ekstra plads godt albuerum og et tørt sted til oppakningen.</p>
+<p>Robens Seeker 3 LW er til dig, der vil have et let og fleksibelt kuppeltelt til fjeldture, vandring og cykelture i sommerhalvåret. Teltet er udviklet i Danmark, og 2026-udgaven er selvstående og hurtig at rejse. To indgange og en apsis på op til 70 cm i hver side betyder, at ingen skal kravle over hinanden, og at der er plads til oppakning og madlavning i ly.</p>
+<p>Med FlexPitch kan du nøjes med inderteltet på varme nætter eller rulle oversejlet delvist tilbage for udsigt og stjernekig. Oversejlet er silikonebelagt 20D SilPoly, der suger meget lidt vand og tørrer hurtigt, og bunden holder til 5.000 mm.</p>
+<p>Inderteltet er 215 cm langt med 105 cm siddehøjde. De korte DAC-stangsektioner passer i cykeltasker, og aluminiumspløkke og en reparationslap følger med.</p>
 HTML,
-			'good'    => [ 'To eller tre personer', 'Dig, der vil have god plads i et kuppeltelt' ],
+			'good'    => [ 'To-tre personer på vandring', 'Bikepacking', 'Varme nætter med kun indertelt' ],
 			'less'    => [ 'Lavt budget' ],
 		],
 		[
@@ -63,12 +64,13 @@ HTML,
 			'name'    => 'Easy Camp Rago 2',
 			'role'    => 'Bedst til prisen',
 			'reviews' => [],
-			'verdict' => 'Let kuppeltelt til to fra Easy Camp med en særlig stangkonstruktion – et godt første telt.',
+			'verdict' => 'Fritstående kuppeltelt til to på ca. 2,5 kg med aluminiumsstænger og en pakkepose, der spændes på cyklen.',
 			'why'     => <<<'HTML'
-<p>Easy Camp Rago 2 er kuppelteltet til jer, der vil have funktion og holdbarhed uden at betale for et fjeldtelt. Det er bygget til to personer og holdt nede i vægt, så det er nemt at tage med på tur.</p>
-<p>Easy Camp hører til samme familie som Robens, og det mærkes i konstruktionen: Teltet har en særlig stangløsning, der adskiller det fra de helt billige kuppeltelte.</p>
+<p>Easy Camp Rago 2 er til dig, der vil ud at vandre eller cykle uden at betale for et dyrt fjeldtelt. Teltet til to vejer ca. 2,5 kg og fylder kun 40 × 14 cm pakket, og den vandafvisende pakkepose har spænder, så den sidder fast på cyklen.</p>
+<p>Det er fritstående og rejses i én arbejdsgang, så du hurtigt er under tag, også på ujævnt terræn. Stængerne er 8,5 mm EnduraLight 7001-aluminium. Oversejlet er WeatherGuard 3000 med tapede sømme, 3.000 mm vandsøjle og PFAS-fri behandling, og bunden holder til 5.000 mm.</p>
+<p>Indgange i begge sider og ventilationsåbninger mindsker kondens. Tørresnor, lommer og lanternestrop holder styr på det små.</p>
 HTML,
-			'good'    => [ 'Første telt', 'Weekendture' ],
+			'good'    => [ 'Første telt', 'Cykelture og vandring', 'Par med et lille budget' ],
 			'less'    => [ 'Krævende fjeldture' ],
 		],
 		[

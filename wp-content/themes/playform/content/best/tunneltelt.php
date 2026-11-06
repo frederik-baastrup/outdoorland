@@ -19,13 +19,14 @@ HTML,
 			'name'    => 'Nordisk Oppland 4 PU',
 			'role'    => 'Bedst samlet',
 			'reviews' => [],
-			'verdict' => 'Nordisks populære tunneltelt til fire – nu med en stejlere tunnelbue, der giver markant mere plads.',
+			'verdict' => 'Rejses i én arbejdsgang med tre 7001-aluminiumsstænger – indertelt og oversejl går op samtidig, også i regnvejr.',
 			'why'     => <<<'HTML'
-<p>Nordisk Oppland 4 PU er til jer, der vil have et gennemført tunneltelt til fire fra et af de mest kendte danske teltmærker. Oppland PU-serien er populær, og fra sæsonen 2023 har Nordisk opdateret den på flere punkter.</p>
-<p>Den største forbedring er vinklen på tunnelbuen, som er øget kraftigt. Det giver mere rumfornemmelse og bedre plads til at sidde, pakke og klæde om. Materialerne er de samme som før.</p>
+<p>Nordisk Oppland 4 PU er tunnelteltet til dig, der vil have et gennemført telt, som står stabilt i blæst og er hurtigt at rejse. Tre stænger i anodiseret 7001 T6-aluminium føres gennem ubrudte, forstærkede løbegange udvendigt, og en lukket lomme i enden af hver kanal betyder, at du ikke skal rende frem og tilbage for at fæste dem.</p>
+<p>Inderteltet sidder fast i oversejlet med clips, så hele teltet rejses på én gang, og soverummet forbliver tørt, selv når det øser ned. Justerbare remme og pløkfæster i begge ender lader dig stramme dugen, når duggen falder.</p>
+<p>Varmlufttapede sømme og ventilskakter med myggenet i begge ender sørger for et godt indeklima, og en ekstra dør bag myggenettet lukker tæt, hvis du bruger teltet om vinteren. Tørresnor og lommer holder styr på småtingene.</p>
 HTML,
-			'good'    => [ 'Fire personer på tur', 'Dig, der vil have meget plads indenfor' ],
-			'less'    => [ 'Lavt budget' ],
+			'good'    => [ 'Opsætning i regnvejr', 'Blæsende lejrpladser', 'Fire personer med oppakning' ],
+			'less'    => [ 'Lavt budget', 'Hårdt underlag – teltet skal pløkkes ud' ],
 		],
 		[
 			'ean'     => '5709388157140',
@@ -48,13 +49,14 @@ HTML,
 			'name'    => 'Easy Camp Pasvik 3',
 			'role'    => 'Bedst til tre',
 			'reviews' => [],
-			'verdict' => 'Teknisk optimeret tunneltelt til tre fra Easy Camp – til aktive campister, vandrere og cyklister.',
+			'verdict' => 'Tunneltelt til tre på ca. 3,2 kg med forlænget apsis til cykeltasker og madlavning i læ.',
 			'why'     => <<<'HTML'
-<p>Easy Camp Pasvik 3 er den lidt mindre udgave til tre personer. Det er et teknisk tunneltelt til jer, der er aktive på turen – til fods eller på cykel.</p>
-<p>Som par får I god plads til oppakningen, og tunnelformen giver meget rum for vægten. Easy Camp er i tæt familie med Robens, og det kan ses på detaljerne.</p>
+<p>Easy Camp Pasvik 3 er til de aktive, der går eller cykler på tur og vil have plads til både tre personer og grejet. Det forlængede indgangsparti giver ekstra plads til cykeltasker, udstyr og et lille køkken, så I kan lave mad og spise i læ.</p>
+<p>Teltet vejer ca. 3,2 kg og pakkes til 46 × 16 cm i en vandafvisende pose med spænder til cyklen. Stængerne er farvekodede 8,5 mm EnduraLight 7001-aluminium, så opsætningen går hurtigt. Oversejlet er WeatherGuard 3000 med tapede sømme, 3.000 mm vandsøjle og PFAS-fri behandling, og bunden holder til 5.000 mm.</p>
+<p>Ventilation både for og bag mindsker kondens. Lommer, kroge, tørresnor og lanternestrop holder orden, og et reparationssæt følger med.</p>
 HTML,
-			'good'    => [ 'Par og små familier', 'Cykelture og vandreture' ],
-			'less'    => [ 'Hårdt underlag' ],
+			'good'    => [ 'Par og små familier', 'Cykelture og vandreture', 'Madlavning i læ' ],
+			'less'    => [ 'Hårdt underlag – teltet skal pløkkes ud' ],
 		],
 		[
 			'ean'     => '0197642979594',
@@ -62,13 +64,14 @@ HTML,
 			'name'    => 'The North Face Wawona 6P',
 			'role'    => 'Bedst til familien',
 			'reviews' => [],
-			'verdict' => 'Tunnellignende familietelt fra The North Face med et stort overdækket frontområde.',
+			'verdict' => 'Tunnelformet basecamp-telt med forlænget apsis og et stort opholdsrum, hvor alle kan stå oprejst.',
 			'why'     => <<<'HTML'
-<p>The North Face Wawona 6P er til familien, der vil have et telt med plads til at være sammen – ikke kun til at sove. Konstruktionen minder om et tunneltelt, og foran er der et stort overdækket område.</p>
-<p>Frontområdet fungerer som opholdsrum, hvor I kan sidde i ly, spise og have udstyret, når vejret driller.</p>
+<p>The North Face Wawona 6P er tunnelteltet til familien, der vil have plads til at være sammen – ikke kun til at sove. Forenden er forlænget til et stort, overdækket opholdsrum med ståhøjde, hvor I kan spise, spille kort og have udstyret stående i ly, når vejret driller.</p>
+<p>Tunnelformen giver høje vægge og god bevægelsesfrihed, og de store åbninger gør det nemt at lufte ud og komme ind og ud. Som andre tunneltelte står det ikke af sig selv, så det skal pløkkes og bardunes ud – til gengæld får du meget plads for 8,82 kg.</p>
+<p>Det er et tresæsonstelt med DAC MX-aluminiumsstænger og PU-coatet polyesterdug, lavet til brug fra forår til efterår.</p>
 HTML,
-			'good'    => [ 'Familiecamping', 'Dig, der vil have et overdækket opholdsrum' ],
-			'less'    => [ 'Ture, hvor teltet skal bæres' ],
+			'good'    => [ 'Familiecamping', 'Opholdsrum i læ', 'Basecamp i flere dage' ],
+			'less'    => [ 'Hårdt underlag – teltet er ikke fritstående' ],
 		],
 		[
 			'ean'     => '5902194521635',

@@ -79,12 +79,13 @@ HTML,
 			'name'    => 'Easy Camp Rands Tipi',
 			'role'    => 'Billigst',
 			'reviews' => [],
-			'verdict' => 'Rummeligt tipitelt til op til 8 personer fra Easy Camp – klassisk form og moderne materialer til en lav pris.',
+			'verdict' => 'Tipitelt til op til 8 personer på ca. 7,3 kg – rejses om én midterstang og har 3.000 mm vandsøjle.',
 			'why'     => <<<'HTML'
-<p>Easy Camp Rands Tipi er den billige vej ind i tipiteltets verden. Det kombinerer den klassiske tipiform med moderne materialer og gennemtænkte detaljer, så det fungerer til både campingturen, glamping i haven og andre eventyr udendørs.</p>
-<p>Der er plads til op til otte personer, så hele familien eller vennegruppen kan sove under samme dug.</p>
+<p>Easy Camp Rands Tipi er den billige vej til et stort, socialt tipitelt. Det åbne rum har plads til op til otte personer, så hele familien eller vennegruppen kan samles under samme dug – på campingpladsen, til glamping eller i haven.</p>
+<p>Teltet rejses om én central midterstang, og stængerne er EnduraMax-stål, så opsætningen går hurtigt. Oversejlet er WeatherGuard 3000 i PU-belagt polyester med brandhæmmende behandling, tapede sømme og 3.000 mm vandsøjle. Bunden i dobbeltbelagt polyethylen er syet fast, men kan foldes ned eller knappes op ved døren, og netdøren lynes helt til bunden, så insekterne bliver ude.</p>
+<p>En overdækket tagventil og tre lave ventiler mindsker kondens. Seks lommer, et ophæng på stangen til lys og glamping-vimpler følger med. Pakket måler det ca. 73 × 21 cm.</p>
 HTML,
-			'good'    => [ 'Lavt budget', 'Festival og havecamping', 'Glamping' ],
+			'good'    => [ 'Lavt budget', 'Glamping og havecamping', 'Store grupper' ],
 			'less'    => [ 'Vintercamping' ],
 		],
 	],
