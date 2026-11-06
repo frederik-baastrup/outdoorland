@@ -19,11 +19,12 @@ HTML,
 			'name'    => 'Nordisk Oppland 4 PU',
 			'role'    => 'Bedst samlet',
 			'reviews' => [],
-			'verdict' => 'Populært tunneltelt fra Nordisk med øget vinkel på tunnelbuen for mere plads.',
+			'verdict' => 'Nordisks populære tunneltelt til fire – nu med en stejlere tunnelbue, der giver markant mere plads.',
 			'why'     => <<<'HTML'
-<p>Oppland-serien er opdateret, så vinklen på tunnelbuen er øget markant. Det giver mere plads i teltet – og Nordisk er et af de mest kendte danske teltmærker.</p>
+<p>Nordisk Oppland 4 PU er til jer, der vil have et gennemført tunneltelt til fire fra et af de mest kendte danske teltmærker. Oppland PU-serien er populær, og fra sæsonen 2023 har Nordisk opdateret den på flere punkter.</p>
+<p>Den største forbedring er vinklen på tunnelbuen, som er øget kraftigt. Det giver mere rumfornemmelse og bedre plads til at sidde, pakke og klæde om. Materialerne er de samme som før.</p>
 HTML,
-			'good'    => [ 'Vandring og kano for fire', 'Plads for vægten' ],
+			'good'    => [ 'Fire personer på tur', 'Dig, der vil have meget plads indenfor' ],
 			'less'    => [ 'Lavt budget' ],
 		],
 		[
@@ -32,12 +33,14 @@ HTML,
 			'name'    => 'Easy Camp Pasvik 4',
 			'role'    => 'Bedst til prisen',
 			'reviews' => [],
-			'verdict' => 'Teknisk tunneltelt til fire aktive campister.',
+			'verdict' => 'Tunneltelt til fire med stort opholdsrum, to døre og 3000 mm yderdug – klar på cirka 3 minutter.',
 			'why'     => <<<'HTML'
-<p>Pasvik 4 er et teknisk tunneltelt til cykel- og vandreture for fire, der giver meget plads for pengene.</p>
+<p>Easy Camp Pasvik 4 er til familien eller vennegruppen, der vil have plads til både at sove og hygge. Sovekabinen rummer fire, og foran er der et stort, lyst opholdsrum med god loftshøjde, hvor I kan lave mad og have udstyret. Gearkroge, tørresnor, lommer og en lanternestrop holder orden.</p>
+<p>Med farvekodede stænger og kanaler står teltet på cirka 3 minutter. Yderdugen er 180T polyester med PU-belægning og 3000 mm vandsøjle, brandhæmmende og PFAS-fri, og bunden har 5000 mm. Stængerne er 9,5 mm EnduraLight-aluminium.</p>
+<p>Døre både foran og i siden gør det nemt at komme ind og ud, og ventilation for og bag mindsker kondens.</p>
 HTML,
-			'good'    => [ 'Aktive familier', 'Fornuftigt budget' ],
-			'less'    => [ 'Hårdt underlag' ],
+			'good'    => [ 'Aktive familier', 'Fornuftigt budget', 'Dig, der vil have teltet hurtigt op' ],
+			'less'    => [ 'Hårdt underlag – tunneltelte skal pløkkes ud' ],
 		],
 		[
 			'ean'     => '5709388157133',
@@ -45,11 +48,12 @@ HTML,
 			'name'    => 'Easy Camp Pasvik 3',
 			'role'    => 'Bedst til tre',
 			'reviews' => [],
-			'verdict' => 'Teknisk optimeret tunneltelt til tre.',
+			'verdict' => 'Teknisk optimeret tunneltelt til tre fra Easy Camp – til aktive campister, vandrere og cyklister.',
 			'why'     => <<<'HTML'
-<p>Pasvik 3 er den lidt mindre udgave til tre personer – god til par, der vil have plads til oppakningen.</p>
+<p>Easy Camp Pasvik 3 er den lidt mindre udgave til tre personer. Det er et teknisk tunneltelt til jer, der er aktive på turen – til fods eller på cykel.</p>
+<p>Som par får I god plads til oppakningen, og tunnelformen giver meget rum for vægten. Easy Camp er i tæt familie med Robens, og det kan ses på detaljerne.</p>
 HTML,
-			'good'    => [ 'Par og små familier', 'Cykelture' ],
+			'good'    => [ 'Par og små familier', 'Cykelture og vandreture' ],
 			'less'    => [ 'Hårdt underlag' ],
 		],
 		[
@@ -58,11 +62,12 @@ HTML,
 			'name'    => 'The North Face Wawona 6P',
 			'role'    => 'Bedst til familien',
 			'reviews' => [],
-			'verdict' => 'Tunnellignende familietelt med stort overdækket frontområde.',
+			'verdict' => 'Tunnellignende familietelt fra The North Face med et stort overdækket frontområde.',
 			'why'     => <<<'HTML'
-<p>Wawona 6P har en tunnellignende konstruktion med et stort frontområde, der fungerer som overdækket opholdsrum for hele familien.</p>
+<p>The North Face Wawona 6P er til familien, der vil have et telt med plads til at være sammen – ikke kun til at sove. Konstruktionen minder om et tunneltelt, og foran er der et stort overdækket område.</p>
+<p>Frontområdet fungerer som opholdsrum, hvor I kan sidde i ly, spise og have udstyret, når vejret driller.</p>
 HTML,
-			'good'    => [ 'Familiecamping', 'Opholdsrum' ],
+			'good'    => [ 'Familiecamping', 'Dig, der vil have et overdækket opholdsrum' ],
 			'less'    => [ 'Ture, hvor teltet skal bæres' ],
 		],
 		[
@@ -71,12 +76,14 @@ HTML,
 			'name'    => 'Bushmen Core-Tent Lodger',
 			'role'    => 'Mest alsidigt',
 			'reviews' => [],
-			'verdict' => 'Tarp-kompatibelt 2-personers tunneltelt i insektnet med god ventilation.',
+			'verdict' => 'Tunneltelt i insektnet til to, der sammen med en tarp bliver et ultralet setup på under 1,5 kg.',
 			'why'     => <<<'HTML'
-<p>Core-Tent Lodger er et 2-personers tunneltelt af insektnet, der er lavet til at blive brugt under en tarp. Det giver stor alsidighed: luftigt på varme nætter og beskyttet under tarpen, når det regner.</p>
+<p>Bushmen Core-Tent Lodger er til dig, der elsker let udstyr og frihed til at bygge din egen lejr. Det er et 2-personers tunneltelt i luftigt insektnet med vandtæt, forhøjet bund og tapede syninger. På varme, tørre nætter sover du under stjernerne uden myg.</p>
+<p>Spænder du en tarp over, har du et ultralet telt. Med en 2 × 3 m tarp vejer det hele under 1,5 kg inklusive aluminiumsstængerne, og med en 3 × 3 m tarp får du en apsis på 2 m² ekstra og et sæt under 2 kg.</p>
+<p>Teltet er cirka en halv meter længere end mange ultralette telte, så selv høje personer har plads. Indgange både foran og i siden giver let adgang til oppakningen. Oplagt til cykelrejser, kajak og vandring.</p>
 HTML,
-			'good'    => [ 'Bushcraft med tarp', 'Varme sommernætter' ],
-			'less'    => [ 'Dem uden tarp' ],
+			'good'    => [ 'Bushcraft med tarp', 'Cykelrejser, kajak og vandring', 'Høje personer' ],
+			'less'    => [ 'Dem uden tarp – teltet er ikke vandtæt alene' ],
 		],
 	],
 	'guide'    => <<<'HTML'

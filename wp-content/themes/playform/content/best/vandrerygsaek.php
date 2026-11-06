@@ -19,12 +19,14 @@ HTML,
 			'name'    => 'Fjällräven Kajka 65',
 			'role'    => 'Bedst samlet',
 			'reviews' => [],
-			'verdict' => 'Opdateret udgave af en af de mest anerkendte vandrerygsække til krævende brug.',
+			'verdict' => 'Træramme, slidstærkt Vinylon F og adgang fra top, front og bund – bygget til tung oppakning.',
 			'why'     => <<<'HTML'
-<p>Fjällräven Kajka-serien er blandt de mest anerkendte vandrerygsække overhovedet og rost af både brugere og fagpresse. Kajka 65 er den opdaterede udgave til de krævende ture.</p>
+<p>Fjällräven Kajka 65 er rygsækken til de lange trekkingture, hvor du bærer telt, sovepose og mad til mange dage gennem krævende terræn. Kajka-serien er en af de mest roste vandrerygsække blandt både brugere og fagpresse, og denne opdaterede udgave har fået et lettere design og to praktiske sidelommer.</p>
+<p>Bæresystemet er bygget op om en træramme, der fordeler selv meget tung last godt. Med Perfect Fit-systemet justerer du hurtigt både ryglængde og skulderbredde, så den sidder rigtigt. Stoffet er Vinylon F, der modstår fugt og slid. Du kommer til hovedrummet fra toppen, gennem en lynlås foran og via et separat bundrum til soveposen eller vådt udstyr. Tophætten med lynlåslommer kan tages af og bruges som dagtursrygsæk.</p>
+<p>Et aftageligt regnslag følger med, og der er fæstepunkter til stave og isøkse. Rygsækken vejer 3.150 g.</p>
 HTML,
-			'good'    => [ 'Lange ture med tung oppakning', 'Mange års brug' ],
-			'less'    => [ 'Lette dagture' ],
+			'good'    => [ 'Lange ture med tung oppakning', 'Mange års brug', 'Dig, der vil kunne nå alt udstyr nemt' ],
+			'less'    => [ 'Gramjægere – den vejer 3.150 g' ],
 		],
 		[
 			'ean'     => '0843820108866',
@@ -45,12 +47,14 @@ HTML,
 			'name'    => 'Lundhags Padje Light 60 L',
 			'role'    => 'Lettest',
 			'reviews' => [],
-			'verdict' => 'Ekstremt let vandrerygsæk på 60 liter fra Lundhags’ letvægtsserie.',
+			'verdict' => 'Kun 1.150 g for 60 liter plus 14 liters stretchlommer – med aluramme og ventileret ryg.',
 			'why'     => <<<'HTML'
-<p>Padje Light 60 L er en del af Lundhags’ letvægtsserie, hvor kunsten er at holde vægten så langt nede som muligt uden at gå på kompromis med funktionen.</p>
+<p>Lundhags Padje Light 60 L er til dig, der vil gå langt med telt, sovepose og liggeunderlag uden at slæbe på unødig vægt. Den vejer kun 1.150 g, men har stadig ramme og et rigtigt hoftebælte. Denne Regular Long-udgave passer typisk til personer over ca. 180 cm.</p>
+<p>En 360° ramme af 8 mm aluminium holder formen og fører vægten ned på hofterne, og hoftebæltet har skum i flere densiteter. Carry Comfort 2.0 holder rygsækken lidt væk fra ryggen, så du sveder mindre. Hovedrummet på 60 liter lukkes med rulletop og Y-rem, og store stretchlommer foran og på siderne giver 14 liter ekstra – 74 liter i alt.</p>
+<p>Der er lynlåslomme med nøgleclips, flytbare elastikløkker til stave eller isøkse, dobbelt sidekompression og plads til drikkesystem. Stoffet er primært genanvendt nylon med PU-belægning.</p>
 HTML,
-			'good'    => [ 'Letvægtsvandring', 'Lange ture' ],
-			'less'    => [ 'Meget tung oppakning' ],
+			'good'    => [ 'Letvægtsvandring', 'Lange ture med telt', 'Høje vandrere over ca. 180 cm' ],
+			'less'    => [ 'Meget tung oppakning', 'Dig, der vil have mange rum og lynlåse' ],
 		],
 		[
 			'ean'     => '7323451155642',
@@ -58,12 +62,14 @@ HTML,
 			'name'    => 'Fjällräven Kajka X-Lätt 45',
 			'role'    => 'Bedste lette Kajka',
 			'reviews' => [],
-			'verdict' => 'Letvægtsorienteret trekkingrygsæk på 45 liter med balance mellem slidstyrke og lav vægt.',
+			'verdict' => 'Kajka-holdbarhed til 1.155 g: Vinylon F, birketræramme og justerbar ryglængde.',
 			'why'     => <<<'HTML'
-<p>Kajka X-Lätt 45 er en letvægtsudgave af Kajka, der balancerer slidstyrke, funktion og lav vægt uden at gå på kompromis med komforten.</p>
+<p>Fjällräven Kajka X-Lätt 45 er til dig, der vil have den robuste Kajka-kvalitet, men går med en lettere oppakning på flerdagsture. Den vejer 1.155 g med alt på og kan komme ned omkring 1.050 g, når du fjerner de dele, du ikke skal bruge.</p>
+<p>Stoffet er Fjällrävens slidstærke Vinylon F, og bund, ryg og hoftebælte er forstærket med genanvendt ripstop-polyamid. Birketrærammen giver en stabil vægtfordeling, og ryglængden kan justeres. Hovedrummet på 45 liter lukkes med en snekrave, låget har to lynlåslommer, og stretchlommerne på siderne kan nås fra både top og side.</p>
+<p>Frontlommen kan tages af, og den indvendige lomme kan bruges som en lille crossbody-taske. Den er klar til drikkesystem, og sidekompressionen kan fjernes for at spare vægt.</p>
 HTML,
-			'good'    => [ 'Ture på 2–4 dage', 'Let oppakning' ],
-			'less'    => [ 'Vinterture' ],
+			'good'    => [ 'Flerdagsture med let oppakning', 'Dig, der vil have en slidstærk letvægtsrygsæk', 'Mindre til mellemstore rygge (S/M)' ],
+			'less'    => [ 'Lange ture med meget udstyr', 'Regnslag skal købes ekstra' ],
 		],
 		[
 			'ean'     => '7045952820613',
@@ -71,12 +77,14 @@ HTML,
 			'name'    => 'Lundhags Saruk Pro 75 L',
 			'role'    => 'Mest plads',
 			'reviews' => [],
-			'verdict' => 'Stor vandrerygsæk på 75 liter fra Lundhags.',
+			'verdict' => 'Slidstærk 75-liters arbejdshest med stiv aluramme, lynlås foran og i bunden og regnslag med.',
 			'why'     => <<<'HTML'
-<p>Saruk Pro 75 L har plads til den lange tur eller vinterturen, hvor der skal mere udstyr med.</p>
+<p>Lundhags Saruk Pro 75 L er rygsækken til de lange ture ud i vildmarken, hvor du skal bære telt, sovepose og mad til mange dage. Den er en af Lundhags' mest slidstærke og fleksible rygsække, og denne Regular Long-udgave passer til ryglængder på 46–56 cm – typisk personer over ca. 180 cm.</p>
+<p>Carry Comfort 4.0 er stift og støttende med en 360° ramme af 8 mm aluminium og to V-formede alustivere, så vægten ender på hofterne. Hoftebæltet har justerbar bredde og udvidelige lommer. Med dobbelt lynlås foran og lynlås i bunden kommer du til udstyret uden at pakke alt ud, og de store sidelommer kan udvides, når der skal mere med.</p>
+<p>Regnslag følger med, låget kan tages af, og der er lomme til drikkeblære. Den vejer 3.020 g.</p>
 HTML,
-			'good'    => [ 'Lange ture og vinter', 'Meget udstyr' ],
-			'less'    => [ 'Korte ture' ],
+			'good'    => [ 'Lange ture og vinter', 'Meget og tungt udstyr', 'Høje vandrere' ],
+			'less'    => [ 'Korte ture', 'Gramjægere – den vejer 3.020 g' ],
 		],
 	],
 	'guide'    => <<<'HTML'

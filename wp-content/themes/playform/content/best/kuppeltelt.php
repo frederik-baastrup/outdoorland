@@ -19,11 +19,12 @@ HTML,
 			'name'    => 'Robens Seeker 3 LW',
 			'role'    => 'Bedst samlet',
 			'reviews' => [],
-			'verdict' => 'Prisvindende kuppeltelt i opdateret 2026-version – dansk teltudvikling i topklasse.',
+			'verdict' => 'Prisvindende kuppeltelt til tre i ny 2026-udgave – dansk teltudvikling i topklasse.',
 			'why'     => <<<'HTML'
-<p>Robens Seeker 3 LW er et kuppeltelt til tre, hvor lav vægt og god plads går op i en højere enhed.</p>
+<p>Robens Seeker 3 LW er til dig, der vil have et kuppeltelt med plads til tre og stiller høje krav til dit udstyr. Teltet er udviklet i Danmark, og denne opdaterede 2026-version bygger videre på et kuppeltelt, der allerede har vundet priser.</p>
+<p>Kuppelformen gør teltet selvstående, så du kan finde den bedste plads, før du pløkker det fast. Er I kun to, giver den ekstra plads godt albuerum og et tørt sted til oppakningen.</p>
 HTML,
-			'good'    => [ 'Vandring og cykelture', 'To eller tre personer' ],
+			'good'    => [ 'To eller tre personer', 'Dig, der vil have god plads i et kuppeltelt' ],
 			'less'    => [ 'Lavt budget' ],
 		],
 		[
@@ -32,11 +33,13 @@ HTML,
 			'name'    => 'Fjällräven Abisko Dome 2',
 			'role'    => 'Bedst i hårdt vejr',
 			'reviews' => [],
-			'verdict' => 'Teknisk avanceret kuppeltelt til to med høj stabilitet og ventilation.',
+			'verdict' => 'Selvstående helårskuppel til to med tre aluminiumsstænger, to apsisser og TripleRip-nylon uden PFAS.',
 			'why'     => <<<'HTML'
-<p>Abisko Dome 2 er bygget til at stå stabilt på fjeldet. Kuppelformen giver god plads og ventilation uden at gå på kompromis med vægt og holdbarhed.</p>
+<p>Abisko Dome 2 er kuppelteltet til dig, der tager på fjeldet eller vandrer i alle årstider. Tre stænger i DAC Featherlite-aluminium gør det selvstående, så du kan rejse det på ujævn grund og flytte det, før det pløkkes fast. Inder- og ydertelt sættes op i ét, så det tørre soverum ikke bliver vådt i regnvejr.</p>
+<p>Med en dør og en stor apsis i hver side skal I ikke kravle over hinanden, og der er plads til både rygsække og madlavning. Luftåbninger i forskellige højder og myggenet sørger for et rart indeklima.</p>
+<p>Ydersejlet i TripleRip-nylon er let og slidstærkt med 3000 mm vandsøjle, og bunden klarer 6000 mm. Hele pakken vejer 3160 g.</p>
 HTML,
-			'good'    => [ 'Fjeld og blæst', 'Brug i mange år' ],
+			'good'    => [ 'Fjeld og blæst', 'Vandring i alle årstider', 'Brug i mange år' ],
 			'less'    => [ 'Lavt budget' ],
 		],
 		[
@@ -45,12 +48,14 @@ HTML,
 			'name'    => 'Snow Peak Land Nest Dome Medium',
 			'role'    => 'Bedst til familien',
 			'reviews' => [],
-			'verdict' => 'Kuppeltelt til op til fire personer til basecampen.',
+			'verdict' => 'Rummeligt kuppeltelt til fire på ca. 450 × 280 × 160 cm – med plads til både sove- og opholdszone.',
 			'why'     => <<<'HTML'
-<p>Land Nest Dome Medium er et kuppeltelt til familien og basecampen, hvor komfort og fleksibilitet vægter højest.</p>
+<p>Snow Peak Land Nest Dome Medium er til familien eller vennerne, der slår lejr samme sted i flere dage og vil have plads til at bo. Teltet har plads til op til fire og måler cirka 450 × 280 × 160 cm, så I kan sidde oprejst og indrette en sovedel og et mindre område til ophold og udstyr.</p>
+<p>Stængerne i A6061-aluminium gør teltet selvstående og stabilt i vind, og fordi de sidder udvendigt, kan du rejse det i regnvejr, uden at inderteltet bliver vådt. Yderteltet er i 75D polyester med PU-coating, mindst 1800 mm vandsøjle og UV-beskyttelse, og bunden er i kraftig 210D Oxford. Flere netpaneler mindsker kondens.</p>
+<p>Barduner, pløkker og transporttasker følger med. Det vejer omkring 8,7 kg, så det hører til i bilen.</p>
 HTML,
-			'good'    => [ 'Familier', 'Basecamp' ],
-			'less'    => [ 'Lange vandreture' ],
+			'good'    => [ 'Familier', 'Basecamp og længere ophold', 'Dig, der vil kunne stå og sidde godt' ],
+			'less'    => [ 'Vandreture – det er for tungt at bære' ],
 		],
 		[
 			'ean'     => '5709388157119',
@@ -58,9 +63,10 @@ HTML,
 			'name'    => 'Easy Camp Rago 2',
 			'role'    => 'Bedst til prisen',
 			'reviews' => [],
-			'verdict' => 'Teknisk gennemført 2-personers kuppeltelt med lav vægt.',
+			'verdict' => 'Let kuppeltelt til to fra Easy Camp med en særlig stangkonstruktion – et godt første telt.',
 			'why'     => <<<'HTML'
-<p>Easy Camp Rago 2 er et let og holdbart kuppeltelt til to i tæt familie med Robens.</p>
+<p>Easy Camp Rago 2 er kuppelteltet til jer, der vil have funktion og holdbarhed uden at betale for et fjeldtelt. Det er bygget til to personer og holdt nede i vægt, så det er nemt at tage med på tur.</p>
+<p>Easy Camp hører til samme familie som Robens, og det mærkes i konstruktionen: Teltet har en særlig stangløsning, der adskiller det fra de helt billige kuppeltelte.</p>
 HTML,
 			'good'    => [ 'Første telt', 'Weekendture' ],
 			'less'    => [ 'Krævende fjeldture' ],
@@ -71,9 +77,10 @@ HTML,
 			'name'    => 'High Peak Monodome XL',
 			'role'    => 'Billigst',
 			'reviews' => [],
-			'verdict' => 'Klassisk 4-personers kuppeltelt til festival og camping med vandsøjle på 1500 mm.',
+			'verdict' => 'Klassisk og meget billigt 4-personers kuppeltelt til festival og sommercamping med 1500 mm vandsøjle.',
 			'why'     => <<<'HTML'
-<p>High Peak Monodome XL er det helt billige kuppeltelt til festival og sommercamping. Vandsøjlen er 1500 mm, så det er bedst til godt vejr.</p>
+<p>High Peak Monodome XL er det helt enkle kuppeltelt til fire, når det skal være billigt. Det er lavet til festival og camping, hvor I primært skal have et sted at sove.</p>
+<p>Vandsøjlen er 1500 mm, så teltet er bedst i tørt sommervejr. Til gengæld behøver du ikke være ked af det, hvis det får en hård tur på festivalpladsen.</p>
 HTML,
 			'good'    => [ 'Festival', 'Meget lavt budget' ],
 			'less'    => [ 'Regnvejr og blæst' ],

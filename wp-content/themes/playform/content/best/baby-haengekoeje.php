@@ -20,12 +20,14 @@ HTML,
 			'name'    => 'La Siesta Moki børnehængekøje',
 			'role'    => 'Bedst samlet',
 			'reviews' => [],
-			'verdict' => 'Børnehængekøje i økologisk bomuld med ophæng.',
+			'verdict' => 'Blød børnehængekøje i økologisk bomuld med børnesikkert ophæng, der justeres i højden på et øjeblik.',
 			'why'     => <<<'HTML'
-<p>La Siesta Moki er en børnehængekøje i økologisk bomuld, og ophænget følger med, så den er klar til at blive hængt op. La Siesta er specialister i hængekøjer.</p>
+<p>La Siesta Moki giver børneværelset et hyggeligt sted at gynge, lege, læse og slappe af. Den er lavet til børn fra 3 til 12 år og er i økologisk bomuld, der er blødt og skånsomt mod huden.</p>
+<p>Ophænget følger med og består af to børnesikrede dele. Med SmartLock-krogen indstiller du nemt højden, så den passer til barnet, og MultiSpot gør det let at tage hængekøjen ned og sætte den op igen, når I skal bruge gulvpladsen. De polstrede kanter gør den både slidstærk og tryg. Liggefladen måler 110 × 210 cm, og den kan bære op til 80 kg.</p>
+<p>Bliver den beskidt, tager du ophænget af og putter hængekøjen i vaskemaskinen. Den vejer kun 1,8 kg.</p>
 HTML,
-			'good'    => [ 'Børneværelset og haven', 'Økologisk bomuld' ],
-			'less'    => [ 'Voksne' ],
+			'good'    => [ 'Børneværelset', 'Børn fra 3 til 12 år', 'Økologisk bomuld' ],
+			'less'    => [ 'Voksne – den bærer op til 80 kg' ],
 		],
 		[
 			'ean'     => '4025122935135',
@@ -33,12 +35,14 @@ HTML,
 			'name'    => 'La Siesta Moki Max børnehængekøje',
 			'role'    => 'Mest plads',
 			'reviews' => [],
-			'verdict' => 'Større udgave af Moki-børnehængekøjen i økologisk bomuld med ophæng.',
+			'verdict' => 'Stor familiehængekøje på 160 × 350 cm, der bærer 160 kg – så både børn og voksne kan være med.',
 			'why'     => <<<'HTML'
-<p>Moki Max er den større udgave af La Siestas børnehængekøje, så der er plads til, at barnet kan bruge den i flere år.</p>
+<p>Moki Max er den store udgave af La Siestas børnehængekøje, og den er til hele familien. Der er plads til, at I kan ligge flere sammen og hygge på børneværelset, og den er beregnet til alle fra 3 år og opefter. Så vokser barnet ikke fra den.</p>
+<p>Hængekøjen måler 160 × 350 cm og kan bære op til 160 kg. Den er i økologisk bomuld med lange fibre, der gør stoffet ekstra stærkt og holdbart, og som samtidig er venligt mod huden. SmartLock-ophænget gør det nemt og sikkert at justere højden, og med MultiSpot er det nemt at tage den ned og hænge den op igen.</p>
+<p>Ophængsdelene kan tages af, så hængekøjen kan komme i vaskemaskinen og blive som ny. Den vejer 2,9 kg.</p>
 HTML,
-			'good'    => [ 'Større børn', 'Lang levetid' ],
-			'less'    => [ 'Små rum' ],
+			'good'    => [ 'Hele familien', 'Børn, der skal kunne bruge den i mange år', 'Hygge for flere ad gangen' ],
+			'less'    => [ 'Små rum – den er 350 cm lang' ],
 		],
 		[
 			'ean'     => '4025122935074',
@@ -46,12 +50,14 @@ HTML,
 			'name'    => 'La Siesta Joki hængekøjehule',
 			'role'    => 'Mest hygge',
 			'reviews' => [],
-			'verdict' => 'Hængekøjehule i økologisk bomuld – en lun hule at gynge i.',
+			'verdict' => 'Hyggelig hængekøjehule i økologisk bomuld med pude, reb og alt til ophænget i kassen.',
 			'why'     => <<<'HTML'
-<p>Joki er en hængekøjehule: en lukket, rund hængekøje, som barnet kan kravle ind i og gemme sig i. Den fås med forskellige dyremotiver.</p>
+<p>La Siesta Joki er en hængekøjehule – en lille hule, barnet kan kravle ind i for at lege, læse eller bare finde ro og lade op. Den er lavet til børn fra 3 til 10 år og fås med flere forskellige motiver, fx Teddy, Foxy og Froggy.</p>
+<p>Hulen er i blød økologisk bomuld med en pude i polyester, og de polstrede kanter mindsker slid. Ophængssystemet er bygget ind, og der følger et reb på 300 cm med, så den er nem at hænge op i loftet. En sikkerhedssvirvel sørger for, at hulen ikke ruller sig sammen. Siddefladen er 70 cm bred, den er 150 cm høj, og den bærer op til 80 kg. Loftet skal være mindst 200 cm højt.</p>
+<p>Tag pude og ophæng af, og vask den på 30 °C skåneprogram. Lad den lufttørre – den må ikke i tørretumbleren.</p>
 HTML,
-			'good'    => [ 'Leg og ro', 'Børneværelset' ],
-			'less'    => [ 'Udendørs brug i regnvejr' ],
+			'good'    => [ 'Leg og ro', 'Børn fra 3 til 10 år', 'Læsekrogen på børneværelset' ],
+			'less'    => [ 'Lave lofter under 200 cm' ],
 		],
 	],
 	'guide'    => <<<'HTML'

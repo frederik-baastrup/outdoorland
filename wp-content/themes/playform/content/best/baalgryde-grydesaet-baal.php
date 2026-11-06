@@ -19,12 +19,14 @@ HTML,
 			'name'    => 'Primus CampFire Pot 5 L',
 			'role'    => 'Bedst samlet',
 			'reviews' => [],
-			'verdict' => 'Robust bålgryde på 5 liter i rustfrit 18/8-stål med låg med dørslag og indfældbar bærehank.',
+			'verdict' => 'Rummelig 5-liters bålgryde i rustfrit 18/8-stål med dørslag i låget og hank, så den kan hænge over ilden.',
 			'why'     => <<<'HTML'
-<p>Primus CampFire Pot er en robust gryde på 5 liter i rustfrit 18/8-stål. Låget har dørslag, og den indfældbare bærehank gør, at gryden kan hænge direkte over åben ild.</p>
+<p>Primus CampFire Pot 5 L er gryden til dig, der laver mad til hele lejren – familien, spejderne eller vennerne i shelteren. Med 5 liter er der plads til en stor portion suppe, chili eller gryderet og gerne en ekstra omgang.</p>
+<p>Gryden er i 18/8 rustfrit stål af fødevarekvalitet, der tåler høj varme og hyppig brug direkte over åbent bål – og den virker lige så godt på gasbrænderen. Hanken kan foldes ind, når du pakker, og låget har indbygget dørslag, så du let kan hælde vandet fra pasta og kartofler. Et lædermærke på låget gør det nemt at løfte og kigge til maden.</p>
+<p>Stålet er nemt at gøre rent, og bagefter ryger gryden i den medfølgende pose.</p>
 HTML,
-			'good'    => [ 'Mad til mange over bål', 'Pasta og suppe' ],
-			'less'    => [ 'Vandreture' ],
+			'good'    => [ 'Mad til mange over bål', 'Pasta, suppe og gryderetter', 'Basecamp og shelterture' ],
+			'less'    => [ 'Vandreture, hvor hvert gram tæller' ],
 		],
 		[
 			'ean'     => '4250435703502',
@@ -32,12 +34,14 @@ HTML,
 			'name'    => 'Petromax Dutch Oven Essential FT6',
 			'role'    => 'Bedste støbejernsgryde',
 			'reviews' => [],
-			'verdict' => 'Dutch oven på 5,5 liter i præindbrændt støbejern – klar til brug med det samme.',
+			'verdict' => 'Dutch oven på 5,5 liter i præindbrændt støbejern med ophængsbøjle og låg, der også er en stegepande.',
 			'why'     => <<<'HTML'
-<p>Petromax Dutch Oven FT6 er lavet af præindbrændt støbejern, så den er klar til brug med det samme og gradvist opbygger en naturlig non-stick-overflade. Den kan bruges til alt fra simreretter til brød.</p>
+<p>Petromax Dutch Oven Essential FT6 er til dig, der vil lave rigtig mad over bålet: langtidssimrede gryderetter, møre grydestege og nybagt brød. Den rummer 5,5 liter, og du kan bruge den over bål, på grillen, på komfuret og i ovnen.</p>
+<p>Støbejernet er brændt ind fra fabrikken, så du kan gå i gang med det samme, og overfladen bliver mere og mere slip-let, jo mere du bruger den. Bunden er flad, og jernet holder varmen og fordeler den jævnt. Låget kan vendes og bruges som stegepande, så du kan brune kød eller koge sauce ind, mens gryden simrer.</p>
+<p>Essential-serien har tyndere gods end klassiske Dutch ovens og er derfor lettere, men den vejer stadig 7,55 kg. Med ophængsbøjlen hænger du den direkte over ilden.</p>
 HTML,
-			'good'    => [ 'Gryderetter og brød', 'Lang levetid' ],
-			'less'    => [ 'Lav vægt' ],
+			'good'    => [ 'Gryderetter, stege og brød', 'Lang levetid', 'Bål, grill og køkken derhjemme' ],
+			'less'    => [ 'Ture, hvor grejet skal bæres langt' ],
 		],
 		[
 			'ean'     => '7330033903942',
@@ -45,11 +49,13 @@ HTML,
 			'name'    => 'Primus CampFire Cookset Large',
 			'role'    => 'Bedste grydesæt',
 			'reviews' => [],
-			'verdict' => 'Grydesæt med gryder på 1,8 og 3,0 liter og stegepande i rustfrit stål med aluminiumsbund.',
+			'verdict' => 'Komplet grydesæt i rustfrit stål: 3 liters gryde, 1,8 liters kasserolle og 21 cm stegepande, der pakkes sammen.',
 			'why'     => <<<'HTML'
-<p>CampFire Cookset Large består af to gryder på 1,8 og 3,0 liter og en stegepande i rustfrit 18/8-stål med aluminium i bunden for en mere jævn varmefordeling.</p>
+<p>Primus CampFire Cookset Large giver dig et helt bålkøkken i én pose. Sættet har en gryde på 3 liter, en kasserolle på 1,8 liter og en stegepande på 21 cm – suppe i gryden, pastasauce eller morgenkaffe i kasserollen og æg, pølser og grøntsager på panden.</p>
+<p>Alt er i 18/8 rustfrit stål og kan bruges direkte over bål eller på gasbrænderen. Panden har aluminiumsbund for jævn varme, og den store gryde har en hank, så du kan hænge den over ilden. Begge låg har indbygget dørslag.</p>
+<p>Håndtagene svinges ind, og delene stables til en pakke på Ø 21 × 15,5 cm. Med i købet er en pose, så sættet er let at tage med i bilen eller kanoen.</p>
 HTML,
-			'good'    => [ 'Hele måltider på tur', 'Familien' ],
+			'good'    => [ 'Hele måltider på tur', 'Familien og basecamp', 'Kanoture' ],
 			'less'    => [ 'Den lette vandretur' ],
 		],
 		[
@@ -58,11 +64,13 @@ HTML,
 			'name'    => 'Trangia Billy 2,5 L',
 			'role'    => 'Bedst til prisen',
 			'reviews' => [],
-			'verdict' => 'Klassisk bålgryde på 2,5 liter fra Trangia – også til stormkøkkenet.',
+			'verdict' => 'Klassisk let bålgryde på 2,5 liter i aluminium – og plads til hele Trangia 27-stormkøkkenet indeni.',
 			'why'     => <<<'HTML'
-<p>Trangia Billy er den klassiske bålgryde. Med 2,5 liter kan den bruges over bålet eller på Trangias stormkøkken, og Trangias 27-serie passer lige ned i den.</p>
+<p>Trangia Billy 2,5 L er den klassiske bålgryde til to–fire personer. Den hænger i sin wire-hank over bålet, og du kan også stille den på dit Trangia-stormkøkken eller en gasbrænder. Den er fremstillet i Sverige.</p>
+<p>Gryden er i ultralet aluminium og måler ca. Ø 200 × 130 mm. Det smarte er, at et Trangia 27-sæt passer lige ned i den, så gryden også bliver transportkasse til hele dit køkken. Låg følger med.</p>
+<p>Den fylder og vejer meget lidt i rygsækken, og hanken kan lægges ned, når du pakker. Oplagt til kaffevand, havregrød og aftensmad for et par stykker.</p>
 HTML,
-			'good'    => [ 'Kaffe og vand', 'Lavt budget' ],
+			'good'    => [ 'Kaffe, vand og mad til 2–4', 'Dig med Trangia 27', 'Lavt budget' ],
 			'less'    => [ 'Gryderetter til mange' ],
 		],
 	],

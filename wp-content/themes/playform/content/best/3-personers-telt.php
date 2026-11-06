@@ -19,9 +19,10 @@ HTML,
 			'name'    => 'Robens Seeker 3 LW',
 			'role'    => 'Bedst samlet',
 			'reviews' => [],
-			'verdict' => 'Opdateret 2026-version af et prisvindende kuppeltelt – dansk teltudvikling i topklasse.',
+			'verdict' => 'Prisvindende kuppeltelt i en opdateret 2026-version – dansk teltudvikling, når den er bedst.',
 			'why'     => <<<'HTML'
-<p>Robens Seeker 3 LW er dansk teltudvikling i topklasse. Den opdaterede 2026-version af det prisvindende kuppeltelt kombinerer lav vægt og god plads til tre.</p>
+<p>Robens Seeker 3 LW er teltet til dig, der vil have plads til tre og et telt, du kan stole på, når I er på tur. Det er et kuppeltelt udviklet i Danmark, og modellen har allerede vundet priser.</p>
+<p>Til 2026 er teltet blevet opdateret, så du får den nyeste udgave af en model, der har vist sit værd. Med plads til tre er det et oplagt valg for par, der gerne vil have lidt ekstra albuerum, eller for to voksne og et barn.</p>
 HTML,
 			'good'    => [ 'Vandring og cykelture', 'Par, der vil have plads' ],
 			'less'    => [ 'Lavt budget' ],
@@ -58,9 +59,10 @@ HTML,
 			'name'    => 'Easy Camp Pasvik 3',
 			'role'    => 'Bedste tunneltelt',
 			'reviews' => [],
-			'verdict' => 'Teknisk optimeret tunneltelt til aktive campister.',
+			'verdict' => 'Teknisk gennemtænkt tunneltelt til aktive campister, vandrere og cykelturister.',
 			'why'     => <<<'HTML'
-<p>Easy Camp Pasvik 3 er et tunneltelt, der giver meget plads i forhold til vægten. Det er skabt til aktive campister på cykel- og vandreture.</p>
+<p>Easy Camp Pasvik 3 er tunneltelt til dig, der er på farten og vil have et telt, der er tænkt igennem. Det er skabt til aktive campister, vandrere og cykelturister, der slår lejr et nyt sted hver aften.</p>
+<p>Easy Camp er i tæt familie med Robens, og det kan mærkes på de tekniske løsninger. Tunnelformen giver meget plads i forhold til vægten, så der er rum til tre eller til to med al oppakningen indenfor. Husk, at et tunneltelt skal pløkkes ud for at stå.</p>
 HTML,
 			'good'    => [ 'Cykelture', 'Fornuftigt budget' ],
 			'less'    => [ 'Hårdt underlag, hvor teltet ikke kan pløkkes' ],
@@ -71,9 +73,10 @@ HTML,
 			'name'    => 'Grand Canyon Topeka 3',
 			'role'    => 'Bedst til prisen',
 			'reviews' => [],
-			'verdict' => 'Prisgunstigt 3-personers telt fra Nordisks mærke Grand Canyon.',
+			'verdict' => 'Prisvenligt telt til tre fra Grand Canyon – mærket bag danske Nordisk.',
 			'why'     => <<<'HTML'
-<p>Topeka 3 er et prisvenligt telt fra Grand Canyon, hvor der er sparet på detaljerne, men ikke på holdbarheden. Godt til festival, haven og de første campingture.</p>
+<p>Grand Canyon Topeka 3 er det oplagte valg, hvis du vil i gang med at campere uden at bruge mange penge. Grand Canyon er mærket, som danske Nordisk – kendt for bomuldstelte og fjeldtelte – bruger til sine prisvenlige telte.</p>
+<p>Her er der sparet på materialevalg og detaljer, men ikke på kvaliteten. Det gør Topeka 3 til et godt telt til festivalen, haven og de første weekendture, hvor I vil have plads til tre uden en stor investering.</p>
 HTML,
 			'good'    => [ 'Lavt budget', 'Festival og weekend' ],
 			'less'    => [ 'Fjeldture' ],

@@ -19,11 +19,12 @@ HTML,
 			'name'    => 'NEMO Dagger OSMO 2P',
 			'role'    => 'Bedst samlet',
 			'reviews' => [],
-			'verdict' => 'Opdateret udgave af et af de mest populære backpackingtelte – komfort og lav vægt til to.',
+			'verdict' => 'Opdateret udgave af et af de mest populære backpackingtelte – god plads til to uden unødig vægt.',
 			'why'     => <<<'HTML'
-<p>NEMO Dagger OSMO 2P er en markant opdateret version af et af de mest populære backpackingtelte på markedet. Det er lavet til vandrere, der vil have god plads og gennemtænkte detaljer uden at slæbe på unødig vægt.</p>
+<p>NEMO Dagger OSMO 2P er til jer, der går lange ture sammen og vil have plads til at sove godt efter en hel dag på stierne. Teltet er en markant opdateret udgave af et af de mest populære backpackingtelte, og det er bygget til at give komfort uden at tynge rygsækken.</p>
+<p>Fokus er på gennemtænkte detaljer og lav vægt, så I får et telt, der er rart at bo i – også når turen varer flere dage.</p>
 HTML,
-			'good'    => [ 'Vandreture for to', 'Komfort og lav vægt' ],
+			'good'    => [ 'Vandreture for to', 'Dig, der vil have både plads og lav vægt' ],
 			'less'    => [ 'Lavt budget' ],
 		],
 		[
@@ -32,12 +33,14 @@ HTML,
 			'name'    => 'Fjällräven Abisko Dome 2',
 			'role'    => 'Bedst i hårdt vejr',
 			'reviews' => [],
-			'verdict' => 'Rummeligt og stabilt kuppeltelt til to med høj komfort og god ventilation.',
+			'verdict' => 'Stabilt helårstelt med to indgange, to store apsisser og indertelt, der slås op sammen med oversejlet.',
 			'why'     => <<<'HTML'
-<p>Abisko Dome 2 er et teknisk avanceret kuppeltelt, hvor kuppelformen giver stabilitet og god plads. Det er udviklet til dig, der vil have et telt, der står godt i vind og vejr, uden at gå på kompromis med vægt og holdbarhed.</p>
+<p>Fjällräven Abisko Dome 2 er til jer, der vandrer året rundt og vil have et telt, I kan stole på i al slags vejr. Det er selvstående med tre stænger, så det er nemt at slå op – også på ujævn grund. Inderteltet og oversejlet rejses samtidig, så soverummet holder sig tørt, når det regner.</p>
+<p>Der er en indgang og en stor apsis i hver side, så I hver har plads til udstyr og kan lave mad i ly. Inderteltet måler 220 × 130 × 100 cm. Ventilation i flere højder og fint myggenet i alle åbninger giver et godt indeklima uden insekter, og fire netlommer og en nethylde holder styr på småtingene.</p>
+<p>Oversejlet er i Fjällrävens TripleRip-nylon uden PFAS med 3000 mm vandsøjle, bunden har 6000 mm. Stængerne er DAC Featherlite i aluminium. Pakket vejer det 3160 g og måler 44 × 19 cm.</p>
 HTML,
-			'good'    => [ 'Fjeldture og blæsende pladser', 'Brug i mange år' ],
-			'less'    => [ 'Lavt budget' ],
+			'good'    => [ 'Fjeldture og vandring året rundt', 'Dig, der vil have plads til udstyr i to apsisser', 'Brug i mange år' ],
+			'less'    => [ 'Lavt budget', 'Dig, der vil ned under 3 kg' ],
 		],
 		[
 			'ean'     => '5709388157119',
@@ -45,11 +48,12 @@ HTML,
 			'name'    => 'Easy Camp Rago 2',
 			'role'    => 'Bedst til prisen',
 			'reviews' => [],
-			'verdict' => 'Teknisk gennemført 2-personers kuppeltelt med fokus på funktion, holdbarhed og lav vægt.',
+			'verdict' => 'Kuppeltelt til to med en særlig stangkonstruktion – funktion, holdbarhed og lav vægt til en lav pris.',
 			'why'     => <<<'HTML'
-<p>Easy Camp Rago 2 er et kuppeltelt i tæt familie med Robens – og det kan mærkes på detaljerne. Det giver funktionalitet, holdbarhed og lav vægt til en pris, der gør det let at komme i gang med camping.</p>
+<p>Easy Camp Rago 2 er til jer, der vil i gang med at overnatte i telt uden at bruge mange penge. Det er et 2-personers kuppeltelt, der er bygget med fokus på funktion, holdbarhed og lav vægt, så det kan følge med på både weekendture og længere eventyr.</p>
+<p>Easy Camp er i tæt familie med Robens, og det kan ses på detaljerne – blandt andet den særlige stangkonstruktion.</p>
 HTML,
-			'good'    => [ 'Første telt', 'Weekendture' ],
+			'good'    => [ 'Første telt', 'Weekendture', 'Lavt budget' ],
 			'less'    => [ 'Krævende fjeldture' ],
 		],
 		[
@@ -58,12 +62,13 @@ HTML,
 			'name'    => 'Grand Canyon Robson 2',
 			'role'    => 'Bedst til festival',
 			'reviews' => [],
-			'verdict' => 'Prisgunstigt 2-personers telt fra Nordisks mærke Grand Canyon.',
+			'verdict' => 'Let tunneltelt til to fra Nordisks prisvenlige mærke Grand Canyon – med apsis og 3000 mm vandsøjle.',
 			'why'     => <<<'HTML'
-<p>Grand Canyon er Nordisks prisvenlige mærke, hvor der er sparet på materialer og detaljer, men ikke på holdbarheden. Robson 2 er et godt telt til festival, haven og sommerens weekendture.</p>
+<p>Grand Canyon Robson 2 er til dig, der vil have et billigt og let telt til festival, haven eller sommerens weekendture. Grand Canyon er Nordisks prisvenlige mærke, hvor der er sparet på materialer og detaljer, men ikke på kvaliteten.</p>
+<p>Det er et tunneltelt med ét soverum til to personer. Foran er der en apsis med løs bund, hvor du kan stille sko og rygsæk i tørvejr. Ventilationsåbninger i oversejlet hjælper mod kondens, og oversejlet har en vandsøjle på 3000 mm, så det klarer en ordentlig regnbyge.</p>
 HTML,
-			'good'    => [ 'Festival og weekend', 'Lavt budget' ],
-			'less'    => [ 'Lange vandreture' ],
+			'good'    => [ 'Festival og weekend', 'Lavt budget', 'Første telt' ],
+			'less'    => [ 'Lange vandreture i hårdt vejr' ],
 		],
 		[
 			'ean'     => '0811666036933',
@@ -71,11 +76,12 @@ HTML,
 			'name'    => 'NEMO Hornet Elite OSMO 2P',
 			'role'    => 'Lettest',
 			'reviews' => [],
-			'verdict' => 'Ultralight backpackingtelt til to gramjægere.',
+			'verdict' => 'Ultralet backpackingtelt til to, der vil have så få gram som muligt på ryggen.',
 			'why'     => <<<'HTML'
-<p>Hornet Elite OSMO 2P er det helt lette valg til to. Det er bygget til thru-hikere og minimalister, der vil have så lidt vægt som muligt på ryggen.</p>
+<p>NEMO Hornet Elite OSMO 2P er det helt lette valg til to. Det er bygget til langdistancevandrere og minimalister, der tæller hvert gram og vil gå længere med mindre på ryggen.</p>
+<p>Til gengæld er der sparet på pladsen, så det passer bedst til jer, der primært bruger teltet til at sove i.</p>
 HTML,
-			'good'    => [ 'Lange vandreture', 'Lav vægt' ],
+			'good'    => [ 'Lange vandreture', 'Dig, der vil have lavest mulig vægt' ],
 			'less'    => [ 'Dem, der vil have meget plads' ],
 		],
 	],

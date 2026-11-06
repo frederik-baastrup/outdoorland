@@ -71,12 +71,14 @@ HTML,
 			'name'    => 'Sea to Summit Ikos Evo TR3',
 			'role'    => 'Mest plads for vægten',
 			'reviews' => [],
-			'verdict' => 'Let 3-personers telt med stænger fra DAC, der laver nogle af markedets stærkeste teltstænger.',
+			'verdict' => 'Fritstående telt til tre med næsten lodrette vægge, 4,46 m² kabine og footprint i kassen – til 3,15 kg.',
 			'why'     => <<<'HTML'
-<p>Sea to Summit Ikos Evo TR3 er udviklet sammen med grundlæggeren af DAC Pole Company, der laver nogle af markedets stærkeste teltstænger. Et let telt med plads til tre.</p>
+<p>Sea to Summit Ikos Evo TR3 er teltet til dig, der vil have masser af plads uden at slæbe på et tungt campingtelt. Det er fritstående, så du kan sætte det op og flytte rundt på det, indtil pladsen er helt rigtig. Stangsystemet er tegnet af grundlæggeren af DAC Pole Company, og Tension Ridge-konstruktionen løfter toppen, så væggene står næsten lodret. Det giver god plads omkring hoved og skuldre og fuld siddehøjde.</p>
+<p>Kabinen er 194 × 230 × 113 cm (4,46 m²), og apsis på 1,98 m² holder oppakningen tør. Der er to indgange, så ingen skal kravle over hinanden om natten. Apex Vent i toppen leder fugtig luft ud og mindsker kondens. Oversejlet er 68D ripstop-polyester med 1.800 mm vandsøjle, og bunden holder 4.000 mm. Stængerne er DAC MX i aluminium.</p>
+<p>Footprint og et gear loft følger med. Teltet vejer 3,148 kg og pakker til 20 × 50 cm.</p>
 HTML,
-			'good'    => [ 'Par, der vil have plads', 'Små familier på tur' ],
-			'less'    => [ 'Solovandring' ],
+			'good'    => [ 'Par, der vil have plads', 'Små familier på tur', 'Dig, der vil have god ventilation' ],
+			'less'    => [ 'Solovandring, hvor hvert gram tæller' ],
 		],
 	],
 	'guide'    => <<<'HTML'
