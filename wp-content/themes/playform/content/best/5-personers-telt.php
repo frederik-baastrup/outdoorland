@@ -19,11 +19,13 @@ HTML,
 			'name'    => 'Helsport Gimle Family 4+',
 			'role'    => 'Bedst samlet',
 			'reviews' => [],
-			'verdict' => 'Letvægts familietelt på ca. 7,8 kg med fuld ståhøjde i midten og et stort indertelt.',
+			'verdict' => 'Rummeligt familietelt til 4–6 personer, der kun vejer ca. 7,8 kg – med fuld ståhøjde i midten.',
 			'why'     => <<<'HTML'
-<p>Gimle Family 4+ er en letvægtsmodel blandt de rummelige familietelte: ca. 7,8 kg og fuld ståhøjde i midten af teltet. Det store indertelt på 210 x 240 cm giver god plads til familien.</p>
+<p>Helsport Gimle Family 4+ er til familien, der vil have plads uden at slæbe på et tungt telt. Med cirka 7,8 kg er det en letvægtsmodel blandt de store familietelte, og det har plads til 4–6 personer.</p>
+<p>I midten af teltet er der fuld ståhøjde, så du kan klæde om og rydde op uden at gå krumbøjet. Indertelten måler 210 × 240 cm og giver god plads til liggeunderlag og soveposer til hele familien.</p>
+<p>Den lave vægt gør teltet nemt at have med, også når bilen ikke kan holde lige ved siden af lejrpladsen.</p>
 HTML,
-			'good'    => [ 'Familier, der vil kunne bære teltet', 'Ståhøjde' ],
+			'good'    => [ 'Familier, der vil kunne bære teltet', 'Ståhøjde', 'Op til 6 personer' ],
 			'less'    => [ 'Lavt budget' ],
 		],
 		[
@@ -32,9 +34,10 @@ HTML,
 			'name'    => 'Grand Canyon Helena 5',
 			'role'    => 'Bedst til prisen',
 			'reviews' => [],
-			'verdict' => 'Prisgunstigt familietelt til 5 fra Nordisks mærke Grand Canyon.',
+			'verdict' => 'Prisgunstigt telt til fem fra Grand Canyon – Nordisks mærke til dig, der vil campere uden at bruge en formue.',
 			'why'     => <<<'HTML'
-<p>Helena 5 er et prisvenligt familietelt fra Grand Canyon, hvor der er sparet på materialer og detaljer, men ikke på holdbarheden. Et godt telt til campingferien med familien.</p>
+<p>Grand Canyon Helena 5 er til familien eller vennegruppen, der vil på campingferie uden at bruge en formue på teltet. Grand Canyon er mærket, som danske Nordisk – kendt for bomuldstelte og fjeldtelte – bruger til sine prisgunstige telte.</p>
+<p>For at holde prisen nede er der sparet på materialer og detaljer i forhold til Nordisks dyreste telte. Til gengæld får du plads til fem personer til en pris, der efterlader penge til resten af ferien.</p>
 HTML,
 			'good'    => [ 'Campingferie', 'Fornuftigt budget' ],
 			'less'    => [ 'Fjeldture' ],
@@ -45,11 +48,13 @@ HTML,
 			'name'    => 'Outwell Florida 5 lufttelt',
 			'role'    => 'Bedste lufttelt',
 			'reviews' => [],
-			'verdict' => 'Moderne og rummeligt lufttelt til familier med Dual Front-system.',
+			'verdict' => 'Lufttelt med 6000 mm vandsøjle, mørklagte soverum og indbygget lys – og pumpen følger med.',
 			'why'     => <<<'HTML'
-<p>Outwell Florida 5 er et lufttelt: I stedet for stænger pustes bøjlerne op, så teltet står hurtigt. Det er rummeligt og fleksibelt og lavet til familier, der vil have det komfortabelt på campingpladsen.</p>
+<p>Outwell Florida 5 er luftteltet til familien, der vil have komfort på campingpladsen. Luftkanalerne pumpes op hver for sig med den medfølgende pumpe, og sammen med teleskopstænger i aluminium står teltet stabilt. Med Dual Front kan fronten lynes af, så du får et åbent fortelt på varme dage – og lukker den igen, når vejret skifter.</p>
+<p>Dugen er Outtex 6000 ripstop med 6000 mm vandsøjle og tapede sømme, og teltet er bygget til at klare vindstyrke 9. De mørklagte soverum er 230 cm dybe med fuld ståhøjde, så både børn og voksne sover bedre, når solen står op. Dæmpbart LED-lys er bygget ind og drives via USB-C.</p>
+<p>Magnetdøre lader dig gå ind og ud uden larm om natten, og det fastsyede gulv holder fugt, skidt og insekter ude. Tonede vinduer giver lys og privatliv i opholdsrummet.</p>
 HTML,
-			'good'    => [ 'Hurtig opsætning', 'Komfort på campingpladsen' ],
+			'good'    => [ 'Hurtig opsætning', 'Familier med børn, der skal sove godt', 'Blæsende og våde campingferier' ],
 			'less'    => [ 'Ture, hvor teltet skal bæres' ],
 		],
 		[
@@ -58,9 +63,10 @@ HTML,
 			'name'    => 'Bushmen Baker Tent 8.1',
 			'role'    => 'Bedst til bushcraft',
 			'reviews' => [],
-			'verdict' => 'Bakertelt med åben front til 5 personer – til lejrbålet og den lange tur i skoven.',
+			'verdict' => 'Klassisk bushcraft- og basecamp-telt til fem, bygget til komfort, slid og ægte lejrstemning.',
 			'why'     => <<<'HTML'
-<p>Bushmen Baker Tent 8.1 er et bakertelt med den klassiske åbne front, så I kan sidde i ly og stadig have udsigt til bålet. Et telt for dem, der elsker livet i skoven.</p>
+<p>Bushmen Baker Tent 8.1 er til dig, der elsker livet i skoven og vil have en rigtig lejr frem for en campingplads. Det er et klassisk bushcraft- og basecamp-telt med plads til fem personer, og det er lavet til friluftsfolk, der vil have både komfort og ægte lejrstemning.</p>
+<p>Bakerteltets åbne front lader jer sidde i ly og stadig have udsigt til bålet. Teltet er bygget til at tåle slid, og det er lavet i moderne tekniske materialer, så du får det klassiske udtryk uden at gå på kompromis.</p>
 HTML,
 			'good'    => [ 'Bushcraft og lejrbål', 'Grupper' ],
 			'less'    => [ 'Myg og kolde nætter uden ekstra udstyr' ],

@@ -19,11 +19,12 @@ HTML,
 			'name'    => 'Helsport Gimle Family 4+',
 			'role'    => 'Bedst samlet',
 			'reviews' => [],
-			'verdict' => 'Letvægts familietelt på ca. 7,8 kg med fuld ståhøjde i midten.',
+			'verdict' => 'Rummeligt familietelt til 4–6 på kun ca. 7,8 kg – med fuld ståhøjde i midten.',
 			'why'     => <<<'HTML'
-<p>Gimle Family 4+ vejer kun ca. 7,8 kg og har alligevel fuld ståhøjde i midten. Det store indertelt på 210 x 240 cm giver plads til hele familien.</p>
+<p>Helsport Gimle Family 4+ er til familien, der vil have plads uden at slæbe på et tungt telt. Med omkring 7,8 kg er det en letvægtsmodel blandt de rummelige familietelte, så det er nemmere at have med på tur end de fleste telte i samme størrelse.</p>
+<p>Der er plads til 4–6 personer, og inderteltet måler 210 × 240 cm, så der er god plads til liggeunderlag og soveposer til hele familien. I midten af teltet er der fuld ståhøjde, så I kan klæde om og pakke tasker uden at sidde på knæ.</p>
 HTML,
-			'good'    => [ 'Familier på tur', 'Lav vægt for størrelsen' ],
+			'good'    => [ 'Familier på tur', 'Lav vægt for størrelsen', 'Dig, der vil kunne stå oprejst' ],
 			'less'    => [ 'Lavt budget' ],
 		],
 		[
@@ -32,11 +33,12 @@ HTML,
 			'name'    => 'Big Agnes Bunk House 6',
 			'role'    => 'Mest plads',
 			'reviews' => [],
-			'verdict' => 'Rummeligt familietelt med stor frontapsis og god ståhøjde.',
+			'verdict' => 'Familietelt til 5–6 med god ståhøjde og stor apsis foran – bygget til camping hele sæsonen.',
 			'why'     => <<<'HTML'
-<p>Bunk House 6 er bygget til camping hele sæsonen med god ståhøjde og en stor frontapsis, der fungerer som overdækket opholdsrum.</p>
+<p>Big Agnes Bunk House 6 giver den store familie god plads på campingpladsen. Teltet rummer 5–6 personer og er lavet til jer, der vil have komfort og ståhøjde, uanset om I camperer en weekend i maj eller tre uger i juli.</p>
+<p>Foran sidder en stor apsis, som bliver jeres overdækkede stue. Her er plads til campingstole, sko og våde jakker, så inderteltet forbliver et rent og tørt soverum. Når det regner, kan I stadig sidde ude og spise, og ståhøjden gør det let at bevæge sig rundt for både voksne og børn.</p>
 HTML,
-			'good'    => [ 'Store familier', 'Lange ferier' ],
+			'good'    => [ 'Store familier', 'Lange ferier', 'Overdækket ophold foran teltet' ],
 			'less'    => [ 'Ture, hvor teltet skal bæres' ],
 		],
 		[
@@ -45,12 +47,14 @@ HTML,
 			'name'    => 'Outwell Florida 5 lufttelt',
 			'role'    => 'Hurtigst at slå op',
 			'reviews' => [],
-			'verdict' => 'Moderne lufttelt til familier med Dual Front-system.',
+			'verdict' => 'Lufttelt til fem med mørklagte soverum, indbygget dæmpbart lys og 6.000 mm vandsøjle.',
 			'why'     => <<<'HTML'
-<p>Florida 5 er et lufttelt, så bøjlerne pustes op i stedet for at blive samlet. Det gør opsætningen hurtig – rart, når børnene venter.</p>
+<p>Outwell Florida 5 er lufteltet til familien, der vil have komfort og en hurtig opsætning. Luftkanalerne pumpes op hver for sig gennem ventiler udvendigt, og pumpen følger med. Med Dual Front-systemet kan fronten lynes af, så I får et åbent fortelt på varme dage – eller et lukket telt med tre zoner, når vejret skifter.</p>
+<p>Dugen er Outtex 6000 Express RS: et let, rivefast ripstop-stof med 6.000 mm vandsøjle og tapede sømme. Teltet er bygget til at klare vindstyrke 9. Soverummene er 230 cm dybe med fuld ståhøjde og mørklagte sider, så børnene sover, selvom solen står op. Det indbyggede, dæmpbare LED-lys drives af en USB-C-enhed.</p>
+<p>Magnetdøre gør det muligt at gå ud og ind uden lynlåslarm om natten, og den fastsyede bund holder fugt, skidt og insekter ude.</p>
 HTML,
-			'good'    => [ 'Hurtig opsætning', 'Komfort' ],
-			'less'    => [ 'Lavt budget' ],
+			'good'    => [ 'Hurtig opsætning', 'Børnefamilier, der vil sove længe', 'Blæsende campingpladser' ],
+			'less'    => [ 'Lavt budget', 'Stort og tungt – ikke til ture, hvor teltet skal bæres' ],
 		],
 		[
 			'ean'     => '5703384087715',
@@ -58,9 +62,10 @@ HTML,
 			'name'    => 'Grand Canyon Helena 6',
 			'role'    => 'Bedst til prisen',
 			'reviews' => [],
-			'verdict' => 'Prisgunstigt familietelt til 6 fra Grand Canyon.',
+			'verdict' => 'Familietelt til seks fra Nordisks prisvenlige mærke Grand Canyon – meget plads for pengene.',
 			'why'     => <<<'HTML'
-<p>Helena 6 giver masser af plads for pengene og er et godt telt til familiens første campingferier.</p>
+<p>Grand Canyon Helena 6 er et godt bud, hvis familien skal på sin første campingferie og vil holde budgettet. Seks personer kan sove i teltet, så der er plads til både børn, bedsteforældre eller en ekstra ven.</p>
+<p>Bag Grand Canyon står danske Nordisk. Under dette navn laver de telte, hvor man har valgt enklere materialer og skåret ned på detaljerne for at holde prisen nede. Det gør Helena 6 til et fornuftigt valg til sommerens campingpladsferie, hvor I mest har brug for plads og tag over hovedet.</p>
 HTML,
 			'good'    => [ 'Fornuftigt budget', 'Campingferie' ],
 			'less'    => [ 'Hårdt vejr' ],
@@ -71,11 +76,12 @@ HTML,
 			'name'    => 'Easy Camp Orsa Cabin',
 			'role'    => 'Bedst til store familier',
 			'reviews' => [],
-			'verdict' => 'Robust kabinetelt til op til 8 personer.',
+			'verdict' => 'Robust og vejrbestandigt kabinetelt med plads til op til 8 personer.',
 			'why'     => <<<'HTML'
-<p>Orsa Cabin har plads til op til 8 personer og en rummelig indretning, så selv den store familie kan være her.</p>
+<p>Easy Camp Orsa Cabin er til den store familie eller vennegruppen, der vil campere komfortabelt sammen. Der er plads til op til 8 personer, og den rummelige indretning gør, at I ikke ligger oven i hinanden.</p>
+<p>Teltet er et teknisk veludviklet kabinetelt, bygget robust og til at klare vejret ude i naturen. Den rummelige kabine gør det rart at opholde sig i teltet, også på en regnvejrsdag.</p>
 HTML,
-			'good'    => [ 'Store familier', 'Lavt budget' ],
+			'good'    => [ 'Store familier', 'Lavt budget', 'Grupper af venner' ],
 			'less'    => [ 'Lange vandreture' ],
 		],
 	],

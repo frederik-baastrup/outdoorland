@@ -19,12 +19,14 @@ HTML,
 			'name'    => 'Nordisk Asgard 12.6 Technical Cotton',
 			'role'    => 'Bedst samlet',
 			'reviews' => [],
-			'verdict' => 'Ekstra rummeligt bomuldstelt på 12,6 m² til op til 6 personer.',
+			'verdict' => '12,6 m² og 250 cm ståhøjde i åndbar Technical Cotton – siderne kan rulles op, så teltet bliver en tarp.',
 			'why'     => <<<'HTML'
-<p>Nordisk Asgard 12.6 er et af de mest kendte bomuldstelte. Grundarealet på 12,6 m² giver plads til familien eller en gruppe på op til seks.</p>
+<p>Nordisk Asgard 12.6 er klokketeltet til familien eller vennerne, der vil have masser af plads og et godt indeklima. Grundarealet på 12,6 m² giver plads til seks, og med 250 cm i højden kan alle stå oprejst. Teltet er lavet til både varme sommerture og krævende vinterbrug.</p>
+<p>Dugen er Technical Cotton – 35 % bomuld og 65 % polyester – der ånder og giver meget lidt kondens. Den er rivestærk, behandlet på ydersiden og tåler solen bedre end nylon. På varme dage ruller du sidevæggene op og bruger teltet som en stor tarp. Tre ventiler foroven og tre regulerbare forneden, alle med myggenet, sørger for frisk luft.</p>
+<p>Teltet rejses med én højdejusterbar midterstang og en stang ved døren. Den T-formede lynlås i den 180 cm brede dør gør det nemt at gå ind og ud. Bund og sovekabine kan købes til, når du vil udbygge teltet.</p>
 HTML,
-			'good'    => [ 'Familier og glamping', 'Lange ophold' ],
-			'less'    => [ 'Lav vægt' ],
+			'good'    => [ 'Familier og glamping', 'Lange ophold', 'Varme sommerdage med åbne sider' ],
+			'less'    => [ 'Ture, hvor teltet skal bæres – det vejer 16 kg', 'Bund følger ikke med' ],
 		],
 		[
 			'ean'     => '5703384023959',
@@ -32,24 +34,28 @@ HTML,
 			'name'    => 'Nordisk Alfheim 12.6 Technical Cotton',
 			'role'    => 'Bedste tipi i bomuld',
 			'reviews' => [],
-			'verdict' => 'Lavvu i Technical Cotton med 12,6 m² grundareal.',
+			'verdict' => 'Klassisk lavvu på 12,6 m² og 275 cm i højden – rejst nemt og hurtigt med én midterstang.',
 			'why'     => <<<'HTML'
-<p>Alfheim 12.6 er Nordisks lavvu i Technical Cotton – klassisk tipi-facon og et stort, hyggeligt rum.</p>
+<p>Nordisk Alfheim 12.6 er tipiteltet til dig, der drømmer om den klassiske lavvu med et stort, hyggeligt rum. Grundarealet på 12,6 m² rummer familien eller en gruppe på op til seks, og teltet kan bruges fra sommerferien sydpå til krævende vinterture.</p>
+<p>Opsætningen er enkel: én midterstang i let og stærk aluminium, og teltet står. Med 275 cm i højden og 400 cm i diameter er der luft over hovedet. Dugen i Technical Cotton ånder, så kondensen holdes nede, og tophatten kan reguleres indefra for mere eller mindre luft – med myggenet bag.</p>
+<p>Pløkkerne er i hærdet aluminium og bider godt i blød jord. Pakket fylder teltet 32 × 99 cm og vejer 13,4 kg, og du kan købe bund og sovekabine til.</p>
 HTML,
-			'good'    => [ 'Hurtig opsætning', 'Godt indeklima' ],
-			'less'    => [ 'Lav vægt' ],
+			'good'    => [ 'Hurtig opsætning', 'Godt indeklima', 'Brug året rundt' ],
+			'less'    => [ 'Lange vandreture – det vejer 13,4 kg', 'Bund følger ikke med' ],
 		],
 		[
 			'ean'     => '5709388077462',
 			'price'   => 6608,
 			'name'    => 'Robens Klondike 6',
-			'role'    => 'Bedste kuppel i bomuld',
+			'role'    => 'Bedste klokketelt i bomuld',
 			'reviews' => [],
-			'verdict' => 'Bomuldstelt til 6 personer fra danske Robens.',
+			'verdict' => 'Klokketelt til seks med lodrette sider, bund med lynlås og udtag til ovn – klar til både sommer og vinter.',
 			'why'     => <<<'HTML'
-<p>Robens Klondike 6 er et bomuldstelt til seks fra det danske Oase Outdoors – godt til den lange ferie, hvor indeklimaet betyder meget.</p>
+<p>Robens Klondike 6 er til familien, der vil have et gennemført bomuldstelt med plads til alle. Lodrette sidevægge udnytter arealet bedre, og med 400 cm i diameter og 270 cm i højden er der plads til seks voksne eller fx fire voksne og fire børn.</p>
+<p>Dugen er Robens' HydroTex med 35 % bomuld og 65 % polyester. Den ånder og giver et behageligt indeklima, og når det regner, svulmer fibrene op, så dugen bliver tæt. Bunden i slidstærk Oxford-polyester følger med og lynes fast. En lynlås fra døren til midterstangen åbner bunden, så der bliver plads til en ovn eller beskidte støvler – og der er udtag til skorsten.</p>
+<p>Teltet rejses med en midterstang i anodiseret aluminium og en bue ved døren. Tophatten styres indefra med en snor, og bardunerne kan bindes op, så de ikke filtrer.</p>
 HTML,
-			'good'    => [ 'Familieferie', 'Varme sommerdage' ],
+			'good'    => [ 'Familieferie', 'Vintercamping med ovn', 'Bund med i købet' ],
 			'less'    => [ 'Ture, hvor teltet skal bæres' ],
 		],
 		[
@@ -58,12 +64,14 @@ HTML,
 			'name'    => 'Nordisk Utgard Sky 13.2 Technical Cotton',
 			'role'    => 'Mest plads',
 			'reviews' => [],
-			'verdict' => 'Stort bomuldstelt på 13,2 m² til op til 6 personer.',
+			'verdict' => 'Nærmest et lille hus: to overdækkede indgange og en 180° Sky-åbning, der laver teltet om til veranda.',
 			'why'     => <<<'HTML'
-<p>Utgard Sky 13.2 giver endnu mere plads end Asgard og er bygget til lange ophold i bomuldsteltets behagelige klima.</p>
+<p>Nordisk Utgard Sky 13.2 er det tætteste, du kommer på et lille hus, du kan tage med. Seks personer har rigtig god plads, og i en snæver vending kan otte overnatte. Det er teltet til den lange campingferie, hvor teltet er jeres base.</p>
+<p>Det særlige er Sky-åbningen på 180 grader: Lyn bunden fri, hæv hjørnerne med de medfølgende stænger, og du har en overdækket veranda med udsigt til naturen. Der er to store, overdækkede indgange og vinduer for, bag og ved jorden – alle med myggenet og lukkeklapper, så du styrer ventilationen efter vejret.</p>
+<p>Dugen i Technical Cotton ånder og giver minimal kondens. Midterstangen kan justeres i højden, og pløkkerne er i galvaniseret, hærdet stål. Indertelte og bund kan købes til.</p>
 HTML,
-			'good'    => [ 'Lange ophold', 'Store familier' ],
-			'less'    => [ 'Lavt budget' ],
+			'good'    => [ 'Lange ophold', 'Store familier', 'Dig, der vil sidde ude under tag' ],
+			'less'    => [ 'Lavt budget', 'Kort tur – teltet vejer 24 kg' ],
 		],
 		[
 			'ean'     => '7340001627411',
@@ -71,12 +79,14 @@ HTML,
 			'name'    => 'Tentipi Onyx 7 CP',
 			'role'    => 'Bedst året rundt',
 			'reviews' => [],
-			'verdict' => 'Tipitelt i bomuldsblandingen Cotpolmex Comfort til friluftsliv året rundt.',
+			'verdict' => 'Helårs-tipi med 4,6 meter grundplan og 270 cm højde i åndbar Cotpolmex Comfort.',
 			'why'     => <<<'HTML'
-<p>Tentipi Onyx 7 CP er lavet til brug året rundt med en dug i bomuldsblanding, 4,6 meter grundplan og 270 cm højde.</p>
+<p>Tentipi Onyx 7 CP er til dig, der vil have et telt, der kan bruges i al slags vejr – sommer som vinter. Den klassiske nordiske tipi-form med én central stang gør opsætningen enkel, og der er plads til op til syv sovende. Vil I have god plads til ophold og udstyr, passer det bedst til fire–fem personer.</p>
+<p>Grundplanen er 4,6 meter i diameter, gulvarealet 4 meter, og højden når 270 cm. Dugen i Cotpolmex Comfort – bomuld og polyester – ånder og giver et behageligt indeklima. Ventilationshætten lader dig styre luften, og døren har myggenet.</p>
+<p>Barduner og pløkker følger med. Pakket måler teltet 62 × 26 cm og vejer 13 kg. Gulv og indertelt fås separat, så du kan bygge teltet op efter behov.</p>
 HTML,
-			'good'    => [ 'Vinter og sommer', 'Grupper' ],
-			'less'    => [ 'Lavt budget' ],
+			'good'    => [ 'Vinter og sommer', 'Grupper og familier', 'Enkel opsætning med én stang' ],
+			'less'    => [ 'Lavt budget', 'Gulv og indertelt koster ekstra' ],
 		],
 	],
 	'guide'    => <<<'HTML'

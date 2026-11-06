@@ -19,11 +19,13 @@ HTML,
 			'name'    => 'TravelSafe Travel Hammock No-Bug',
 			'role'    => 'Bedst samlet',
 			'reviews' => [],
-			'verdict' => 'Hængekøje til 1 person med myggenet, lynlås og vandtæt regnslag. 275 x 140 cm, op til 100 kg.',
+			'verdict' => 'Komplet sove-sæt til én: hængekøje med indbygget myggenet og vandtæt regnslag – samlet kun 630 g.',
 			'why'     => <<<'HTML'
-<p>TravelSafe Travel Hammock har både myggenet med lynlås og et vandtæt regnslag, så du er klar til både myg og regn. Den måler 275 x 140 cm og kan bære op til 100 kg.</p>
+<p>TravelSafe Travel Hammock er til dig, der vil sove ude uden at blive generet af myg eller regn. Du får både hængekøjen med indbygget myggenet og et vandtæt regnslag, så du er klar til en nat i skoven fra første tur.</p>
+<p>Bunden er i 210T taft-nylon (faldskærmsstof), og toppen er et meget fint net med 1000 huller pr. tomme, som holder selv små insekter ude. En lynlås i hele længden gør det nemt at komme ind og ud. Regnslaget i polyester måler 270 × 240 cm og dækker hele hængekøjen mod regn, sol og det, der falder ned fra træerne.</p>
+<p>Hængekøjen er 275 × 140 cm og bærer op til 100 kg. Det hele vejer 630 g og pakkes i en bæretaske i nylon, så den er let at have med i rygsækken.</p>
 HTML,
-			'good'    => [ 'Overnatning ude', 'Regn og myg' ],
+			'good'    => [ 'Overnatning ude og rygsækture', 'Regn og myg', 'Rejser til områder med meget kryb' ],
 			'less'    => [ 'To personer' ],
 		],
 		[
@@ -32,9 +34,10 @@ HTML,
 			'name'    => 'Grand Canyon Bass Mosquito Hammock',
 			'role'    => 'Bedst til prisen',
 			'reviews' => [],
-			'verdict' => 'Prisgunstig hængekøje med indbygget myggenet fra Nordisks mærke Grand Canyon.',
+			'verdict' => 'Prisvenlig hængekøje med indbygget myggenet fra Grand Canyon – mærket under danske Nordisk.',
 			'why'     => <<<'HTML'
-<p>Bass Mosquito Hammock er den billige vej til en hængekøje med myggenet. Grand Canyon er Nordisks prisvenlige mærke, hvor der er sparet på detaljerne, men ikke på holdbarheden.</p>
+<p>Grand Canyon Bass Mosquito Hammock er det oplagte valg, hvis du vil prøve at sove i hængekøje uden at investere stort. Myggenettet sidder fast på hængekøjen, så du ikke skal købe og montere et net for sig.</p>
+<p>Grand Canyon er mærket under danske Nordisk, som ellers er kendt for bomuldstelte og fjeldtelte. Her har man valgt enklere materialer og færre detaljer for at holde prisen nede. Det gør Bass til en god hængekøje til haven, festivalen og de første nætter i skoven.</p>
 HTML,
 			'good'    => [ 'Haven og festival', 'Lavt budget' ],
 			'less'    => [ 'Lange ture i regnvejr' ],
@@ -45,9 +48,11 @@ HTML,
 			'name'    => 'Origin Outdoors hængekøje med pop up-myggenet',
 			'role'    => 'Nemmest',
 			'reviews' => [],
-			'verdict' => 'Hængekøje med pop up-myggenet uden opsætning – vendbar, så den kan bruges med eller uden net.',
+			'verdict' => 'Myggenet, der folder sig ud af sig selv, og en hængekøje, der bærer op til 150 kg.',
 			'why'     => <<<'HTML'
-<p>Myggenettet springer op af sig selv, så der er ingen opsætning og intet besvær. Hængekøjen er vendbar og kan bruges med eller uden net, og karabiner, ophængstove og opbevaringspose følger med.</p>
+<p>Origin Outdoors hængekøje er til dig, der vil hurtigt fra rygsæk til afslapning. Myggenettet er pop up, så det folder sig ud af sig selv – du skal ikke spænde snore eller bøvle med stænger.</p>
+<p>Hængekøjen er vendbar, så du kan bruge den med nettet, når myggene er fremme, og uden, når du bare vil ligge i solen. Den bærer op til 150 kg, så der er god margen. Den vejer ikke meget og fylder lidt, når den er pakket sammen.</p>
+<p>Alt til ophænget er med i pakken: karabiner, ophængstove og en opbevaringspose, så du kan hænge den op, så snart du har fundet to træer.</p>
 HTML,
 			'good'    => [ 'Hurtig opsætning', 'Haven og stranden' ],
 			'less'    => [ 'Kraftig regn uden tarp' ],
@@ -58,11 +63,13 @@ HTML,
 			'name'    => 'Ticket To The Moon Universal Bug Net 360',
 			'role'    => 'Bedst til din egen hængekøje',
 			'reviews' => [],
-			'verdict' => 'Myggenet på 395 g, der beskytter hele vejen rundt – også nedefra.',
+			'verdict' => 'Myggenet på 395 g, der lukker helt rundt om din hængekøje – med top, der kan lynes helt op.',
 			'why'     => <<<'HTML'
-<p>Har du allerede en hængekøje, er Bug Net 360 fra Ticket To The Moon et godt valg. Nettet vejer 395 g, er åndbart og beskytter hele vejen rundt, så du heller ikke bliver bidt nedefra. Det passer til standard hængekøjer uden spredestokke.</p>
+<p>Har du allerede en hængekøje, gør Ticket To The Moon Bug Net 360 den klar til nætter i myggeland. Nettet trækkes over hængekøjen og lukker hele vejen rundt, så du heller ikke bliver stukket nedefra. Det passer til de fleste almindelige hængekøjer uden spredestokke op til 320 cm.</p>
+<p>Det bløde, men robuste polyesternet har 200 huller pr. cm², så selv de mindste insekter holdes ude, mens luften kan komme igennem. Med de dobbelte, rundgående YKK-lynlåse åbner du hele toppen, når du vil have frit udsyn og mere luft. En indbygget ridgeline holder nettet væk fra ansigtet, og lommen bliver til en pude, når du putter en trøje i den.</p>
+<p>Nettet vejer kun 395 g, kan vaskes ved 30 °C og har 10 års garanti.</p>
 HTML,
-			'good'    => [ 'Opgradering af egen hængekøje', 'Lav vægt' ],
+			'good'    => [ 'Opgradering af egen hængekøje', 'Lav vægt', 'Festival, strand og skov' ],
 			'less'    => [ 'Hængekøjer med spredestokke' ],
 		],
 	],
