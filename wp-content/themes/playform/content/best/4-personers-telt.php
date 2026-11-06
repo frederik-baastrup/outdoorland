@@ -19,12 +19,14 @@ HTML,
 			'name'    => 'Nemo Aurora Highrise 4P',
 			'role'    => 'Bedst samlet',
 			'reviews' => [],
-			'verdict' => 'Firepersoners telt med en højde på 1,75 meter – plads og komfort til familien.',
+			'verdict' => 'Firepersoners telt med ståhøjde, to døre og to forrum – og PFAS-fri dug med 1500 mm vandsøjle.',
 			'why'     => <<<'HTML'
-<p>Nemo Aurora Highrise 4P skiller sig ud med en højde på hele 1,75 meter. Det giver en helt anden komfort, når fire personer skal bo i teltet på familieturen eller den lange campingferie.</p>
+<p>Nemo Aurora Highrise 4P er til familien eller parret, der vil have plads til at leve i teltet – ikke bare sove i det. Væggene står næsten lodret, så der er ståhøjde, og I kan klæde om og pakke tasker uden at gå krumbøjet. To store døre og to forrum betyder, at ingen skal kravle over de andre, og at sko og oppakning kan ligge tørt i hver side.</p>
+<p>Yderdugen er 68D ripstop-polyester med PU-coating og 1500 mm vandsøjle, bunden er kraftig 150D polyester, og alle materialer er PFAS-fri. DAC Pressfit-stænger i aluminium giver en stabil ramme, og farvekoder og clips gør opsætningen enkel.</p>
+<p>Store mesh-flader og vinduer med regnbeskyttelse giver luft og udsigt. Lommer, et gearloft, en dørmåtte og refleksdetaljer gør livet i lejren nemt. Teltet vejer 6,25 kg.</p>
 HTML,
-			'good'    => [ 'Familiecamping', 'Ståhøjde' ],
-			'less'    => [ 'Ture, hvor teltet skal bæres langt' ],
+			'good'    => [ 'Familier, der vil kunne stå oprejst', 'Weekendture i bil', 'Par, der vil have ekstra plads' ],
+			'less'    => [ 'Ture, hvor teltet skal bæres langt', 'Vintercamping – det er et tresæsonstelt' ],
 		],
 		[
 			'ean'     => '5703384121488',
@@ -32,12 +34,14 @@ HTML,
 			'name'    => 'Nordisk Oppland 4 PU',
 			'role'    => 'Bedste tunneltelt',
 			'reviews' => [],
-			'verdict' => 'Populært tunneltelt fra Nordisk med øget vinkel på tunnelbuen for mere plads.',
+			'verdict' => 'Tunneltelt til fire med ca. 2,5 meter lang apsis, 8.000 mm bund og en front, der åbner til 180 graders udsyn.',
 			'why'     => <<<'HTML'
-<p>Nordisk har opdateret den populære Oppland-serie, så vinklen på tunnelbuen er øget markant – det giver mere plads i teltet. Et gennemført telt fra et af de mest kendte danske teltmærker.</p>
+<p>Nordisk Oppland 4 PU er til de fire, der vil have masser af plads til både mennesker og oppakning. Sovedelen er op til 230 cm bred og 225 cm lang, og foran ligger en apsis på omkring 2,5 meter, hvor rygsækkene kan stå, og hvor der stadig er plads til at lave mad i læ, når det regner.</p>
+<p>Den stejle tunnelbue giver albuerum, når I sidder op ad væggene med kortspil eller en bog. Indgangene er høje, og du kan gå ind fra både siden og fronten. Hele fronten kan åbnes til 180 graders udsyn, og forteltets åbning kan stilles på fire måder efter vejret og jeres ønske om privatliv.</p>
+<p>Oversejlet er 68D ripstop-polyester med mindst 3.000 mm vandsøjle og tåler solen bedre end nylon. Bunden holder til 8.000 mm.</p>
 HTML,
-			'good'    => [ 'Vandring og kanoture for fire', 'Plads i forhold til vægt' ],
-			'less'    => [ 'Lavt budget' ],
+			'good'    => [ 'Familien på fire med meget oppakning', 'Madlavning i læ', 'Dig, der vil nyde udsigten fra teltet' ],
+			'less'    => [ 'Lavt budget', 'Polyesterdugen vejer lidt mere end nylon' ],
 		],
 		[
 			'ean'     => '4960589851737',
@@ -75,12 +79,14 @@ HTML,
 			'name'    => 'Grand Canyon Topeka 4',
 			'role'    => 'Billigst',
 			'reviews' => [],
-			'verdict' => 'Prisgunstigt 4-personers telt fra Nordisks mærke Grand Canyon.',
+			'verdict' => 'Selvstående kuppeltelt til fire på 4,5 kg med 3.000 mm oversejl – pakkes ned til 66 × 18 cm.',
 			'why'     => <<<'HTML'
-<p>Topeka 4 er det billige familietelt fra Grand Canyon. Godt til sommerens campingtur, festival og overnatning i haven.</p>
+<p>Grand Canyon Topeka 4 er til dig, der bruger telt et par gange om året og vil have noget, du kan stole på, uden at sprænge budgettet. Grand Canyon er Nordisks prisvenlige mærke, og Topeka 4 passer fint til sommercamping og cykel- eller kanoture.</p>
+<p>Teltet er selvstående med to diagonale stænger og en ekstra bue over apsis, hvor rygsække og støvler kan stå tørt. Oversejlet i PU-belagt polyester har forseglede sømme og 3.000 mm vandsøjle, og bunden klarer 4.000 mm. På varme, tørre nætter kan du nøjes med inderteltet og kigge op på nattehimlen.</p>
+<p>Stængerne er i glasfiber – ikke de letteste, men stærke – og inderteltet hægtes på med kroge, så teltet står hurtigt. Det vejer 4,5 kg, og stålpløkker og transportpose følger med.</p>
 HTML,
-			'good'    => [ 'Lavt budget', 'Sommercamping' ],
-			'less'    => [ 'Hårdt vejr' ],
+			'good'    => [ 'Lavt budget', 'Sommercamping', 'Cykel- og kanoture' ],
+			'less'    => [ 'Hyppig eller hård brug' ],
 		],
 	],
 	'guide'    => <<<'HTML'

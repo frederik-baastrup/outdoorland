@@ -19,12 +19,13 @@ HTML,
 			'name'    => 'NEMO Dagger OSMO 2P',
 			'role'    => 'Bedst samlet',
 			'reviews' => [],
-			'verdict' => 'Opdateret udgave af et af de mest populære backpackingtelte – god plads til to uden unødig vægt.',
+			'verdict' => 'Hver sin dør og hver sin apsis på ca. 1,1 m² – og 109 cm til loftet, så I begge kan sidde op.',
 			'why'     => <<<'HTML'
-<p>NEMO Dagger OSMO 2P er til jer, der går lange ture sammen og vil have plads til at sove godt efter en hel dag på stierne. Teltet er en markant opdateret udgave af et af de mest populære backpackingtelte, og det er bygget til at give komfort uden at tynge rygsækken.</p>
-<p>Fokus er på gennemtænkte detaljer og lav vægt, så I får et telt, der er rart at bo i – også når turen varer flere dage.</p>
+<p>NEMO Dagger OSMO 2P er teltet til jer, der er afsted sammen i flere dage og vil have et rigtigt lille hjem om aftenen. Hver af jer har sin egen dør og sin egen apsis på ca. 1,1 m², så ingen skal kravle over den anden for at komme ud om natten. Med 109 cm til loftet kan I begge sidde op og spille kort, mens regnen trommer på dugen.</p>
+<p>Den nye udgave har fået højere døre og skuldre, og små stivere i apsisserne giver 22 % mere plads til rygsække og støvler. Landing Zone er en aftagelig bund, der klikkes fast i apsissen, så udstyret ligger tørt.</p>
+<p>Divvy Cube-pakposen lader jer dele teltet mellem to rygsække, så den ene ikke bærer det hele.</p>
 HTML,
-			'good'    => [ 'Vandreture for to', 'Dig, der vil have både plads og lav vægt' ],
+			'good'    => [ 'Par og venner på flerdagsture', 'Dig, der vil have plads til at sidde op', 'Lange ture, hvor I deler vægten' ],
 			'less'    => [ 'Lavt budget' ],
 		],
 		[
@@ -48,13 +49,14 @@ HTML,
 			'name'    => 'Easy Camp Rago 2',
 			'role'    => 'Bedst til prisen',
 			'reviews' => [],
-			'verdict' => 'Kuppeltelt til to med en særlig stangkonstruktion – funktion, holdbarhed og lav vægt til en lav pris.',
+			'verdict' => 'Fritstående kuppeltelt med 3000 mm vandsøjle, aluminiumsstænger og indgang i begge sider – på ca. 2,5 kg.',
 			'why'     => <<<'HTML'
-<p>Easy Camp Rago 2 er til jer, der vil i gang med at overnatte i telt uden at bruge mange penge. Det er et 2-personers kuppeltelt, der er bygget med fokus på funktion, holdbarhed og lav vægt, så det kan følge med på både weekendture og længere eventyr.</p>
-<p>Easy Camp er i tæt familie med Robens, og det kan ses på detaljerne – blandt andet den særlige stangkonstruktion.</p>
+<p>Easy Camp Rago 2 er til jer, der vil i gang med vandre- og cykelture uden at bruge en formue. Det er et fritstående kuppeltelt, hvor stængerne gør, at teltet rejses i én arbejdsgang. Så står det hurtigt, også på ujævn grund. Easy Camp er i tæt familie med Robens, og det kan ses på detaljerne.</p>
+<p>Oversejlet har 3000 mm vandsøjle og tapede sømme, og bunden holder til 5000 mm, så I ligger tørt, selv når jorden er våd. Stængerne er i letvægtsaluminium, og med en indgang i hver side kommer I ud uden at forstyrre hinanden. Udluftninger holder kondensen nede.</p>
+<p>Teltet vejer ca. 2,5 kg og pakker til 40 × 14 cm i en pose med spænder, der kan sidde på cyklen.</p>
 HTML,
-			'good'    => [ 'Første telt', 'Weekendture', 'Lavt budget' ],
-			'less'    => [ 'Krævende fjeldture' ],
+			'good'    => [ 'Første rigtige vandretelt', 'Cykelture og weekendture', 'Lavt budget' ],
+			'less'    => [ 'Dig, der vil ned under 2 kg' ],
 		],
 		[
 			'ean'     => '5703384084325',
@@ -76,13 +78,14 @@ HTML,
 			'name'    => 'NEMO Hornet Elite OSMO 2P',
 			'role'    => 'Lettest',
 			'reviews' => [],
-			'verdict' => 'Ultralet backpackingtelt til to, der vil have så få gram som muligt på ryggen.',
+			'verdict' => 'Telt til to på under 1 kg – med to døre og to apsisser, så I hver har jeres egen side.',
 			'why'     => <<<'HTML'
-<p>NEMO Hornet Elite OSMO 2P er det helt lette valg til to. Det er bygget til langdistancevandrere og minimalister, der tæller hvert gram og vil gå længere med mindre på ryggen.</p>
-<p>Til gengæld er der sparet på pladsen, så det passer bedst til jer, der primært bruger teltet til at sove i.</p>
+<p>NEMO Hornet Elite OSMO 2P er til jer, der vil gå langt sammen og have så lidt vægt i rygsækkene som muligt. Hele teltet vejer 935 g, som det leveres, og det deles let mellem jer to.</p>
+<p>Selvom vægten er lav, har I hver jeres dør og jeres egen apsis på ca. 0,6 m² til rygsæk og sko. Gulvet er 216 cm langt og 128 cm bredt ved hovedet, så der er plads til to liggeunderlag i almindelig bredde. Flybar-stangklipsen giver mere plads ved hovedenden, og loftshøjden er 94 cm. Gulvet er formet som et badekar med opkanter, der holder vand og træk ude.</p>
+<p>Fodenden skal pløkkes ud, før teltet står helt stramt.</p>
 HTML,
-			'good'    => [ 'Lange vandreture', 'Dig, der vil have lavest mulig vægt' ],
-			'less'    => [ 'Dem, der vil have meget plads' ],
+			'good'    => [ 'Par, der vandrer langt', 'Dig, der vil have lavest mulig vægt til to' ],
+			'less'    => [ 'Dig, der vil kunne sidde højt og bo i teltet i dårligt vejr' ],
 		],
 	],
 	'guide'    => <<<'HTML'

@@ -19,12 +19,14 @@ HTML,
 			'name'    => 'NEMO Hornet Elite OSMO 1P',
 			'role'    => 'Lettest',
 			'reviews' => [],
-			'verdict' => 'Kompromisløst ultralight backpackingtelt til gramjægere og thru-hikere.',
+			'verdict' => 'Soloteltet til gramjægeren: 812 g, som du køber det, og alligevel 98 cm til loftet.',
 			'why'     => <<<'HTML'
-<p>NEMO Hornet Elite OSMO 1P er lavet til dig, der tæller gram. Det er et ekstremt let backpackingtelt til lange vandreture, hvor hver eneste ting i rygsækken skal gøre sig fortjent til pladsen.</p>
+<p>NEMO Hornet Elite OSMO 1P er til dig, der går alene og vil have så lidt på ryggen som muligt. Teltet vejer 812 g, som det kommer fra butikken, og kan barberes ned til 657 g med færrest mulige pløkker. Pakket fylder det kun 48 × 10 × 5 cm.</p>
+<p>Inderteltet er 221 cm langt og smaller fra 102 cm ved hovedet til 81 cm ved fødderne, så der er plads til et bredt liggeunderlag. Flybar-stangklipsen og de trekantede bardunfæster løfter dugen ved hoved og fod, så du kan sidde op under de 98 cm til loftet. Sideindgangen fører ud til en apsis, hvor rygsæk og støvler ligger i ly.</p>
+<p>Det finmaskede net holder myg ude og luften i gang, og en Nightlight-lomme gør pandelampen til en blød teltlampe.</p>
 HTML,
-			'good'    => [ 'Lange vandreture', 'Gramjægere' ],
-			'less'    => [ 'Dem, der vil have meget plads' ],
+			'good'    => [ 'Soloture, hvor hvert gram tæller', 'Thru-hiking og lange etaper', 'Forår, sommer og efterår' ],
+			'less'    => [ 'Dig, der vil have meget plads til oppakning indenfor', 'Fodenden skal pløkkes for at stå stramt' ],
 		],
 		[
 			'ean'     => '0811666038630',
@@ -32,12 +34,14 @@ HTML,
 			'name'    => 'Nemo Dragonfly OSMO 1P',
 			'role'    => 'Bedst samlet',
 			'reviews' => [],
-			'verdict' => 'Fritstående soloteltsted med OSMO-dug, der holder sig stram i fugtigt vejr, og en rummelig apsis.',
+			'verdict' => 'Fritstående soloteltsted med 102 cm siddehøjde og dug, der holder sig stram i regnvejr.',
 			'why'     => <<<'HTML'
-<p>Dragonfly OSMO 1P er fritstående, så det kan slås op næsten overalt. OSMO-dugen holder sig stram, når det er fugtigt, og den rummelige apsis giver plads til oppakningen.</p>
+<p>NEMO Dragonfly OSMO 1P er soloteltet til dig, der vil have lidt mere komfort uden at give slip på den lave vægt. Det er fritstående, så du kan rejse det på klippe, sand eller hård jord og flytte det rundt, til pladsen er rigtig. En tværstang giver højere dør og mere plads, og med 102 cm siddehøjde kan du skifte tøj uden at krumme dig sammen.</p>
+<p>OSMO-dugen bliver ikke slap, når natten bliver fugtig, og oversejlet har 1500 mm vandsøjle. Inderteltet måler 224 cm i længden og har store netpaneler, lommer og en Nightlight-lomme til pandelampen.</p>
+<p>Pakket vejer det 1230 g og fylder 48,5 × 14 × 7 cm. Apsissen giver tørt ly til oppakningen.</p>
 HTML,
-			'good'    => [ 'Vandring i skiftende vejr', 'Hurtig opsætning' ],
-			'less'    => [ 'Lavt budget' ],
+			'good'    => [ 'Dig, der vil kunne sidde op i teltet', 'Teltpladser med hårdt eller ujævnt underlag', 'Vandring fra forår til efterår' ],
+			'less'    => [ 'Dig, der vil ned under 1 kg' ],
 		],
 		[
 			'ean'     => '0811666037572',
@@ -45,12 +49,14 @@ HTML,
 			'name'    => 'Nemo Dragonfly OSMO Bikepack 1P',
 			'role'    => 'Bedst til cykelturen',
 			'reviews' => [],
-			'verdict' => 'Soloteltsted med minimal pakkestørrelse til bikepacking.',
+			'verdict' => 'Korte stangsektioner og en pakke på 37 × 15 cm, der kan spændes direkte på styret.',
 			'why'     => <<<'HTML'
-<p>Bikepack-udgaven af Dragonfly er bygget til at blive spændt på cyklen: korte stænger og en meget lille pakkestørrelse, uden at komforten går tabt. OSMO-materialet er 100 % genanvendt.</p>
+<p>NEMO Dragonfly OSMO Bikepack 1P er bygget til dig, der overnatter på cykelturen eller i kanoen. Stængerne er delt i korte sektioner, så hele teltet pakker til 37 × 15 cm, og den tørre pakpose kan spændes fast på styret eller stellet. Så er tasker og rygsæk fri til alt det andet.</p>
+<p>Teltet er fritstående og hurtigt at slå op, når du kommer frem. Inderteltet er 224 cm langt med 102 cm siddehøjde, og en apsis i siden giver plads til tasker og våde sko. Ventilation højt og lavt sender den fugtige luft ud og holder kondensen nede.</p>
+<p>Dugen er 100 % genanvendt OSMO uden PFAS, og den holder formen i fugtigt vejr. Pakket vejer teltet 1400 g.</p>
 HTML,
-			'good'    => [ 'Bikepacking', 'Lille pakkestørrelse' ],
-			'less'    => [ 'Ture til fods med stor rygsæk' ],
+			'good'    => [ 'Bikepacking og cykelferie', 'Kanoture, hvor pakmålet tæller', 'Dig, der vil have teltet på styret' ],
+			'less'    => [ 'Rene vandreture, hvor et lettere telt er nok' ],
 		],
 	],
 	'guide'    => <<<'HTML'

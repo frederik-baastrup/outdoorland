@@ -34,13 +34,14 @@ HTML,
 			'name'    => 'Grand Canyon Helena 5',
 			'role'    => 'Bedst til prisen',
 			'reviews' => [],
-			'verdict' => 'Prisgunstigt telt til fem fra Grand Canyon – Nordisks mærke til dig, der vil campere uden at bruge en formue.',
+			'verdict' => 'Stort tunneltelt til 5–6 med to adskilte sovekabiner og et opholdsrum, der kan rumme bord og stole.',
 			'why'     => <<<'HTML'
-<p>Grand Canyon Helena 5 er til familien eller vennegruppen, der vil på campingferie uden at bruge en formue på teltet. Grand Canyon er mærket, som danske Nordisk – kendt for bomuldstelte og fjeldtelte – bruger til sine prisgunstige telte.</p>
-<p>For at holde prisen nede er der sparet på materialer og detaljer i forhold til Nordisks dyreste telte. Til gengæld får du plads til fem personer til en pris, der efterlader penge til resten af ferien.</p>
+<p>Grand Canyon Helena 5 er til familien på fem, der vil have en rigtig campingferie uden at betale for et dyrt telt. Det er et stort tunneltelt til 5–6 personer med to adskilte sovekabiner, så børn og voksne kan sove hver for sig. Opholdsrummet er så stort, at der er plads til bord og stole – eller cyklerne.</p>
+<p>Fire parallelle stænger går gennem løbegange i oversejlet, og hele teltet rejses i én arbejdsgang, så inderteltet ikke bliver vådt i regnvejr. Oversejlet i PU-belagt polyester har forseglede sømme og 3.000 mm vandsøjle, og den faste bund klarer 4.000 mm. Inderteltet er 195 cm højt.</p>
+<p>Vinduer med markiser giver lys og privatliv, og store ventiler sørger for luft. Teltet vejer 16,5 kg og hører til i bilen.</p>
 HTML,
-			'good'    => [ 'Campingferie', 'Fornuftigt budget' ],
-			'less'    => [ 'Fjeldture' ],
+			'good'    => [ 'Familier på fem', 'Bilferie og sommercamping', 'Fornuftigt budget' ],
+			'less'    => [ 'Ture, hvor teltet skal bæres (16,5 kg)', 'Hyppig og hård brug' ],
 		],
 		[
 			'ean'     => '5709388159182',
@@ -63,13 +64,14 @@ HTML,
 			'name'    => 'Bushmen Baker Tent 8.1',
 			'role'    => 'Bedst til bushcraft',
 			'reviews' => [],
-			'verdict' => 'Klassisk bushcraft- og basecamp-telt til fem, bygget til komfort, slid og ægte lejrstemning.',
+			'verdict' => 'Baker-telt i polycotton med en sidevæg, der løftes op til veranda – og plads til brændeovn indenfor.',
 			'why'     => <<<'HTML'
-<p>Bushmen Baker Tent 8.1 er til dig, der elsker livet i skoven og vil have en rigtig lejr frem for en campingplads. Det er et klassisk bushcraft- og basecamp-telt med plads til fem personer, og det er lavet til friluftsfolk, der vil have både komfort og ægte lejrstemning.</p>
-<p>Bakerteltets åbne front lader jer sidde i ly og stadig have udsigt til bålet. Teltet er bygget til at tåle slid, og det er lavet i moderne tekniske materialer, så du får det klassiske udtryk uden at gå på kompromis.</p>
+<p>Bushmen Baker Tent 8.1 er til dig, der vil have en rigtig lejr med bål og varme – ikke bare en plads på campingpladsen. Den klassiske Baker-form har en sidevæg, der kan løftes op og blive en overdækket veranda i hele teltets bredde. Her kan I lave mad og sidde i ly, mens varmen fra bålet stråler ind i teltet.</p>
+<p>Dugen er polycotton med 35 % bomuld og 65 % polyester. Den ånder, holder kondensen nede og kan tåle gløder fra bål og teltovn. Når stoffet bliver vådt, svulmer det let op og lukker tættere. Grundarealet er 300 × 270 cm, og højden er ca. 200 cm i midten og 230 cm ved verandaen.</p>
+<p>Fast bund, to overdækkede indgange med myggenet og små vinduer gør teltet brugbart året rundt. Stænger, pløkker, barduner og transporttaske følger med.</p>
 HTML,
-			'good'    => [ 'Bushcraft og lejrbål', 'Grupper' ],
-			'less'    => [ 'Myg og kolde nætter uden ekstra udstyr' ],
+			'good'    => [ 'Bushcraft og vinterlejr', 'Ture med teltovn', '3–4 personer med udstyr' ],
+			'less'    => [ 'Ture, hvor teltet skal bæres – det vejer ca. 20 kg' ],
 		],
 	],
 	'guide'    => <<<'HTML'

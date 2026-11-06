@@ -33,12 +33,13 @@ HTML,
 			'name'    => 'Big Agnes Bunk House 6',
 			'role'    => 'Mest plads',
 			'reviews' => [],
-			'verdict' => 'Familietelt til 5–6 med god ståhøjde og stor apsis foran – bygget til camping hele sæsonen.',
+			'verdict' => 'Familietelt med en stor frontapsis, der kan rulles helt op – jeres overdækkede stue på campingpladsen.',
 			'why'     => <<<'HTML'
-<p>Big Agnes Bunk House 6 giver den store familie god plads på campingpladsen. Teltet rummer 5–6 personer og er lavet til jer, der vil have komfort og ståhøjde, uanset om I camperer en weekend i maj eller tre uger i juli.</p>
-<p>Foran sidder en stor apsis, som bliver jeres overdækkede stue. Her er plads til campingstole, sko og våde jakker, så inderteltet forbliver et rent og tørt soverum. Når det regner, kan I stadig sidde ude og spise, og ståhøjden gør det let at bevæge sig rundt for både voksne og børn.</p>
+<p>Big Agnes Bunk House 6 er til familien, der bruger teltet som base i flere dage ad gangen. Ud over soveområdet har det en ekstra rummelig frontapsis med langt mere overdækket plads end et almindeligt kuppeltelt. Her er der plads til campingmøbler, køkkengrej og våde støvler, så sovekabinen forbliver ren og ryddelig.</p>
+<p>På varme dage ruller I fronten helt op, så apsissen bliver en forlængelse af pladsen udenfor. Når vejret skifter, lukker I den, og så giver den læ mod regn og blæst. Der er god ståhøjde, så både børn og voksne kan bevæge sig frit.</p>
+<p>Store mesh-paneler i inderteltet, højt placerede ventiler og dobbeltvæggen giver et behageligt indeklima, selv når hele familien sover der flere nætter i træk.</p>
 HTML,
-			'good'    => [ 'Store familier', 'Lange ferier', 'Overdækket ophold foran teltet' ],
+			'good'    => [ 'Familier på lange campingophold', 'Spisning og ophold i ly', 'Børnefamilier, der vil have orden' ],
 			'less'    => [ 'Ture, hvor teltet skal bæres' ],
 		],
 		[
@@ -62,13 +63,14 @@ HTML,
 			'name'    => 'Grand Canyon Helena 6',
 			'role'    => 'Bedst til prisen',
 			'reviews' => [],
-			'verdict' => 'Familietelt til seks fra Nordisks prisvenlige mærke Grand Canyon – meget plads for pengene.',
+			'verdict' => 'To adskilte sovekabiner og et opholdsrum med plads til bord, stole og cykler – til en lav pris.',
 			'why'     => <<<'HTML'
-<p>Grand Canyon Helena 6 er et godt bud, hvis familien skal på sin første campingferie og vil holde budgettet. Seks personer kan sove i teltet, så der er plads til både børn, bedsteforældre eller en ekstra ven.</p>
-<p>Bag Grand Canyon står danske Nordisk. Under dette navn laver de telte, hvor man har valgt enklere materialer og skåret ned på detaljerne for at holde prisen nede. Det gør Helena 6 til et fornuftigt valg til sommerens campingpladsferie, hvor I mest har brug for plads og tag over hovedet.</p>
+<p>Grand Canyon Helena 6 er familieteltet til jer, der vil have plads til alle uden at bruge hele feriebudgettet. Med to sovekabiner kan forældre og børn sove hver for sig, og det store opholdsrum har plads til spisebord, stole og cykler. Teltet er også oplagt i haven, når der kommer gæster, der skal overnatte.</p>
+<p>Vinduerne giver lys og udsigt, og markiserne kan trækkes for, når I vil have skygge eller lidt privatliv. Store ventilationsåbninger sørger for frisk luft, og myggenetsdøren holder insekterne ude.</p>
+<p>Fordi inder- og ydertelt rejses samtidig, bliver soverummet ikke vådt, hvis I ankommer i regnvejr. Grand Canyon er Nordisks prisvenlige mærke, og teltet er lavet til campingferien og turen i ny og næ.</p>
 HTML,
-			'good'    => [ 'Fornuftigt budget', 'Campingferie' ],
-			'less'    => [ 'Hårdt vejr' ],
+			'good'    => [ 'Familiens første telt', 'Sommerferie i bil', 'Gæster i haven' ],
+			'less'    => [ 'Hyppig eller hård brug' ],
 		],
 		[
 			'ean'     => '5709388144546',
@@ -76,10 +78,11 @@ HTML,
 			'name'    => 'Easy Camp Orsa Cabin',
 			'role'    => 'Bedst til store familier',
 			'reviews' => [],
-			'verdict' => 'Robust og vejrbestandigt kabinetelt med plads til op til 8 personer.',
+			'verdict' => 'Kabinetelt til op til 8 personer med kraftige stålstænger, 3.000 mm vandsøjle og opsætning i én arbejdsgang.',
 			'why'     => <<<'HTML'
-<p>Easy Camp Orsa Cabin er til den store familie eller vennegruppen, der vil campere komfortabelt sammen. Der er plads til op til 8 personer, og den rummelige indretning gør, at I ikke ligger oven i hinanden.</p>
-<p>Teltet er et teknisk veludviklet kabinetelt, bygget robust og til at klare vejret ude i naturen. Den rummelige kabine gør det rart at opholde sig i teltet, også på en regnvejrsdag.</p>
+<p>Easy Camp Orsa Cabin er til den store familie eller vennegruppen, der vil have masser af plads uden at betale meget. Det rummelige kabinetelt måler 270 × 365 cm og har plads til op til otte personer, så det passer til både sommerferien, weekendturen og længere ophold.</p>
+<p>Stængerne er EnduraMax-stål på 19, 22 og 25 mm og giver en stabil ramme. Oversejlet er WeatherGuard 3000 i PU-belagt polyester med tapede sømme og 3.000 mm vandsøjle, og den fastsyede bund i polyethylen holder fugten fra jorden ude. Teltet rejses i én arbejdsgang, så I hurtigt er klar.</p>
+<p>Mesh i døren og overdækkede ventiler langs siderne giver god luft. Seks lommer og ophængningspunkter foran, bagpå og på midterstangen giver plads til lys og udstyr. Det vejer ca. 9,4 kg.</p>
 HTML,
 			'good'    => [ 'Store familier', 'Lavt budget', 'Grupper af venner' ],
 			'less'    => [ 'Lange vandreture' ],

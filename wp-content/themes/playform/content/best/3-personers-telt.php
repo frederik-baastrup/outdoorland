@@ -19,13 +19,14 @@ HTML,
 			'name'    => 'Robens Seeker 3 LW',
 			'role'    => 'Bedst samlet',
 			'reviews' => [],
-			'verdict' => 'Prisvindende kuppeltelt i en opdateret 2026-version – dansk teltudvikling, når den er bedst.',
+			'verdict' => 'Prisvindende, fritstående kuppeltelt med to indgange, 105 cm til loftet og korte stænger, der passer i cykeltasken.',
 			'why'     => <<<'HTML'
-<p>Robens Seeker 3 LW er teltet til dig, der vil have plads til tre og et telt, du kan stole på, når I er på tur. Det er et kuppeltelt udviklet i Danmark, og modellen har allerede vundet priser.</p>
-<p>Til 2026 er teltet blevet opdateret, så du får den nyeste udgave af en model, der har vist sit værd. Med plads til tre er det et oplagt valg for par, der gerne vil have lidt ekstra albuerum, eller for to voksne og et barn.</p>
+<p>Robens Seeker 3 LW er det danskudviklede kuppeltelt til tre, der vil have lav vægt og meget plads i ét. Den opdaterede 2026-udgave er fritstående og hurtig at rejse. Der er en indgang og en apsis på op til 70 cm i hver side, så alle kan komme ud uden at vække de andre.</p>
+<p>Inderteltet er 215 cm langt og 170 cm bredt ved hovedenden, og med 105 cm til loftet kan I sidde op og lave mad, mens det regner. På lune nætter kan du nøjes med inderteltet, eller du kan rulle oversejlet tilbage og se stjernerne. Oversejlet er silikonebelagt ripstop-polyester med tapede sømme, der suger meget lidt vand.</p>
+<p>Stængerne har korte sektioner, så de passer i cykeltasker. Aluminiumspløkker og en reparationslap følger med.</p>
 HTML,
-			'good'    => [ 'Vandring og cykelture', 'Par, der vil have plads' ],
-			'less'    => [ 'Lavt budget' ],
+			'good'    => [ 'Vandring og bikepacking', 'Par, der vil have ekstra albuerum', 'Lune nætter med kun inderteltet' ],
+			'less'    => [ 'Dig, der sjældent kommer i telt' ],
 		],
 		[
 			'ean'     => '0811666036384',
@@ -33,11 +34,13 @@ HTML,
 			'name'    => 'NEMO Dagger OSMO 3P',
 			'role'    => 'Bedst til vandring',
 			'reviews' => [],
-			'verdict' => 'Rummelig 3-personers udgave af det populære backpackingtelt.',
+			'verdict' => 'Plads til tre på 224 × 178 cm – og et telt, der pakket kun vejer 2020 g.',
 			'why'     => <<<'HTML'
-<p>NEMO Dagger OSMO 3P giver tre personer plads i et telt, der stadig er lavet til at blive båret. Det er et af de mest populære backpackingtelte på markedet i en markant opdateret version.</p>
+<p>NEMO Dagger OSMO 3P er til jer, der er tre på vandretur, eller to, der vil have rigeligt med plads. Gulvet måler 224 × 178 cm, så tre brede liggeunderlag kan ligge side om side, og loftet er højt nok til, at alle kan sidde oprejst. Alligevel vejer teltet kun 2020 g, som det leveres.</p>
+<p>Stængerne er farvekodede og passer til mærker på teltet, så det er let at slå op, selv i mørke. Teltet står af sig selv, og Axial-hjørnerne lader dig spænde dugen med én hånd. To døre og to apsisser giver hver side sin egen indgang og plads til rygsække.</p>
+<p>Dugen er 100 % genanvendt OSMO uden PFC og PFAS og holder sig stram i fugtigt vejr.</p>
 HTML,
-			'good'    => [ 'Lange ture', 'Komfort og lav vægt' ],
+			'good'    => [ 'Tre på vandretur', 'Par med meget oppakning', 'Lange ture, hvor vægten tæller' ],
 			'less'    => [ 'Lavt budget' ],
 		],
 		[
@@ -46,12 +49,14 @@ HTML,
 			'name'    => 'MSR Elixir 3',
 			'role'    => 'Mest robust',
 			'reviews' => [],
-			'verdict' => 'Teknisk, rummeligt og robust 3-personers telt, hvor komfort og slidstyrke kommer før minimalvægt.',
+			'verdict' => 'Robust, fritstående telt i kraftig 75D-polyester med footprint i kassen og to store indgange.',
 			'why'     => <<<'HTML'
-<p>MSR Elixir 3 er udviklet til friluftsbrug, hvor komfort, slidstyrke og pålidelig vejrbeskyttelse prioriteres højere end den absolut laveste vægt. Et telt, der kan holde i mange sæsoner.</p>
+<p>MSR Elixir 3 er teltet til jer, der hellere vil have et solidt telt med god plads end spare de sidste gram. Det er fritstående med farvekodede stænger i 7000-serie aluminium, så det står hurtigt, også på klippe og hård jord. Gulvet er 213 × 178 cm med plads til tre liggeunderlag, og med 109 cm til loftet kan alle sidde op på én gang.</p>
+<p>Oversejlet er kraftig 75D-polyester, der holder spændingen i vådt vejr, og bunden har over 3000 mm vandsøjle. To StayDry-døre har regnrender, så vandet ikke drypper ind, når I åbner, og apsisserne giver samlet ca. 1,4 m² til oppakning.</p>
+<p>Et footprint følger med. Det skåner bunden og kan bruges med stænger og oversejl alene, når vægten skal ned.</p>
 HTML,
-			'good'    => [ 'Mange års brug', 'Skiftende vejr' ],
-			'less'    => [ 'Gramjægere' ],
+			'good'    => [ 'Mange års brug', 'Skiftende vejr og hårdt underlag', 'Basecamp og kajak- eller cykelture' ],
+			'less'    => [ 'Gramjægere – pakket vejer det 3240 g' ],
 		],
 		[
 			'ean'     => '5709388157133',
@@ -59,13 +64,14 @@ HTML,
 			'name'    => 'Easy Camp Pasvik 3',
 			'role'    => 'Bedste tunneltelt',
 			'reviews' => [],
-			'verdict' => 'Teknisk gennemtænkt tunneltelt til aktive campister, vandrere og cykelturister.',
+			'verdict' => 'Tunneltelt med forlænget apsis til madlavning og cykeltasker – 3000 mm vandsøjle og ca. 3,2 kg.',
 			'why'     => <<<'HTML'
-<p>Easy Camp Pasvik 3 er tunneltelt til dig, der er på farten og vil have et telt, der er tænkt igennem. Det er skabt til aktive campister, vandrere og cykelturister, der slår lejr et nyt sted hver aften.</p>
-<p>Easy Camp er i tæt familie med Robens, og det kan mærkes på de tekniske løsninger. Tunnelformen giver meget plads i forhold til vægten, så der er rum til tre eller til to med al oppakningen indenfor. Husk, at et tunneltelt skal pløkkes ud for at stå.</p>
+<p>Easy Camp Pasvik 3 er tunneltelt til jer, der cykler eller vandrer og slår lejr et nyt sted hver aften. Det store plus er den forlængede apsis foran. Her er plads til cykeltasker og støvler, og I kan lave mad og spise i læ, når vejret driller.</p>
+<p>Oversejlet har 3000 mm vandsøjle og tapede sømme, og bunden holder til 5000 mm. Stængerne er i letvægtsaluminium og farvekodede, så opsætningen går hurtigt. Udluftning både foran og bagi holder kondensen nede. Indvendigt er der lommer, kroge, tørresnor og strop til lygten.</p>
+<p>Teltet vejer ca. 3,2 kg og pakker til 46 × 16 cm i en pose med spænder til cyklen. Et reparationssæt følger med.</p>
 HTML,
-			'good'    => [ 'Cykelture', 'Fornuftigt budget' ],
-			'less'    => [ 'Hårdt underlag, hvor teltet ikke kan pløkkes' ],
+			'good'    => [ 'Cykelferie', 'Madlavning i læ', 'Fornuftigt budget' ],
+			'less'    => [ 'Hårdt underlag – et tunneltelt skal pløkkes ud for at stå' ],
 		],
 		[
 			'ean'     => '5703384087647',
@@ -73,13 +79,14 @@ HTML,
 			'name'    => 'Grand Canyon Topeka 3',
 			'role'    => 'Bedst til prisen',
 			'reviews' => [],
-			'verdict' => 'Prisvenligt telt til tre fra Grand Canyon – mærket bag danske Nordisk.',
+			'verdict' => 'Selvstående kuppeltelt til tre med 210 × 210 cm inderrum og 3000 mm vandsøjle – fra Nordisks budgetmærke.',
 			'why'     => <<<'HTML'
-<p>Grand Canyon Topeka 3 er det oplagte valg, hvis du vil i gang med at campere uden at bruge mange penge. Grand Canyon er mærket, som danske Nordisk – kendt for bomuldstelte og fjeldtelte – bruger til sine prisvenlige telte.</p>
-<p>Her er der sparet på materialevalg og detaljer, men ikke på kvaliteten. Det gør Topeka 3 til et godt telt til festivalen, haven og de første weekendture, hvor I vil have plads til tre uden en stor investering.</p>
+<p>Grand Canyon Topeka 3 er til jer, der vil i gang med at campere uden at bruge mange penge. Grand Canyon er danske Nordisks prisvenlige mærke. Her er der sparet på materialer og detaljer, men teltet er stadig pålideligt til sommercamping og den årlige kanotur.</p>
+<p>Inderteltet er 210 × 210 cm og 125 cm højt, så tre har god plads. Oversejlet har 3000 mm vandsøjle og forseglede sømme, og bunden holder til 4000 mm. Bag den store fordør er en apsis til rygsække og støvler. Teltet er selvstående, så du på tørre sommernætter kan nøjes med inderteltet.</p>
+<p>Stængerne er i glasfiber, som er stærkt, men tungere end aluminium. Teltet vejer 3900 g og leveres med stålpløkker.</p>
 HTML,
-			'good'    => [ 'Lavt budget', 'Festival og weekend' ],
-			'less'    => [ 'Fjeldture' ],
+			'good'    => [ 'Lavt budget', 'Sommercamping og kanoture', 'Dig, der ikke bruger telt så tit' ],
+			'less'    => [ 'Fjeldture og hyppigt, hårdt brug' ],
 		],
 	],
 	'guide'    => <<<'HTML'

@@ -19,12 +19,14 @@ HTML,
 			'name'    => 'NEMO Hornet Elite OSMO 2P',
 			'role'    => 'Lettest til to',
 			'reviews' => [],
-			'verdict' => 'Kompromisløst ultralight backpackingtelt til to.',
+			'verdict' => 'Dobbeltvægget telt til to, der vejer 779 g i minimumsopsætning og pakker til 48 × 10 × 5 cm.',
 			'why'     => <<<'HTML'
-<p>Hornet Elite OSMO 2P er bygget til gramjægere og thru-hikere, der vil have så lidt vægt som muligt på ryggen.</p>
+<p>NEMO Hornet Elite OSMO 2P er for dig, der vil have et rigtigt telt med indertelt og oversejl, men næsten ingen vægt. Med kun de nødvendige pløkker vejer det 779 g, og pakket fylder det kun 48 × 10 × 5 cm i rygsækken.</p>
+<p>Elite-udgaven er skåret ned i alle detaljer. Stængerne er tynde DAC Featherlite-aluminium, og hele konstruktionen hænger på et nav, så den er hurtig at samle. OSMO-dugen suger meget lidt vand, så teltet ikke bliver tungere at bære efter en våd nat, og den bliver ikke slap i regn.</p>
+<p>Stoffet er 100 % genanvendt og uden PFAS. Fodenden skal pløkkes, før teltet står stramt, og Divvy Cube-posen gør det let at fordele delene.</p>
 HTML,
-			'good'    => [ 'Lange vandreture', 'Gramjægere' ],
-			'less'    => [ 'Dem, der vil have meget plads' ],
+			'good'    => [ 'Thru-hiking og lange etaper', 'Par, der deler vægten', 'Gramjægere' ],
+			'less'    => [ 'Klippegrund, hvor pløkkerne ikke kan komme i' ],
 		],
 		[
 			'ean'     => '0811666036926',
@@ -32,12 +34,14 @@ HTML,
 			'name'    => 'NEMO Hornet Elite OSMO 1P',
 			'role'    => 'Lettest solo',
 			'reviews' => [],
-			'verdict' => 'Ultralight soloteltsted til minimalister.',
+			'verdict' => 'Ned til 657 g og stadig dobbeltvægget – soloteltet til minimalisten, der vil gå langt.',
 			'why'     => <<<'HTML'
-<p>Soloversionen af Hornet Elite er til dig, der går alene og vil skære i vægten overalt.</p>
+<p>Soloudgaven af NEMO Hornet Elite OSMO er for minimalisten, der vil skære i vægten overalt. Med færrest mulige pløkker vejer teltet 657 g, og selv med alt fra kassen er du kun oppe på 812 g. Alligevel får du et dobbeltvægget telt med separat oversejl, der holder kondensen væk fra soveposen.</p>
+<p>Selv snore og syninger er gjort lettere i Elite-udgaven. OSMO-dugen er 100 % genanvendt og fri for PFAS, og den strækker sig tre gange mindre i vådt vejr, så du slipper for at efterspænde midt om natten. Bunden er formet som et badekar med opkanter mod vand og vind.</p>
+<p>Inderteltet er bygget i fint net, der lader luften strømme og holder insekter ude på varme sommernætter.</p>
 HTML,
-			'good'    => [ 'Solovandring', 'Thru-hiking' ],
-			'less'    => [ 'To personer' ],
+			'good'    => [ 'Solovandring med ultralet oppakning', 'Sommerture med varme nætter', 'Dig, der vil undgå kondens' ],
+			'less'    => [ 'To personer', 'Vinterture – det er et tresæsonstelt' ],
 		],
 		[
 			'ean'     => '0811666036360',
@@ -45,12 +49,14 @@ HTML,
 			'name'    => 'NEMO Dagger OSMO 2P',
 			'role'    => 'Bedst samlet',
 			'reviews' => [],
-			'verdict' => 'Let backpackingtelt med god plads og komfort til to.',
+			'verdict' => 'Det rummelige letvægtstelt: 1780 g pakket, næsten lodrette vægge og opsætning med én hånd.',
 			'why'     => <<<'HTML'
-<p>Dagger OSMO 2P er det gode kompromis: let nok til lange ture og med plads nok til at to kan være der i regnvejr.</p>
+<p>NEMO Dagger OSMO 2P er for jer, der vil gå let, men ikke vil gå på kompromis med pladsen. Pakket vejer teltet 1780 g, og det kan komme ned på 1510 g. Til gengæld får I et telt, hvor stængerne rejser væggene næsten lodret, så der er mere luft over hovedet end i mange telte i samme vægtklasse.</p>
+<p>De forbøjede, farvekodede stænger sidder på et nav og klikkes i farvemærkede punkter, så teltet står hurtigt, også i mørke. Med Axial-hjørnerne kan du spænde dugen med én hånd. OSMO-dugen er ca. 20 % stærkere end lignende stoffer i samme vægt, og teltet er bluesign-certificeret.</p>
+<p>Teltet er fritstående og pakker til 51 × 16 × 9 cm.</p>
 HTML,
-			'good'    => [ 'Vandring for to', 'Komfort' ],
-			'less'    => [ 'Lavt budget' ],
+			'good'    => [ 'Par, der vil have komfort på lange ture', 'Opsætning i mørke og blæst', 'Dig, der går op i bæredygtige materialer' ],
+			'less'    => [ 'Lavt budget', 'Dig, der vil under 1 kg' ],
 		],
 		[
 			'ean'     => '0811666038647',
@@ -58,11 +64,13 @@ HTML,
 			'name'    => 'Nemo Dragonfly OSMO 2P',
 			'role'    => 'Bedst fritstående',
 			'reviews' => [],
-			'verdict' => 'Fritstående letvægtstelt med to indgange og to apsisser.',
+			'verdict' => 'Fritstående telt til to på 1490 g med to døre, to apsisser og 102 cm siddehøjde.',
 			'why'     => <<<'HTML'
-<p>Dragonfly OSMO 2P er fritstående og har to indgange og to rummelige apsisser, så hver person har sin egen plads til oppakningen.</p>
+<p>NEMO Dragonfly OSMO 2P er for jer, der vil have et let telt, der står af sig selv. Det er fritstående, så I kan slå det op på klippe, sand eller grus og flytte det, til underlaget er helt rigtigt. Pakket vejer det 1490 g.</p>
+<p>En tværstang løfter døre og tag, så I får 102 cm siddehøjde og et næsten fladt loft. Inderteltet er 224 cm langt og 127 cm bredt ved hovedet. Hver af jer har sin egen dør og sin egen apsis, og Landing Zone-bakken kan lægges i den, I vil. OSMO-dugen har 1500 mm vandsøjle og holder sig stram i fugtigt vejr.</p>
+<p>Divvy Cube-pakposen gør det let at dele teltet mellem to rygsække.</p>
 HTML,
-			'good'    => [ 'To på tur', 'Hårdt underlag' ],
+			'good'    => [ 'To på tur, der vil have hver sin indgang', 'Klippe, sand og hårdt underlag', 'Vandring fra forår til efterår' ],
 			'less'    => [ 'Lavt budget' ],
 		],
 		[

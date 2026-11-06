@@ -19,13 +19,14 @@ HTML,
 			'name'    => 'Big Agnes Bunk House 6',
 			'role'    => 'Bedst samlet',
 			'reviews' => [],
-			'verdict' => 'Rummeligt telt til 5–6 med god ståhøjde og en stor frontapsis, der bliver jeres overdækkede opholdsrum.',
+			'verdict' => 'Fritstående telt til seks med Pressfit-aluminiumsstænger, farvekodet opsætning og en stor frontapsis.',
 			'why'     => <<<'HTML'
-<p>Big Agnes Bunk House 6 er bygget til jer, der vil have plads, ståhøjde og komfort på campingpladsen eller i en basecamp – hele sæsonen igennem. Der er plads til 5–6 personer, så hele familien eller vennegruppen kan sove under samme tag.</p>
-<p>Den store apsis foran fungerer som et overdækket opholdsrum. Her kan I sidde i tørvejr, når det regner, og have sko, tasker og madkasser stående, så soverummet holdes rent og ryddeligt. Den gode ståhøjde gør det nemt at klæde om og bevæge sig rundt uden at gå på knæ.</p>
+<p>Big Agnes Bunk House 6 er til jer, der vil have et stort telt, som er nemt at sætte op og står solidt. Konstruktionen er fritstående, så I kan flytte teltet på plads, før det pløkkes fast, og kuppelformen fordeler belastningen jævnt over stængerne.</p>
+<p>Stængerne er lette Pressfit-aluminium, og farvekodede stropper og spænder viser, hvor hver stang skal sidde – også når I ankommer sent. Oversejlet fastgøres direkte til stængerne, så dugen sidder stramt i blæst, og reflekterende barduner gør det let at gå rundt om teltet i mørke.</p>
+<p>Oversejl og bund er 75D polyester med 1.500 mm PU-belægning og tapede sømme, og den vandafvisende behandling er PFAS-fri. Dobbeltvæggen holder kondensen nede, og foran venter en stor apsis til ophold og udstyr.</p>
 HTML,
-			'good'    => [ 'Hele campingsæsonen', 'Ståhøjde og plads', 'Dig, der vil have et overdækket opholdsrum' ],
-			'less'    => [ 'Lavt budget' ],
+			'good'    => [ 'Grupper på seks', 'Nem opsætning, også i mørke', 'Tre sæsoner på campingpladsen' ],
+			'less'    => [ 'Lavt budget', 'Vintercamping – det er et tresæsonstelt' ],
 		],
 		[
 			'ean'     => '0197642979594',
@@ -33,13 +34,14 @@ HTML,
 			'name'    => 'The North Face Wawona 6P',
 			'role'    => 'Bedst til basecamp',
 			'reviews' => [],
-			'verdict' => 'Tunnelformet telt til seks med generøs loftshøjde og et stort overdækket frontområde til ophold.',
+			'verdict' => 'Telt til seks med et indertelt på 295 × 239 cm, ståhøjde i opholdsrummet og DAC-aluminiumsstænger.',
 			'why'     => <<<'HTML'
-<p>The North Face Wawona 6P er lavet til campingpladsen og basecampen, hvor plads og praktiske løsninger betyder mest. Der er plads til seks personer, og den tunnellignende konstruktion giver en generøs loftshøjde, så teltet føles luftigt og stort indvendig.</p>
-<p>Foran er der et stort overdækket område, som I kan bruge som opholdsrum. Det giver et sted at spise, spille kort eller bare sidde i læ, når vejret driller – og en plads til udstyret, så det ikke skal ligge i soverummet.</p>
+<p>The North Face Wawona 6P er til jer, der vil have plads til seks og et ordentligt sted at være, når I ikke sover. Inderteltet måler 295 × 239 cm, så der er god plads til seks liggeunderlag, og opholdsrummet foran har ståhøjde.</p>
+<p>Stængerne er DAC MX-aluminium, og oversejlet er 75D polyester med PU-coating og 1.200 mm vandsøjle, der holder vind og regn ude fra forår til efterår. De store åbninger gør det let at komme ind og ud og giver masser af luft på varme dage.</p>
+<p>Pakket vejer teltet 8,82 kg og fylder 76 × 25 cm i bagagerummet, så det er nemt at have med til basecamp eller campingplads.</p>
 HTML,
-			'good'    => [ 'Familie og venner', 'Opholdsrum i læ', 'Campingplads og basecamp' ],
-			'less'    => [ 'Ture, hvor teltet skal bæres' ],
+			'good'    => [ 'Seks personer på campingpladsen', 'Basecamp', 'Forår til efterår' ],
+			'less'    => [ 'Ture, hvor teltet skal bæres', 'Vintercamping' ],
 		],
 		[
 			'ean'     => '5703384087715',
@@ -47,13 +49,14 @@ HTML,
 			'name'    => 'Grand Canyon Helena 6',
 			'role'    => 'Bedst til prisen',
 			'reviews' => [],
-			'verdict' => 'Prisvenligt familietelt til seks fra Grand Canyon – mærket, der hører under danske Nordisk.',
+			'verdict' => 'Tunneltelt til 6–7 på 505 cm i længden med to sovekabiner og 3.000 mm vandsøjle.',
 			'why'     => <<<'HTML'
-<p>Grand Canyon Helena 6 er til familien, der vil på campingferie uden at bruge en formue på teltet. Der er plads til seks personer, så alle kan sove sammen.</p>
-<p>Grand Canyon er mærket under danske Nordisk, som er kendt for bomuldstelte og fjeldtelte. Under Grand Canyon-navnet laver de prisvenlige telte med enklere materialer og færre detaljer – så du betaler for det, en almindelig campingferie kræver, og ikke for ekstraudstyr, du ikke får brug for.</p>
+<p>Grand Canyon Helena 6 er det store, høje telt til jer, der vil have mest mulig plads for pengene. Det er bygget som et klassisk tunneltelt til 6–7 personer: Udvendigt er det 505 cm langt og 205 cm højt, og indenfor er der to adskilte sovekabiner og et meget stort opholdsrum.</p>
+<p>Fire glasfiberstænger med samlinger i letmetal føres gennem løbegange i oversejlet, og teltet rejses i én arbejdsgang. Oversejlet i PU-belagt polyester har ekstra forseglede sømme og 3.000 mm vandsøjle, og den faste bund holder til 4.000 mm. Inderteltet er åndbar taffeta-polyester med myggenet i døren.</p>
+<p>Stålpløkker og transportpose følger med. Med 18 kg er det et telt til bilferien, ikke til rygsækken.</p>
 HTML,
-			'good'    => [ 'Campingferie', 'Fornuftigt budget', 'Familiens første telt' ],
-			'less'    => [ 'Hårdt vejr på fjeldet' ],
+			'good'    => [ 'Store familier og grupper', 'Bilferie og sommercamping', 'Fornuftigt budget' ],
+			'less'    => [ 'Hyppig eller hård brug', 'Ture, hvor teltet skal bæres (18 kg)' ],
 		],
 		[
 			'ean'     => '5709388144577',
@@ -61,13 +64,14 @@ HTML,
 			'name'    => 'Easy Camp Sandland Yurt',
 			'role'    => 'Mest hygge',
 			'reviews' => [],
-			'verdict' => 'Meget rummeligt telt til 5–6 personer i hyggeligt, rundt yurt-design med moderne materialer.',
+			'verdict' => 'Rundt yurt-telt til 5–6 med 230 cm højde, store vinduer med gardiner og glamping-vimpler i kassen.',
 			'why'     => <<<'HTML'
-<p>Easy Camp Sandland Yurt er til jer, der vil have lidt glamping-stemning på campingpladsen. Teltet har den klassiske runde yurt-form, men er lavet af moderne materialer og har praktiske detaljer, der gør det nemt at bruge.</p>
-<p>Der er plads til 5–6 personer, og den runde form giver et stort, sammenhængende rum, hvor alle kan samles. Det gør teltet alsidigt: som soverum for familien, som hyggekrog i haven eller som samlingssted på festivalen.</p>
+<p>Easy Camp Sandland Yurt er til jer, der vil have glamping-stemning og ét stort, fælles rum. Den runde form giver et åbent og luftigt telt på 320 × 365 cm med 230 cm højde, så I kan stå op, spise og sove samme sted. Der er plads til 5–6 personer.</p>
+<p>Oversejlet er WeatherGuard 3000 i PU-belagt polyester med tapede sømme, 3.000 mm vandsøjle og PFAS-fri, vandafvisende behandling. Kraftige EnduraFlex-glasfiberstænger på 11 og 12,5 mm giver en solid kuppel, og bunden i polyethylen er syet fast, så fugt og snavs bliver ude.</p>
+<p>Store vinduer med gardiner giver lys og privatliv. Seks lommer og tre ophængningspunkter holder orden, og vimplerne giver teltet et festligt look. Det vejer ca. 10,6 kg og pakkes ned til 65 × 24 cm.</p>
 HTML,
-			'good'    => [ 'Glamping-stemning', 'Festival og haven', 'Lavt budget' ],
-			'less'    => [ 'Blæsende pladser' ],
+			'good'    => [ 'Glamping og længere ophold', 'Familier, der vil samles i ét rum', 'Lavt budget' ],
+			'less'    => [ 'Ture, hvor teltet skal bæres' ],
 		],
 		[
 			'ean'     => '5703384028718',
