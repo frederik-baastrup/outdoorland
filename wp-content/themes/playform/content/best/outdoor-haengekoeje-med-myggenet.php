@@ -34,13 +34,14 @@ HTML,
 			'name'    => 'Grand Canyon Bass Mosquito Hammock',
 			'role'    => 'Bedst til prisen',
 			'reviews' => [],
-			'verdict' => 'Prisvenlig hængekøje med indbygget myggenet fra Grand Canyon – mærket under danske Nordisk.',
+			'verdict' => 'Komplet hængekøje på 660 g med fastsyet myggenet, 2,5 m stropper og plads til 150 kg.',
 			'why'     => <<<'HTML'
-<p>Grand Canyon Bass Mosquito Hammock er det oplagte valg, hvis du vil prøve at sove i hængekøje uden at investere stort. Myggenettet sidder fast på hængekøjen, så du ikke skal købe og montere et net for sig.</p>
-<p>Grand Canyon er mærket under danske Nordisk, som ellers er kendt for bomuldstelte og fjeldtelte. Her har man valgt enklere materialer og færre detaljer for at holde prisen nede. Det gør Bass til en god hængekøje til haven, festivalen og de første nætter i skoven.</p>
+<p>Grand Canyon Bass Mosquito Hammock er det nemme sted at starte, hvis du vil sove i hængekøje uden at investere stort. Myggenettet er syet fast og lukkes med lynlås, så du ligger beskyttet mod myg og andre insekter og stadig har himlen over dig.</p>
+<p>Køjen er 320 cm lang og 150 cm bred i rivstærk 70D-nylon, der er let og blød at ligge i. Den kan bære op til 150 kg. Alt ophæng følger med: to karabiner, to stropper på 2,5 meter og træbeskyttere, der skåner barken. De lange stropper gør det let at hænge op, også når træerne står langt fra hinanden.</p>
+<p>Det hele vejer ca. 660 g og pakkes til Ø12 × 19 cm. Grand Canyon er Nordisks prisvenlige mærke.</p>
 HTML,
-			'good'    => [ 'Haven og festival', 'Lavt budget' ],
-			'less'    => [ 'Lange ture i regnvejr' ],
+			'good'    => [ 'Sommerture med mange myg', 'Bikepacking og lette ture', 'Lavt budget' ],
+			'less'    => [ 'Hyppigt og hårdt brug' ],
 		],
 		[
 			'ean'     => '4021504283351',

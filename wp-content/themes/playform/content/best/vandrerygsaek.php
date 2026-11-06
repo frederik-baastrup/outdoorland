@@ -34,12 +34,14 @@ HTML,
 			'name'    => 'Osprey Aether 55',
 			'role'    => 'Bedst til prisen',
 			'reviews' => [],
-			'verdict' => 'Vandrerygsæk på 55 liter fra amerikanske Osprey, der er specialiseret i vandrerygsække.',
+			'verdict' => '55 liter med justerbar ryg, bæreevne op til 27 kg og adgang til hovedrummet fra top, bund og front.',
 			'why'     => <<<'HTML'
-<p>Osprey er et af de mærker, der har specialiseret sig i vandre- og turrygsække og skiller sig ud med deres tilgang til produktudvikling og materialer. Aether 55 er en god størrelse til ture på 3–5 dage.</p>
+<p>Osprey Aether 55 er til dig, der skal bære tung oppakning på ture over flere dage. AirScape-ryggen har formstøbte skumpaneler, der sidder tæt på kroppen og lader luften cirkulere, og systemet er bygget til at bære op til 27 kg. Denne S/M-udgave passer ryglængder fra 43 til 51 cm.</p>
+<p>Med Fit-on-the-Fly kan du justere polstringen i hoftebælte og skulderstropper undervejs, uden at tage rygsækken af. Du kommer til hovedrummet gennem toppen, bunden eller en stor U-lynlås foran, så du ikke skal grave efter tingene. Der er bundrum til soveposen, dybe stretchlommer i siderne og plads til drikkesystem.</p>
+<p>Regnslaget følger med. Stoffet er bluesign-certificeret 420D-nylon uden PFC, og rygsækken vejer 2190 g.</p>
 HTML,
-			'good'    => [ 'Ture på 3–5 dage', 'God pasform' ],
-			'less'    => [ 'Ekspeditioner' ],
+			'good'    => [ 'Flerdagsture med tung oppakning', 'Dig, der vil finjustere pasformen', 'Rejser med meget bagage' ],
+			'less'    => [ 'Dagsture og lette ture, hvor 55 liter er for meget' ],
 		],
 		[
 			'ean'     => '7045952820651',

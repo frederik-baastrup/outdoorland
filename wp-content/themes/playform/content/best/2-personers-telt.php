@@ -19,7 +19,7 @@ HTML,
 			'name'    => 'NEMO Dagger OSMO 2P',
 			'role'    => 'Bedst samlet',
 			'reviews' => [],
-			'verdict' => 'Hver sin dør og hver sin apsis på ca. 1,1 m² – og 109 cm til loftet, så I begge kan sidde op.',
+			'verdict' => 'Hver sin dør, hver sin apsis på ca. 1,1 m² og 109 cm til loftet, så I begge kan sidde op.',
 			'why'     => <<<'HTML'
 <p>NEMO Dagger OSMO 2P er teltet til jer, der er afsted sammen i flere dage og vil have et rigtigt lille hjem om aftenen. Hver af jer har sin egen dør og sin egen apsis på ca. 1,1 m², så ingen skal kravle over den anden for at komme ud om natten. Med 109 cm til loftet kan I begge sidde op og spille kort, mens regnen trommer på dugen.</p>
 <p>Den nye udgave har fået højere døre og skuldre, og små stivere i apsisserne giver 22 % mere plads til rygsække og støvler. Landing Zone er en aftagelig bund, der klikkes fast i apsissen, så udstyret ligger tørt.</p>

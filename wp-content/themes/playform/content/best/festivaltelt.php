@@ -61,13 +61,14 @@ HTML,
 			'name'    => 'Grand Canyon Topeka 3',
 			'role'    => 'Mest plads for pengene',
 			'reviews' => [],
-			'verdict' => 'Prisvenligt telt til tre fra Grand Canyon, Nordisks budgetmærke – plads til tre eller to plus bagage.',
+			'verdict' => 'Kuppeltelt med 125 cm til loftet, apsis til tasker og ventilation, der holder morgenvarmen nede.',
 			'why'     => <<<'HTML'
-<p>Grand Canyon Topeka 3 er til jer, der vil have lidt ekstra albuerum på festivalen uden at betale meget. Grand Canyon er Nordisks prisvenlige mærke, hvor der er sparet på materialer og detaljer for at holde prisen nede.</p>
-<p>Med plads til tre kan I enten være tre afsted eller to, der får god plads til soveposer, tasker og tøj. Det gør teltet til et godt valg til både festival og familiens første campingture.</p>
+<p>Grand Canyon Topeka 3 er til jer, der vil have rigtig plads på festivalen uden at betale meget. Grand Canyon er Nordisks budgetmærke, hvor der er sparet på materialer og detaljer, men kvaliteten er fornuftig til en uge på campingpladsen.</p>
+<p>Med 125 cm til loftet kan I sidde op og klæde om, og bag den store fordør er en apsis til tasker og støvler. Når solen står på om morgenen, kan I rulle oversejlet op bagtil og åbne ventilationen, så luften kan strømme igennem. En regnbyge klarer oversejlet med 3000 mm vandsøjle.</p>
+<p>Stængerne hægtes i kroge på inderteltet, så teltet står hurtigt, og alt pakkes i en pose med stålpløkker.</p>
 HTML,
-			'good'    => [ 'Plads til bagage', 'Lavt budget', 'Festival for tre' ],
-			'less'    => [ 'Hårdt vejr og fjeldture' ],
+			'good'    => [ 'Festival for tre', 'To med meget bagage', 'Lavt budget' ],
+			'less'    => [ 'Dig, der skal bære teltet langt – det vejer 3900 g' ],
 		],
 	],
 	'guide'    => <<<'HTML'
