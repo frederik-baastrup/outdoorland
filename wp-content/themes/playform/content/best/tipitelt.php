@@ -19,12 +19,14 @@ HTML,
 			'name'    => 'Tentipi Onyx 7 CP',
 			'role'    => 'Bedst samlet',
 			'reviews' => [],
-			'verdict' => 'Tipitelt til friluftsliv året rundt med 4,6 meter grundplan og 270 cm højde.',
+			'verdict' => 'Helårstipi med 4,6 meter grundplan, 270 cm loftshøjde og åndbar dug i bomuld og polyester.',
 			'why'     => <<<'HTML'
-<p>Tentipi Onyx 7 CP har én central stang, et grundplan på 4,6 meter og 270 cm højde, så der er god plads til sovepladser, udstyr og socialt samvær. Dugen er i bomuldsblandingen Cotpolmex Comfort.</p>
+<p>Tentipi Onyx 7 CP er til jer, der vil bo i naturen – hele året og i al slags vejr. Den klassiske nordiske tipiform rejses om én central stang, og med et grundplan på 4,6 meter og 270 cm til toppen kan I stå oprejst og samles om maden, når vejret driver jer indenfor. Der er plads til syv sovende, men med fire til fem får I god plads til ophold og udstyr.</p>
+<p>Dugen er Tentipis Cotpolmex Comfort i bomuld og polyester, der ånder og giver et behageligt indeklima. Ventilationshætten i toppen lader dig regulere luften, og døren har myggenet til de lyse sommernætter.</p>
+<p>Barduner og pløkker følger med, mens gulv og indertelt købes separat, så I kan bygge teltet op efter behov. Pakket vejer det 13 kg og måler 62 x 26 cm.</p>
 HTML,
-			'good'    => [ 'Brug året rundt', 'Grupper og basecamp' ],
-			'less'    => [ 'Lavt budget' ],
+			'good'    => [ 'Brug året rundt', 'Familier og grupper på 4-5', 'Basecamp og lange ophold' ],
+			'less'    => [ 'Lavt budget', 'Dig, der vil have gulv med fra start' ],
 		],
 		[
 			'ean'     => '5703384023959',
@@ -32,12 +34,14 @@ HTML,
 			'name'    => 'Nordisk Alfheim 12.6 Technical Cotton',
 			'role'    => 'Bedste bomuldstipi',
 			'reviews' => [],
-			'verdict' => 'Robust lavvu i Technical Cotton med 12,6 m² grundareal.',
+			'verdict' => 'Lavvu i Nordisks Technical Cotton med 12,6 m² grundareal, 275 cm højde og minimal kondens – sommer som vinter.',
 			'why'     => <<<'HTML'
-<p>Alfheim 12.6 er en lavvu i Nordisks Technical Cotton med et grundareal på 12,6 m² og klassisk tipi-facon – et lækkert og robust telt til familien eller gruppen.</p>
+<p>Nordisk Alfheim 12.6 er den rummelige lavvu til familien eller gruppen på op til seks, der vil have et telt til både varme sommerture og krævende vinterbrug. Grundarealet er 12,6 m², diameteren 400 cm og højden 275 cm, så der er god plads til både at sove og hygge.</p>
+<p>Dugen er Technical Cotton, en blanding af 65 % polyester og 35 % bomuld. Den giver et langt bedre indeklima og meget mindre kondens end et traditionelt telt, og den tåler solen bedre end nylon. Toppen kan reguleres indefra og har myggenet, og alle bardun- og pløkfæster er ekstra forstærkede.</p>
+<p>Teltet rejses hurtigt om én midterstang i aluminium, og døren har en omvendt T-lynlås med myggenet. Du kan tilkøbe Zip-In Floor og en sovekabine. Perforerede V-pløkke i aluminium bider godt i blødt underlag.</p>
 HTML,
-			'good'    => [ 'Glamping og lange ophold', 'Godt indeklima' ],
-			'less'    => [ 'Lav vægt' ],
+			'good'    => [ 'Glamping og lange ophold', 'Godt indeklima uden kondens', 'Både sommer- og vinterture' ],
+			'less'    => [ 'Dig, der skal bære teltet langt – det vejer 13,4 kg' ],
 		],
 		[
 			'ean'     => '5703384087746',
@@ -45,12 +49,14 @@ HTML,
 			'name'    => 'Grand Canyon Indiana 8',
 			'role'    => 'Bedst til prisen',
 			'reviews' => [],
-			'verdict' => 'Rummeligt tipitelt til 8 personer fra Grand Canyon.',
+			'verdict' => 'Klokkeformet tipitelt til op til 8 personer med 3.000 mm vandsøjle – fra Nordisks prisvenlige mærke Grand Canyon.',
 			'why'     => <<<'HTML'
-<p>Indiana 8 er et rummeligt tipitelt til en fornuftig pris – godt til weekendcamping og ekstra soveplads i haven.</p>
+<p>Grand Canyon Indiana 8 er til dig, der vil have masser af plads uden at betale for et bomuldstelt. Det er et klokkeformet tipitelt med plads til op til otte personer, så det passer til familien på weekendcamping eller som ekstra soveplads til gæsterne derhjemme og i sommerhuset.</p>
+<p>Oversejlet har en vandsøjle på 3.000 mm, så I kan sove trygt, selv når sommervejret skifter.</p>
+<p>Grand Canyon er Nordisks budgetmærke, så du får plads til mange for pengene.</p>
 HTML,
-			'good'    => [ 'Weekend og festival', 'Fornuftigt budget' ],
-			'less'    => [ 'Hårdt vejr' ],
+			'good'    => [ 'Weekendcamping med familien', 'Ekstra soveplads til gæster', 'Fornuftigt budget' ],
+			'less'    => [ 'Hårdt vejr og vintercamping' ],
 		],
 		[
 			'ean'     => '7029981040433',
@@ -58,12 +64,14 @@ HTML,
 			'name'    => 'Helsport Pasvik 6-8',
 			'role'    => 'Bedst til lejrbål',
 			'reviews' => [],
-			'verdict' => 'Klassisk lavvu til 6-8 personer. Bund kan tilkøbes.',
+			'verdict' => 'Helsports letteste lavvu: kun 4,72 kg, flammehæmmende dug og plads til Helsports brændeovn eller brænder.',
 			'why'     => <<<'HTML'
-<p>Pasvik 6-8 er en klassisk lavvu fra Helsport. Uden bund er der plads til at samles om et ildsted – og vil du have bund i, kan den tilkøbes.</p>
+<p>Helsport Pasvik 6-8 er lavvuen til jer, der vil have plads til hele gruppen uden at slæbe et tungt telt. Den vejer kun 4,72 kg og pakkes ned til 65 x 22 cm, så den kan bæres i rygsækken på lange ture.</p>
+<p>Dugen er flammehæmmende, så du kan fyre op i Helsports lavvu-brændeovn eller bruge en brænder indenfor – oplagt til kolde aftener og efterårsture. Indeklimaet styres med justerbare ventiler, Helsports AirFlow II-ventilation og en top hat, som du kan regulere indefra. Den store, brede indgang har fuldt myggenet.</p>
+<p>Snorene kan rulles op og holdes på plads med elastik. Stangen følger med, mens bund skal købes separat, hvis du vil have en.</p>
 HTML,
-			'good'    => [ 'Spejdere og grupper', 'Lejrbål' ],
-			'less'    => [ 'Fast bund fra start' ],
+			'good'    => [ 'Spejdere og grupper', 'Ture med brændeovn', 'Lange ture med teltet på ryggen' ],
+			'less'    => [ 'Dig, der vil have fast bund fra start' ],
 		],
 		[
 			'ean'     => '5709388144560',
@@ -71,11 +79,12 @@ HTML,
 			'name'    => 'Easy Camp Rands Tipi',
 			'role'    => 'Billigst',
 			'reviews' => [],
-			'verdict' => 'Tipitelt til op til 8 personer til en lav pris.',
+			'verdict' => 'Rummeligt tipitelt til op til 8 personer fra Easy Camp – klassisk form og moderne materialer til en lav pris.',
 			'why'     => <<<'HTML'
-<p>Easy Camp Rands Tipi er den billige vej ind i tipiteltets verden – godt til festival, haven og sommerens campingtur.</p>
+<p>Easy Camp Rands Tipi er den billige vej ind i tipiteltets verden. Det kombinerer den klassiske tipiform med moderne materialer og gennemtænkte detaljer, så det fungerer til både campingturen, glamping i haven og andre eventyr udendørs.</p>
+<p>Der er plads til op til otte personer, så hele familien eller vennegruppen kan sove under samme dug.</p>
 HTML,
-			'good'    => [ 'Lavt budget', 'Festival' ],
+			'good'    => [ 'Lavt budget', 'Festival og havecamping', 'Glamping' ],
 			'less'    => [ 'Vintercamping' ],
 		],
 	],

@@ -19,12 +19,13 @@ HTML,
 			'name'    => 'Grand Canyon Robson 2',
 			'role'    => 'Bedst samlet',
 			'reviews' => [],
-			'verdict' => 'Prisgunstigt 2-personers telt fra Nordisks mærke Grand Canyon.',
+			'verdict' => 'Let tunneltelt til to fra Nordisks budgetmærke Grand Canyon – med 3.000 mm vandsøjle og apsis til bagagen.',
 			'why'     => <<<'HTML'
-<p>Robson 2 er et prisvenligt telt, hvor der er sparet på detaljerne, men ikke på holdbarheden – så det kan bruges igen efter festivalen.</p>
+<p>Grand Canyon Robson 2 er til jer, der vil have et ordentligt telt til festivalen, som også kan holde til weekendturene bagefter. Grand Canyon er Nordisks prisvenlige mærke: Der er sparet på materialer og detaljer for at holde prisen nede.</p>
+<p>Teltet er et let tunneltelt med ét sovekammer til to personer. Oversejlet har en vandsøjle på 3.000 mm, så et festivalregnvejr ikke behøver at ødelægge natten. Foran er en apsis med løs bund, hvor I kan stille støvler, tasker og køletaske i læ. Ventilationsåbningerne i oversejlet lufter ud, så der ikke bliver så klamt indenfor om morgenen.</p>
 HTML,
-			'good'    => [ 'Festival for to', 'Weekendture bagefter' ],
-			'less'    => [ 'Fjeldture' ],
+			'good'    => [ 'Festival for to', 'Weekendture efter festivalen', 'Dig, der vil have god vandsøjle for pengene' ],
+			'less'    => [ 'Fjeldture og hårdt vejr' ],
 		],
 		[
 			'ean'     => '4001690102902',
@@ -32,12 +33,13 @@ HTML,
 			'name'    => 'High Peak Vision 3 Pop Up',
 			'role'    => 'Hurtigst at slå op',
 			'reviews' => [],
-			'verdict' => 'Kompakt pop up-telt til 2-3 personer med vandsøjle på 2000 mm.',
+			'verdict' => 'Kompakt pop up-telt til 2-3 personer, der står klar på ingen tid, når I ankommer til festivalpladsen.',
 			'why'     => <<<'HTML'
-<p>Vision 3 er et pop up-telt, der næsten slår sig selv op. Der er plads til 2-3 personer og en vandsøjle på 2000 mm.</p>
+<p>High Peak Vision 3 er teltet til dig, der hellere vil i gang med festen end bruge tid på stænger og vejledninger. Som pop up-telt folder det sig næsten selv ud, så du hurtigt kan pløkke det fast og komme videre.</p>
+<p>Der er plads til to personer med bagage eller tre, der ligger tæt. Teltet er kompakt, så det er nemt at have med i bilen eller på vej fra parkeringspladsen til campingområdet.</p>
 HTML,
-			'good'    => [ 'Hurtig opsætning', 'Festival' ],
-			'less'    => [ 'Lange ture' ],
+			'good'    => [ 'Hurtig opsætning', 'Festival og weekendcamping', 'Dig, der aldrig har slået telt op før' ],
+			'less'    => [ 'Lange ture med teltet på ryggen' ],
 		],
 		[
 			'ean'     => '4001690101646',
@@ -45,12 +47,13 @@ HTML,
 			'name'    => 'High Peak Monodome XL',
 			'role'    => 'Billigst',
 			'reviews' => [],
-			'verdict' => 'Klassisk 4-personers kuppeltelt med vandsøjle på 1500 mm.',
+			'verdict' => 'Klassisk kuppeltelt til fire personer fra High Peak – det billigste valg til festival og camping.',
 			'why'     => <<<'HTML'
-<p>Monodome XL er det helt billige kuppeltelt til fire. Vandsøjlen på 1500 mm er bedst til godt vejr.</p>
+<p>High Peak Monodome XL er det oplagte valg, når budgettet er stramt, men der skal være plads til hele vennegruppen. Det er et klassisk kuppeltelt til fire personer, lavet til festival og camping.</p>
+<p>Kuppelformen gør teltet enkelt at slå op, og det står af sig selv, så du kan flytte det rundt, før det bliver pløkket fast. Vandsøjlen på 1500 mm klarer sig bedst i en sommer med pænt vejr – tjek prognosen, og tag eventuelt en ekstra presenning med.</p>
 HTML,
-			'good'    => [ 'Meget lavt budget', 'Vennegruppen' ],
-			'less'    => [ 'Meget regn' ],
+			'good'    => [ 'Meget lavt budget', 'Vennegruppen på festival', 'Sommercamping i godt vejr' ],
+			'less'    => [ 'Mange dage med kraftig regn' ],
 		],
 		[
 			'ean'     => '5703384087647',
@@ -58,12 +61,13 @@ HTML,
 			'name'    => 'Grand Canyon Topeka 3',
 			'role'    => 'Mest plads for pengene',
 			'reviews' => [],
-			'verdict' => 'Prisgunstigt 3-personers telt.',
+			'verdict' => 'Prisvenligt telt til tre fra Grand Canyon, Nordisks budgetmærke – plads til tre eller to plus bagage.',
 			'why'     => <<<'HTML'
-<p>Topeka 3 giver plads til tre – eller to og al bagagen – til en lav pris.</p>
+<p>Grand Canyon Topeka 3 er til jer, der vil have lidt ekstra albuerum på festivalen uden at betale meget. Grand Canyon er Nordisks prisvenlige mærke, hvor der er sparet på materialer og detaljer for at holde prisen nede.</p>
+<p>Med plads til tre kan I enten være tre afsted eller to, der får god plads til soveposer, tasker og tøj. Det gør teltet til et godt valg til både festival og familiens første campingture.</p>
 HTML,
-			'good'    => [ 'Plads til bagage', 'Lavt budget' ],
-			'less'    => [ 'Hårdt vejr' ],
+			'good'    => [ 'Plads til bagage', 'Lavt budget', 'Festival for tre' ],
+			'less'    => [ 'Hårdt vejr og fjeldture' ],
 		],
 	],
 	'guide'    => <<<'HTML'
