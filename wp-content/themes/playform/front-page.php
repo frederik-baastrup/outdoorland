@@ -30,7 +30,7 @@ function playform_front_products( string $which ): array {
 			$base['tax_query'] = [ [ 'taxonomy' => 'product_cat', 'field' => 'slug', 'terms' => array_column( playform_menu_spec(), 0 ) ] ];
 		} else {
 			// "Populære": telte, soveposer, rygsække og vandrestøvler (god kurvstørrelse), blandet hver dag.
-			$base['tax_query']    = [ [ 'taxonomy' => 'product_cat', 'field' => 'slug', 'terms' => [ 'telte', 'soveposer', 'vandrerygsaekke', 'vandrestoevler', 'jakker' ] ] ];
+			$base['tax_query']    = [ [ 'taxonomy' => 'product_cat', 'field' => 'slug', 'terms' => [ 'telte', 'soveposer', 'vandrerygsaekke', 'vandrestoevler', 'liggeunderlag' ] ] ];
 			$base['meta_query'][] = [ 'key' => '_price', 'value' => 500, 'compare' => '>=', 'type' => 'NUMERIC' ];
 			$base['orderby']      = 'rand';
 		}
@@ -83,11 +83,11 @@ $hero = [
 	[ 'slug' => 'camping', 'title' => 'Camping', 'big' => true, 'subs' => [ [ 'Telte', [ 'sub' => 'telte' ] ], [ 'Soveposer', [ 'sub' => 'soveposer' ] ], [ 'Liggeunderlag', [ 'sub' => 'liggeunderlag' ] ], [ 'Hængekøjer', [ 'sub' => 'haengekoejer' ] ] ] ],
 	[ 'slug' => 'rygsaekke', 'title' => 'Rygsække & tasker', 'subs' => [ [ 'Vandrerygsække', [ 'sub' => 'vandrerygsaekke' ] ], [ 'Dagsrygsække', [ 'sub' => 'dagsrygsaekke' ] ], [ 'Drybags', [ 'sub' => 'drybags' ] ] ] ],
 	[ 'slug' => 'fiskeri', 'title' => 'Fiskeri', 'subs' => [ [ 'Fiskestænger', [ 'sub' => 'fiskestaenger' ] ], [ 'Fiskehjul', [ 'sub' => 'fiskehjul' ] ], [ 'Endegrej', [ 'sub' => 'endegrej' ] ] ] ],
-	[ 'slug' => 'outdoortoej', 'title' => 'Outdoortøj', 'subs' => [ [ 'Jakker', [ 'sub' => 'jakker' ] ], [ 'Regntøj', [ 'sub' => 'regntoej' ] ], [ 'Fleece', [ 'sub' => 'fleece' ] ] ] ],
+	[ 'slug' => 'fodtoej', 'title' => 'Fodtøj', 'subs' => [ [ 'Vandrestøvler', [ 'sub' => 'vandrestoevler' ] ], [ 'Trailsko', [ 'sub' => 'trailsko' ] ], [ 'Gummistøvler', [ 'sub' => 'gummistoevler' ] ] ] ],
 ];
 // Desktop: det store kort til venstre og tre kort til højre. Mobil: karrusel med alle 8 hovedkategorier.
 $mob = array_values( array_filter(
-	[ 'camping', 'rygsaekke', 'outdoortoej', 'fodtoej', 'fiskeri', 'vandsport', 'jagt', 'friluftskoekken', 'udstyr' ],
+	[ 'camping', 'rygsaekke', 'fodtoej', 'fiskeri', 'vandsport', 'jagt', 'friluftskoekken', 'udstyr' ],
 	static function ( $c ) {
 		$t = get_term_by( 'slug', $c, 'product_cat' );
 		return $t && ( $t->count > 0 || get_term_children( $t->term_id, 'product_cat' ) );

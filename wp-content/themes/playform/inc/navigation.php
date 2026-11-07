@@ -133,7 +133,6 @@ function playform_menu_spec(): array {
 		[ 'camping', null ],
 		[ 'friluftskoekken', null ],
 		[ 'rygsaekke', null ],
-		[ 'outdoortoej', null ],
 		[ 'fodtoej', null ],
 		[ 'udstyr', null ],
 		[ 'fiskeri', null ],
@@ -144,7 +143,7 @@ function playform_menu_spec(): array {
 
 /** Outdoorland: små linjeikoner foran menupunkterne (vises på brede skærme). slug => ikon i playform_icon(). */
 function playform_menu_icons(): array {
-	return [ 'camping' => 'tent', 'friluftskoekken' => 'pot', 'rygsaekke' => 'backpack', 'outdoortoej' => 'jacket', 'fodtoej' => 'boot', 'udstyr' => 'flashlight', 'fiskeri' => 'fish', 'vandsport' => 'kayak', 'jagt' => 'binoculars' ];
+	return [ 'camping' => 'tent', 'friluftskoekken' => 'pot', 'rygsaekke' => 'backpack', 'fodtoej' => 'boot', 'udstyr' => 'flashlight', 'fiskeri' => 'fish', 'vandsport' => 'kayak', 'jagt' => 'binoculars' ];
 }
 
 /** Visningsnavne fra menuen (fx "Romaskiner" for kategorien "Romaskine"), slug => navn. */
@@ -155,7 +154,6 @@ function playform_menu_labels(): array {
 		'camping'          => 'Camping',
 		'friluftskoekken'  => 'Friluftskøkken',
 		'rygsaekke'        => 'Rygsække',
-		'outdoortoej'      => 'Outdoortøj',
 		'fodtoej'          => 'Fodtøj',
 		'udstyr'           => 'Udstyr',
 		'fiskeri'          => 'Fiskeri',
@@ -266,7 +264,7 @@ function playform_menu(): array {
 /** Populære kategorier, der vises i søgefeltet, før man har skrevet noget. */
 function playform_search_shortcuts(): array {
 	$out = [];
-	foreach ( [ 'telte', 'soveposer', 'vandrerygsaekke', 'vandrestoevler', 'jakker', 'pandelamper', 'stormkoekken', 'fiskestaenger' ] as $slug ) {
+	foreach ( [ 'telte', 'soveposer', 'vandrerygsaekke', 'vandrestoevler', 'liggeunderlag', 'pandelamper', 'stormkoekken', 'fiskestaenger' ] as $slug ) {
 		$t = get_term_by( 'slug', $slug, 'product_cat' );
 		if ( $t && $t->count > 0 ) {
 			$out[] = [ $t->name, get_term_link( $t ) ];

@@ -59,6 +59,44 @@ final class ImageCache {
 		return ! is_wp_error( $saved );
 	}
 
+	/**
+	 * Sletter gemte billeder af produkter, der ikke længere har et aktivt tilbud (fx en kategori, der er fjernet).
+	 * Udsolgte produkter har stadig et aktivt tilbud og beholder billedet. Frigør plads og filer (inodes) på serveren.
+	 * @return int antal slettede filer
+	 */
+	public static function purge_inactive(): int {
+		global $wpdb;
+		$t      = Offers::table();
+		$remote = (array) $wpdb->get_col(
+			$wpdb->prepare(
+				"SELECT DISTINCT m.meta_value FROM {$wpdb->postmeta} m
+				 WHERE m.meta_key = %s AND m.meta_value <> ''
+				 AND NOT EXISTS ( SELECT 1 FROM $t o WHERE o.product_id = m.post_id AND o.active = 1 )",
+				ProductSync::META_IMAGE
+			)
+		);
+		// Et billede kan deles af flere produkter: behold det, hvis et aktivt produkt bruger samme adresse.
+		$used = array_flip( (array) $wpdb->get_col(
+			$wpdb->prepare(
+				"SELECT DISTINCT m.meta_value FROM {$wpdb->postmeta} m
+				 WHERE m.meta_key = %s AND EXISTS ( SELECT 1 FROM $t o WHERE o.product_id = m.post_id AND o.active = 1 )",
+				ProductSync::META_IMAGE
+			)
+		) );
+		[ $dir ] = self::dir();
+		$n       = 0;
+		foreach ( $remote as $r ) {
+			if ( isset( $used[ $r ] ) ) {
+				continue;
+			}
+			$file = $dir . '/' . self::name( (string) $r );
+			if ( is_file( $file ) && @unlink( $file ) ) { // phpcs:ignore
+				++$n;
+			}
+		}
+		return $n;
+	}
+
 	public const HOOK = 'playform_image_cache';
 
 	/** Henter manglende billeder løbende (hvert 5. minut), så nye produkter hurtigt får et lokalt billede. */
@@ -101,6 +139,7 @@ final class ImageCache {
 				"SELECT i.post_id, i.meta_value FROM {$wpdb->postmeta} i
 				 LEFT JOIN {$wpdb->postmeta} s ON s.post_id = i.post_id AND s.meta_key = '_pf_in_stock'
 				 WHERE i.meta_key = %s AND i.meta_value <> ''
+				 AND EXISTS ( SELECT 1 FROM " . Offers::table() . " o WHERE o.product_id = i.post_id AND o.active = 1 )
 				 ORDER BY ( s.meta_value = '1' ) DESC, i.post_id DESC",
 				ProductSync::META_IMAGE
 			),

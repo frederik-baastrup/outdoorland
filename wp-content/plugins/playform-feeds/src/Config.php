@@ -107,7 +107,7 @@ final class Config {
 			'rygsaekke'       => [ 'name' => 'Rygsække & tasker', 'match' => 'rygsæk|rygsaek|backpack|daypack|vandrerygsæk|trekkingrygsæk|dagsrygsæk|turrygsæk|duffel|drybag|dry ?bag|vandtæt pose|pakkepose|kompressionspose|packing cube|bæltetaske|hoftetaske|regnslag til rygsæk|rygsækregnslag|væskeblære|hydration|camelbak|vandreryg', 'not' => 'skoletaske|skolerygsæk|skoletasker|computertaske|laptop|pc-taske|kuffert|trolley|toilettaske|pung|gymnastikpose|børnehave' ],
 			'udstyr'          => [ 'name' => 'Udstyr', 'match' => 'pandelampe|headlamp|hovedlygte|lommelygte|flashlight|lanterne|campinglampe|teltlampe|led lygte|lygte\b|kniv\b|knive\b|jagtkniv|foldekniv|outdoorkniv|bushcraft|mora(kniv)?\b|multitool|multi-tool|leatherman|victorinox|økse|\bsav\b|foldesav|kikkert|binocular|monokular|afstandsmåler|vandrestav|trekkingstav|nordic walking stav|stave\b|kompas|gps\b|pejling|førstehjælp|nødtæppe|overlevelse|survival|prepping|nødradio|powerbank|solcellepanel|solcellelader|myggemiddel|insektmiddel|myggespray|myggestift|flåttang|reparationssæt|repair|imprægnering|imprægner|nikwax|grangers|vaskemiddel|\\bwash\\b|vask & pleje|tøjvask|karabin', 'not' => 'cykellygte|cykel|køkkenkniv|kokkekniv|brødkniv|mikroskop|laboratorie|lup\b|drone|metaldetektor|skistav|ski stav|skistave|batteri\b|ledning|pære\b|filter\b|lygteholder|oplader til cykel|dykkerlygte|arbejdslampe|bilkompas' ],
 			'fodtoej'         => [ 'name' => 'Fodtøj', 'match' => 'vandrestøvle|vandrestovle|vandresko|trekkingsko|trekkingstøvle|hiking ?(boot|shoe)|trail ?sko|trailsko|trail ?runner|approach ?sko|gummistøvle|gummistovle|vinterstøvle|termostøvle|outdoorstøvle|outdoorsko|trekking ?sandal|vandresandal|fodtøj|footwear|støvler?\b|\bsko\b|\bboots?\b|gore-?tex sko|\bgtx\b.*(mid|low)|\bmid gtx|\blow gtx', 'not' => 'neopren|skisko|skistøvle|støvlespray|skosnøre|snørebånd|sål(er)?\b|indlægssål|skocreme|skovoks|skoimprægnering|hverdagssko|ballerina|stilet|pumps|sneaker(?!.*trail)|hjemmesko|tøffel|klipklap|badesandal|cykelsko|golfsko|fodboldstøvle|indendørssko|\bspray\b|skoholder|skotaske' ],
-			'outdoortoej'     => [ 'name' => 'Outdoortøj', 'match' => 'jakke|jacket|anorak|parka|regntøj|regnjakke|regnbukser|regnsæt|regnponcho|poncho|softshell|hardshell|skaljakke|fleece|mellemlag|midlayer|uldundertøj|uld ?trøje|merino|baselayer|base layer|skiundertøj|svedundertøj|ulduntertøj|\blange underbukser|inderlag|trekkingbukser|vandrebukser|outdoorbukser|turbukser|friluftsbukser|zip-?off|convertible|\bbukser\b|trousers|\bpants\b|shorts|\bvest\b|dunvest|dunjakke|\bdun\b|isoleringsjakke|primaloft|skjorte|\bshirt|t-?shirt|trøje|hoodie|\bhættetrøje|pullover|sweater|\bhue\b|\bbeanie|halsedisse|buff\b|handsker?\b|luffer|vanter|strømper|sokker|\bsocks|kasket|\bcap\b|solhat|\bhat\b|myggehat|overtræksbukser|overtræksjakke|lette lag|uldbeklædning|beklædning|\btøj\b|herre ?beklædning|dame ?beklædning|herrebeklædning|damebeklædning|jakker til|bukser til|bukser og shorts', 'not' => 'skijakke|skibukser|snowboard|cykel|løbe(tights|trøje|jakke|shorts|strømper)|tights|kjole|nederdel|undertøj til|bh\b|sports-?bh|trusser|boxershorts|badetøj|bikini|badebukser|pyjamas|nattøj|morgenkåbe|jakkesæt|habit|slips|hundejakke|hundedækken|airsoft|kampbukser|kampskjorte|militær' ],
+			// Outdoortøj er fjernet (ejerens valg 7. nov. 2026): fylder meget og ranker ikke mod de store tøjbutikker.
 		];
 	}
 
@@ -161,16 +161,6 @@ final class Config {
 				'gummistoevler'    => [ 'name' => 'Gummistøvler', 'match' => 'gummistøvle|gummistovle|rubber boot' ],
 				'vinterstoevler'   => [ 'name' => 'Vinterstøvler', 'match' => 'vinterstøvle|termostøvle|snow ?boot|winter' ],
 				'sandaler'         => [ 'name' => 'Sandaler', 'match' => 'sandal' ],
-			],
-			'outdoortoej' => [
-				'jakker'           => [ 'name' => 'Jakker', 'match' => 'jakke|jacket|anorak|parka|softshell|hardshell|isoleringsjakke|\bdun\b', 'not' => 'regnjakke|regntøj|vest' ],
-				'regntoej'         => [ 'name' => 'Regntøj', 'match' => 'regn|rain|poncho' ],
-				'bukser'           => [ 'name' => 'Bukser & shorts', 'match' => 'bukser|trousers|\bpants\b|shorts|zip-?off', 'not' => 'regn|underbukser|uld' ],
-				'fleece'           => [ 'name' => 'Fleece & mellemlag', 'match' => 'fleece|mellemlag|midlayer|trøje|hoodie|pullover|sweater' ],
-				'uldundertoej'     => [ 'name' => 'Uldundertøj & baselayer', 'match' => 'uld|merino|baselayer|base layer|skiundertøj|inderlag|underbukser' ],
-				'skjorter'         => [ 'name' => 'Skjorter & t-shirts', 'match' => 'skjorte|shirt' ],
-				'veste'            => [ 'name' => 'Veste', 'match' => '\bvest\b|dunvest' ],
-				'huer-handsker'    => [ 'name' => 'Huer, handsker & sokker', 'match' => '\bhue\b|beanie|handske|luffe|vanter|halsedisse|buff\b|strømpe|sokker|\bsocks|kasket|\bcap\b|hat\b' ],
 			],
 			'fiskeri' => [
 				'fiskestaenger'    => [ 'name' => 'Fiskestænger', 'match' => 'stang|rod\b|rods\b', 'not' => 'holder|tasker?|rør|stangholder' ],

@@ -1027,8 +1027,34 @@ add_action(
 		$res = \Playform\Feeds\Importer::reclassify();
 		update_option( 'playform_config_hash', (string) md5_file( WP_PLUGIN_DIR . '/playform-feeds/src/Config.php' ), false );
 		update_option( 'playform_reclassify_last', [ 'time' => current_time( 'mysql' ) ] + $res, false );
+		playform_remove_dropped_categories();
+		if ( method_exists( '\\Playform\\Feeds\\ImageCache', 'purge_inactive' ) ) {
+			update_option( 'playform_image_purge_last', [ 'time' => current_time( 'mysql' ), 'deleted' => \Playform\Feeds\ImageCache::purge_inactive() ], false );
+		}
 	}
 );
+
+/**
+ * Hovedkategorier, der er fjernet fra Config::categories() (fx Outdoortøj 7. nov. 2026), slettes med underkategorier,
+ * så adresserne giver 404 og playform_legacy_redirects() sender dem videre. Produkterne er allerede skjult af reclassify.
+ */
+function playform_remove_dropped_categories(): void {
+	$keep = array_keys( \Playform\Feeds\Config::categories() );
+	foreach ( [ 'outdoortoej' ] as $slug ) {
+		if ( in_array( $slug, $keep, true ) ) {
+			continue;
+		}
+		$t = get_term_by( 'slug', $slug, 'product_cat' );
+		if ( ! $t ) {
+			continue;
+		}
+		foreach ( (array) get_term_children( $t->term_id, 'product_cat' ) as $child ) {
+			wp_delete_term( (int) $child, 'product_cat' );
+		}
+		wp_delete_term( $t->term_id, 'product_cat' );
+	}
+	delete_transient( 'playform_menu' );
+}
 
 /**
  * Skjulte artikler (_pf_hidden, se content/legacy-posts.php) vises ikke i lister: Viden & guides, emnesider,

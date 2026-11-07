@@ -1,6 +1,6 @@
 # Outdoorland – projektnoter til Claude
 
-Outdoorland (outdoorland.dk) er en affiliate-side, der ligner en webshop. Den samler outdoorudstyr – camping, friluftskøkken, rygsække, outdoortøj, fodtøj, udstyr, fiskeri og jagt – fra over 30 danske shops via Partner-ads-produktfeeds. Man køber ikke på siden: "Gå til butik" sender brugeren videre til shoppen via et affiliate-link.
+Outdoorland (outdoorland.dk) er en affiliate-side, der ligner en webshop. Den samler outdoorudstyr – camping, friluftskøkken, rygsække, fodtøj, udstyr, fiskeri og jagt – fra over 30 danske shops via Partner-ads-produktfeeds. Man køber ikke på siden: "Gå til butik" sender brugeren videre til shoppen via et affiliate-link.
 
 Ejer: Frederik Baastrup (Mondae). Al tekst på siden er på dansk.
 
@@ -12,10 +12,11 @@ Alt, der er særligt for nichen, ligger i `wp-content/plugins/playform-feeds/src
 
 - `Config.php`
   - 33 shops (partnerid 14854), godkendt 5. nov. 2026. Seks programmer kræver en begrundelse og søges, når sitet er online: Outdoortid.dk, Northern Nights, Survivalstore, Jagt Jakt, Thehuntingshop, Sportdres Fiskegrej. Zeejuu (metaldetektorer) er ikke med – uden for nichen.
-  - Kategorier: `camping`, `friluftskoekken`, `rygsaekke`, `outdoortoej`, `fodtoej`, `udstyr`, `fiskeri`, `vandsport` (SurfMore + kajakker/SUP fra fiskebutikkerne), `jagt` – med underkategorier. Rækkefølgen betyder noget (specifikt udstyr før tøj).
+  - Kategorier: `camping`, `friluftskoekken`, `rygsaekke`, `fodtoej`, `udstyr`, `fiskeri`, `vandsport` (SurfMore + kajakker/SUP fra fiskebutikkerne), `jagt` – med underkategorier. Rækkefølgen betyder noget (specifikt udstyr før tøj).
   - `skip_uncategorized()` = true: varer, der ikke passer i en kategori, kommer slet ikke med (ikke "ukategoriseret").
   - `create_out_of_stock()` = false: nye, udsolgte varer oprettes ikke (tøjbutikkerne har titusindvis). Kendte varer bliver liggende som "ikke på lager".
   - `group_variants` + `variant_strip`: butikker med én række pr. størrelse/farve (Friluftsland, Outdoornu, Pro Outdoor, Friluftslageret, Wolf Tactical …) samles til ét produkt. `variant_strip` er regex, der fjerner størrelse/farve fra navnet (`Importer::strip_variant()`).
+  - **Outdoortøj er fjernet** (ejerens valg 7. nov. 2026: fyldte meget – ca. 17.000 produkter – og ranker ikke mod de store tøjbutikker). Tøj, der ikke rammer en anden kategori (jagt, fiskeri …), kommer ikke med. Efter reclassify slettes kategorien med underkategorier (`playform_remove_dropped_categories()`), billeder af produkter uden aktive tilbud slettes (`ImageCache::purge_inactive()`), og gamle adresser sendes til forsiden (`playform_legacy_redirects()`).
   - Udelukket: skydevåben, ammunition og airsoft (luftpistoler og luftgeværer er med under jagt › luftvåben – ejerens ønske, den gamle guide ranker); militær/politi; ski, løb og cykling; campingvogne; have, pool og værksted.
   - Ændres Config.php, sorteres alle tilbud igen automatisk efter udrulningen (`playform_reclassify`, `Importer::reclassify()`; også `wp playform reclassify`).
   - Testet på feedsne 5. nov. 2026: ca. 60.000 produkter på lager i kategorierne (fiskeri ca. 18.000 – meget fluebinding; tøj ca. 17.000).

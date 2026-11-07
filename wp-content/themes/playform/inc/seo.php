@@ -112,7 +112,7 @@ add_action(
 		}
 		$desc = '';
 		if ( is_front_page() ) {
-			$desc = 'Telte, soveposer, rygsække, outdoortøj, fiskegrej og jagtudstyr fra over 30 danske webshops samlet ét sted. Tjek priser og tilbud, og læs købsguides før turen.';
+			$desc = 'Telte, soveposer, rygsække, vandrestøvler, fiskegrej og jagtudstyr fra over 30 danske webshops samlet ét sted. Tjek priser og tilbud, og læs købsguides før turen.';
 		} elseif ( function_exists( 'playform_current_campaign' ) && playform_current_campaign() ) {
 			$desc = playform_campaign_page_text( playform_current_campaign() )['intro'];
 		} elseif ( playform_is_tilbud_page() ) {
