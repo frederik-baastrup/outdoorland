@@ -23,6 +23,13 @@ final class Classifier {
 		if ( is_array( $map ) ) {
 			$mapped = $map[ $cat ] ?? 'exclude';
 			// '?': butikskategorien er med, men kun vores egne regler (inkl. udelukkelser) afgør placeringen.
+			// '?:<regex>': som '?', men navnet skal også matche regex (fx kun bærbare grill fra en stor grillkategori).
+			if ( is_string( $mapped ) && str_starts_with( $mapped, '?:' ) ) {
+				if ( ! self::m( substr( $mapped, 2 ), $name ) ) {
+					return 'exclude';
+				}
+				$mapped = '?';
+			}
 			if ( '?' === $mapped ) {
 				foreach ( Config::exclude() as $pattern ) {
 					if ( self::m( $pattern, $name ) ) {

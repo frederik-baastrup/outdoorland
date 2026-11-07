@@ -28,17 +28,19 @@ HTML,
 			'less'    => [ 'Store selskaber' ],
 		],
 		[
-			'ean'     => '0742286966013',
-			'price'   => 2299,
-			'name'    => 'O-Grill 600',
-			'role'    => 'Mest grillflade',
+			'ean'     => '077924030062',
+			'price'   => 1299,
+			'name'    => 'Weber Go-Anywhere gasgrill',
+			'role'    => 'Klassikeren fra Weber',
 			'reviews' => [],
-			'verdict' => 'Lidt bredere letvægts gasgrill, 56,7 x 57,8 x 21,5 cm.',
+			'verdict' => 'Bærbar gasgrill fra Weber med regulator i kassen og 10 års garanti på låg og balje.',
 			'why'     => <<<'HTML'
-<p>O-Grill 600 er den lidt større søster til 500-modellen med mere plads til bøffer og grøntsager. Den er stadig let og nem at tage med.</p>
+<p>Weber Go-Anywhere er bygget til netop det, navnet lover: grillmad, hvor du end er. Den praktiske størrelse gør den nem at tage med på tur, og den varmer op på et øjeblik, så du ikke står og venter, når sulten melder sig ved stranden eller på campingpladsen.</p>
+<p>Håndtagene gør den nem at bære, og de har varmeskjold, så du kan flytte den uden at brænde fingrene. Regulatoren følger med i kassen, så du kan gå i gang med det samme. Grillen vejer 7,4 kg.</p>
+<p>Weber giver 10 års garanti på låg og balje, 5 år på håndtagene og 2 år på resten. Det er god ro i maven, når grillen skal tåle mange ture.</p>
 HTML,
-			'good'    => [ 'Familien på tur', 'Mere grillflade' ],
-			'less'    => [ 'Meget små pladser' ],
+			'good'    => [ 'Bilen og campingpladsen', 'Dig, der vil have lang garanti', 'Hurtig opvarmning' ],
+			'less'    => [ 'Rygsækken – den vejer 7,4 kg' ],
 		],
 		[
 			'ean'     => '6001773120531',

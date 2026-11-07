@@ -86,11 +86,28 @@ final class Config {
 			// Vandsport (SUP, kajak, våddragter, redningsveste) – vinterdelen (ski, snowboard) kommer ikke med.
 			'surfmore'         => [ 'name' => 'SurfMore', 'url' => "$b&bannerid=63626&feedid=1238" ],
 			'profgear'         => [ 'name' => 'ProfGear', 'url' => "$b&bannerid=109619&feedid=3592" ],
+			// KitchenOne (køkken, Kitzhens største feed): kun friluftsliv, bålfade og bærbare grill – vores egne regler placerer ('?').
+			'kitchenone'       => [ 'name' => 'KitchenOne.dk', 'url' => "$b&bannerid=79283&feedid=1862", 'category_map' => self::kitchenone_map() ],
 			// Proshop (elektronik, 276.000 varer): kun tre butikskategorier, og kun det, vores egne regler kan placere ('?').
 			'proshop'          => [ 'name' => 'Proshop.dk', 'url' => "$b&bannerid=67757&feedid=1399", 'category_map' => [ 'camping' => '?', 'lommelygter og pandelamper' => '?', 'kikkert' => '?' ] ],
 		];
 		$custom = get_option( 'playform_shops' );
 		return is_array( $custom ) && $custom ? $custom : $defaults;
+	}
+
+	/** KitchenOnes butikskategorier, der må komme med på Outdoorland (7. nov. 2026). */
+	private static function kitchenone_map(): array {
+		$portable = '?:transportabel|bærbar|go-?anywhere|traveler|smokey joe|o-grill|camping|nomadiq|venture|caravan|pick ?nick|picnic';
+		$map      = [];
+		foreach ( [ '', ' > bærplukkere & svampekurve > svampeknive', ' > campingudstyr', ' > campingudstyr > led-lamper', ' > campingudstyr > petroleumslamper', ' > campingudstyr > tilbehør til lanterner', ' > friluftskniv', ' > køleboks', ' > spork', ' > stormkøkken', ' > termo madkasse', ' > termokande', ' > termokopper', ' > tændstål', ' > udendørs stegepande', ' > økse' ] as $sub ) {
+			$map[ 'udendørs madlavning > friluftsliv' . $sub ] = '?';
+		}
+		$map['udendørs madlavning > grill > bålfad']                   = '?';
+		$map['udendørs madlavning > have & udemiljø > ildsted & bålfad'] = '?';
+		foreach ( [ 'gasgrill', 'kulgrill', 'elgrill', 'grilltaske' ] as $g ) {
+			$map[ 'udendørs madlavning > grill > ' . $g ] = $portable;
+		}
+		return $map;
 	}
 
 	/**
