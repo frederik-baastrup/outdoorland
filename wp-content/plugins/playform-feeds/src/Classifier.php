@@ -22,6 +22,15 @@ final class Classifier {
 		$map  = $shop['category_map'] ?? null;
 		if ( is_array( $map ) ) {
 			$mapped = $map[ $cat ] ?? 'exclude';
+			// '?': butikskategorien er med, men kun vores egne regler (inkl. udelukkelser) afgør placeringen.
+			if ( '?' === $mapped ) {
+				foreach ( Config::exclude() as $pattern ) {
+					if ( self::m( $pattern, $name ) ) {
+						return 'exclude';
+					}
+				}
+				return self::first_match( $match_name ) ?: 'exclude';
+			}
 			// 'refine': butikken sælger kun nichens varer – vores egne regler må placere varen mere præcist
 			// (fx en pizzasaks i butikkens "Andet pizzaudstyr"), ellers bruges butikkens kategori.
 			if ( 'exclude' !== $mapped && ! empty( $shop['refine'] ) ) {
