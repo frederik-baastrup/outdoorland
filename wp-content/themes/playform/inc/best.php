@@ -97,7 +97,7 @@ add_shortcode(
 			$sel = 'produktdata';
 		}
 		return '<aside class="method"><span class="method__title">' . playform_icon( 'check', 16, 1.6 ) . 'Sådan har vi valgt</span>'
-			. '<p>' . $how . ' <a href="' . esc_url( playform_method_url() ) . '">Sådan vælger vi produkter</a>.</p>'
+			. '<p>' . $how . ' Udvælgelsen og teksten er skrevet med AI-hjælp ud fra butikkernes produktdata, og alle tal er tjekket mod dem.' . ' <a href="' . esc_url( playform_method_url() ) . '">Sådan vælger vi produkter</a>.</p>'
 			. '<p>Vi opdaterer priser og lagerstatus to gange i døgnet. Handler du via vores links, modtager vi provision, men valgene er truffet ud fra ' . $sel . ' og ikke ud fra provision. <a href="' . $money . '">Sådan tjener vi penge</a>.</p></aside>';
 	}
 );

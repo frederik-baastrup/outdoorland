@@ -32,6 +32,9 @@ return [
 <h2>Uden betydning for valget</h2>
 <p>Provisionen, hvilken butik der sælger, og betaling for en plads. Ingen kan købe sig ind i vores guides. Læs, <a href="/saadan-tjener-vi-penge/">hvordan Outdoorland tjener penge</a>.</p>
 
+<h2>Sådan indgår AI</h2>
+<p>Vi bruger AI til at gennemgå de mange tusinde produkter fra butikkerne, finde anmeldelser af præcis samme model og skrive guider og produkttekster. AI'en arbejder kun med butikkernes egne oplysninger og anmeldelserne – den må ikke opfinde specifikationer, og et automatisk faktatjek sikrer, at alle tal findes i butikkens data. Frederik Baastrup er ansvarlig redaktør og retter fejl, så snart vi hører om dem.</p>
+
 <h2>Hvad vi ikke kan bedømme</h2>
 <p>Hvordan et telt står i stiv kuling, om lynlåsen holder til den tiende tur, og hvordan en sovepose føles klokken fire om natten – det viser kun brug. Tag gerne et kig på andres erfaringer, og tjek altid pris og levering hos butikken, før du køber.</p>
 
