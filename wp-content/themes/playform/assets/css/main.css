@@ -9,7 +9,7 @@
 	--soft: #F4F4F1;
 	--img: #F1F1EE;
 	--tile: #EDECE8;
-	--accent: #627358; /* Outdoorland-grøn fra logoet (logo v3, 5. nov. 2026) */
+	--accent: #47763A; /* Outdoorland-grøn: klarere grøn end logoets #627358 til knapper og accenter (ejerens ønske 7. nov. 2026) */
 	--on-accent: #FFFFFF;
 	--sale: #B42318;
 	--ok: #1E9E4A;
@@ -624,7 +624,7 @@ a.usp__item:hover b { text-decoration: underline; text-underline-offset: 3px; }
 
 /* Artikelheader: lille kicker, forfatter og fakta på én fin linje */
 .kicker { display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px 5px 10px; border: 1px solid var(--line-2); border-radius: 999px; font-size: 11.5px; font-weight: 600; letter-spacing: .6px; text-transform: uppercase; color: var(--ink); }
-.kicker i { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 3px rgba(98,115,88,.15); }
+.kicker i { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 3px rgba(71,118,58,.15); }
 .guide__meta { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 28px; width: 100%; max-width: 860px; margin-top: 8px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted-2); }
 .guide__author { display: inline-flex; align-items: center; gap: 12px; }
 .guide__author > span { display: flex; flex-direction: column; gap: 2px; line-height: 1.2; }
@@ -654,7 +654,7 @@ a.usp__item:hover b { text-decoration: underline; text-underline-offset: 3px; }
 /* Viden & guides: fremhævet guide + gitter */
 .guides-index { padding-top: 48px; }
 .kicker--sm { padding: 4px 10px 3px 8px; font-size: 10.5px; }
-.kicker--sm i { width: 5px; height: 5px; box-shadow: 0 0 0 2px rgba(98,115,88,.15); }
+.kicker--sm i { width: 5px; height: 5px; box-shadow: 0 0 0 2px rgba(71,118,58,.15); }
 .gcard { display: flex; flex-direction: column; gap: 16px; }
 .gcard__img { display: block; aspect-ratio: 3 / 2; border-radius: var(--r-l); overflow: hidden; background: var(--tile); }
 .gcard__img img { width: 100%; height: 100%; object-fit: cover; transition: transform .7s cubic-bezier(.2,.7,.2,1); }
@@ -813,7 +813,7 @@ ul.guide__facts { display: inline-flex; flex-wrap: wrap; align-items: center; ma
 .guide__head .crumbs { margin-bottom: 4px; }
 .byline__txt b span { font-weight: 400; color: var(--muted-2); }
 .guide__cat { display: inline-flex; align-items: center; gap: 8px; font-weight: 600; color: var(--ink); }
-.guide__cat i { width: 6px; height: 6px; margin: 0 2px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 3px rgba(98,115,88,.15); }
+.guide__cat i { width: 6px; height: 6px; margin: 0 2px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 3px rgba(71,118,58,.15); }
 .guide__cat:hover { text-decoration: underline; text-underline-offset: 3px; }
 @media (min-width: 1081px) {
 	.guide__head { max-width: 1080px; }
@@ -1123,8 +1123,8 @@ ul.guide__facts { display: inline-flex; flex-wrap: wrap; align-items: center; ma
 @media (max-width: 760px) { .rel { margin: 24px 0 44px; padding-top: 18px; } .rel__title { font-size: 16px; margin-bottom: 12px; } .rel__col a { padding: 5px 11px; font-size: 13px; } }
 
 /* Købsknappen i accentfarven (fra logoet): den vigtigste handling skal skille sig ud fra resten af siden */
-.btn-shop { background: var(--accent); color: var(--on-accent); border: 0; box-shadow: 0 1px 0 rgba(0,0,0,.06), 0 6px 16px rgba(98,115,88,.22); }
-.btn-shop:hover, .btn-shop:focus-visible { background: #B3212C; color: var(--on-accent); }
+.btn-shop { background: var(--accent); color: var(--on-accent); border: 0; box-shadow: 0 1px 0 rgba(0,0,0,.06), 0 6px 16px rgba(71,118,58,.22); }
+.btn-shop:hover, .btn-shop:focus-visible { background: #3C6630; color: var(--on-accent); }
 .btn-shop svg { color: inherit; }
 
 /* Artikelhoved: kompakt og i samme skriftstørrelse */
@@ -1429,8 +1429,8 @@ ul.guide__facts { display: inline-flex; flex-wrap: wrap; align-items: center; ma
 .campaign-bar { background: var(--forest); }
 .campaign-bar__track, .campaign-bar__track:hover, .campaign-bar__track:focus { color: #DDE3D5; }
 .campaign-bar__item i { background: var(--sage); }
-.campaign-bar__btn { background: #F1F3EE; color: var(--forest); }
-.campaign-bar__btn:hover, .campaign-bar__btn:focus-visible { background: #fff; color: var(--forest); }
+.campaign-bar__btn { background: var(--accent); color: #fff; }
+.campaign-bar__btn:hover, .campaign-bar__btn:focus-visible { background: #3C6630; color: #fff; }
 
 /* Menuen: skovgrønne links med grøn understregning og hover. */
 .mm__link { color: var(--forest-2); transition: color .2s ease; }
@@ -1533,3 +1533,10 @@ body { background: #FAFAF6; }
 /* Produktside: Sammenlign priser, Prishistorik, Om produktet og Specifikationer samme størrelse som "Lignende …" */
 .two h2 { font-size: 30px; }
 @media (max-width: 900px) { .two h2 { font-size: 24px; } }
+
+/* Outdoorland: grøn som primær knapfarve (ejerens ønske 7. nov. 2026). */
+.btn, .cc__btn--solid { background: var(--accent); border-color: var(--accent); color: #fff; }
+.btn:hover, .btn:focus-visible, .cc__btn--solid:hover { background: #3C6630; border-color: #3C6630; color: #fff; }
+.btn-out:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
+.offer--best .btn-out { border-color: var(--accent); background: var(--accent); color: #fff; }
+.offer--best .btn-out:hover { border-color: #3C6630; background: #3C6630; }
