@@ -87,16 +87,16 @@ add_shortcode(
 		$picks = (array) get_post_meta( get_the_ID(), '_pf_picks', true );
 		$with  = count( array_filter( $picks, static fn( $p ) => ! empty( $p['reviews'] ) ) );
 		if ( $picks && $with === count( $picks ) ) {
-			$how = 'Valgene hviler på uafhængige anmeldelser fra andre medier – du finder linkene ved hvert produkt – og på specifikationer, pris og garanti fra butikkerne.';
+			$how = 'Vi har ikke haft produkterne til test selv. Valgene hviler på uafhængige anmeldelser fra andre medier – du finder linkene ved hvert produkt – og på specifikationer, pris og garanti fra butikkerne.';
 			$sel = 'anmeldelser og produktdata';
 		} elseif ( $with > 0 ) {
-			$how = 'De produkter, som uafhængige medier har anmeldt, linker vi til anmeldelserne af. De øvrige har vi vurderet ud fra specifikationer, pris og garanti fra butikkerne, og det fremgår ved produktet.';
+			$how = 'Vi har ikke haft produkterne til test selv. De produkter, som uafhængige medier har anmeldt, linker vi til anmeldelserne af. De øvrige har vi vurderet ud fra specifikationer, pris og garanti fra butikkerne, og det fremgår ved produktet.';
 			$sel = 'anmeldelser og produktdata';
 		} else {
-			$how = 'Valgene er vores egen vurdering, bygget på specifikationer, materialer, pris og garanti fra butikkerne.';
+			$how = 'Vi har ikke haft produkterne til test selv. Valgene er vores egen vurdering, bygget på specifikationer, materialer, pris og garanti fra butikkerne.';
 			$sel = 'produktdata';
 		}
-		return '<aside class="method"><span class="method__kicker">Sådan har vi valgt</span><strong class="method__title">Vi har ikke testet udstyret selv</strong>'
+		return '<aside class="method"><span class="method__title">' . playform_icon( 'check', 16, 1.6 ) . 'Sådan har vi valgt</span>'
 			. '<p>' . $how . ' <a href="' . esc_url( playform_method_url() ) . '">Sådan vælger vi produkter</a>.</p>'
 			. '<p>Vi opdaterer priser og lagerstatus to gange i døgnet. Handler du via vores links, modtager vi provision, men valgene er truffet ud fra ' . $sel . ' og ikke ud fra provision. <a href="' . $money . '">Sådan tjener vi penge</a>.</p></aside>';
 	}
