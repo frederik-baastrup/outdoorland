@@ -404,6 +404,8 @@ function playform_legacy_redirects(): array {
 		'bedste-luftmadras-test' => '/bedste-luftmadras/',
 		// Sider og kategorier fra det gamle site
 		'outdoor-butikker'      => '/vores-butikker/',
+		// Købsguides uden produkter i feedsne, fjernet 7. nov. 2026 (ejerens valg)
+		'baalhytte' => '/baalfad/', 'shelter' => '/camping/tarp-shelter/', 'uv-telt-baby' => '/camping/telte/', 'parasol-firkantet' => '/', 'parasol-med-tilt' => '/', 'terrassevarmer' => '/udendoers-pejs-med-skorsten/',
 		// Outdoortøj er fjernet (7. nov. 2026) – kategori og underkategorier sendes til forsiden
 		'outdoortoej' => '/', 'outdoortoej/jakker' => '/', 'outdoortoej/regntoej' => '/', 'outdoortoej/bukser' => '/', 'outdoortoej/fleece' => '/', 'outdoortoej/uldundertoej' => '/', 'outdoortoej/skjorter' => '/', 'outdoortoej/veste' => '/', 'outdoortoej/huer-handsker' => '/', 'outdoortoej/tilbud' => '/tilbud/',
 		'blog'                  => '/viden/',
