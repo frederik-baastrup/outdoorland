@@ -502,6 +502,10 @@ function playform_seed_best(): void {
 			'post_category' => $cat ? [ (int) $cat->term_id ] : [],
 			'post_author'   => $author ? (int) $author[0] : 1,
 		];
+		if ( ! empty( $a['date'] ) ) { // oprindelig udgivelsesdato fra det gamle site
+			$data['post_date']     = $a['date'];
+			$data['post_date_gmt'] = get_gmt_from_date( $a['date'] );
+		}
 		if ( $existing ) {
 			$post = $existing[0];
 			// En gammel artikel, der er flyttet 1:1 fra det gamle site, erstattes af den omskrevne guide på samme adresse.
