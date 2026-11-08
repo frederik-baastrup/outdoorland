@@ -6,11 +6,11 @@ defined( 'ABSPATH' ) || exit;
 
 return [
 	'slug'     => 'tunneltelt',
-	'title'    => 'Tunneltelt: Vores bud på de 4 bedste – meget plads for vægten',
-	'excerpt'  => 'Tunnelteltet giver mest plads for vægten. Her er vores bud på de 4 bedste tunneltelte fra danske butikker.',
+	'title'    => 'Tunneltelt: Vores bud på de 5 bedste – meget plads for vægten',
+	'excerpt'  => 'Tunnelteltet giver mest plads for vægten. Her er vores bud på de 5 bedste tunneltelte fra de butikker, vi samarbejder med.',
 	'more_cat' => 'telte',
 	'intro'    => <<<'HTML'
-<p>Et tunneltelt har parallelle buer, der danner en tunnel. Det giver meget indvendig plads og høje vægge i forhold til vægten – derfor er tunnelteltet populært på både vandreture og campingferien.</p><p>Herunder er vores bud på de 4 bedste tunneltelte hos danske butikker lige nu.</p>
+<p>Et tunneltelt har parallelle buer, der danner en tunnel. Det giver meget indvendig plads og høje vægge i forhold til vægten – derfor er tunnelteltet populært på både vandreture og campingferien.</p><p>Herunder er vores bud på de 5 bedste tunneltelte hos de butikker, vi samarbejder med.</p>
 HTML,
 	'picks'    => [
 		[
@@ -72,6 +72,21 @@ HTML,
 HTML,
 			'good'    => [ 'Familiecamping', 'Opholdsrum i læ', 'Basecamp i flere dage' ],
 			'less'    => [ 'Hårdt underlag – teltet er ikke fritstående' ],
+		],
+		[
+			'ean'     => '5709388144935',
+			'price'   => 1121,
+			'name'    => 'Robens Starlight 1 EXP',
+			'role'    => 'Bedst til én person',
+			'reviews' => [],
+			'verdict' => 'Kompakt solo-tunneltelt med mindst 5000 mm vandsøjle og en rummelig apsis til grej og madlavning i læ.',
+			'why'     => <<<'HTML'
+<p>Robens Starlight 1 EXP er tunnelteltet til dig, der tager på tur alene – til fods, på cykel eller i kano – og vil have et pålideligt telt med lille pakkevolumen. En lang midterbue og en kort stang i hvert hjørne giver mere plads indenfor, og farvekodede stænger i 7001 T6-aluminium gør teltet hurtigt at rejse. Lad inderteltet hænge i, så rejses det hele på én gang.</p>
+<p>Oversejlet i HydroTex ripstop-polyester har forseglede sømme og mindst 5000 mm vandsøjle, og bunden klarer 10000 mm. Bag den store sidedør er en rummelig apsis til rygsæk og støvler – og til forsigtig madlavning, når det regner. To ventilationsåbninger holder kondensen nede.</p>
+<p>Myggenet i døren, lommer og en loftssnor til lampen gør teltet nemt at bo i. Aluminiumspløkker og pakkepose følger med.</p>
+HTML,
+			'good'    => [ 'Soloture til fods, på cykel og i kano', 'Regnvejr', 'Dit første solotelt' ],
+			'less'    => [ 'To personer', 'Hårdt underlag – teltet skal pløkkes ud' ],
 		],
 	],
 	'guide'    => <<<'HTML'

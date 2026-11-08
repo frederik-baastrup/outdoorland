@@ -6,11 +6,11 @@ defined( 'ABSPATH' ) || exit;
 
 return [
 	'slug'     => '5-personers-telt',
-	'title'    => '5 personers telt: Vores bud på de 4 bedste telte til 5 mand',
-	'excerpt'  => 'Fem personer, ét telt. Her er vores bud på de 4 bedste 5-personers telte fra danske butikker – til familien, festivalen og den lange campingferie.',
+	'title'    => '5 personers telt: Vores bud på de 5 bedste telte til 5 mand',
+	'excerpt'  => 'Fem personer, ét telt. Her er vores bud på de 5 bedste 5-personers telte fra de butikker, vi samarbejder med – til familien, festivalen og den lange campingferie.',
 	'more_cat' => 'telte',
 	'intro'    => <<<'HTML'
-<p>Et 5 personers telt er et godt valg for familien med tre børn – eller for vennerne, der vil på festival sammen. Der er plads nok til at sove, og de bedste modeller har både ståhøjde og et rum til at samles i.</p><p>Herunder er vores bud på de 4 bedste telte til fem personer hos danske butikker lige nu.</p>
+<p>Et 5 personers telt er et godt valg for familien med tre børn – eller for vennerne, der vil på festival sammen. Der er plads nok til at sove, og de bedste modeller har både ståhøjde og et rum til at samles i.</p><p>Herunder er vores bud på de 5 bedste telte til fem personer hos de butikker, vi samarbejder med.</p>
 HTML,
 	'picks'    => [
 		[
@@ -72,6 +72,21 @@ HTML,
 HTML,
 			'good'    => [ 'Bushcraft og vinterlejr', 'Ture med teltovn', '3–4 personer med udstyr' ],
 			'less'    => [ 'Ture, hvor teltet skal bæres – det vejer ca. 20 kg' ],
+		],
+		[
+			'ean'     => '4001690115667',
+			'price'   => 1792,
+			'name'    => 'High Peak Paros 5',
+			'role'    => 'Lavest pris',
+			'reviews' => [],
+			'verdict' => 'Enkelt familietelt til fem fra High Peak med 4000 mm vandsøjle – guidens billigste bud.',
+			'why'     => <<<'HTML'
+<p>High Peak Paros 5 er til familien, der vil afsted på telttur uden at gøre det til en stor investering. Det er et funktionelt familietelt bygget til fem personer, så hele familien kan sove samlet i ét telt.</p>
+<p>Det vigtigste tal er vandsøjlen på 4000 mm. Den ligger over det, vi anbefaler til dansk vejr i guiden herunder, så I kan tage afsted med god samvittighed, selv om prognosen viser byger.</p>
+<p>Paros 5 er det enkle valg i guiden. Skal teltet kunne mere – fx lufttelt med mørklagte soverum eller polycotton, der tåler en teltovn – finder du det højere oppe på listen. Vil I bare have tag over hovedet til fem, er det her et godt sted at starte.</p>
+HTML,
+			'good'    => [ 'Familier på fem', 'Lavt budget', 'Sommerferie med byger' ],
+			'less'    => [ 'Dig, der vil have ekstra funktioner som luftkanaler eller teltovn' ],
 		],
 	],
 	'guide'    => <<<'HTML'

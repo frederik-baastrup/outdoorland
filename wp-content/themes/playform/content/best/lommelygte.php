@@ -6,11 +6,11 @@ defined( 'ABSPATH' ) || exit;
 
 return [
 	'slug'     => 'lommelygte',
-	'title'    => 'Lommelygte: Vores bud på de 4 bedste kraftige lommelygter',
-	'excerpt'  => 'En god lommelygte er lys i mørket på turen, i bilen og derhjemme. Her er vores bud på de 4 bedste kraftige lommelygter fra danske butikker.',
+	'title'    => 'Lommelygte: Vores bud på de 5 bedste kraftige lommelygter',
+	'excerpt'  => 'En god lommelygte er lys i mørket på turen, i bilen og derhjemme. Her er vores bud på de 5 bedste kraftige lommelygter fra de butikker, vi samarbejder med.',
 	'more_cat' => 'lommelygter',
 	'intro'    => <<<'HTML'
-<p>En god lommelygte er en af de ting, du først savner, når den mangler: når strømmen går, når bilen skal tjekkes i mørke, eller når du skal finde vej tilbage til teltet. Moderne LED-lygter er små, kraftige og ofte genopladelige.</p><p>Herunder er vores bud på de 4 bedste lommelygter hos danske butikker lige nu.</p>
+<p>En god lommelygte er en af de ting, du først savner, når den mangler: når strømmen går, når bilen skal tjekkes i mørke, eller når du skal finde vej tilbage til teltet. Moderne LED-lygter er små, kraftige og ofte genopladelige.</p><p>Herunder er vores bud på de 5 bedste lommelygter hos de butikker, vi samarbejder med.</p>
 HTML,
 	'picks'    => [
 		[
@@ -72,6 +72,21 @@ HTML,
 HTML,
 			'good'    => [ 'Nødberedskab', 'Almindelige batterier', 'Handskerum og værktøjskasse' ],
 			'less'    => [ 'Meget kraftigt lys' ],
+		],
+		[
+			'ean'     => '9010109537421',
+			'price'   => 449,
+			'name'    => 'Nitecore EDC31',
+			'role'    => 'Mest lys i lommen',
+			'reviews' => [],
+			'verdict' => 'Kompakt EDC-lygte med op til 3500 lumen og 380 meters rækkevidde – guidens kraftigste lygte.',
+			'why'     => <<<'HTML'
+<p>Nitecore EDC31 er til dig, der vil have rigtig meget lys med i lommen hver dag. EDC står for every day carry: Lygten er kompakt nok til jakken eller tasken, men giver op til 3500 lumen og når 380 meter frem. Det er mere lys og længere rækkevidde end de andre lygter i guiden.</p>
+<p>Lyset kommer fra en UHi 20 MAX-diode med Nitecores LUMIN SHIELD, og lygten har Nitecores Rapid Lock. Strømmen kommer fra et indbygget batteri på 3800 mAh, så du slipper for at købe nye batterier.</p>
+<p>Lygten er bygget som en taktisk lygte, så den passer lige så godt til vagt- og sikkerhedsarbejde som til aftenturen i skoven og bilens handskerum.</p>
+HTML,
+			'good'    => [ 'Hverdagslygte i lommen', 'Meget lys og lang rækkevidde', 'Vagt- og sikkerhedsarbejde' ],
+			'less'    => [ 'Dig, der vil kunne skifte batteriet selv' ],
 		],
 	],
 	'guide'    => <<<'HTML'

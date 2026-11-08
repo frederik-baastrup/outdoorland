@@ -6,11 +6,11 @@ defined( 'ABSPATH' ) || exit;
 
 return [
 	'slug'     => 'baalgryde-grydesaet-baal',
-	'title'    => 'Bålgryde: Vores bud på de 4 bedste gryder og grydesæt til bål',
-	'excerpt'  => 'Mad over bål smager bedst. Her er vores bud på de 4 bedste bålgryder og grydesæt fra danske butikker – i rustfrit stål og støbejern.',
+	'title'    => 'Bålgryde: Vores bud på de 5 bedste gryder og grydesæt til bål',
+	'excerpt'  => 'Mad over bål smager bedst. Her er vores bud på de 5 bedste bålgryder og grydesæt fra de butikker, vi samarbejder med – i rustfrit stål og støbejern.',
 	'more_cat' => 'kogegrej',
 	'intro'    => <<<'HTML'
-<p>Der er noget særligt ved mad lavet over åben ild: gryderet, der har simret i timevis, kaffe kogt i kedlen og pandekager på bålpanden. En god bålgryde kan tåle flammerne og bliver bedre med alderen.</p><p>Herunder er vores bud på de 4 bedste bålgryder og grydesæt hos danske butikker lige nu.</p>
+<p>Der er noget særligt ved mad lavet over åben ild: gryderet, der har simret i timevis, kaffe kogt i kedlen og pandekager på bålpanden. En god bålgryde kan tåle flammerne og bliver bedre med alderen.</p><p>Herunder er vores bud på de 5 bedste bålgryder og grydesæt hos de butikker, vi samarbejder med.</p>
 HTML,
 	'picks'    => [
 		[
@@ -72,6 +72,21 @@ HTML,
 HTML,
 			'good'    => [ 'Kaffe, vand og mad til 2–4', 'Dig med Trangia 27', 'Lavt budget' ],
 			'less'    => [ 'Gryderetter til mange' ],
+		],
+		[
+			'ean'     => '5709388130242',
+			'price'   => 450,
+			'name'    => 'Robens Carson Dutch Oven 8,2 L',
+			'role'    => 'Bedst til store grupper',
+			'reviews' => [],
+			'verdict' => 'Stor dutch oven på 8,2 liter i tykt støbejern med tre ben, så den kan stå direkte i gløderne.',
+			'why'     => <<<'HTML'
+<p>Robens Carson Dutch Oven 8,2 L er gryden til dig, der laver mad til mange over bålet. Der er plads til gryderet, chili eller suppe til hele lejren. De tre ben gør, at den kan stå direkte i ilden, og flere gryder kan stables oven på hinanden, når der skal laves flere retter på én gang.</p>
+<p>Det tykke støbejern holder godt på varmen og fordeler den jævnt. Låget har en hævet kant, så du kan lægge gløder ovenpå og få varme fra både over og under – så bliver gryden en ovn til brød. Vendt om bliver låget en stegeflade til bøffer og spejlæg. Hanken passer til en trefod, og håndtaget har fæste til en krog.</p>
+<p>Gryden måler 31,5 cm i diameter og vejer over 8 kg. Tør den af med lidt madolie efter brug, så holder jernet.</p>
+HTML,
+			'good'    => [ 'Mad til mange over bål', 'Brød og gryderetter', 'Lejrplads med trefod' ],
+			'less'    => [ 'Ture, hvor grejet skal bæres – den vejer over 8 kg' ],
 		],
 	],
 	'guide'    => <<<'HTML'

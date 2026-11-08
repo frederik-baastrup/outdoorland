@@ -6,11 +6,11 @@ defined( 'ABSPATH' ) || exit;
 
 return [
 	'slug'     => 'udendoers-pejs-med-skorsten',
-	'title'    => 'Udendørs pejs: Vores bud på de 2 bedste – og sådan vælger du',
+	'title'    => 'Udendørs pejs: Vores bud på de 3 bedste – og sådan vælger du',
 	'excerpt'  => 'En udendørs pejs med skorsten leder røgen op og væk og giver varme og stemning på terrassen. Her er vores bud på de bedste havepejse fra danske butikker – og hvad du skal tænke på.',
 	'more_cat' => 'baal',
 	'intro'    => <<<'HTML'
-<p>En udendørs pejs – også kaldet havepejs eller terrassepejs – samler ilden i et lukket brændkammer og sender røgen op gennem skorstenen. Det giver en roligere ild end et åbent bål, mindre røg i øjnene og et flot fokuspunkt på terrassen, også når aftenerne bliver kølige.</p><p>Udvalget af udendørs pejse hos de danske outdoorbutikker er lille lige nu, så her er de to modeller, vi kan anbefale – og en guide til, hvad du skal kigge efter, hvis du vil finde din egen.</p>
+<p>En udendørs pejs – også kaldet havepejs eller terrassepejs – samler ilden i et lukket brændkammer og sender røgen op gennem skorstenen. Det giver en roligere ild end et åbent bål, mindre røg i øjnene og et flot fokuspunkt på terrassen, også når aftenerne bliver kølige.</p><p>Udvalget af udendørs pejse hos de butikker, vi samarbejder med, er lille lige nu, så her er de tre modeller, vi kan anbefale – og en guide til, hvad du skal kigge efter, hvis du vil finde din egen.</p>
 HTML,
 	'picks'    => [
 		[
@@ -38,6 +38,21 @@ HTML,
 HTML,
 			'good'    => [ 'Lavt budget', 'Små terrasser' ],
 			'less'    => [ 'Dem, der vil have en lukket pejs' ],
+		],
+		[
+			'ean'     => '7058121078005',
+			'price'   => 4990,
+			'name'    => 'Espegard Udepejs 100',
+			'role'    => 'Mest gennemført',
+			'reviews' => [],
+			'verdict' => '100 cm høj udepejs i sortemaljeret stål med gnistfanger og ren forbrænding, der giver mindre røg.',
+			'why'     => <<<'HTML'
+<p>Espegard Udepejs 100 er til dig, der vil have et samlingspunkt på terrassen, som giver både varme og flammer at kigge på – året rundt. Pejsen er 100 cm høj, og den høje form leder røgen opad og ud gennem toppen, så I ikke sidder i røgen.</p>
+<p>Et modul i brændkammeret giver en ren forbrænding med god varme og meget lidt røg. Pejsen er lavet af sortemaljeret stål, der tåler meget høje temperaturer og beskytter mod fugt og rust. En gnistfanger i syrefast stål gør brugen tryggere, mens du stadig kan se flammerne.</p>
+<p>Bundristen kan tages ud, så asken er nem at fjerne, og du kan grille pølser på spyd over flammerne. Pejsen måler 61,5 × 46 cm i grundfladen og vejer 23 kg, så den står solidt.</p>
+HTML,
+			'good'    => [ 'Terrassen hele året', 'Mindre røg', 'Varme og stemning om aftenen' ],
+			'less'    => [ 'Dig, der vil flytte den tit – den vejer 23 kg' ],
 		],
 	],
 	'guide'    => <<<'HTML'

@@ -8,12 +8,12 @@ defined( 'ABSPATH' ) || exit;
 
 return [
 	'slug'     => 'luftpistol',
-	'title'    => 'Luftpistol: Vores bud på de 4 bedste – også med magasin og flere skud',
-	'excerpt'  => 'Find den rigtige luftpistol til skydning på skive i haven eller på banen. Vores bud på de 4 bedste luftpistoler fra danske butikker – fra den billige begynderpistol til kraftige PCP-pistoler med magasin.',
+	'title'    => 'Luftpistol: Vores bud på de 5 bedste – også med magasin og flere skud',
+	'excerpt'  => 'Find den rigtige luftpistol til skydning på skive i haven eller på banen. Vores bud på de 5 bedste luftpistoler fra de butikker, vi samarbejder med – fra den billige begynderpistol til kraftige PCP-pistoler med magasin.',
 	'more_cat' => 'luftvaaben',
 	'intro'    => <<<'HTML'
 <p>Skydning med luftpistol er koncentration, ro på hånden og den gode lyd, når haglet rammer midt i skiven. Uanset om du vil træne præcision i haven, tage med på skydebanen eller bare have det sjovt med familien, findes der en luftpistol, der passer.</p>
-<p>Den største forskel ligger i, hvordan pistolen får sit tryk: en fjeder- eller stempelpistol spændes før hvert skud, mens en PCP-pistol fyldes med trykluft og kan skyde mange skud i træk – ofte fra et magasin. Herunder er vores bud på de 4 bedste luftpistoler hos danske butikker lige nu.</p>
+<p>Den største forskel ligger i, hvordan pistolen får sit tryk: en fjeder- eller stempelpistol spændes før hvert skud, mens en PCP-pistol fyldes med trykluft og kan skyde mange skud i træk – ofte fra et magasin. Herunder er vores bud på de 5 bedste luftpistoler hos de butikker, vi samarbejder med.</p>
 HTML,
 	'picks'    => [
 		[
@@ -72,6 +72,21 @@ HTML,
 HTML,
 			'good'    => [ 'Begyndere', 'Gave med alt, der skal bruges' ],
 			'less'    => [ 'Skydning på længere afstand' ],
+		],
+		[
+			'ean'     => '0793676031736',
+			'price'   => 699,
+			'name'    => 'Gamo P-900',
+			'role'    => 'Lavest pris',
+			'reviews' => [],
+			'verdict' => 'Let luftpistol på 580 g i 4,5 mm med riflet løb – og hagl, skydekasse og skiver med i sættet.',
+			'why'     => <<<'HTML'
+<p>Gamo P-900 er til dig, der vil i gang med skiveskydning uden at bruge mange penge. Det er en enkeltskuds fjederstempelpistol: Du spænder den før hvert skud, og så er den klar. Der skal ikke fyldes trykluft eller købes CO2-patroner.</p>
+<p>Løbet har riffelgang, så haglet får en stabil bane, og det bageste sigte kan indstilles, så du kan justere ind efter skiven. Pistolen skyder 4,5 mm med 105 m/s og vejer kun 580 g, så den er nem at holde roligt. En aftrækkersikring gør den tryggere at håndtere.</p>
+<p>I sættet får du en dåse hagl, en skydekasse og skydeskiver, så du kan gå i gang med det samme.</p>
+HTML,
+			'good'    => [ 'Begyndere og skiveskydning', 'Lavt budget', 'Dig, der vil have alt med i sættet' ],
+			'less'    => [ 'Mange skud i træk – den lades med ét hagl ad gangen' ],
 		],
 	],
 	'guide'    => <<<'HTML'

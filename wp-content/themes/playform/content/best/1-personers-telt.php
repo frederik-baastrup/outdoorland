@@ -6,11 +6,11 @@ defined( 'ABSPATH' ) || exit;
 
 return [
 	'slug'     => '1-personers-telt',
-	'title'    => '1 personers telt: Vores bud på de 3 bedste solotelte til vandring og bikepacking',
-	'excerpt'  => 'Et godt soloteltsted er let, hurtigt at slå op og stærkt nok til vejret. Her er vores bud på de 3 bedste 1-personers telte fra danske butikker.',
+	'title'    => '1 personers telt: Vores bud på de 5 bedste solotelte til vandring og bikepacking',
+	'excerpt'  => 'Et godt soloteltsted er let, hurtigt at slå op og stærkt nok til vejret. Her er vores bud på de 5 bedste 1-personers telte fra de butikker, vi samarbejder med.',
 	'more_cat' => 'telte',
 	'intro'    => <<<'HTML'
-<p>Alene på tur betyder, at du selv bærer det hele. Et 1-personers telt skal derfor være let, pakke småt og være hurtigt at slå op, når du kommer træt frem – og samtidig give dig ly, når vejret skifter.</p><p>Herunder er vores bud på de 3 bedste soloteltsteder hos danske butikker lige nu.</p>
+<p>Alene på tur betyder, at du selv bærer det hele. Et 1-personers telt skal derfor være let, pakke småt og være hurtigt at slå op, når du kommer træt frem – og samtidig give dig ly, når vejret skifter.</p><p>Herunder er vores bud på de 5 bedste solotelte hos de butikker, vi samarbejder med.</p>
 HTML,
 	'picks'    => [
 		[
@@ -57,6 +57,36 @@ HTML,
 HTML,
 			'good'    => [ 'Bikepacking og cykelferie', 'Kanoture, hvor pakmålet tæller', 'Dig, der vil have teltet på styret' ],
 			'less'    => [ 'Rene vandreture, hvor et lettere telt er nok' ],
+		],
+		[
+			'ean'     => '5703384084264',
+			'price'   => 539,
+			'name'    => 'Grand Canyon Apex 1',
+			'role'    => 'Billigst til én',
+			'reviews' => [],
+			'verdict' => 'Enkelt solotelt fra Grand Canyon, Nordisks prisvenlige mærke – det oplagte første telt til soloturen.',
+			'why'     => <<<'HTML'
+<p>Grand Canyon Apex 1 er til dig, der vil prøve kræfter med ture alene uden at bruge mange penge på teltet. Grand Canyon er navnet, som danske Nordisk bruger til sine prisvenlige telte. Nordisk er kendt for bomuldstelte og gennemførte fjeldtelte, og i Grand Canyon-serien er der sparet på materialer og detaljer for at holde prisen nede.</p>
+<p>Teltet er lavet til én person, så du får dit eget sted at sove på den korte tur, i shelterområdet eller på weekendturen.</p>
+<p>Forskellen til de andre telte i guiden er enkel: Apex 1 er budgetvalget, mens NEMO-teltene og MSR Elixir 1 er bygget med flere tekniske detaljer.</p>
+HTML,
+			'good'    => [ 'Dit første solotelt', 'Lavt budget', 'Kortere ture alene' ],
+			'less'    => [ 'Dig, der vil have detaljerne fra de dyrere solotelte' ],
+		],
+		[
+			'ean'     => '040818136980',
+			'price'   => 1971,
+			'name'    => 'MSR Elixir 1',
+			'role'    => 'Mest plads til én',
+			'reviews' => [],
+			'verdict' => 'Fritstående og rummeligt solotelt med 99 cm til loftet – og footprint med i købet.',
+			'why'     => <<<'HTML'
+<p>MSR Elixir 1 er soloteltet til dig, der hellere vil have plads og robusthed end jagte de sidste gram. Det er et fritstående kuppeltelt, så du kan rejse det på klippe og hård jord og flytte det, til pladsen er rigtig. Farvekodede stænger i 7000-aluminium og clips gør opsætningen enkel, også alene i blæst og mørke.</p>
+<p>Inderteltet er 224 × 76 cm, og med næsten lodrette vægge og 99 cm til loftet kan du sidde op og skifte tøj. Oversejlet i ripstop-polyester holder sig stramt i regn og har 1500 mm vandsøjle, bunden 3000 mm, og sømmene er tapede. Den store indgang fører ud til en apsis til rygsæk og støvler.</p>
+<p>Footprint følger med. Vil du spare vægt, slår du kun footprint, stænger og oversejl op. Minimumsvægten er ca. 1,84 kg.</p>
+HTML,
+			'good'    => [ 'Dig, der vil have plads i soloteltet', 'Hårdt og ujævnt underlag', 'Forår, sommer og efterår' ],
+			'less'    => [ 'Ultralette ture – det vejer ca. 1,84 kg' ],
 		],
 	],
 	'guide'    => <<<'HTML'

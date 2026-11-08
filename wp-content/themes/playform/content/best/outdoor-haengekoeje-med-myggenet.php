@@ -6,11 +6,11 @@ defined( 'ABSPATH' ) || exit;
 
 return [
 	'slug'     => 'outdoor-haengekoeje-med-myggenet',
-	'title'    => 'Hængekøje med myggenet: Vores bud på de 4 bedste til haven og turen',
-	'excerpt'  => 'Sov i fred for myggene. Her er vores bud på de 4 bedste hængekøjer med myggenet og myggenet til hængekøjen fra danske butikker.',
+	'title'    => 'Hængekøje med myggenet: Vores bud på de 5 bedste til haven og turen',
+	'excerpt'  => 'Sov i fred for myggene. Her er vores bud på de 5 bedste hængekøjer med myggenet og myggenet til hængekøjen fra de butikker, vi samarbejder med.',
 	'more_cat' => 'haengekoejer',
 	'intro'    => <<<'HTML'
-<p>Der er ikke meget, der slår en nat i hængekøjen mellem to træer – medmindre myggene har fundet dig. Med et myggenet kan du sove i fred, og med et regnslag eller en tarp er du også klar til en regnbyge.</p><p>Herunder er vores bud på de 4 bedste hængekøjer med myggenet hos danske butikker lige nu.</p>
+<p>Der er ikke meget, der slår en nat i hængekøjen mellem to træer – medmindre myggene har fundet dig. Med et myggenet kan du sove i fred, og med et regnslag eller en tarp er du også klar til en regnbyge.</p><p>Herunder er vores bud på de 5 bedste hængekøjer med myggenet hos de butikker, vi samarbejder med.</p>
 HTML,
 	'picks'    => [
 		[
@@ -72,6 +72,21 @@ HTML,
 HTML,
 			'good'    => [ 'Opgradering af egen hængekøje', 'Lav vægt', 'Festival, strand og skov' ],
 			'less'    => [ 'Hængekøjer med spredestokke' ],
+		],
+		[
+			'ean'     => '610696770998',
+			'price'   => 599,
+			'name'    => 'DD Hammocks DD Frontline Hammock',
+			'role'    => 'Bedst til kølige nætter',
+			'reviews' => [],
+			'verdict' => 'Hængekøje med fastsyet myggenet, lynlås i begge sider og dobbelt bund, hvor du kan lægge et liggeunderlag ind.',
+			'why'     => <<<'HTML'
+<p>DD Frontline Hammock er til dig, der vil sove ude flere nætter og have styr på både myg og kulde. Myggenettet er syet fast og holdes ud fra ansigtet af to korte spreader-stænger, og det fine net holder også knot og mitter ude. Du kan lyne dig ind fra begge sider, og vil du ligge frit, bruger du køjen uden net.</p>
+<p>Bunden er dobbelt, så du kan skubbe et liggeunderlag eller anden isolering ind mellem lagene, når natten bliver kølig. Køjen er 2,7 × 1,4 m i ripstop-nylon, passer til personer op til ca. 195 cm og bærer op til 125 kg. Fire lommer indvendigt holder styr på småtingene.</p>
+<p>Webbing, elastikliner og pakkepose følger med, så du er klar til at hænge den op. Køjen vejer 850 g uden webbing og stænger.</p>
+HTML,
+			'good'    => [ 'Flere nætter i skoven', 'Kølige nætter med liggeunderlag', 'Høje personer op til ca. 195 cm' ],
+			'less'    => [ 'Regn – der følger ikke tarp med' ],
 		],
 	],
 	'guide'    => <<<'HTML'

@@ -6,11 +6,11 @@ defined( 'ABSPATH' ) || exit;
 
 return [
 	'slug'     => 'bedste-luftmadras',
-	'title'    => 'Luftmadras: Vores bud på de 4 bedste til telt, gæster og festival',
-	'excerpt'  => 'En god luftmadras kan redde nattesøvnen i teltet og når gæsterne kommer. Her er vores bud på de 4 bedste luftmadrasser fra danske butikker.',
+	'title'    => 'Luftmadras: Vores bud på de 5 bedste til telt, gæster og festival',
+	'excerpt'  => 'En god luftmadras kan redde nattesøvnen i teltet og når gæsterne kommer. Her er vores bud på de 5 bedste luftmadrasser fra de butikker, vi samarbejder med.',
 	'more_cat' => 'liggeunderlag',
 	'intro'    => <<<'HTML'
-<p>En god nats søvn i teltet starter med det, du ligger på. En luftmadras løfter dig væk fra den kolde, ujævne jord, og når den ikke er i brug, fylder den næsten ingenting.</p><p>Herunder er vores bud på de 4 bedste luftmadrasser hos danske butikker lige nu.</p>
+<p>En god nats søvn i teltet starter med det, du ligger på. En luftmadras løfter dig væk fra den kolde, ujævne jord, og når den ikke er i brug, fylder den næsten ingenting.</p><p>Herunder er vores bud på de 5 bedste luftmadrasser hos de butikker, vi samarbejder med.</p>
 HTML,
 	'picks'    => [
 		[
@@ -68,6 +68,21 @@ HTML,
 HTML,
 			'good'    => [ 'Lavt budget', 'Telt og sommerhus' ],
 			'less'    => [ 'Kolde nætter' ],
+		],
+		[
+			'ean'     => '4001690410335',
+			'price'   => 473,
+			'name'    => 'High Peak Dallas Twin',
+			'role'    => 'Bedst til to',
+			'reviews' => [],
+			'verdict' => 'Dobbelt luftmadras fra High Peak, så I kan sove to på én madras i teltet eller på gæsteværelset.',
+			'why'     => <<<'HTML'
+<p>High Peak Dallas Twin er til jer, der er to og hellere vil dele én madras end ligge på hver sin. Det er en dobbelt luftmadras med plads til to personer, så der ikke opstår en kold sprække mellem to enkeltmadrasser midt om natten.</p>
+<p>Madrassen er lavet til komfort, men er samtidig kompakt, når luften er lukket ud. Den fylder derfor ikke meget i bilen på vej til campingpladsen eller i skabet, når den ikke er i brug.</p>
+<p>Guidens andre modeller er alle til én person. Dallas Twin er valget, når I er et par, eller når gæsterne kommer to ad gangen.</p>
+HTML,
+			'good'    => [ 'Par i telt', 'Gæster, der kommer to', 'Campingferie i bil' ],
+			'less'    => [ 'Dig, der sover alene', 'Kolde nætter uden ekstra isolering' ],
 		],
 	],
 	'guide'    => <<<'HTML'

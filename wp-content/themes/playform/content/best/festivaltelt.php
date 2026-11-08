@@ -6,11 +6,11 @@ defined( 'ABSPATH' ) || exit;
 
 return [
 	'slug'     => 'festivaltelt',
-	'title'    => 'Festivaltelt: Vores bud på de 4 bedste billige telte til festival',
-	'excerpt'  => 'Et festivaltelt skal være billigt, hurtigt at slå op og holde sig tørt. Her er vores bud på de 4 bedste festivaltelte fra danske butikker.',
+	'title'    => 'Festivaltelt: Vores bud på de 5 bedste billige telte til festival',
+	'excerpt'  => 'Et festivaltelt skal være billigt, hurtigt at slå op og holde sig tørt. Her er vores bud på de 5 bedste festivaltelte fra de butikker, vi samarbejder med.',
 	'more_cat' => 'telte',
 	'intro'    => <<<'HTML'
-<p>På festival er teltet stedet, hvor du sover (lidt), skifter tøj og holder tasken tør. Det behøver ikke koste meget – men det skal kunne slås op hurtigt, og det skal kunne klare en regnbyge.</p><p>Herunder er vores bud på de 4 bedste festivaltelte hos danske butikker lige nu.</p>
+<p>På festival er teltet stedet, hvor du sover (lidt), skifter tøj og holder tasken tør. Det behøver ikke koste meget – men det skal kunne slås op hurtigt, og det skal kunne klare en regnbyge.</p><p>Herunder er vores bud på de 5 bedste festivaltelte hos de butikker, vi samarbejder med.</p>
 HTML,
 	'picks'    => [
 		[
@@ -69,6 +69,21 @@ HTML,
 HTML,
 			'good'    => [ 'Festival for tre', 'To med meget bagage', 'Lavt budget' ],
 			'less'    => [ 'Dig, der skal bære teltet langt – det vejer 3900 g' ],
+		],
+		[
+			'ean'     => '5709388144676',
+			'price'   => 421,
+			'name'    => 'Easy Camp Reindal 3',
+			'role'    => 'Bedst til at sove længe',
+			'reviews' => [],
+			'verdict' => 'Let tunneltelt til tre på ca. 2,9 kg med mørkere indertelt, så morgensolen ikke vækker dig så tidligt.',
+			'why'     => <<<'HTML'
+<p>Easy Camp Reindal 3 er til dig, der vil sove lidt længere på festivalen. Inderteltet er syet i et mørkere stof, så morgenlyset ikke slår lige så hårdt igennem. Der er plads til tre, og et lille fortelt giver ly til tasker og støvler.</p>
+<p>Ventilation både foran og bagved lader luften strømme igennem og holder kondensen nede, når solen står på teltet. Oversejlet er PU-belagt polyester med 2000 mm vandsøjle, brandhæmmende og med PFC-fri vandafvisning. Stængerne er i glasfiber og bunden i polyethylen.</p>
+<p>Teltet vejer ca. 2,9 kg og pakkes til ca. 50 × 15 cm, så det er nemt at bære fra bilen til campingområdet – og at tage med på vandre- eller cykelturen bagefter. Lommer og et ophæng til lanternen holder styr på småtingene.</p>
+HTML,
+			'good'    => [ 'Festival for tre – eller to med bagage', 'Dig, der vil sove længere', 'Cykel- og vandreture bagefter' ],
+			'less'    => [ 'Mange dage med regn – vandsøjlen er 2000 mm' ],
 		],
 	],
 	'guide'    => <<<'HTML'
