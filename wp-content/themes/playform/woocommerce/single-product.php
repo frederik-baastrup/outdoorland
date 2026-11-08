@@ -153,7 +153,7 @@ while ( have_posts() ) :
 			<li><?php echo playform_icon( 'refresh', 18, 1.4 ); // phpcs:ignore ?><span><b>Opdateret 2× dagligt</b>Pris og lager fra butikken selv</span></li>
 			<li><?php echo playform_icon( 'store', 18, 1.4 ); // phpcs:ignore ?><span><b>Du handler hos butikken</b>Levering og retur på butikkens vilkår</span></li>
 			<li><?php echo playform_icon( 'tag', 18, 1.4 ); // phpcs:ignore ?><span><b>Butikkernes egne tilbud</b>Højst 14 dage gamle</span></li>
-			<li><?php echo playform_icon( 'grid', 18, 1.4 ); // phpcs:ignore ?><span><b>Grej fra flere shops</b>Danske outdoor-webshops på ét sted</span></li>
+			<li><?php echo playform_icon( 'grid', 18, 1.4 ); // phpcs:ignore ?><span><b>Grej fra flere shops</b>Fra outdoorbutikker, vi samarbejder med</span></li>
 		</ul>
 	</section>
 
