@@ -6,11 +6,11 @@ defined( 'ABSPATH' ) || exit;
 
 return [
 	'slug'     => 'tunneltelt',
-	'title'    => 'Tunneltelt: Vores bud på de 5 bedste – meget plads for vægten',
-	'excerpt'  => 'Tunnelteltet giver mest plads for vægten. Her er vores bud på de 5 bedste tunneltelte fra danske butikker.',
+	'title'    => 'Tunneltelt: Vores bud på de 4 bedste – meget plads for vægten',
+	'excerpt'  => 'Tunnelteltet giver mest plads for vægten. Her er vores bud på de 4 bedste tunneltelte fra danske butikker.',
 	'more_cat' => 'telte',
 	'intro'    => <<<'HTML'
-<p>Et tunneltelt har parallelle buer, der danner en tunnel. Det giver meget indvendig plads og høje vægge i forhold til vægten – derfor er tunnelteltet populært på både vandreture og campingferien.</p><p>Herunder er vores bud på de 5 bedste tunneltelte hos danske butikker lige nu.</p>
+<p>Et tunneltelt har parallelle buer, der danner en tunnel. Det giver meget indvendig plads og høje vægge i forhold til vægten – derfor er tunnelteltet populært på både vandreture og campingferien.</p><p>Herunder er vores bud på de 4 bedste tunneltelte hos danske butikker lige nu.</p>
 HTML,
 	'picks'    => [
 		[
@@ -72,21 +72,6 @@ HTML,
 HTML,
 			'good'    => [ 'Familiecamping', 'Opholdsrum i læ', 'Basecamp i flere dage' ],
 			'less'    => [ 'Hårdt underlag – teltet er ikke fritstående' ],
-		],
-		[
-			'ean'     => '5902194521635',
-			'price'   => 1036,
-			'name'    => 'Bushmen Core-Tent Lodger',
-			'role'    => 'Mest alsidigt',
-			'reviews' => [],
-			'verdict' => 'Tunneltelt i insektnet til to, der sammen med en tarp bliver et ultralet setup på under 1,5 kg.',
-			'why'     => <<<'HTML'
-<p>Bushmen Core-Tent Lodger er til dig, der elsker let udstyr og frihed til at bygge din egen lejr. Det er et 2-personers tunneltelt i luftigt insektnet med vandtæt, forhøjet bund og tapede syninger. På varme, tørre nætter sover du under stjernerne uden myg.</p>
-<p>Spænder du en tarp over, har du et ultralet telt. Med en 2 × 3 m tarp vejer det hele under 1,5 kg inklusive aluminiumsstængerne, og med en 3 × 3 m tarp får du en apsis på 2 m² ekstra og et sæt under 2 kg.</p>
-<p>Teltet er cirka en halv meter længere end mange ultralette telte, så selv høje personer har plads. Indgange både foran og i siden giver let adgang til oppakningen. Oplagt til cykelrejser, kajak og vandring.</p>
-HTML,
-			'good'    => [ 'Bushcraft med tarp', 'Cykelrejser, kajak og vandring', 'Høje personer' ],
-			'less'    => [ 'Dem uden tarp – teltet er ikke vandtæt alene' ],
 		],
 	],
 	'guide'    => <<<'HTML'
