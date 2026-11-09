@@ -156,7 +156,7 @@ final class Config {
 				'koeletasker'      => [ 'name' => 'Køletasker, kølebokse & køleskabe', 'match' => 'køletaske|køleboks|kølebox|cool ?box|cooler|køleskab' ],
 				'grill'            => [ 'name' => 'Grill til camping', 'match' => 'grill', 'not' => 'tang|børste|rist til|overtræk|termometer|handske|spyd|stick' ],
 				'turmad'           => [ 'name' => 'Turmad', 'match' => 'turmad|frysetørret|trekking ?mad|real turmat|drytech|måltid|morgenmad|dessert' ],
-				'baal'             => [ 'name' => 'Bål & ildsted', 'match' => 'bål|baal|fyrfad|ildsted|havepejs|terrassepejs|tændstål|firesteel|ildstål|optænding' ],
+				'baal'             => [ 'name' => 'Bål & ildsted', 'match' => 'bål|baal|fyrfad|ildsted|havepejs|terrassepejs|tændstål|firesteel|ildstål|optænding', 'not' => 'gryde|pande|kedel|saucepan|kasserolle|kop\b|krus|tallerken|bestik|stick|spyd|pind|tang\b|handske|kogebog' ], // kun selve ildstedet – ikke gryder og grejtilbehør med "bål" i butikkens navn (9. nov. 2026)
 			],
 			'rygsaekke' => [
 				'vandrerygsaekke'  => [ 'name' => 'Vandrerygsække', 'match' => 'vandrerygsæk|trekking|\b(4\d|5\d|6\d|7\d|8\d) ?l(iter)?\b|\b(4\d|5\d|6\d|7\d|8\d)\b(?!.*cm)', 'not' => 'drybag|pose' ],
