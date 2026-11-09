@@ -7,10 +7,10 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'     => 'bomuldstelt',
 	'title'    => 'Bomuldstelt: Vores bud på de 5 bedste telte i bomuld og technical cotton',
-	'excerpt'  => 'Bomuldstelte ånder, giver et behageligt indeklima og holder i mange år. Her er vores bud på de 5 bedste bomuldstelte fra danske butikker.',
+	'excerpt'  => 'Bomuldstelte ånder, giver et behageligt indeklima og holder i mange år. Her er vores bud på de 5 bedste bomuldstelte fra de butikker, vi samarbejder med.',
 	'more_cat' => 'telte',
 	'intro'    => <<<'HTML'
-<p>Et bomuldstelt er et telt, man bliver glad for. Dugen ånder, så der er køligt om dagen og lunt om natten, og der dannes mindre kondens end i et telt af polyester. Til gengæld vejer bomuld mere – og teltet skal tørre, før det pakkes væk.</p><p>Herunder er vores bud på de 5 bedste bomuldstelte hos danske butikker lige nu.</p>
+<p>Et bomuldstelt er et telt, man bliver glad for. Dugen ånder, så der er køligt om dagen og lunt om natten, og der dannes mindre kondens end i et telt af polyester. Til gengæld vejer bomuld mere – og teltet skal tørre, før det pakkes væk.</p><p>Herunder er vores bud på de 5 bedste bomuldstelte hos de butikker, vi samarbejder med, lige nu.</p>
 HTML,
 	'picks'    => [
 		[

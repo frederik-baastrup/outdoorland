@@ -7,10 +7,10 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'     => 'letvaegtstelt',
 	'title'    => 'Letvægtstelt: Vores bud på de 5 bedste ultralette telte til vandring',
-	'excerpt'  => 'Når du selv skal bære teltet, tæller hvert gram. Her er vores bud på de 5 bedste letvægtstelte fra danske butikker.',
+	'excerpt'  => 'Når du selv skal bære teltet, tæller hvert gram. Her er vores bud på de 5 bedste letvægtstelte fra de butikker, vi samarbejder med.',
 	'more_cat' => 'telte',
 	'intro'    => <<<'HTML'
-<p>På en lang vandretur mærker du hvert gram. Et letvægtstelt gør turen lettere – bogstaveligt talt – og giver energi til flere kilometer og bedre udsigter.</p><p>Herunder er vores bud på de 5 bedste letvægtstelte hos danske butikker lige nu.</p>
+<p>På en lang vandretur mærker du hvert gram. Et letvægtstelt gør turen lettere – bogstaveligt talt – og giver energi til flere kilometer og bedre udsigter.</p><p>Herunder er vores bud på de 5 bedste letvægtstelte hos de butikker, vi samarbejder med, lige nu.</p>
 HTML,
 	'picks'    => [
 		[

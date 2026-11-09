@@ -7,10 +7,10 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'     => 'vandrerygsaek',
 	'title'    => 'Vandrerygsæk: Vores bud på de 5 bedste til lange vandreture',
-	'excerpt'  => 'Den rigtige vandrerygsæk gør turen lettere. Her er vores bud på de 5 bedste vandrerygsække fra danske butikker – fra 45 til 75 liter.',
+	'excerpt'  => 'Den rigtige vandrerygsæk gør turen lettere. Her er vores bud på de 5 bedste vandrerygsække fra de butikker, vi samarbejder med – fra 45 til 75 liter.',
 	'more_cat' => 'vandrerygsaekke',
 	'intro'    => <<<'HTML'
-<p>På en vandretur over flere dage bærer du alt på ryggen: telt, sovepose, mad og tøj. En god vandrerygsæk flytter vægten ned på hofterne, så skuldrene ikke brænder efter de første kilometer.</p><p>Herunder er vores bud på de 5 bedste vandrerygsække hos danske butikker lige nu.</p>
+<p>På en vandretur over flere dage bærer du alt på ryggen: telt, sovepose, mad og tøj. En god vandrerygsæk flytter vægten ned på hofterne, så skuldrene ikke brænder efter de første kilometer.</p><p>Herunder er vores bud på de 5 bedste vandrerygsække hos de butikker, vi samarbejder med, lige nu.</p>
 HTML,
 	'picks'    => [
 		[

@@ -7,10 +7,10 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'     => '6-personers-telt',
 	'title'    => '6 personers telt: Vores bud på de 5 bedste store familietelte',
-	'excerpt'  => 'Et 6 personers telt giver plads til hele familien – og lidt til. Her er vores bud på de 5 bedste 6-personers telte fra danske butikker.',
+	'excerpt'  => 'Et 6 personers telt giver plads til hele familien – og lidt til. Her er vores bud på de 5 bedste 6-personers telte fra de butikker, vi samarbejder med.',
 	'more_cat' => 'telte',
 	'intro'    => <<<'HTML'
-<p>Med et 6 personers telt får familien plads til at bo, ikke bare sove. Der er plads til liggeunderlag, tasker og et rum, hvor I kan spise, spille og vente på, at regnen holder op.</p><p>Herunder er vores bud på de 5 bedste telte til seks personer hos danske butikker lige nu.</p>
+<p>Med et 6 personers telt får familien plads til at bo, ikke bare sove. Der er plads til liggeunderlag, tasker og et rum, hvor I kan spise, spille og vente på, at regnen holder op.</p><p>Herunder er vores bud på de 5 bedste telte til seks personer hos de butikker, vi samarbejder med, lige nu.</p>
 HTML,
 	'picks'    => [
 		[

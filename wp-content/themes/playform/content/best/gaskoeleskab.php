@@ -9,11 +9,11 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'     => 'gaskoeleskab',
 	'title'    => 'Gaskøleskab: Sådan vælger du – og 5 stærke alternativer til camping og kolonihave',
-	'excerpt'  => 'Skal køleskabet køre på gas, 12 V eller 230 V? Her er alt det vigtige om gaskøleskabe – og vores bud på de 5 bedste kølebokse fra danske butikker, når du ikke har strøm hele tiden.',
+	'excerpt'  => 'Skal køleskabet køre på gas, 12 V eller 230 V? Her er alt det vigtige om gaskøleskabe – og vores bud på de 5 bedste kølebokse fra de butikker, vi samarbejder med, når du ikke har strøm hele tiden.',
 	'more_cat' => 'koeletasker',
 	'intro'    => <<<'HTML'
 <p>Et gaskøleskab er genialt, når der ikke er strøm: i kolonihavehuset, i campingvognen eller i sommerhuset uden el. Det køler med en lille gasflamme og er næsten lydløst. Men et gaskøleskab er også en investering, og til mange ture er en moderne kompressorkøleboks på 12 V og 230 V både billigere og mere fleksibel.</p>
-<p>Herunder er vores bud på de bedste køleløsninger hos danske butikker lige nu – fra den lille køleboks til bilen til kompressormodeller, der kan fryse ned. Længere nede forklarer vi, hvornår et rigtigt gaskøleskab er det rigtige valg.</p>
+<p>Herunder er vores bud på de bedste køleløsninger hos de butikker, vi samarbejder med, lige nu – fra den lille køleboks til bilen til kompressormodeller, der kan fryse ned. Længere nede forklarer vi, hvornår et rigtigt gaskøleskab er det rigtige valg.</p>
 HTML,
 	'picks'    => [
 		[

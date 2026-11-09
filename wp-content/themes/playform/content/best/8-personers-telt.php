@@ -8,11 +8,11 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'     => '8-personers-telt',
 	'title'    => '8 personers telt: Vores bud på de 5 bedste telte til store familier og grupper',
-	'excerpt'  => 'Skal hele familien eller vennegruppen sove under samme dug? Her er vores bud på de 5 bedste telte til 8 personer – kabinetelte, tipitelte og robuste gruppetelte fra danske butikker.',
+	'excerpt'  => 'Skal hele familien eller vennegruppen sove under samme dug? Her er vores bud på de 5 bedste telte til 8 personer – kabinetelte, tipitelte og robuste gruppetelte fra de butikker, vi samarbejder med.',
 	'more_cat' => 'telte',
 	'intro'    => <<<'HTML'
 <p>Et telt til 8 personer er et lille sommerhus, du kan pakke sammen. Der er plads til at sove, til at stå op og klæde om og til at samles, når regnen trommer på dugen. Men store telte er meget forskellige: Nogle har separate sovekabiner, andre er åbne tipitelte med plads til et ildsted eller en ovn.</p>
-<p>Herunder er vores bud på de 5 bedste telte til 8 personer hos danske butikker lige nu – fra det prisvenlige familietelt til det robuste gruppetelt, der kan klare alt.</p>
+<p>Herunder er vores bud på de 5 bedste telte til 8 personer hos de butikker, vi samarbejder med, lige nu – fra det prisvenlige familietelt til det robuste gruppetelt, der kan klare alt.</p>
 HTML,
 	'picks'    => [
 		[

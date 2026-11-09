@@ -7,10 +7,10 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'     => 'familietelt',
 	'title'    => 'Familietelt: Vores bud på de 5 bedste telte til familieferien',
-	'excerpt'  => 'Et godt familietelt har plads, ståhøjde og et rum til at samles. Her er vores bud på de 5 bedste familietelte fra danske butikker.',
+	'excerpt'  => 'Et godt familietelt har plads, ståhøjde og et rum til at samles. Her er vores bud på de 5 bedste familietelte fra de butikker, vi samarbejder med.',
 	'more_cat' => 'telte',
 	'intro'    => <<<'HTML'
-<p>Den gode familieferie i telt starter med et telt, hvor alle kan være. Ståhøjde, et stort fællesrum og sovekabiner, så børnene kan sove i ro, gør hele forskellen.</p><p>Herunder er vores bud på de 5 bedste familietelte hos danske butikker lige nu.</p>
+<p>Den gode familieferie i telt starter med et telt, hvor alle kan være. Ståhøjde, et stort fællesrum og sovekabiner, så børnene kan sove i ro, gør hele forskellen.</p><p>Herunder er vores bud på de 5 bedste familietelte hos de butikker, vi samarbejder med, lige nu.</p>
 HTML,
 	'picks'    => [
 		[

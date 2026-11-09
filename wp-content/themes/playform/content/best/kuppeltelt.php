@@ -7,10 +7,10 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'     => 'kuppeltelt',
 	'title'    => 'Kuppeltelt: Vores bud på de 5 bedste – stabile og nemme at slå op',
-	'excerpt'  => 'Kuppelteltet er stabilt, ofte fritstående og nemt at slå op. Her er vores bud på de 5 bedste kuppeltelte fra danske butikker.',
+	'excerpt'  => 'Kuppelteltet er stabilt, ofte fritstående og nemt at slå op. Her er vores bud på de 5 bedste kuppeltelte fra de butikker, vi samarbejder med.',
 	'more_cat' => 'telte',
 	'intro'    => <<<'HTML'
-<p>Kuppelteltet er den klassiske teltform: stængerne krydser over teltet, så det står af sig selv og holder godt i vind fra alle sider. Det er nemt at slå op, og du kan flytte det, før du pløkker det fast.</p><p>Herunder er vores bud på de 5 bedste kuppeltelte hos danske butikker lige nu.</p>
+<p>Kuppelteltet er den klassiske teltform: stængerne krydser over teltet, så det står af sig selv og holder godt i vind fra alle sider. Det er nemt at slå op, og du kan flytte det, før du pløkker det fast.</p><p>Herunder er vores bud på de 5 bedste kuppeltelte hos de butikker, vi samarbejder med, lige nu.</p>
 HTML,
 	'picks'    => [
 		[

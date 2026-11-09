@@ -7,7 +7,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'     => 'udendoers-pejs-med-skorsten',
 	'title'    => 'Udendørs pejs: Vores bud på de 3 bedste – og sådan vælger du',
-	'excerpt'  => 'En udendørs pejs med skorsten leder røgen op og væk og giver varme og stemning på terrassen. Her er vores bud på de bedste havepejse fra danske butikker – og hvad du skal tænke på.',
+	'excerpt'  => 'En udendørs pejs med skorsten leder røgen op og væk og giver varme og stemning på terrassen. Her er vores bud på de bedste havepejse fra de butikker, vi samarbejder med – og hvad du skal tænke på.',
 	'more_cat' => 'baal',
 	'intro'    => <<<'HTML'
 <p>En udendørs pejs – også kaldet havepejs eller terrassepejs – samler ilden i et lukket brændkammer og sender røgen op gennem skorstenen. Det giver en roligere ild end et åbent bål, mindre røg i øjnene og et flot fokuspunkt på terrassen, også når aftenerne bliver kølige.</p><p>Udvalget af udendørs pejse hos de butikker, vi samarbejder med, er lille lige nu, så her er de tre modeller, vi kan anbefale – og en guide til, hvad du skal kigge efter, hvis du vil finde din egen.</p>

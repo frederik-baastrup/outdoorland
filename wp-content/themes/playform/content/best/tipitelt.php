@@ -7,10 +7,10 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'     => 'tipitelt',
 	'title'    => 'Tipitelt: Vores bud på de 5 bedste tipitelte og lavvuer',
-	'excerpt'  => 'Tipitelte og lavvuer er hurtige at slå op og giver ét stort rum med plads til ildsted. Her er vores bud på de 5 bedste fra danske butikker.',
+	'excerpt'  => 'Tipitelte og lavvuer er hurtige at slå op og giver ét stort rum med plads til ildsted. Her er vores bud på de 5 bedste fra de butikker, vi samarbejder med.',
 	'more_cat' => 'telte',
 	'intro'    => <<<'HTML'
-<p>Tipiteltet – eller lavvuen, som den nordiske udgave hedder – er en af de ældste teltformer. Én midterstang og pløkker hele vejen rundt, og så står teltet. Det runde rum giver plads til mange, og i mange modeller kan der fyres i en teltovn.</p><p>Herunder er vores bud på de 5 bedste tipitelte hos danske butikker lige nu.</p>
+<p>Tipiteltet – eller lavvuen, som den nordiske udgave hedder – er en af de ældste teltformer. Én midterstang og pløkker hele vejen rundt, og så står teltet. Det runde rum giver plads til mange, og i mange modeller kan der fyres i en teltovn.</p><p>Herunder er vores bud på de 5 bedste tipitelte hos de butikker, vi samarbejder med, lige nu.</p>
 HTML,
 	'picks'    => [
 		[

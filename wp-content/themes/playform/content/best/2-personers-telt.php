@@ -7,10 +7,10 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'     => '2-personers-telt',
 	'title'    => '2 personers telt: Vores bud på de 5 bedste – fra festival til fjeld',
-	'excerpt'  => 'Det mest populære telt er til to. Her er vores bud på de 5 bedste 2-personers telte fra danske butikker – fra det billige festivaltelt til det lette fjeldtelt.',
+	'excerpt'  => 'Det mest populære telt er til to. Her er vores bud på de 5 bedste 2-personers telte fra de butikker, vi samarbejder med – fra det billige festivaltelt til det lette fjeldtelt.',
 	'more_cat' => 'telte',
 	'intro'    => <<<'HTML'
-<p>Et 2 personers telt er det mest alsidige telt, du kan eje. Det er stort nok til to på weekendtur, let nok til at bære på vandreturen og lille nok til at slå op på festivalpladsen.</p><p>Herunder er vores bud på de 5 bedste telte til to personer hos danske butikker lige nu.</p>
+<p>Et 2 personers telt er det mest alsidige telt, du kan eje. Det er stort nok til to på weekendtur, let nok til at bære på vandreturen og lille nok til at slå op på festivalpladsen.</p><p>Herunder er vores bud på de 5 bedste telte til to personer hos de butikker, vi samarbejder med, lige nu.</p>
 HTML,
 	'picks'    => [
 		[

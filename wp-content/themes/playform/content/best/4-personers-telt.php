@@ -7,10 +7,10 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'     => '4-personers-telt',
 	'title'    => '4 personers telt: Vores bud på de 5 bedste til familien',
-	'excerpt'  => 'Et 4 personers telt er det klassiske familietelt til den lille familie. Her er vores bud på de 5 bedste 4-personers telte fra danske butikker.',
+	'excerpt'  => 'Et 4 personers telt er det klassiske familietelt til den lille familie. Her er vores bud på de 5 bedste 4-personers telte fra de butikker, vi samarbejder med.',
 	'more_cat' => 'telte',
 	'intro'    => <<<'HTML'
-<p>Et 4 personers telt er størrelsen, hvor camping for alvor bliver familieferie. Der er plads til at sove fire, og de bedste modeller har ståhøjde, så I kan klæde om og hygge jer, når det regner.</p><p>Herunder er vores bud på de 5 bedste telte til fire personer hos danske butikker lige nu.</p>
+<p>Et 4 personers telt er størrelsen, hvor camping for alvor bliver familieferie. Der er plads til at sove fire, og de bedste modeller har ståhøjde, så I kan klæde om og hygge jer, når det regner.</p><p>Herunder er vores bud på de 5 bedste telte til fire personer hos de butikker, vi samarbejder med, lige nu.</p>
 HTML,
 	'picks'    => [
 		[

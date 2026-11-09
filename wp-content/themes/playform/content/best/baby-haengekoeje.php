@@ -8,10 +8,10 @@ return [
 	'slug'     => 'baby-haengekoeje',
 	'keyword'  => 'babyhængekøje',
 	'title'    => 'Babyhængekøje og børnehængekøje: Vores bud på de 3 bedste',
-	'excerpt'  => 'En hængekøje til de mindste giver en hyggelig hule at gynge og slappe af i. Her er vores bud på de 3 bedste børnehængekøjer og hængekøjehuler fra danske butikker.',
+	'excerpt'  => 'En hængekøje til de mindste giver en hyggelig hule at gynge og slappe af i. Her er vores bud på de 3 bedste børnehængekøjer og hængekøjehuler fra de butikker, vi samarbejder med.',
 	'more_cat' => 'haengekoejer',
 	'intro'    => <<<'HTML'
-<p>Børn elsker at gynge. En børnehængekøje eller en hængekøjehule bliver hurtigt et yndlingssted – til at læse, lege og falde til ro i, inde på børneværelset eller ude i haven.</p><p>Herunder er vores bud på de 3 bedste hængekøjer til børn hos danske butikker lige nu.</p>
+<p>Børn elsker at gynge. En børnehængekøje eller en hængekøjehule bliver hurtigt et yndlingssted – til at læse, lege og falde til ro i, inde på børneværelset eller ude i haven.</p><p>Herunder er vores bud på de 3 bedste hængekøjer til børn hos de butikker, vi samarbejder med, lige nu.</p>
 HTML,
 	'picks'    => [
 		[

@@ -8,10 +8,10 @@ return [
 	'slug'     => 'baalfad',
 	'title'    => 'Bålfad: Vores bud på de 5 bedste til haven og terrassen',
 	'keyword'  => 'bålfad',
-	'excerpt'  => 'Et bålfad samler familie og venner om ilden hele vejen rundt. Her er vores bud på de 5 bedste bålfade fra danske butikker – fra røgreducerende bålfad til store bålfade med ildrager.',
+	'excerpt'  => 'Et bålfad samler familie og venner om ilden hele vejen rundt. Her er vores bud på de 5 bedste bålfade fra de butikker, vi samarbejder med – fra røgreducerende bålfad til store bålfade med ildrager.',
 	'more_cat' => 'baal',
 	'intro'    => <<<'HTML'
-<p>Et bålfad er den nemmeste vej til lejrbålsstemning i haven. Ilden er samlet i et fad, der står sikkert, og I kan sidde hele vejen rundt – med en kop kaffe, en pølse på en pind eller bare udsigten til flammerne.</p><p>Herunder er vores bud på de 5 bedste bålfade hos danske butikker lige nu, fra det helt enkle til modeller, der også kan bruges som grill.</p>
+<p>Et bålfad er den nemmeste vej til lejrbålsstemning i haven. Ilden er samlet i et fad, der står sikkert, og I kan sidde hele vejen rundt – med en kop kaffe, en pølse på en pind eller bare udsigten til flammerne.</p><p>Herunder er vores bud på de 5 bedste bålfade hos de butikker, vi samarbejder med, lige nu, fra det helt enkle til modeller, der også kan bruges som grill.</p>
 HTML,
 	'picks'    => [
 		[

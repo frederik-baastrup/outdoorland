@@ -7,10 +7,10 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'     => 'lille-grill-transportabel',
 	'title'    => 'Lille grill: Vores bud på de 5 bedste transportable grill til camping, altan og strand',
-	'excerpt'  => 'En lille, transportabel grill gør enhver tur til en grillfest. Her er vores bud på de 5 bedste små gasgrill og campinggrill fra danske butikker.',
+	'excerpt'  => 'En lille, transportabel grill gør enhver tur til en grillfest. Her er vores bud på de 5 bedste små gasgrill og campinggrill fra de butikker, vi samarbejder med.',
 	'more_cat' => 'grill',
 	'intro'    => <<<'HTML'
-<p>Duften af grillmad ved stranden, på campingpladsen eller på altanen – det kræver ikke en stor grill. En lille, transportabel grill kan stå i bagagerummet, er hurtig at tænde og kan bruges overalt, hvor der er plads til at grille sikkert.</p><p>Herunder er vores bud på de 5 bedste små grill hos danske butikker lige nu – fra den lette gasgrill i kuffertformat til den lille kulgrill til rygsækken.</p>
+<p>Duften af grillmad ved stranden, på campingpladsen eller på altanen – det kræver ikke en stor grill. En lille, transportabel grill kan stå i bagagerummet, er hurtig at tænde og kan bruges overalt, hvor der er plads til at grille sikkert.</p><p>Herunder er vores bud på de 5 bedste små grill hos de butikker, vi samarbejder med, lige nu – fra den lette gasgrill i kuffertformat til den lille kulgrill til rygsækken.</p>
 HTML,
 	'picks'    => [
 		[

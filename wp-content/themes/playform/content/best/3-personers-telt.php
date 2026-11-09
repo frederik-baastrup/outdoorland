@@ -7,10 +7,10 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'     => '3-personers-telt',
 	'title'    => '3 personers telt: Vores bud på de 5 bedste til par, venner og små familier',
-	'excerpt'  => 'Et 3 personers telt giver to god plads eller tre en tur sammen. Her er vores bud på de 5 bedste 3-personers telte fra danske butikker.',
+	'excerpt'  => 'Et 3 personers telt giver to god plads eller tre en tur sammen. Her er vores bud på de 5 bedste 3-personers telte fra de butikker, vi samarbejder med.',
 	'more_cat' => 'telte',
 	'intro'    => <<<'HTML'
-<p>Et 3 personers telt er et populært valg for par, der vil have plads til oppakningen, og for små familier på tur. Der er plads til at ligge uden at ligge oven i hinanden – og vægten er stadig til at bære.</p><p>Herunder er vores bud på de 5 bedste telte til tre personer hos danske butikker lige nu.</p>
+<p>Et 3 personers telt er et populært valg for par, der vil have plads til oppakningen, og for små familier på tur. Der er plads til at ligge uden at ligge oven i hinanden – og vægten er stadig til at bære.</p><p>Herunder er vores bud på de 5 bedste telte til tre personer hos de butikker, vi samarbejder med, lige nu.</p>
 HTML,
 	'picks'    => [
 		[
