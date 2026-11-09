@@ -427,7 +427,7 @@ function playform_legacy_redirects(): array {
 		// Sider og kategorier fra det gamle site
 		'outdoor-butikker'      => '/vores-butikker/',
 		// Købsguides uden produkter i feedsne, fjernet 7. nov. 2026 (ejerens valg)
-		'baalhytte' => '/baalfad/', 'shelter' => '/camping/tarp-shelter/', 'uv-telt-baby' => '/camping/telte/', 'parasol-firkantet' => '/', 'parasol-med-tilt' => '/', 'terrassevarmer' => '/udendoers-pejs-med-skorsten/',
+		'shelter' => '/camping/tarp-shelter/', 'uv-telt-baby' => '/camping/telte/', 'parasol-firkantet' => '/', 'parasol-med-tilt' => '/', 'terrassevarmer' => '/udendoers-pejs-med-skorsten/',
 		// Outdoortøj er fjernet (7. nov. 2026) – kategori og underkategorier sendes til forsiden
 		'outdoortoej' => '/', 'outdoortoej/jakker' => '/', 'outdoortoej/regntoej' => '/', 'outdoortoej/bukser' => '/', 'outdoortoej/fleece' => '/', 'outdoortoej/uldundertoej' => '/', 'outdoortoej/skjorter' => '/', 'outdoortoej/veste' => '/', 'outdoortoej/huer-handsker' => '/', 'outdoortoej/tilbud' => '/tilbud/',
 		'blog'                  => '/viden/',
@@ -549,6 +549,7 @@ function playform_seed_best(): void {
 		}
 		update_post_meta( $id, '_pf_picks', $a['picks'] ?? [] );
 		update_post_meta( $id, '_pf_keyword', playform_guide_keyword( $a ) );
+		update_post_meta( $id, '_pf_seo_title', (string) ( $a['seo_title'] ?? '' ) ); // fx vejledninger uden produktvalg (/baalhytte/)
 		update_post_meta( $id, '_pf_more_cat', (string) ( $a['more_cat'] ?? '' ) );
 		$root[ $a['slug'] ] = (int) $id;
 	}
@@ -780,7 +781,8 @@ add_filter(
 			return $parts;
 		}
 		$n              = count( (array) get_post_meta( $id, '_pf_picks', true ) );
-		$parts['title'] = 'Bedste ' . playform_best_kw( $kw ) . ' ' . wp_date( 'Y' ) . ( $n > 1 ? ' → Se vores top ' . $n : ' – købsguide' );
+		$own            = (string) get_post_meta( $id, '_pf_seo_title', true );
+		$parts['title'] = '' !== $own ? $own : 'Bedste ' . playform_best_kw( $kw ) . ' ' . wp_date( 'Y' ) . ( $n > 1 ? ' → Se vores top ' . $n : ' – købsguide' );
 		// Domænet kommer kun med, når der er plads (ca. 65 tegn i alt) – ejerens ønske 6. nov. 2026.
 		$site = ucfirst( (string) playform_site( 'domain' ) );
 		if ( mb_strlen( $parts['title'] . ' – ' . $site ) > 65 ) {

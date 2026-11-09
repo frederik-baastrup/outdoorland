@@ -917,7 +917,7 @@ function playform_legacy_cleanup(): void {
 	}
 	foreach ( get_posts( [ 'post_type' => 'post', 'post_status' => 'any', 'numberposts' => 20, 'meta_key' => '_pf_legacy_post', 'meta_value' => 1 ] ) as $p ) { // phpcs:ignore
 		// Fjernede købsguides uden produkter (ejerens valg 7. nov. 2026) – adresserne viderestilles i playform_legacy_redirects().
-		if ( in_array( $p->post_name, [ 'baalhytte', 'shelter', 'uv-telt-baby', 'parasol-firkantet', 'parasol-med-tilt', 'terrassevarmer' ], true ) ) {
+		if ( in_array( $p->post_name, [ 'shelter', 'uv-telt-baby', 'parasol-firkantet', 'parasol-med-tilt', 'terrassevarmer' ], true ) ) {
 			wp_delete_post( $p->ID, true );
 			continue;
 		}
