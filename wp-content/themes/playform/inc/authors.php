@@ -193,13 +193,13 @@ function playform_author_profile(): void {
 	if ( (int) get_option( 'playform_author_profile' ) >= 2 || '' === playform_site( 'niche' ) ) { // uden importpluginnet kender vi hverken navn eller niche
 		return;
 	}
-	$old = [ sprintf( 'Frederik Baastrup står bag %s. Han samler %s fra de danske webshops ét sted og skriver købsguiderne, så du kan sammenligne priser, specifikationer og tilbud, før du køber.', playform_site( 'name' ), playform_site( 'niche' ) ), sprintf( 'Frederik Baastrup er stifter og redaktør af %1$s. Til daglig driver han Mondae, hvor han arbejder med webdesign og digitale løsninger. Med %1$s samler han %2$s fra danske webshops ét sted og skriver købsguides, der gør det nemt at sammenligne priser, specifikationer og tilbud – med åbenhed om, hvordan produkterne er valgt, og hvordan siden tjener penge.', playform_site( 'name' ), playform_site( 'niche' ) ) ];
+	$old = [ sprintf( 'Frederik Baastrup står bag %s. Han samler %s fra de butikker, vi samarbejder med, ét sted og skriver købsguiderne, så du kan sammenligne priser, specifikationer og tilbud, før du køber.', playform_site( 'name' ), playform_site( 'niche' ) ), sprintf( 'Frederik Baastrup er stifter og redaktør af %1$s. Til daglig driver han Mondae, hvor han arbejder med webdesign og digitale løsninger. Med %1$s samler han %2$s fra de butikker, vi samarbejder med, ét sted og skriver købsguides, der gør det nemt at sammenligne priser, specifikationer og tilbud – med åbenhed om, hvordan produkterne er valgt, og hvordan siden tjener penge.', playform_site( 'name' ), playform_site( 'niche' ) ) ];
 	$users = get_users( [ 'search' => 'Frederik Baastrup', 'search_columns' => [ 'display_name' ], 'number' => 1 ] )
 		?: get_users( [ 'role' => 'administrator', 'number' => 1 ] );
 	foreach ( $users as $u ) {
 		$bio = trim( (string) get_user_meta( $u->ID, 'description', true ) );
 		if ( '' === $bio || playform_author_defaults()['bio'] === $bio || in_array( $bio, $old, true ) ) {
-			update_user_meta( $u->ID, 'description', sprintf( 'Stifter og redaktør af %1$s er Frederik Baastrup, som til daglig driver Mondae med webdesign og digitale løsninger. Med %1$s giver han overblik over %2$s fra danske webshops og skriver købsguides, hvor du kan sammenligne priser, specifikationer og tilbud. Det står åbent på siden, hvordan produkterne er udvalgt, og hvordan siden tjener penge.', playform_site( 'name' ), playform_site( 'niche' ) ) );
+			update_user_meta( $u->ID, 'description', sprintf( 'Stifter og redaktør af %1$s er Frederik Baastrup, som til daglig driver Mondae med webdesign og digitale løsninger. Med %1$s giver han overblik over %2$s fra de butikker, vi samarbejder med og skriver købsguides, hvor du kan sammenligne priser, specifikationer og tilbud. Det står åbent på siden, hvordan produkterne er udvalgt, og hvordan siden tjener penge.', playform_site( 'name' ), playform_site( 'niche' ) ) );
 		}
 		if ( '' === (string) get_user_meta( $u->ID, 'pf_photo', true ) ) {
 			update_user_meta( $u->ID, 'pf_photo', playform_asset( 'authors/frederik-baastrup.jpg' ) );

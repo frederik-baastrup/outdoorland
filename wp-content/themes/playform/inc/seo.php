@@ -119,7 +119,7 @@ add_action(
 			$t    = get_queried_object();
 			$desc = sprintf( 'Her er %s, som danske webshops har nedsat lige nu. Vi viser butikkernes egne tilbud, og købet foregår hos forhandleren.', $t instanceof WP_Term ? mb_strtolower( playform_cat_label( $t ) ) : playform_site( 'niche' ) );
 		} elseif ( is_tax( 'product_cat' ) ) {
-			$desc = wp_strip_all_tags( term_description() ) ?: sprintf( 'Se %s fra danske webshops samlet ét sted på %s. Sammenlign priser, se butikkernes tilbud og find den rigtige model.', mb_strtolower( playform_cat_label( get_queried_object() ) ), playform_site( 'name' ) );
+			$desc = wp_strip_all_tags( term_description() ) ?: sprintf( 'Se %s fra de butikker, vi samarbejder med, samlet ét sted på %s. Sammenlign priser, se butikkernes tilbud og find den rigtige model.', mb_strtolower( playform_cat_label( get_queried_object() ) ), playform_site( 'name' ) );
 		} elseif ( is_post_type_archive( 'product' ) ) {
 			$desc = sprintf( 'Alle produkter på %s: %s fra de butikker, vi samarbejder med. Priser og lager opdateres to gange i døgnet.', playform_site( 'name' ), playform_site( 'niche' ) );
 		} elseif ( is_singular( 'product' ) ) {

@@ -505,7 +505,7 @@ function playform_vary_default_texts(): void {
 	if ( '' === $niche ) {
 		return;
 	}
-	playform_update_text( 'vores-butikker', "$name samler $niche fra flere danske webshops ét sted. Vi henter produkter, priser og lagerstatus direkte fra butikkerne to gange i døgnet. Når du klikker på \"Gå til butik\", sendes du videre til butikken, hvor du handler som normalt.", "På $name kan du se $niche fra mange danske webshops på ét sted. Butikkernes produkter, priser og lagerstatus opdateres to gange i døgnet direkte fra deres feeds. Vælger du \"Gå til butik\", kommer du over til forhandleren og køber dér, ligesom du plejer." );
+	playform_update_text( 'vores-butikker', "$name samler $niche fra de butikker, vi samarbejder med, ét sted. Vi henter produkter, priser og lagerstatus direkte fra butikkerne to gange i døgnet. Når du klikker på \"Gå til butik\", sendes du videre til butikken, hvor du handler som normalt.", "På $name kan du se $niche fra mange danske webshops på ét sted. Butikkernes produkter, priser og lagerstatus opdateres to gange i døgnet direkte fra deres feeds. Vælger du \"Gå til butik\", kommer du over til forhandleren og køber dér, ligesom du plejer." );
 	playform_update_text( 'saadan-tjener-vi-penge', "$name er gratis at bruge. Når du klikker videre til en butik og handler, får vi en lille provision fra butikken. Det koster ikke dig noget ekstra. Du kan altid sortere efter pris, tilbud eller nyeste.", "Det koster ingenting at bruge $name. Handler du i en butik via vores links, får vi en lille provision fra butikken, og prisen er den samme for dig. Produkterne kan altid sorteres efter pris, tilbud eller nyeste." );
 	playform_update_text( 'saadan-tjener-vi-penge', "Som tilbud viser vi kun butikkernes egne tilbud, og kun i højst 14 dage. Har vi selv fulgt prisen hos butikken i de 30 dage før tilbuddet, viser vi den laveste pris i perioden som førpris. Ellers viser vi butikkens egen førpris, tydeligt mærket som butikkens. Tjek altid den endelige pris hos butikken.", "Tilbud betyder hos os butikkernes egne tilbud, og de vises i højst 14 dage. Hvis vi har fulgt butikkens pris i de 30 dage, før tilbuddet startede, er førprisen den laveste pris i den periode. Hvis ikke, ser du butikkens egen førpris med en tydelig markering af, at den er butikkens. Tjek den endelige pris i butikken, inden du køber." );
 }
@@ -516,10 +516,36 @@ function playform_vary_default_texts(): void {
  */
 function playform_seed_category_texts(): void {
 	$texts = (array) require get_template_directory() . '/content/category-texts.php';
+	// Én gang (10. nov. 2026): gemte tekster må ikke antyde, at vi dækker alle danske butikker.
+	if ( (int) get_option( 'playform_cat_texts_fix' ) < 1 ) {
+		$fix = static fn( string $v ): string => (string) preg_replace(
+			[ '/fra (flere )?danske (webshops|butikker|shops)( samlet| ét sted)/u', '/fra (flere )?danske (webshops|butikker|shops)(?!,? vi samarbejder)/u' ],
+			[ 'fra de butikker, vi samarbejder med,$3', 'fra de butikker, vi samarbejder med' ],
+			$v
+		);
+		foreach ( get_terms( [ 'taxonomy' => 'product_cat', 'hide_empty' => false ] ) as $tm ) {
+			if ( $tm->description !== $fix( $tm->description ) ) {
+				wp_update_term( $tm->term_id, 'product_cat', [ 'description' => $fix( $tm->description ) ] );
+			}
+			$seo = (string) get_term_meta( $tm->term_id, 'pf_seo_text', true );
+			if ( $seo !== '' && $seo !== $fix( $seo ) ) {
+				update_term_meta( $tm->term_id, 'pf_seo_text', $fix( $seo ) );
+			}
+		}
+		update_option( 'playform_cat_texts_fix', 1, false );
+	}
 	foreach ( $texts as $slug => $t ) {
 		$term = get_term_by( 'slug', $slug, 'product_cat' );
 		if ( ! $term ) {
 			continue;
+		}
+		// 'refresh' => N i category-texts.php: overskriv de gemte tekster én gang (fx når en underkategori har fået nyt indhold).
+		if ( ! empty( $t['refresh'] ) && (int) get_term_meta( $term->term_id, 'pf_text_rev', true ) < (int) $t['refresh'] ) {
+			wp_update_term( $term->term_id, 'product_cat', [ 'description' => '' ] );
+			delete_term_meta( $term->term_id, 'pf_seo_text' );
+			delete_term_meta( $term->term_id, 'pf_faq' );
+			update_term_meta( $term->term_id, 'pf_text_rev', (int) $t['refresh'] );
+			$term = get_term( $term->term_id, 'product_cat' );
 		}
 		if ( ! $term->description && ! empty( $t['intro'] ) ) {
 			wp_update_term( $term->term_id, 'product_cat', [ 'description' => $t['intro'] ] );
@@ -756,7 +782,7 @@ add_action(
  */
 function playform_renamed_categories(): array {
 	return [
-		'drikkevarekoeleskab' => [ 'vinkoeleskab', 'Vinkøleskab', 'Køleskabe til drikkevarer, vinkøleskabe og ølkølere. Se modeller fra flere danske webshops samlet ét sted.' ],
+		'drikkevarekoeleskab' => [ 'vinkoeleskab', 'Vinkøleskab', 'Køleskabe til drikkevarer, vinkøleskabe og ølkølere. Se modeller fra de butikker, vi samarbejder med, samlet ét sted.' ],
 	];
 }
 
@@ -821,7 +847,7 @@ function playform_fix_default_site_name(): void {
 		}
 		$wpdb->query( $wpdb->prepare( "UPDATE {$wpdb->term_taxonomy} SET description = REPLACE(description, %s, %s) WHERE description LIKE %s", $bad, $name, '%' . $wpdb->esc_like( $bad ) . '%' ) );
 	}
-	if ( '' !== $niche ) { // tom niche gav "samler han  fra danske webshops"
+	if ( '' !== $niche ) { // tom niche gav "samler han  fra de butikker, vi samarbejder med"
 		$wpdb->query( $wpdb->prepare( "UPDATE {$wpdb->usermeta} SET meta_value = REPLACE(meta_value, 'samler han  fra', %s) WHERE meta_key = 'description'", "samler han $niche fra" ) );
 	}
 	wp_cache_flush();
