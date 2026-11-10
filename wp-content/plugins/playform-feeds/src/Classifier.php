@@ -43,6 +43,14 @@ final class Classifier {
 			if ( 'exclude' !== $mapped && ! empty( $shop['refine'] ) ) {
 				return self::first_match( $match_name ) ?: $mapped;
 			}
+			// Fast kategori: udelukkelserne gælder stadig for navnet (fx montager og batterier i en optikkategori).
+			if ( 'exclude' !== $mapped ) {
+				foreach ( Config::exclude() as $pattern ) {
+					if ( self::m( $pattern, $name ) ) {
+						return 'exclude';
+					}
+				}
+			}
 			return $mapped;
 		}
 		foreach ( Config::exclude() as $pattern ) {

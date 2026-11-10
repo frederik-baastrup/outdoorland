@@ -80,12 +80,23 @@ final class Config {
 			'minflue'          => [ 'name' => 'Minflue.dk', 'url' => "$b&bannerid=117505&feedid=4395" ],
 			'fisk-paa-krogen'  => [ 'name' => 'Fisk på krogen', 'url' => "$b&bannerid=50681&feedid=783", 'group_variants' => true ],
 			'fishnote'         => [ 'name' => 'Fishnote', 'url' => "$b&bannerid=97436&feedid=2699" ],
+			// Fiskegrej.dk (tilføjet 10. nov. 2026): fiskebutik med tøj – vores regler holder tøjet ude.
+			'fiskegrej'        => [ 'name' => 'Fiskegrej.dk', 'url' => "$b&bannerid=42223&feedid=509", 'group_variants' => true ],
 			// Jagt
-			'hunterspoint'     => [ 'name' => "Hunters' Point", 'url' => "$b&bannerid=66913&feedid=1360", 'group_variants' => true , 'variant_strip' => $size ],
+			// Jagt Jakt (tilføjet 10. nov. 2026): kun butikskategorierne i jagtjakt_map() – våben, ammunition, montager, lyddæmpere, trofæer m.m. kommer ikke med.
+			'jagt-jakt'        => [ 'name' => 'Jagt Jakt', 'url' => "$b&bannerid=115125&feedid=4130", 'group_variants' => true, 'category_map' => self::jagtjakt_map() ],
+			'hunterspoint'    => [ 'name' => "Hunters' Point", 'url' => "$b&bannerid=66913&feedid=1360", 'group_variants' => true , 'variant_strip' => $size ],
 			'almas'            => [ 'name' => 'Almas Park & Fritid', 'url' => "$b&bannerid=99713&feedid=2844", 'group_variants' => true , 'variant_strip' => $size ],
 			// Vandsport (SUP, kajak, våddragter, redningsveste) – vinterdelen (ski, snowboard) kommer ikke med.
 			'surfmore'         => [ 'name' => 'SurfMore', 'url' => "$b&bannerid=63626&feedid=1238" ],
 			'profgear'         => [ 'name' => 'ProfGear', 'url' => "$b&bannerid=109619&feedid=3592" ],
+			// Tilføjet 10. nov. 2026: brede butikker, hvor kun enkelte butikskategorier hører til nichen ('?' = vores regler afgør).
+			// Specialbutikken (arbejdstøj, værktøj, landbrug): kun vandrestøvler, waders, friluftsliv, rygsække, lygter, økser og jagt.
+			'specialbutikken'  => [ 'name' => 'Specialbutikken', 'url' => "$b&bannerid=101274&feedid=2934", 'category_map' => self::specialbutikken_map(), 'group_variants' => true, 'variant_strip' => [ '/\\s*\\((?:[^()]|\\([^()]*\\))*\\)\\s*$/u' ] ],
+			// Millida (madkasser til børn): kun køletasker og termo – ikke madkasser og bestik.
+			'millida'          => [ 'name' => 'Millida', 'url' => "$b&bannerid=115560&feedid=4180", 'category_map' => [ 'montii' => '?:køletaske|drikkedunk|termo', 'yumbox zuppa termomadkasser' => '?:køletaske|drikkedunk|termo' ] ],
+			// Solarcamp.dk (solcellelamper til haven): kun solcelleopladere og powerbanks.
+			'solarcamp'        => [ 'name' => 'Solarcamp.dk', 'url' => "$b&bannerid=92673&feedid=2447", 'category_map' => [ 'solcelleopladere > solcelleoplader til mobil' => '?', 'powerbanks > stor powerbank' => '?', 'powerbanks > lille powerbank' => '?' ] ],
 			// KitchenOne (køkken, Kitzhens største feed): kun friluftsliv, bålfade og bærbare grill – vores egne regler placerer ('?').
 			'kitchenone'       => [ 'name' => 'KitchenOne.dk', 'url' => "$b&bannerid=79283&feedid=1862", 'category_map' => self::kitchenone_map() ],
 			// Proshop (elektronik, 276.000 varer): kun tre butikskategorier, og kun det, vores egne regler kan placere ('?').
@@ -110,6 +121,56 @@ final class Config {
 		return $map;
 	}
 
+	/** Specialbutikkens butikskategorier, der må komme med på Outdoorland (10. nov. 2026). Resten er arbejdstøj, værktøj, have og landbrug. */
+	private static function specialbutikken_map(): array {
+		$map = [];
+		foreach ( [ 'fritidstøj > vandrestøvler og vandresko > vandrestøvler', 'fritidstøj > vandrestøvler og vandresko > fritidssko / sandaler', 'fritidstøj > waders', 'fritidstøj > friluftsliv - gasblus, gryder, bestik, lanterner m.m.', 'fritidstøj > rygsække og tasker', 'fritidstøj > fritidsbeklædning', 'fritidstøj > tøjpleje / tøjrens / tøjvask > nikwax produkter', 'fritidstøj > gummistøvler til mænd og kvinder', 'uden strøm > lys', 'værktøj og udstyr > elartikler > lommelygter og tilbehør', 'værktøj og udstyr > gasredskaber og tilbehør > gasblus til køkken og camping', 'hus og have > haveredskaber > økser og save', 'gaveideer', 'uden strøm > diverse', 'outlet!' ] as $c ) {
+			$map[ "produkter > $c" ] = '?';
+		}
+		$map['jagttøj og jagtudstyr > jagtstøvler, fritidssko og tilbehør']            = '?';
+		$map['jagttøj og jagtudstyr > jagtudstyr og tilbehør > lokkekald og lokkemidler'] = '?';
+		$map['produkter > black november > jagt']                                      = 'jagt';
+		return $map;
+	}
+
+	/**
+	 * Jagt Jakts butikskategorier, der må komme med (10. nov. 2026). Alt andet (skydevåben, ammunition, lyddæmpere,
+	 * montager, våbenpleje, trofæer, gaveartikler, biludstyr, batterier …) holdes ude.
+	 * 'jagt' = jagttøj og jagtoptik direkte i Jagt; '?' = vores egne regler (inkl. udelukkelser) afgør placeringen.
+	 */
+	private static function jagtjakt_map(): array {
+		$map = [];
+		$t   = 'jagttøj, fodtøj og tilbehør';
+		foreach ( [ 'deerhunter', 'pinewood', 'swazi', 'swedteam', 'seeland', 'härkila', 'hunters lodge', 'hike & hunt', 'jakker', 'bukser', 'bukser > kevlar bukser', 'skjorter', 'mellemlag', 'hatte- og huer', 'handsker', 'strømper', 'hundefører- og sikkerhedsudstyr' ] as $sub ) {
+			$map[ "$t > $sub" ] = 'jagt';
+		}
+		foreach ( [ '', ' > tilbehør', ' > avignon', ' > trespass', ' > jagt- og vandrefodtøj', ' > jagt- og vandrefodtøj > treksta', ' > jagt- og vandrefodtøj > vedligehold', ' > jagttasker og rygsække', ' > jagttasker og rygsække > by-allen', ' > jagttasker og rygsække > greenbury' ] as $sub ) {
+			$map[ $t . $sub ] = '?';
+		}
+		$o = 'natkikkert/night vision/dagkikkert/optik';
+		foreach ( [ '', ' > natkikkert', ' > natkikkert > hikmicro', ' > hikmicro', ' > pard', ' > pulsar natkikkert', ' > infiray', ' > atn natkikkerter', ' > sightmark', ' > pixfra', ' > zeiss', ' > optisan kikkerter', ' > håndkikkert', ' > afstandsmåler', ' > riffelkikkert - sigtekikkert', ' > riffelkikkert - sigtekikkert > hawke', ' > håndspotter termisk > hik micro termiske håndspottere', ' > håndspotter termisk > pulsar termiske håndspottere' ] as $sub ) {
+			$map[ $o . $sub ] = 'jagt';
+		}
+		$map[ "$o > håndkikkert tilbehør" ] = '?';
+		foreach ( [ 'vildtkamera', 'vildtkamera > vildtkamera udvalg', 'vildtkamera > vildtkamera med mms/mail', 'vildtkamera > hunters choise' ] as $c ) {
+			$map[ $c ] = 'jagt';
+		}
+		foreach ( [ 'luftgeværer og luftpistoler', 'luftgeværer og luftpistoler > kral', 'luftgeværer og luftpistoler > norica', 'luftgeværer og luftpistoler > hagl' ] as $sub ) {
+			$map[ "våben, tilbehør og ammunition > $sub" ] = 'jagt'; // luftvåben er med (ejerens ønske)
+		}
+		foreach ( [ 'skydestok', 'luftgeværer og luftpistoler > luftgevær tilbehør' ] as $sub ) {
+			$map[ "våben, tilbehør og ammunition > $sub" ] = '?';
+		}
+		$d = 'diverse jagtudstyr';
+		foreach ( [ '', ' > andet', ' > lygter og lys', ' > lygter og lys > pandelygte', ' > knive m.m.', ' > knive m.m. > böker', ' > knive m.m. > accu sharp', ' > knive m.m. > hunters choise', ' > knive m.m. > hike&hunt', ' > jagtstole og siddeunderlag', ' > jagtstole og siddeunderlag > siddeunderlag', ' > lokkekald', ' > lokkekald > kristoffer clausen', ' > outdoor bål udstyr', ' > anti mygge produkter - thermacell', ' > hundegrej', ' > slæbe udstyr', ' > gaveartikler', ' > ladere og powerbanks', ' > høreværn og radio', ' > tyrchem > outdoor' ] as $sub ) {
+			$map[ $d . $sub ] = '?';
+		}
+		foreach ( [ 'aktivitetsplads > sløring', 'aktivitetsplads > lokkemiddel', 'aktivitetsplads > lokkemiddel > attratec', 'aktivitetsplads > lokkemiddel > tyrchem' ] as $c ) {
+			$map[ $c ] = '?';
+		}
+		return $map;
+	}
+
 	/**
 	 * Outdoorlands kategorier. 'match' testes først mod produktnavnet, derefter mod butikkens kategori.
 	 * Rækkefølgen betyder noget: den første kategori, der matcher, vinder. Specifikt udstyr står før tøj,
@@ -118,13 +179,13 @@ final class Config {
 	 */
 	public static function categories(): array {
 		return [
-			'fiskeri'         => [ 'name' => 'Fiskeri', 'match' => 'fiske|fishing|\bfly (tying|fishing)|fluebind|fluestang|flueline|fluehjul|\bfluer?\b|rørflue|spinnestang|spinnehjul|fastspolehjul|multihjul|haspelhjul|endegrej|wobler|wobbler|\bblink\b|spinner|gennemløber|jigs?\b|softbait|soft ?plastic|swimbait|crankbait|jerkbait|pirk|forfang|fletline|monofil|fluorocarbon|\bwaders?\b|vadestøvle|vadebukser|fiskekrog|madding|boilies|put ?(&amp;|&|and) ?take|kyst ?(&amp;|&) ?hav|havørred|gedde|karpe|\bangling|\blure|dubbing|hackle|marabou|tinsel|chenille|bindestik|fluebinding|fly tying|landingsnet|fangstnet|rygeovn|stangholder|line ?spole|bulkspole|single fishing hooks|fishing hooks', 'not' => 'krus\\b|\\bmug\\b|\\bkop\\b|fiskeben|fiskeskæl|fiskesuppe|fiskeolie|fiskebens|fisketaske(?! til)|magnetfisk|flue section|flue kit|drain flue|tilbehør til ovne' ],
-			'vandsport'       => [ 'name' => 'Vandsport', 'match' => '\\bkano|canoe|kajak|kayak|\\bsup\\b|sup ?board|stand.?up ?paddle|paddle ?board|padleboard|pagaj|dobbeltpaddel|\\bpaddle\\b|redningsvest|svømmevest|\\bsecumar\\b|våddragt|wetsuit|neopren|shorty|badesko|belly ?boat|flydering|gummibåd|vandski|wakeboard|kitesurf|windsurf|surfboard|bodyboard', 'not' => 'stangholder|rod holder|net\\b|lommekniv|bog|dagbog|kayak \\d+oz|neopren ?(waders|støvle|handske)|vade' ],
-			'jagt'            => [ 'name' => 'Jagt', 'match' => 'luftpistol|luftgevær|hagl til luft|skydekasse|jagt|hunting|\bhunt\b|\bcamo\b|camouflage|realtree|mossy oak|optifade|lokkefløjte|lokkefugl|vildtkamera|trail ?cam|skydestok|skydeskive|riffelkikkert|sigtekikkert|termisk (kikkert|kamera|sigte)|night ?vision|nattesyn|termokamera|sporline|hundehalsbånd|hundevest|apportbuk|hundefløjte|jagtfløjte|dummy|vildtsæk|vildttrug|sneglekikkert|anstand|skjul\b|tårnstol|jagtstol|deerhunter|härkila|harkila|seeland|chevalier|blaser|\bpinewood|swedteam' ],
+			'fiskeri'         => [ 'name' => 'Fiskeri', 'match' => 'fiske|fishing|\bfly (tying|fishing)|fluebind|fluestang|flueline|fluehjul|\bfluer?\b|rørflue|spinnestang|spinnehjul|fastspolehjul|multihjul|haspelhjul|endegrej|wobler|wobbler|\bblink\b|spinner|gennemløber|jigs?\b|softbait|soft ?plastic|swimbait|crankbait|jerkbait|pirk|forfang|fletline|monofil|fluorocarbon|\bwaders?\b|vadestøvle|vadebukser|fiskekrog|madding|boilies|put ?(&amp;|&|and) ?take|kyst ?(&amp;|&) ?hav|havørred|gedde|karpe|\bangling|\blure|dubbing|hackle|marabou|tinsel|chenille|bindestik|fluebinding|fly tying|landingsnet|fangstnet|rygeovn|stangholder|line ?spole|bulkspole|single fishing hooks|fishing hooks|lead ?clip|tail rubbers?|anti ?tangle|buzz ?bar|bankstick|rod ?(/|&)? ?tip|tip ?(&|and) ?butt|butt protector|lead ?core|hjuletui|reel ?case|wading|neoprensok', 'not' => 'krus\\b|\\bmug\\b|\\bkop\\b|fiskeben|fiskeskæl|fiskesuppe|fiskeolie|fiskebens|fisketaske(?! til)|magnetfisk|flue section|flue kit|drain flue|tilbehør til ovne' ],
+			'vandsport'       => [ 'name' => 'Vandsport', 'match' => '\\bkano|canoe|kajak|kayak|\\bsup\\b|sup ?board|stand.?up ?paddle|paddle ?board|padleboard|pagaj|dobbeltpaddel|\\bpaddle\\b|redningsvest|svømmevest|\\bsecumar\\b|våddragt|wetsuit|neopren|shorty|badesko|belly ?boat|flydering|gummibåd|vandski|wakeboard|kitesurf|windsurf|surfboard|bodyboard', 'not' => 'stangholder|rod holder|net\\b|paddle (knob|inliner)|lommekniv|bog|dagbog|kayak \\d+oz|neopren ?(waders|støvle|handske)|vade' ],
+			'jagt'            => [ 'name' => 'Jagt', 'match' => 'luftpistol|luftgevær|hagl til luft|skydekasse|jagt|hunting|\bhunt\b|\bcamo\b|camouflage|realtree|mossy oak|optifade|lokkefløjte|lokkefugl|lokkekald|skydestol|natkikkert|håndspotter|vildtkamera|trail ?cam|skydestok|skydeskive|riffelkikkert|sigtekikkert|termisk (kikkert|kamera|sigte)|night ?vision|nattesyn|termokamera|sporline|hundehalsbånd|hundevest|apportbuk|hundefløjte|jagtfløjte|dummy|vildtsæk|vildttrug|sneglekikkert|anstand|skjul\b|tårnstol|jagtstol|deerhunter|härkila|harkila|seeland|chevalier|blaser|\bpinewood|swedteam', 'not' => 'karpe|carp|bivvy|\\brod\\b|\\breel|leader|sleeves?\\b|barrow|flueline|fly ?line|\\bmat\\b|mozzy|hoody|hoodie|pullover|joggers|trucker|patch cap|edges|\\brig\\b|beads|tube\\b|tape\\b|weights|sling|hooklink|camotex|aligna|bucket|jagtfasan' ],
 			'camping'         => [ 'name' => 'Camping', 'match' => '\btelte?\b|teltet|tunneltelt|kuppeltelt|geodætisk|1-personers|2-personers|3-personers|4-personers|5-personers|6-personers|8-personers|ydertelt|indertelt|footprint|teltunderlag|teltpløk|pløkker?\b|bardun|teltstang|\btarp\b|shelter\b|bivi\b|bivvy|myggenet|sovepose|lagenpose|liggeunderlag|sovemåtte|luftmadras|selvoppustelig|oppusteligt? underlag|feltseng|hængekøje|haengekoeje|hammock|campingstol|campingbord|campingmøbel|klapstol|foldestol|festivalstol|campingseng|feltseng|sleeping ?bag|sleeping ?pad|\btent\b', 'not' => 'tent green|tent grey|tent gray|tent blue|tent brown|campingvogn|fortelt|markise|autocamper|telttæppe|cykel|parasol|pavillon|festtelt|partytelt|pop-?up telt til (bil|tag)|biltelt|tagtelt|reservedel|teltlampe' ],
 			'friluftskoekken' => [ 'name' => 'Friluftskøkken', 'match' => 'havepejs|terrassepejs|gasgrill|campinggrill|camping grill|bordgrill|minigrill|grilliput|o-grill|safari chef|camp grill|pack grill|tri-pod grill|kulgrill|transportabel grill|bærbar grill|grill i transportabel|kompressorkøl|absorptionskøl|gaskøleskab|stormkøkken|stormkokker|trangia|jetboil|msr (pocket|whisper|wind)|primus|kogesæt|kogegrej|kogeudstyr|campingkøkken|gasbrænder|brænder\b|gaskogeapparat|spritbrænder|turkøkken|feltkøkken|gaspatron|gasdåse|bålgryde|baalgryde|kedel\b|percolator|pocket rocket|dobbeltkogesæt|turmad|frysetørret|trekking ?mad|real turmat|drytech|termoflaske|termokande|termokrus|termo ?drik|drikkedunk|drikkeflaske|vandflaske|feltflaske|vandfilter|vandrensning|lifestraw|sawyer|katadyn|køletaske|køleboks|kølebox|cool ?box|cooler|madkasse|spork|spisebestik|campingbestik|campingservice|turbestik|kuksa|feltspisesæt|madbeholder|\bkrus\b|baal|bål(?!ed)|fyrfad|bålfad|bålpande|bålsted|ildsted|tændstål|firesteel|ildstål|campingservice|campinggryde', 'not' => 'campingvogn|fortelt|markise|autocamper|reservedel|alde|truma|thetford(?!.*absorptionskøleskab)|stik|stikdåse|vandpumpe|vandtank|toilet|kassettetoilet|spejl|træktøj|stabilisator|nødgenerator|(?<!have)(?<!terrasse)pejs|terrassevarmer|parasol|havemøbel|campingvognsspejl|lampe|lys' ],
-			'rygsaekke'       => [ 'name' => 'Rygsække & tasker', 'match' => 'rygsæk|rygsaek|backpack|daypack|vandrerygsæk|trekkingrygsæk|dagsrygsæk|turrygsæk|duffel|drybag|dry ?bag|vandtæt pose|pakkepose|kompressionspose|packing cube|bæltetaske|hoftetaske|regnslag til rygsæk|rygsækregnslag|væskeblære|hydration|camelbak|vandreryg', 'not' => 'skoletaske|skolerygsæk|skoletasker|computertaske|laptop|pc-taske|kuffert|trolley|toilettaske|pung|gymnastikpose|børnehave' ],
-			'udstyr'          => [ 'name' => 'Udstyr', 'match' => 'pandelampe|headlamp|hovedlygte|lommelygte|flashlight|lanterne|campinglampe|teltlampe|led lygte|lygte\b|kniv\b|knive\b|jagtkniv|foldekniv|outdoorkniv|bushcraft|mora(kniv)?\b|multitool|multi-tool|leatherman|victorinox|økse|\bsav\b|foldesav|kikkert|binocular|monokular|afstandsmåler|vandrestav|trekkingstav|nordic walking stav|stave\b|kompas|gps\b|pejling|førstehjælp|nødtæppe|overlevelse|survival|prepping|nødradio|powerbank|solcellepanel|solcellelader|myggemiddel|insektmiddel|myggespray|myggestift|flåttang|reparationssæt|repair|imprægnering|imprægner|nikwax|grangers|vaskemiddel|\\bwash\\b|vask & pleje|tøjvask|karabin', 'not' => 'cykellygte|cykel|køkkenkniv|kokkekniv|brødkniv|mikroskop|laboratorie|lup\b|drone|metaldetektor|skistav|ski stav|skistave|batteri\b|ledning|pære\b|filter\b|lygteholder|oplader til cykel|dykkerlygte|arbejdslampe|bilkompas' ],
+			'rygsaekke'       => [ 'name' => 'Rygsække & tasker', 'match' => 'rygsæk|rygsaek|backpack|day ?pack|vandrerygsæk|trekkingrygsæk|dagsrygsæk|turrygsæk|duffel|drybag|dry ?bag|vandtæt pose|pakkepose|kompressionspose|packing cube|bæltetaske|hoftetaske|regnslag til rygsæk|rygsækregnslag|væskeblære|hydration|camelbak|vandreryg', 'not' => 'skoletaske|skolerygsæk|skoletasker|computertaske|laptop|værktøj|håndværker|pc-taske|kuffert|trolley|toilettaske|pung|gymnastikpose|børnehave' ],
+			'udstyr'          => [ 'name' => 'Udstyr', 'match' => 'pandelampe|headlamp|hovedlygte|lommelygte|flashlight|lanterne|campinglampe|teltlampe|led lygte|lygte\b|kniv\b|knive\b|jagtkniv|foldekniv|outdoorkniv|bushcraft|mora(kniv)?\b|multitool|multi-tool|leatherman|victorinox|økse|\bsav\b|foldesav|kikkert|binocular|monokular|afstandsmåler|vandrestav|trekkingstav|nordic walking stav|stave\b|kompas|gps\b|pejling|førstehjælp|nødtæppe|overlevelse|survival|prepping|nødradio|powerbank|solcellepanel|solcellelader|solcelleoplader|solcelle oplader|myggemiddel|insektmiddel|thermacell|myggespray|myggestift|flåttang|reparationssæt|repair|imprægnering|imprægner|nikwax|grangers|vaskemiddel|\\bwash\\b|vask & pleje|tøjvask|karabin', 'not' => 'cykellygte|cykel|adapterkabel|forlængerkabel|køkkenkniv|kokkekniv|brødkniv|mikroskop|laboratorie|lup\b|drone|metaldetektor|skistav|ski stav|skistave|batteri\b|ledning|pære\b|filter\b|lygteholder|oplader til cykel|dykkerlygte|arbejdslampe|bilkompas' ],
 			'fodtoej'         => [ 'name' => 'Fodtøj', 'match' => 'vandrestøvle|vandrestovle|vandresko|trekkingsko|trekkingstøvle|hiking ?(boot|shoe)|trail ?sko|trailsko|trail ?runner|approach ?sko|gummistøvle|gummistovle|vinterstøvle|termostøvle|outdoorstøvle|outdoorsko|trekking ?sandal|vandresandal|fodtøj|footwear|støvler?\b|\bsko\b|\bboots?\b|gore-?tex sko|\bgtx\b.*(mid|low)|\bmid gtx|\blow gtx', 'not' => 'neopren|skisko|skistøvle|støvlespray|skosnøre|snørebånd|sål(er)?\b|indlægssål|skocreme|skovoks|skoimprægnering|hverdagssko|ballerina|stilet|pumps|sneaker(?!.*trail)|hjemmesko|tøffel|klipklap|badesandal|cykelsko|golfsko|fodboldstøvle|indendørssko|\bspray\b|skoholder|skotaske' ],
 			// Outdoortøj er fjernet (ejerens valg 7. nov. 2026): fylder meget og ranker ikke mod de store tøjbutikker.
 		];
@@ -218,14 +279,18 @@ final class Config {
 			'gavekort|gift ?card|gebyr|fragt\b',
 			'reservedel|spare ?part|replacement part',
 			// Våben og ammunition, airsoft og softguns (ejerens site viser udstyr, ikke våben)
-			'airsoft|softgun|soft ?air|\bbb\b|ammunition|patroner|haglpatron|\briffel\b(?!kikkert)|(?<!luft)gevær|kaliber|\bpistol\b|signalpistol|krydsbue|armbrøst|slangebøsse|kastekniv|knojern|teleskopstav|peberspray|skjold',
+			'airsoft|softgun|soft ?air|\bbb\b|ammunition|patroner|haglpatron|patron ?bælte|\\bpatron-|magazine\\b|(?<!luft)våben(?!foderal)|weapon|lyddæmper|\briffel\b(?!kikkert)|(?<!luft)gevær|kaliber|\bpistol\b|signalpistol|krydsbue|armbrøst|slangebøsse|kastekniv|knojern|teleskopstav|peberspray|skjold',
+			// Montager, adaptere og andet tilbehør til våben og sigtemidler (Jagt Jakt, 10. nov. 2026); abonnementer
+			'montage(ringe|r)?\\b|picatinny|weaver\\b|reduktionsring|(sigtekikkert|riffelkikkert|krypton|thunder).{0,20}adapter|adapter.{0,20}(weaver|picatinny|sigte|riffel)|flip-?up cover|cover til (kikkert|sigte)|spotterholder|adapter \\d+ ?mm|abonnement',
+			// Fiskegrej.dk sætter sit navn foran nogle kategorier ("Fiskegrej.dk > … > Bukser") – tøjet skal ikke under Fiskeri.
+			'^fiskegrej\\.dk > produkter > beklædning & outdoor > (bukser|jakker|handsker|regntøj|trøjer|t-shirts|caps|huer|fleece|inderbeklædning|veste|skjorte|sokker|shorts)',
 			// Ski, snowboard, løb og cykling (ikke Outdoorlands emner)
 			'\bski\b|skiudstyr|skistøvle|skibinding|alpinski|langrend|snowboard|skihjelm|skibrille|skijakke|skibukser|skisko|cykelhjelm|cykellygte|cykel|løbetøj|løbesko|løbestrømper|løbetights|alt til løb',
 			// Andet uden for nichen
 			'campingvogn|fortelt|markise|autocamper|alde\b|truma|thetford(?!.*absorptionskøleskab)|kassettetoilet|træktøj|stabilisator|trailer|presenning',
 			'nødgenerator|generator|pool|spa\b|sauna|græsplæne|havemøbel|parasol|terrassevarmer|automatisk grill|grillbakke|reservelåg|(?<!have)(?<!terrasse)pejs|mikroskop|laboratorie|metaldetektor|magnetfiskeri|tromlemaskine|ravlygte|drone|legetøj|kørelegetøj|fitness',
 			'skoletaske|skolerygsæk|hverdagssko|sixpence|kjole|nederdel|bikini|badetøj|pyjamas|parfume|smykke',
-			'\bbatteri(er)?\b|ledning|oplader\b|pære\b|vandperler',
+			'\bbatteri(er)?\b|bitssæt|adapterkabel|forlængerkabel|ledning|(?<!solcelle)(?<!solcelle )oplader\b|pære\b|vandperler',
 			// Have, værksted og arbejde (Almas, Wolf Tactical)
 			'automower|plæneklipper|robotplæne|ukrudtsbrænder|beskæresaks|møtrik|låseplade|højbed|insektnet|kålnet|afgrænsningskabel|sikkerhedsstøvle|sikkerhedssko|arbejdshandske|arbejdstøj|arbejdsbuks|arbejdsjakke|erhvervsmaskine|motorsav|buskrydder|trimmer|løvblæser|havetraktor|kædesav',
 			// Militær- og politiudstyr (Wolf Tactical)
