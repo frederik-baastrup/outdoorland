@@ -112,12 +112,12 @@ add_action(
 		}
 		$desc = '';
 		if ( is_front_page() ) {
-			$desc = 'Telte, soveposer, rygsække, vandrestøvler, fiskegrej og jagtudstyr fra over 30 danske webshops samlet ét sted. Tjek priser og tilbud, og læs købsguides før turen.';
+			$desc = 'Telte, soveposer, rygsække, vandrestøvler, fiskegrej og jagtudstyr fra de butikker, vi samarbejder med, samlet ét sted. Tjek priser og tilbud, og læs købsguides før turen.';
 		} elseif ( function_exists( 'playform_current_campaign' ) && playform_current_campaign() ) {
 			$desc = playform_campaign_page_text( playform_current_campaign() )['intro'];
 		} elseif ( playform_is_tilbud_page() ) {
 			$t    = get_queried_object();
-			$desc = sprintf( 'Her er %s, som danske webshops har nedsat lige nu. Vi viser butikkernes egne tilbud, og købet foregår hos forhandleren.', $t instanceof WP_Term ? mb_strtolower( playform_cat_label( $t ) ) : playform_site( 'niche' ) );
+			$desc = sprintf( 'Her er %s, som butikkerne, vi samarbejder med, har nedsat lige nu. Vi viser butikkernes egne tilbud, og købet foregår hos forhandleren.', $t instanceof WP_Term ? mb_strtolower( playform_cat_label( $t ) ) : playform_site( 'niche' ) );
 		} elseif ( is_tax( 'product_cat' ) ) {
 			$desc = wp_strip_all_tags( term_description() ) ?: sprintf( 'Se %s fra de butikker, vi samarbejder med, samlet ét sted på %s. Sammenlign priser, se butikkernes tilbud og find den rigtige model.', mb_strtolower( playform_cat_label( get_queried_object() ) ), playform_site( 'name' ) );
 		} elseif ( is_post_type_archive( 'product' ) ) {

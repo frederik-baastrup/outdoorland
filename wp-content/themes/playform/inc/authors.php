@@ -12,7 +12,7 @@ defined( 'ABSPATH' ) || exit;
 function playform_author_defaults(): array {
 	return [
 		'role' => 'Stifter og redaktør',
-		'bio'  => sprintf( '%s er lavet af Frederik Baastrup. Han samler %s fra en lang række danske webshops og skriver købsguides, så du kan sammenligne pris, specifikationer og tilbud, før du pakker til turen.', playform_site( 'name' ), playform_site( 'niche' ) ),
+		'bio'  => sprintf( '%s er lavet af Frederik Baastrup. Han samler %s fra de butikker, sitet samarbejder med, og skriver købsguides, så du kan sammenligne pris, specifikationer og tilbud, før du pakker til turen.', playform_site( 'name' ), playform_site( 'niche' ) ),
 	];
 }
 
