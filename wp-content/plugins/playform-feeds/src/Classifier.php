@@ -22,6 +22,10 @@ final class Classifier {
 		$map  = $shop['category_map'] ?? null;
 		if ( is_array( $map ) ) {
 			$mapped = $map[ $cat ] ?? 'exclude';
+			// 'brand_map': mærker, der afgør placeringen uanset butikkens kategori (fx Thehuntingshops kajakker uden kategori).
+			if ( isset( $shop['brand_map'][ $brand ] ) ) {
+				$mapped = $shop['brand_map'][ $brand ];
+			}
 			// '?': butikskategorien er med, men kun vores egne regler (inkl. udelukkelser) afgør placeringen.
 			// '?:<regex>': som '?', men navnet skal også matche regex (fx kun bærbare grill fra en stor grillkategori).
 			if ( is_string( $mapped ) && str_starts_with( $mapped, '?:' ) ) {

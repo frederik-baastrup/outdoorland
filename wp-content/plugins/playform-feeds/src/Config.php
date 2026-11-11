@@ -85,6 +85,8 @@ final class Config {
 			// Jagt
 			// Jagt Jakt (tilføjet 10. nov. 2026): kun butikskategorierne i jagtjakt_map() – våben, ammunition, montager, lyddæmpere, trofæer m.m. kommer ikke med.
 			'jagt-jakt'        => [ 'name' => 'Jagt Jakt', 'url' => "$b&bannerid=115125&feedid=4130", 'group_variants' => true, 'category_map' => self::jagtjakt_map() ],
+			// Thehuntingshop.dk (tilføjet 11. nov. 2026): én række pr. størrelse ("Bukser - Deep Green - 50", "- 52/33\"", "- XL/2XL", "- 8y / 128", "- 115 cm"); kun butikskategorierne i thehuntingshop_map() – riffeltilbehør, montager, våbenskabe, trofæbehandling, SIM-kort og bagagekurve kommer ikke med. FeelFree-kajakker (uden butikskategori) → Vandsport via 'brand_map'.
+			'thehuntingshop'   => [ 'name' => 'Thehuntingshop.dk', 'url' => "$b&bannerid=99947&feedid=2798", 'group_variants' => true, 'variant_strip' => array_merge( $size, [ '/\\s+-\\s+(?:\\d{2,3}\\/\\d{2}"|\\d?X{0,3}L\\/\\d?X{1,3}L|\\d{1,2}y\\s*\\/\\s*\\d{2,3}|\\d{2,3}\\s*cm)$/iu' ] ), 'category_map' => self::thehuntingshop_map(), 'brand_map' => [ 'feelfree kayak' => 'vandsport' ] ],
 			'hunterspoint'    => [ 'name' => "Hunters' Point", 'url' => "$b&bannerid=66913&feedid=1360", 'group_variants' => true , 'variant_strip' => $size ],
 			'almas'            => [ 'name' => 'Almas Park & Fritid', 'url' => "$b&bannerid=99713&feedid=2844", 'group_variants' => true , 'variant_strip' => $size ],
 			// Vandsport (SUP, kajak, våddragter, redningsveste) – vinterdelen (ski, snowboard) kommer ikke med.
@@ -172,6 +174,44 @@ final class Config {
 	}
 
 	/**
+	 * Thehuntingshop.dks butikskategorier, der må komme med (11. nov. 2026) – samme linje som Jagt Jakt.
+	 * 'jagt' = jagttøj, jagtstøvler, optik, vildtkameraer, lokkekald, høreværn, jagtradioer, revirpleje, vildthåndtering
+	 * og hundegrej direkte i Jagt;
+	 * '?' = vores egne regler (inkl. udelukkelser) afgør. Ikke med: riffeltilbehør, montager, tilbehør til haglvåben,
+	 * våbenskabe, trofæbehandling, SIM- og hukommelseskort, vildtkurve til anhængertræk, hundefoder/-pleje og biludstyr.
+	 * Varer uden butikskategori er næsten kun Deerhunter- og Seeland-jagttøj.
+	 */
+	private static function thehuntingshop_map(): array {
+		$map = [ '' => 'jagt' ];
+		foreach ( [ 'accessories', 'bamsedragter', 'bukser & shorts', 'doghandler tøj', 'el-varmetøj', 'jagt- & skydeveste', 'jagttrøjer', 'jakker & overtøj', 'regntøj', 'skjorter & strik', 'undertøj & baselayers' ] as $sub ) {
+			$map[ "jagttøj > $sub" ] = 'jagt';
+		}
+		$map['fodtøj > jagtstøvler'] = 'jagt';
+		foreach ( [ 'gummistøvler', 'sko', 'strømper', 'pleje' ] as $sub ) {
+			$map[ "fodtøj > $sub" ] = '?';
+		}
+		$map['> kajakker'] = '?';
+		foreach ( [ 'gps & spor', 'halsbånd & liner', 'trænings udstur' ] as $sub ) {
+			$map[ "hund > $sub" ] = 'jagt';
+		}
+		$u = 'jagtudstyr';
+		foreach ( [ ' > høreværn', ' > jagt radio / walkie-talkie', ' > lokkekald', ' > lokkekald > råbuk kald', ' > lokkekald > rævekald', ' > skydestokke', ' > vildtkamera', ' > vildt & revirpleje', ' > vildt & revirpleje > aktivitetstønde', ' > vildt & revirpleje > fodermaskine', ' > vildt & revirpleje > lokkemiddel til foderpladserne', ' > vildthåndtering' ] as $sub ) {
+			$map[ $u . $sub ] = 'jagt';
+		}
+		foreach ( [ '', ' > knive & økser', ' > kvive & økser tilbehør', ' > lygter', ' > lygter > ir lygter', ' > lygter > lygtetilbehør', ' > poster & adgang', ' > powerbanks, opladere & batterier', ' > tasker', ' > tasker & rygsække', ' > vildtkamera > vildtkamera tilbehør' ] as $sub ) {
+			$map[ $u . $sub ] = '?';
+		}
+		// Brinyte-lygter har kun modelnavne ("Brinyte SR8") – butikkens kategori afgør.
+		$map["$u > lygter > lommelygter"] = 'udstyr';
+		$map["$u > lygter > pandelamper"] = 'udstyr';
+		foreach ( [ 'optik > dagoptik', 'optik > dagoptik > håndkikkerter', 'optik > dagoptik > riffeloptik / sigtekikkerter', 'optik > dagoptik > afstandsmåler', 'optik > dagoptik > rødpunktssigter', 'optik > ir infrarød optik > ir clip-on', 'optik > ir infrarød optik > ir sigte kikkert', 'termisk optik', 'termisk optik > termisk clip-on', 'termisk optik > termisk håndspotter', 'termisk optik > termisk håndspotter > binokularer', 'termisk optik > termisk håndspotter > monokularer', 'termisk optik > termisk sigte kikkert' ] as $c ) {
+			$map[ $c ] = 'jagt';
+		}
+		$map['optik > tilbehør til optik'] = '?';
+		return $map;
+	}
+
+	/**
 	 * Outdoorlands kategorier. 'match' testes først mod produktnavnet, derefter mod butikkens kategori.
 	 * Rækkefølgen betyder noget: den første kategori, der matcher, vinder. Specifikt udstyr står før tøj,
 	 * så fx en fiskevest havner under fiskeri og en pandelampe ikke under tøj. Alt, der ikke matcher, kommer
@@ -235,7 +275,7 @@ final class Config {
 				'foerstehjaelp'    => [ 'name' => 'Førstehjælp & overlevelse', 'match' => 'førstehjælp|nødtæppe|overlevelse|survival|prepping|nødradio' ],
 			],
 			'fodtoej' => [
-				'vandrestoevler'   => [ 'name' => 'Vandrestøvler', 'match' => 'vandrestøvle|trekkingstøvle|hiking ?boot|\bmid\b|støvle|boot', 'not' => 'gummistøvle|vinterstøvle|termostøvle|jagtstøvle' ],
+				'vandrestoevler'   => [ 'name' => 'Vandrestøvler', 'match' => 'vandrestøvle|trekkingstøvle|hiking ?boot|\bmid\b|støvle|boot', 'not' => 'gummistøvle|rubber boot|vinterstøvle|termostøvle|jagtstøvle' ],
 				'vandresko'        => [ 'name' => 'Vandresko', 'match' => 'vandresko|trekkingsko|hiking ?shoe|approach|\blow\b|\bsko\b', 'not' => 'trail' ],
 				'trailsko'         => [ 'name' => 'Trailsko', 'match' => 'trail' ],
 				'gummistoevler'    => [ 'name' => 'Gummistøvler', 'match' => 'gummistøvle|gummistovle|rubber boot' ],
@@ -259,9 +299,9 @@ final class Config {
 				'vaaddragter'      => [ 'name' => 'Våddragter & neopren', 'match' => 'våddragt|wetsuit|neopren|shorty|badesko|bootie' ],
 			],
 			'jagt' => [
-				'jagttoej'         => [ 'name' => 'Jagttøj', 'match' => 'jakke|jacket|bukser|trousers|vest|skjorte|trøje|hue|handske|camo|beklædning|\btøj\b|strømper|sokker' ],
+				'jagttoej'         => [ 'name' => 'Jagttøj', 'match' => 'jakke|jacket|bukser|trousers|vest|skjorte|trøje|hue|handske|camo|beklædning|\btøj\b|strømper|sokker|t-shirt|fleece|shorts|strik(?!er)|sweater|\bshirt|overshirt|\bcap\b|\bhat\b|onepiece|overtræk|regnfrakke|poncho|halsedisse|pandebånd|baselayer|bælte\b|\bseler\b|kasket|flatcap|beanie|pullover|half ?zip|sweatshirt|breeks|smock|rain ?set|gaiters|treggings' ],
 				'jagtstoevler'     => [ 'name' => 'Jagtstøvler', 'match' => 'støvle|boot|sko\b' ],
-				'jagtoptik'        => [ 'name' => 'Optik & vildtkameraer', 'match' => 'kikkert|optik|afstandsmåler|vildtkamera|trail ?cam|termisk|nattesyn|night ?vision' ],
+				'jagtoptik'        => [ 'name' => 'Optik & vildtkameraer', 'match' => 'kikkert|optik|afstandsmåler|vildtkamera|jagtkamera|trail ?cam|termisk|nattesyn|night ?vision|spotter|digital scope|clip-?on|monokular|binokular' ],
 				'luftvaaben'       => [ 'name' => 'Luftpistoler & luftgeværer', 'match' => 'luftpistol|luftgevær|hagl til luft|skydekasse' ],
 				'jagthund'         => [ 'name' => 'Til jagthunden', 'match' => 'hund|halsbånd|apport|dummy|fløjte|sporline' ],
 			],
@@ -280,8 +320,10 @@ final class Config {
 			'reservedel|spare ?part|replacement part',
 			// Våben og ammunition, airsoft og softguns (ejerens site viser udstyr, ikke våben)
 			'airsoft|softgun|soft ?air|\bbb\b|ammunition|patroner|haglpatron|patron ?bælte|\\bpatron-|magazine\\b|(?<!luft)våben(?!foderal)|weapon|lyddæmper|\briffel\b(?!kikkert)|(?<!luft)gevær|kaliber|\bpistol\b|signalpistol|krydsbue|armbrøst|slangebøsse|kastekniv|knojern|teleskopstav|peberspray|skjold',
+			// Bagagekurve og lygtesæt til anhængertræk (biludstyr, Thehuntingshop 11. nov. 2026)
+			'bagagekurv|anhængertræk|lygtesæt',
 			// Montager, adaptere og andet tilbehør til våben og sigtemidler (Jagt Jakt, 10. nov. 2026); abonnementer
-			'montage(ringe|r)?\\b|picatinny|weaver\\b|reduktionsring|(sigtekikkert|riffelkikkert|krypton|thunder).{0,20}adapter|adapter.{0,20}(weaver|picatinny|sigte|riffel)|flip-?up cover|cover til (kikkert|sigte)|spotterholder|adapter \\d+ ?mm|abonnement',
+			'montage(ringe|r)?\\b|picatinny|weaver\\b|reduktionsring|(sigtekikkert|riffelkikkert|krypton|thunder).{0,20}adapter|adapter.{0,20}(weaver|picatinny|sigte|riffel)|flip-?up cover|cover til (kikkert|sigte)|spotterholder|adapter \\d+ ?mm|abonnement|kolbeforlænger',
 			// Fiskegrej.dk sætter sit navn foran nogle kategorier ("Fiskegrej.dk > … > Bukser") – tøjet skal ikke under Fiskeri.
 			'^fiskegrej\\.dk > produkter > beklædning & outdoor > (bukser|jakker|handsker|regntøj|trøjer|t-shirts|caps|huer|fleece|inderbeklædning|veste|skjorte|sokker|shorts)',
 			// Ski, snowboard, løb og cykling (ikke Outdoorlands emner)
@@ -290,11 +332,13 @@ final class Config {
 			'campingvogn|fortelt|markise|autocamper|alde\b|truma|thetford(?!.*absorptionskøleskab)|kassettetoilet|træktøj|stabilisator|trailer|presenning',
 			'nødgenerator|generator|pool|spa\b|sauna|græsplæne|havemøbel|parasol|terrassevarmer|automatisk grill|grillbakke|reservelåg|(?<!have)(?<!terrasse)pejs|mikroskop|laboratorie|metaldetektor|magnetfiskeri|tromlemaskine|ravlygte|drone|legetøj|kørelegetøj|fitness',
 			'skoletaske|skolerygsæk|hverdagssko|sixpence|kjole|nederdel|bikini|badetøj|pyjamas|parfume|smykke',
-			'\bbatteri(er)?\b|bitssæt|adapterkabel|forlængerkabel|ledning|(?<!solcelle)(?<!solcelle )oplader\b|pære\b|vandperler',
+			// Batterier – men ikke vildtkameraer, der sælges med batterier (Thehuntingshop, 11. nov. 2026)
+			'^(?!.*(?:vildt|jagt)kamera).*\bbatteri(er)?\b|bitssæt|adapterkabel|forlængerkabel|ledning|(?<!solcelle)(?<!solcelle )oplader\b|pære\b|vandperler',
 			// Have, værksted og arbejde (Almas, Wolf Tactical)
 			'automower|plæneklipper|robotplæne|ukrudtsbrænder|beskæresaks|møtrik|låseplade|højbed|insektnet|kålnet|afgrænsningskabel|sikkerhedsstøvle|sikkerhedssko|arbejdshandske|arbejdstøj|arbejdsbuks|arbejdsjakke|erhvervsmaskine|motorsav|buskrydder|trimmer|løvblæser|havetraktor|kædesav',
 			// Militær- og politiudstyr (Wolf Tactical)
-			'militær|military|\bmil-tec|tactical|taktisk|politi|police|security|plate ?carrier|molle|hylster|holster|magasin|chest ?rig|kampbuks|kampskjorte|uniform',
+			// "Military Olive" er en farve (Seeland), ikke militærudstyr (11. nov. 2026)
+			'militær|military(?! olive)|\bmil-tec|tactical|taktisk|politi|police|security|plate ?carrier|molle|hylster|holster|magasin|chest ?rig|kampbuks|kampskjorte|uniform',
 		];
 	}
 
