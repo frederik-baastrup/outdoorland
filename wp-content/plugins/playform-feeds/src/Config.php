@@ -99,6 +99,7 @@ final class Config {
 			'millida'          => [ 'name' => 'Millida', 'url' => "$b&bannerid=115560&feedid=4180", 'category_map' => [ 'montii' => '?:køletaske|drikkedunk|termo', 'yumbox zuppa termomadkasser' => '?:køletaske|drikkedunk|termo' ] ],
 			// Solarcamp.dk (solcellelamper til haven): kun solcelleopladere og powerbanks.
 			'solarcamp'        => [ 'name' => 'Solarcamp.dk', 'url' => "$b&bannerid=92673&feedid=2447", 'category_map' => [ 'solcelleopladere > solcelleoplader til mobil' => '?', 'powerbanks > stor powerbank' => '?', 'powerbanks > lille powerbank' => '?' ] ],
+			'northernnights'   => [ 'name' => 'Northern Nights', 'url' => "$b&bannerid=118278&feedid=4467" ], // luftmadras (godkendt 11. nov. 2026)
 			// KitchenOne (køkken, Kitzhens største feed): kun friluftsliv, bålfade og bærbare grill – vores egne regler placerer ('?').
 			'kitchenone'       => [ 'name' => 'KitchenOne.dk', 'url' => "$b&bannerid=79283&feedid=1862", 'category_map' => self::kitchenone_map() ],
 			// Proshop (elektronik, 276.000 varer): kun tre butikskategorier, og kun det, vores egne regler kan placere ('?').
