@@ -45,10 +45,15 @@ add_action(
 		}
 		$list  = (array) require $file;
 		$pos   = (int) get_option( 'playform_product_texts_pos', 0 );
-		$batch = array_slice( $list, $pos, 150 );
 		global $wpdb;
 		$table = \Playform\Feeds\Offers::table();
 		$done  = (int) get_option( 'playform_product_texts_applied', 0 );
+		$t0    = microtime( true );
+		// Portioner, der kun består af tekster, som allerede er lagt på, springes over i samme kørsel (højst ca. 20 sek.),
+		// så nye tekster sidst i filen ikke venter på én cron-kørsel pr. portion.
+		do {
+		$before = $done;
+		$batch  = array_slice( $list, $pos, 150 );
 		foreach ( $batch as $t ) {
 			$eans = array_values( array_filter( array_map( 'strval', (array) ( $t['eans'] ?? [] ) ) ) );
 			if ( ! $eans || empty( $t['html'] ) ) {
@@ -73,6 +78,7 @@ add_action(
 		update_option( 'playform_product_texts_applied', $done, false );
 		$pos += count( $batch );
 		update_option( 'playform_product_texts_pos', $pos, false );
+		} while ( $pos < count( $list ) && $done === $before && ( microtime( true ) - $t0 ) < 20 );
 		if ( $pos < count( $list ) ) {
 			wp_schedule_single_event( time() + 30, PLAYFORM_PRODUCT_TEXTS_HOOK );
 		}
