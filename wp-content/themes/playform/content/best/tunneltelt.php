@@ -59,19 +59,18 @@ HTML,
 			'less'    => [ 'Hårdt underlag – teltet skal pløkkes ud' ],
 		],
 		[
-			'ean'     => '0197642979594',
-			'price'   => 3899,
-			'name'    => 'The North Face Wawona 6P',
+			'ean'     => '5709388144874',
+			'price'   => 3000,
+			'name'    => 'Easy Camp Leka Twin 6',
 			'role'    => 'Bedst til familien',
 			'reviews' => [],
-			'verdict' => 'Tunnelformet basecamp-telt med forlænget apsis og et stort opholdsrum, hvor alle kan stå oprejst.',
+			'verdict' => 'Tunneltelt til seks med tre kabiner, fuld ståhøjde og et stort fælles opholdsrum.',
 			'why'     => <<<'HTML'
-<p>The North Face Wawona 6P er tunnelteltet til familien, der vil have plads til at være sammen – ikke kun til at sove. Forenden er forlænget til et stort, overdækket opholdsrum med ståhøjde, hvor I kan spise, spille kort og have udstyret stående i ly, når vejret driller.</p>
-<p>Tunnelformen giver høje vægge og god bevægelsesfrihed, og de store åbninger gør det nemt at lufte ud og komme ind og ud. Som andre tunneltelte står det ikke af sig selv, så det skal pløkkes og bardunes ud – til gengæld får du meget plads for 8,82 kg.</p>
-<p>Det er et tresæsonstelt med DAC MX-aluminiumsstænger og PU-coatet polyesterdug, lavet til brug fra forår til efterår.</p>
+<p>Easy Camp Leka Twin 6 er tunnelteltet til familien eller vennegruppen, der vil have plads til både at sove og være sammen. Teltet har tre kabiner, og i det store fælles opholdsrum er der fuld ståhøjde, så I kan spise, hygge og ordne grej uden at bukke jer.</p>
+<p>Det er lavet til familiecamping, men passer også til glamping og festival. Som andre tunneltelte står det først rigtigt, når det er pløkket og bardunet ud, så stil det gerne med den smalle ende mod vinden.</p>
 HTML,
-			'good'    => [ 'Familiecamping', 'Opholdsrum i læ', 'Basecamp i flere dage' ],
-			'less'    => [ 'Hårdt underlag – teltet er ikke fritstående' ],
+			'good'    => [ 'Familiecamping', 'Fælles opholdsrum med ståhøjde', 'Festival og glamping' ],
+			'less'    => [ 'Ture, hvor teltet skal bæres', 'Hårdt underlag – teltet skal pløkkes ud' ],
 		],
 		[
 			'ean'     => '5709388144935',

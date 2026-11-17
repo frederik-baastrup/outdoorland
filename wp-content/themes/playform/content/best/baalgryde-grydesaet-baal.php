@@ -74,19 +74,18 @@ HTML,
 			'less'    => [ 'Gryderetter til mange' ],
 		],
 		[
-			'ean'     => '5709388130242',
-			'price'   => 450,
-			'name'    => 'Robens Carson Dutch Oven 8,2 L',
+			'ean'     => '4250435707074',
+			'price'   => 999,
+			'name'    => 'Petromax Dutch Oven ft9',
 			'role'    => 'Bedst til store grupper',
 			'reviews' => [],
-			'verdict' => 'Stor dutch oven på 8,2 liter i tykt støbejern med tre ben, så den kan stå direkte i gløderne.',
+			'verdict' => 'Stor dutch oven på 7,5 liter i forbehandlet støbejern med fødder – beregnet til mad til 8–14 personer.',
 			'why'     => <<<'HTML'
-<p>Robens Carson Dutch Oven 8,2 L er gryden til dig, der laver mad til mange over bålet. Der er plads til gryderet, chili eller suppe til hele lejren. De tre ben gør, at den kan stå direkte i ilden, og flere gryder kan stables oven på hinanden, når der skal laves flere retter på én gang.</p>
-<p>Det tykke støbejern holder godt på varmen og fordeler den jævnt. Låget har en hævet kant, så du kan lægge gløder ovenpå og få varme fra både over og under – så bliver gryden en ovn til brød. Vendt om bliver låget en stegeflade til bøffer og spejlæg. Hanken passer til en trefod, og håndtaget har fæste til en krog.</p>
-<p>Gryden måler 31,5 cm i diameter og vejer over 8 kg. Tør den af med lidt madolie efter brug, så holder jernet.</p>
+<p>Petromax Dutch Oven ft9 er gryden, når hele lejren skal mættes. Den rummer 7,5 liter og er lavet til simreretter, steg, suppe, brød og dessert til 8–14 personer. Fødderne gør, at den kan stå direkte i gløderne, og du kan også bruge den på grillen og i udekøkkenet.</p>
+<p>Støbejernet er forbehandlet, så gryden er klar til brug fra start, og låget kan vendes og bruges som pande til fx bacon og spejlæg. En støbejernsgryde i den størrelse er tung, så den hører hjemme på bilturen, shelterpladsen og i haven.</p>
 HTML,
-			'good'    => [ 'Mad til mange over bål', 'Brød og gryderetter', 'Lejrplads med trefod' ],
-			'less'    => [ 'Ture, hvor grejet skal bæres – den vejer over 8 kg' ],
+			'good'    => [ 'Mad til mange over bål', 'Gryderetter, brød og dessert', 'Bål, grill og udekøkken' ],
+			'less'    => [ 'Ture, hvor grejet skal bæres', 'Små portioner til en eller to' ],
 		],
 	],
 	'guide'    => <<<'HTML'

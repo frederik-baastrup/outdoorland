@@ -29,19 +29,18 @@ HTML,
 			'less'    => [ 'Lavt budget', 'Vintercamping – det er et tresæsonstelt' ],
 		],
 		[
-			'ean'     => '0197642979594',
-			'price'   => 3899,
-			'name'    => 'The North Face Wawona 6P',
-			'role'    => 'Bedst til basecamp',
+			'ean'     => '7029981040778',
+			'price'   => 3998,
+			'name'    => 'Helsport Gimle Family 4+',
+			'role'    => 'Let og rummeligt',
 			'reviews' => [],
-			'verdict' => 'Telt til seks med et indertelt på 295 × 239 cm, ståhøjde i opholdsrummet og DAC-aluminiumsstænger.',
+			'verdict' => 'Familietelt til 4–6 personer på ca. 7,8 kg med fuld ståhøjde midt i teltet.',
 			'why'     => <<<'HTML'
-<p>The North Face Wawona 6P er til jer, der vil have plads til seks og et ordentligt sted at være, når I ikke sover. Inderteltet måler 295 × 239 cm, så der er god plads til seks liggeunderlag, og opholdsrummet foran har ståhøjde.</p>
-<p>Stængerne er DAC MX-aluminium, og oversejlet er 75D polyester med PU-coating og 1.200 mm vandsøjle, der holder vind og regn ude fra forår til efterår. De store åbninger gør det let at komme ind og ud og giver masser af luft på varme dage.</p>
-<p>Pakket vejer teltet 8,82 kg og fylder 76 × 25 cm i bagagerummet, så det er nemt at have med til basecamp eller campingplads.</p>
+<p>Helsport Gimle Family 4+ passer til jer, der vil have et stort telt med, men ikke vil kæmpe med et tungt pakket telt fra bilen til pladsen. Det er beregnet til fire til seks personer og vejer omkring 7,8 kg, hvilket er meget lidt for et telt i den størrelse.</p>
+<p>Midt i teltet er der fuld ståhøjde, så I kan rejse jer op, skifte tøj og ordne tasker uden at krybe rundt. Inderteltet er stort og giver plads til liggeunderlag side om side. Er I seks voksne med meget bagage, bliver der tættere, så tænk over, hvor meget grej der skal med ind.</p>
 HTML,
-			'good'    => [ 'Seks personer på campingpladsen', 'Basecamp', 'Forår til efterår' ],
-			'less'    => [ 'Ture, hvor teltet skal bæres', 'Vintercamping' ],
+			'good'    => [ 'Familier, der vil have et let telt', 'Basecamp og campingplads', 'Ståhøjde i midten' ],
+			'less'    => [ 'Seks voksne med meget bagage', 'Lavt budget' ],
 		],
 		[
 			'ean'     => '5703384087715',
@@ -59,19 +58,18 @@ HTML,
 			'less'    => [ 'Hyppig eller hård brug', 'Ture, hvor teltet skal bæres (18 kg)' ],
 		],
 		[
-			'ean'     => '5709388144577',
-			'price'   => 1760,
-			'name'    => 'Easy Camp Sandland Yurt',
-			'role'    => 'Mest hygge',
+			'ean'     => '5703384023959',
+			'price'   => 5256,
+			'name'    => 'Nordisk Alfheim 12.6 Technical Cotton',
+			'role'    => 'Bedste tipitelt',
 			'reviews' => [],
-			'verdict' => 'Rundt yurt-telt til 5–6 med 230 cm højde, store vinduer med gardiner og glamping-vimpler i kassen.',
+			'verdict' => 'Lavvu i Technical Cotton med klassisk tipiform og 12,6 m² grundareal – ét stort rum til familien eller gruppen.',
 			'why'     => <<<'HTML'
-<p>Easy Camp Sandland Yurt er til jer, der vil have glamping-stemning og ét stort, fælles rum. Den runde form giver et åbent og luftigt telt på 320 × 365 cm med 230 cm højde, så I kan stå op, spise og sove samme sted. Der er plads til 5–6 personer.</p>
-<p>Oversejlet er WeatherGuard 3000 i PU-belagt polyester med tapede sømme, 3.000 mm vandsøjle og PFAS-fri, vandafvisende behandling. Kraftige EnduraFlex-glasfiberstænger på 11 og 12,5 mm giver en solid kuppel, og bunden i polyethylen er syet fast, så fugt og snavs bliver ude.</p>
-<p>Store vinduer med gardiner giver lys og privatliv. Seks lommer og tre ophængningspunkter holder orden, og vimplerne giver teltet et festligt look. Det vejer ca. 10,6 kg og pakkes ned til 65 × 24 cm.</p>
+<p>Nordisk Alfheim 12.6 Technical Cotton er til jer, der vil have stemningen i et rundt tipitelt. Den klassiske lavvu-form samler alle under ét højt tag, og med et grundareal på 12,6 m² er der plads til at sove seks og stadig have lidt fællesplads i midten.</p>
+<p>Dugen er Nordisks Technical Cotton med bomuld i vævningen, der ånder bedre end et rent syntetisk telt og giver et behageligt indeklima. Teltet er bygget robust til mere end en enkelt sommerweekend. Husk, at en dug med bomuld skal være helt tør, før den pakkes væk.</p>
 HTML,
-			'good'    => [ 'Glamping og længere ophold', 'Familier, der vil samles i ét rum', 'Lavt budget' ],
-			'less'    => [ 'Ture, hvor teltet skal bæres' ],
+			'good'    => [ 'Familier og grupper på op til seks', 'Hygge i ét stort rum', 'Lange ophold' ],
+			'less'    => [ 'Ture, hvor teltet skal bæres', 'Nedpakning i regnvejr – dugen skal tørre bagefter' ],
 		],
 		[
 			'ean'     => '5703384028718',

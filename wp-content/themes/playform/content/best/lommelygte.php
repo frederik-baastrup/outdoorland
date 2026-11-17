@@ -74,19 +74,18 @@ HTML,
 			'less'    => [ 'Meget kraftigt lys' ],
 		],
 		[
-			'ean'     => '9010109537421',
-			'price'   => 449,
-			'name'    => 'Nitecore EDC31',
-			'role'    => 'Mest lys i lommen',
+			'ean'     => '5060063228198',
+			'price'   => 553,
+			'name'    => 'Nebo Davinci 3500',
+			'role'    => 'Mest lys',
 			'reviews' => [],
-			'verdict' => 'Kompakt EDC-lygte med op til 3500 lumen og 380 meters rækkevidde – guidens kraftigste lygte.',
+			'verdict' => 'Genopladelig lygte med op til 3500 lumen og et indbygget 21700-batteri på 4.500 mAh – flest lumen i guiden.',
 			'why'     => <<<'HTML'
-<p>Nitecore EDC31 er til dig, der vil have rigtig meget lys med i lommen hver dag. EDC står for every day carry: Lygten er kompakt nok til jakken eller tasken, men giver op til 3500 lumen og når 380 meter frem. Det er mere lys og længere rækkevidde end de andre lygter i guiden.</p>
-<p>Lyset kommer fra en UHi 20 MAX-diode med Nitecores LUMIN SHIELD, og lygten har Nitecores Rapid Lock. Strømmen kommer fra et indbygget batteri på 3800 mAh, så du slipper for at købe nye batterier.</p>
-<p>Lygten er bygget som en taktisk lygte, så den passer lige så godt til vagt- og sikkerhedsarbejde som til aftenturen i skoven og bilens handskerum.</p>
+<p>Nebo Davinci 3500 er til dig, der vil have så meget lys som muligt – til eftersøgning i mørket, arbejde udendørs eller aftenen ved søen. Navnet siger det: op til 3500 lumen, hvilket er flere lumen end nogen anden lygte i guiden.</p>
+<p>Du skifter mellem fire funktioner: høj, mellem, lav og strobe. Strømmen kommer fra et indbygget, genopladeligt 21700 litium-ion-batteri på 4.500 mAh, og afhængigt af lysniveauet kører lygten op til ca. 20 timer på en opladning. Jo kraftigere lys, jo hurtigere tømmes batteriet.</p>
 HTML,
-			'good'    => [ 'Hverdagslygte i lommen', 'Meget lys og lang rækkevidde', 'Vagt- og sikkerhedsarbejde' ],
-			'less'    => [ 'Dig, der vil kunne skifte batteriet selv' ],
+			'good'    => [ 'Meget kraftigt lys', 'Eftersøgning og arbejde i mørke', 'Genopladeligt batteri' ],
+			'less'    => [ 'Dig, der vil køre på almindelige batterier' ],
 		],
 	],
 	'guide'    => <<<'HTML'

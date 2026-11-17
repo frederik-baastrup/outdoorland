@@ -14,17 +14,18 @@ return [
 HTML,
 	'picks'    => [
 		[
-			'ean'     => '5709388158123',
-			'price'   => 533,
-			'name'    => 'Outwell Superior Single',
+			'ean'     => '4001690400237',
+			'price'   => 335,
+			'name'    => 'High Peak Single Comfort Plus',
 			'role'    => 'Bedst samlet',
 			'reviews' => [],
-			'verdict' => 'Luksuriøs luftmadras på 195 x 90 cm med 45 cm sovehøjde, 3-lags konstruktion og indbygget pumpe.',
+			'verdict' => 'Blød enkeltmadras med indbygget pumpe, så du selv bestemmer, hvor fast den skal være.',
 			'why'     => <<<'HTML'
-<p>Outwell Superior Single er 195 x 90 cm og har en sovehøjde på 45 cm, så du ligger højt over det kolde underlag. Den robuste 3-lags konstruktion og den indbyggede pumpe gør den både slidstærk og nem at puste op.</p>
+<p>High Peak Single Comfort Plus er luftmadrassen til campingferien og gæsteværelset, hvor komforten kommer før vægten. Den er til én person og blød at ligge på, og den indbyggede pumpe betyder, at du ikke skal huske en ekstra pumpe hjemmefra.</p>
+<p>Pumpen bruger du også til at justere hårdheden: lidt mere luft giver en fastere madras, lidt mindre en blødere. Til kolde nætter er det en god idé at lægge et tæppe eller et skumunderlag under – en almindelig luftmadras holder ikke kulden fra jorden ude.</p>
 HTML,
-			'good'    => [ 'Campingferie', 'Gæstemadras' ],
-			'less'    => [ 'Vandreture' ],
+			'good'    => [ 'Campingferie i bil', 'Gæstemadras', 'Justerbar hårdhed' ],
+			'less'    => [ 'Vandreture', 'Kolde nætter uden ekstra underlag' ],
 		],
 		[
 			'ean'     => '5709388137579',
