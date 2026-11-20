@@ -14,7 +14,7 @@ final class Config {
 			'domain'   => 'outdoorland.dk',
 			'email'    => 'kontakt@outdoorland.dk',
 			'niche'    => 'outdoorudstyr', // "Find outdoorudstyr fra …"
-			'tagline'  => 'Outdoorudstyr til camping, vandring, fiskeri og jagt fra danske webshops samlet ét sted',
+			'tagline'  => 'Outdoorudstyr til camping, vandring, fiskeri og jagt fra de butikker, vi samarbejder med, samlet ét sted',
 			'company'  => 'Mondae',
 			'cvr'      => '37208329',
 			'address'  => 'Rønnevej 19 B, kl., 5270 Odense N',
