@@ -66,6 +66,11 @@ final class Classifier {
 		$found = self::first_match( $match_name );
 		if ( ! $found && ! in_array( $cat, Config::meaningless_shop_categories(), true ) && $cat !== mb_strtolower( $offer['brand'] ) ) {
 			$found = self::first_match( $cat );
+			// Butikkens kategori ("Tøj og Sko") må ikke trække fx en parka ind i Fodtøj: kategoriens 'not' gælder også navnet (21. nov. 2026).
+			$def = $found ? ( Config::categories()[ $found ] ?? [] ) : [];
+			if ( ! empty( $def['not'] ) && self::m( $def['not'], $name ) ) {
+				$found = null;
+			}
 		}
 		// Tilbehør til maskiner (reservedele, filtre …) placeres for sig (Config::machine_categories()).
 		if ( $found && in_array( $found, Config::machine_categories(), true ) && self::m( Config::accessory_pattern(), $name ) ) {
