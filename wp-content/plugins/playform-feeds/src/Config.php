@@ -103,7 +103,6 @@ final class Config {
 			// KitchenOne (køkken, Kitzhens største feed): kun friluftsliv, bålfade og bærbare grill – vores egne regler placerer ('?').
 			'kitchenone'       => [ 'name' => 'KitchenOne.dk', 'url' => "$b&bannerid=79283&feedid=1862", 'category_map' => self::kitchenone_map() ],
 			// Proshop (elektronik, 276.000 varer): kun tre butikskategorier, og kun det, vores egne regler kan placere ('?').
-			'proshop'          => [ 'name' => 'Proshop.dk', 'url' => "$b&bannerid=67757&feedid=1399", 'category_map' => [ 'camping' => '?', 'lommelygter og pandelamper' => '?', 'kikkert' => '?' ] ],
 		];
 		$custom = get_option( 'playform_shops' );
 		return is_array( $custom ) && $custom ? $custom : $defaults;
@@ -322,6 +321,8 @@ final class Config {
 
 	public static function exclude(): array {
 		return [
+			// Fluebinding er fjernet (ejerens valg 21. nov. 2026, spar CPU).
+			'fly ?tying|fluebind|bindemateriale|bindetråd|tying thread|dubbing|hackle|marabou|tinsel|chenille|bindestik|flash ?abou|\\bcdc\\b',
 			'gavekort|gift ?card|gebyr|fragt\b',
 			'reservedel|spare ?part|replacement part',
 			// Våben og ammunition, airsoft og softguns (ejerens site viser udstyr, ikke våben)
