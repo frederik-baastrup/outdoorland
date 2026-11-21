@@ -70,7 +70,7 @@ function playform_how_html(): string {
 <ul>
 <li>Butikken skal have et affiliate-program med produktfeed og have godkendt $name som partner, før dens varer kommer med.</li>
 <li>Der vises kun produkter, som butikken har lagt i feedet, og altid med feedets pris og lagerstatus.</li>
-<li>Vi opdaterer to gange i døgnet. Retter butikken en pris eller tager den en vare ud af feedet, ses ændringen her efter næste opdatering.</li>
+<li>Vi opdaterer hver dag. Retter butikken en pris eller tager den en vare ud af feedet, ses ændringen her efter næste opdatering.</li>
 <li>Billeder og data er fra butikkens feed. Billederne ligger på vores egen server – det giver hurtigere sider, og dine besøg bliver ikke delt med andre.</li>
 </ul>
 

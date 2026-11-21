@@ -53,7 +53,7 @@ if ( $campaign ) {
 } elseif ( $is_cat ) {
 	$title = $term->name;
 	$intro = $term->description ?: sprintf(
-		'Gennemse %s fra danske outdoor-webshops på ét sted. Lager og priser bliver hentet to gange i døgnet, og du handler hos butikken selv.',
+		'Gennemse %s fra danske outdoor-webshops på ét sted. Lager og priser bliver hentet hver dag, og du handler hos butikken selv.',
 		mb_strtolower( $label )
 	);
 } elseif ( $search !== '' ) {
@@ -292,7 +292,7 @@ if ( $campaign || $offer_hero ) :
 				<div class="empty">
 					<?php if ( $offers && ! $state['tags'] ) : ?>
 						<b>Ingen tilbud<?php echo $is_cat ? ' på ' . esc_html( mb_strtolower( $label ) ) : ''; ?> lige nu</b>
-						<span>Kun tilbud, som butikken selv har markeret, og som er højst <?php echo (int) ( class_exists( '\Playform\Feeds\Sales' ) ? \Playform\Feeds\Sales::DAYS : 14 ); ?> dage gamle, kommer med her. Kig ind igen – vi opdaterer priserne to gange i døgnet.</span>
+						<span>Kun tilbud, som butikken selv har markeret, og som er højst <?php echo (int) ( class_exists( '\Playform\Feeds\Sales' ) ? \Playform\Feeds\Sales::DAYS : 14 ); ?> dage gamle, kommer med her. Kig ind igen – vi opdaterer priserne hver dag.</span>
 						<?php if ( $is_cat ) : ?><a class="btn" href="<?php echo esc_url( get_term_link( $term ) ); ?>">Se alle <?php echo esc_html( mb_strtolower( $label ) ); ?></a><?php endif; ?>
 					<?php elseif ( in_array( 'tilbud', playform_active_filters()['egenskab'] ?? [], true ) ) : ?>
 						<b>Ingen tilbud matcher dine filtre</b>
@@ -304,7 +304,7 @@ if ( $campaign || $offer_hero ) :
 						<a class="btn" href="<?php echo esc_url( playform_reset_url() ); ?>">Nulstil filtre</a>
 					<?php else : ?>
 						<b>Ingen produkter i kategorien lige nu</b>
-						<span>Butikkerne har i øjeblikket intet på lager i kategorien. Udvalget bliver opdateret to gange i døgnet, så kig ind igen.</span>
+						<span>Butikkerne har i øjeblikket intet på lager i kategorien. Udvalget bliver opdateret hver dag, så kig ind igen.</span>
 						<a class="btn" href="<?php echo esc_url( home_url( '/' ) ); ?>">Til forsiden</a>
 					<?php endif; ?>
 				</div>

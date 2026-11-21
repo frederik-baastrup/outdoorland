@@ -15,7 +15,7 @@ $pf_money = home_url( '/saadan-tjener-vi-penge/' );
 $pf_usps  = [
 	[ 'grid', 'Danske outdoor-shops', 'samlet ét sted' ],
 	[ 'tag', 'Tilbud', 'direkte fra butikkerne' ],
-	[ 'refresh', 'Nye priser', 'to gange i døgnet' ],
+	[ 'refresh', 'Nye priser', 'hver dag' ],
 	[ 'store', 'Handl direkte', 'hos butikken' ],
 ];
 ?>

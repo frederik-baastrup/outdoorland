@@ -15,7 +15,7 @@ return [
 <h2>Grundkrav</h2>
 <ul>
 <li>Udstyret sælges af en af <a href="/vores-butikker/">de outdoorbutikker, vi samarbejder med</a>. Det, de ikke fører, kan ikke komme med – så guiderne dækker ikke hele markedet.</li>
-<li>Det var på lager og havde billede, da guiden blev skrevet. Pris og lager tjekkes derefter automatisk to gange i døgnet.</li>
+<li>Det var på lager og havde billede, da guiden blev skrevet. Pris og lager tjekkes derefter automatisk hver dag.</li>
 <li>Det hører til emnet. En guide til 2-personers telte indeholder telte til to.</li>
 <li>Højst fem modeller pr. guide.</li>
 </ul>
