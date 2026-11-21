@@ -47,3 +47,7 @@ Cronjobs på SiteGround:
 Matomo via WordPress-pluginnet "Matomo Analytics" – `inc/consent.php` er klar (cookiefri indtil samtykke).
 
 **SEO i købsguides (ejerens ønske 5. nov. 2026):** folk søger "bedste <søgeord>" og "<søgeord> test". `playform_guide_keyword()` (`keyword` i artikelfilen, ellers titlen før kolon) giver titlen "Bedste <søgeord>: …", sidetitlen "Bedste <søgeord> <år> → Se vores top N", "bedste <søgeord>" i kort-fortalt og sammenligningen, og nederst et afsnit (`playform_guide_test_note()`), der ærligt siger, at det ikke er en test. Overskriften har ikke ordet "test" (7. nov. 2026, efter Forbrugerombudsmandens sag mod Obsidian Media) – kun brødteksten i afsnittet må nævne "<søgeord> test". Artikler med reklamelinks mærkes "Reklamelinks"/"Annonce" i alle lister og i metabeskrivelsen (`playform_post_ad_label()`), og hvert produktvalg siger "ikke testet". Aldrig "testvinder", "bedst i test" som påstand eller lignende.
+
+## CPU-besparelser (21. nov. 2026, CPU-kvoten ramt)
+
+Én fuld import i døgnet (kl. 05:30; 17:30-kørslen springes over i `Cli::import`, `--force` tvinger), feeds over 50 MB højst én gang i døgnet, varer under 100 kr kun med, når de er på tilbud (`Config::min_price()`, `Importer::too_cheap()`), udsolgt hos alle butikker i over 60 dage → kladde (`ProductSync::daily_cleanup()`), prishistorik over 12 mdr. slettes, WooCommerce Admin/Analytics slået fra (`inc/bots.php`). Robot-403 må aldrig caches. Proshop er fjernet, og fluebinding er udelukket.
