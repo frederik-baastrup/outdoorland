@@ -148,7 +148,7 @@ final class Importer {
 				$stats['excluded']++;
 				continue;
 			}
-			$category = Classifier::classify( $offer );
+			$category = self::too_cheap( $offer ) ? 'exclude' : Classifier::classify( $offer );
 			if ( $category === 'exclude' ) {
 				$stats['excluded']++;
 				continue;
@@ -274,7 +274,7 @@ final class Importer {
 				$s['excluded']++;
 				continue;
 			}
-			$category = Classifier::classify( $offer );
+			$category = self::too_cheap( $offer ) ? 'exclude' : Classifier::classify( $offer );
 			if ( $category === 'exclude' ) {
 				$s['excluded']++;
 				continue;
@@ -346,15 +346,25 @@ final class Importer {
 	 *
 	 * @return array{changed:int,moves:array<string,int>}
 	 */
+	/**
+	 * Spar CPU (21. nov. 2026, ejerens valg): varer under Config::min_price() kommer ikke med – medmindre butikken
+	 * har dem på tilbud (førpris over prisen). De giver næsten ingen provision, men koster import, billeder og prishistorik.
+	 */
+	public static function too_cheap( array $offer ): bool {
+		$min = method_exists( Config::class, 'min_price' ) ? (float) Config::min_price() : 0.0;
+		$p   = (float) ( $offer['price'] ?? 0 );
+		return $min > 0 && $p > 0 && $p < $min && ! ( (float) ( $offer['list_price'] ?? 0 ) > $p );
+	}
+
 	public static function reclassify(): array {
 		global $wpdb;
 		$t       = Offers::table();
-		$rows    = $wpdb->get_results( "SELECT id, product_id, shop, name, brand, shop_category, price, category FROM $t", ARRAY_A );
+		$rows    = $wpdb->get_results( "SELECT id, product_id, shop, name, brand, shop_category, price, list_price, category FROM $t", ARRAY_A );
 		$changed = [];
 		$moves   = [];
 		foreach ( $rows as $r ) {
 			$offer = [ 'shop' => (string) $r['shop'], 'name' => (string) $r['name'], 'brand' => (string) $r['brand'], 'shop_category' => (string) $r['shop_category'], 'price' => (float) $r['price'] ];
-			$cat   = Classifier::classify( $offer );
+			$cat   = self::too_cheap( $offer + [ 'list_price' => (float) $r['list_price'] ] ) ? 'exclude' : Classifier::classify( $offer );
 			if ( $cat === $r['category'] ) {
 				continue;
 			}

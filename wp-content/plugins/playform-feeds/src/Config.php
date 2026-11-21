@@ -315,6 +315,11 @@ final class Config {
 	}
 
 	/** Produkter, der aldrig skal med (navn eller butikkens kategori). */
+	/** Varer under denne pris kommer ikke med, medmindre de er på tilbud (ejerens valg 21. nov. 2026, spar CPU). */
+	public static function min_price(): float {
+		return 100;
+	}
+
 	public static function exclude(): array {
 		return [
 			'gavekort|gift ?card|gebyr|fragt\b',
