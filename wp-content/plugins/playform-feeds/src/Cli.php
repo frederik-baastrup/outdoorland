@@ -37,6 +37,13 @@ final class Cli {
 			\WP_CLI::log( 'Fuld import er kørt inden for 20 timer – springes over (brug --force).' );
 			return;
 		}
+		// CPU-kvoten for november er brugt op (24. nov. 2026): fuld import holder pause til 1. december.
+		// Kun den daglige oprydning kører (databasen skal under 1 GB). Priserne på siden viser deres dato.
+		if ( $full && empty( $assoc['force'] ) && current_time( 'Y-m-d' ) < '2026-12-01' ) {
+			\WP_CLI::log( 'Import på pause til 1. december (CPU-kvote). Kører kun oprydning.' );
+			ProductSync::daily_cleanup();
+			return;
+		}
 		if ( $full ) {
 			update_option( 'playform_last_full_import', time(), false );
 		}
