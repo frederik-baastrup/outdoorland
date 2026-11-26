@@ -1272,3 +1272,26 @@ add_action(
 	},
 	40
 );
+
+/** Skrivebeskyttet diagnose (26. nov. 2026): tabelstørrelser og oprydningsstatus. ?pf_dbsize=<nøgle> */
+add_action(
+	'init',
+	static function () {
+		if ( ( $_GET['pf_dbsize'] ?? '' ) !== '92efbe24d18675ef55267172' ) { // phpcs:ignore
+			return;
+		}
+		global $wpdb;
+		nocache_headers();
+		$t = $wpdb->get_results( $wpdb->prepare( 'SELECT table_name n, table_rows r, ROUND((data_length+index_length)/1048576) mb, ROUND(data_free/1048576) free FROM information_schema.tables WHERE table_schema = %s ORDER BY (data_length+index_length) DESC LIMIT 20', DB_NAME ), ARRAY_A );
+		wp_send_json( [
+			'tables'       => $t,
+			'purged'       => get_option( 'playform_purge_excluded_count' ),
+			'done'         => get_option( 'playform_purge_excluded_done' ),
+			'reclass'      => get_option( 'playform_reclassify_last' ),
+			'next'         => wp_next_scheduled( 'playform_purge_excluded' ),
+			'reclass_next' => wp_next_scheduled( 'playform_reclassify' ),
+			'products'     => $wpdb->get_results( "SELECT post_status s, COUNT(*) c FROM {$wpdb->posts} WHERE post_type='product' GROUP BY post_status", ARRAY_A ),
+		] );
+	},
+	1
+);
