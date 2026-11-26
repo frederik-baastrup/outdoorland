@@ -39,7 +39,7 @@ final class Cli {
 		}
 		// CPU-kvoten for november er brugt op (24. nov. 2026): fuld import holder pause til 1. december.
 		// Kun den daglige oprydning kører (databasen skal under 1 GB). Priserne på siden viser deres dato.
-		if ( $full && empty( $assoc['force'] ) && current_time( 'Y-m-d' ) < '2026-12-01' ) {
+		if ( $full && empty( $assoc['force'] ) && current_time( 'Y-m-d' ) < '2026-11-27' ) {
 			\WP_CLI::log( 'Import på pause til 1. december (CPU-kvote). Kører kun oprydning.' );
 			ProductSync::daily_cleanup();
 			return;
