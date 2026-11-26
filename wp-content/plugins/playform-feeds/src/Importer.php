@@ -148,7 +148,7 @@ final class Importer {
 				$stats['excluded']++;
 				continue;
 			}
-			$category = self::too_cheap( $offer ) ? 'exclude' : Classifier::classify( $offer );
+			$category = self::too_cheap( $offer ) ? 'exclude' : self::cat_min( Classifier::classify( $offer ), $offer );
 			if ( $category === 'exclude' ) {
 				$stats['excluded']++;
 				continue;
@@ -274,7 +274,7 @@ final class Importer {
 				$s['excluded']++;
 				continue;
 			}
-			$category = self::too_cheap( $offer ) ? 'exclude' : Classifier::classify( $offer );
+			$category = self::too_cheap( $offer ) ? 'exclude' : self::cat_min( Classifier::classify( $offer ), $offer );
 			if ( $category === 'exclude' ) {
 				$s['excluded']++;
 				continue;
@@ -356,6 +356,16 @@ final class Importer {
 		return $min > 0 && $p > 0 && $p < $min && ! ( (float) ( $offer['list_price'] ?? 0 ) > $p );
 	}
 
+	/** Kategori-minimumspris (Config::category_min_price()): billigere varer udelukkes, medmindre de er på tilbud. */
+	public static function cat_min( string $cat, array $offer ): string {
+		$mins = method_exists( Config::class, 'category_min_price' ) ? Config::category_min_price() : [];
+		$p    = (float) ( $offer['price'] ?? 0 );
+		if ( isset( $mins[ $cat ] ) && $p > 0 && $p < (float) $mins[ $cat ] && ! ( (float) ( $offer['list_price'] ?? 0 ) > $p ) ) {
+			return 'exclude';
+		}
+		return $cat;
+	}
+
 	public static function reclassify(): array {
 		global $wpdb;
 		$t       = Offers::table();
@@ -366,7 +376,7 @@ final class Importer {
 		foreach ( $rows as $r ) {
 			$offer = [ 'shop' => (string) $r['shop'], 'name' => (string) $r['name'], 'brand' => (string) $r['brand'], 'shop_category' => (string) $r['shop_category'], 'price' => (float) $r['price'] ];
 			// Butikker, der er fjernet fra Config (fx Proshop 21. nov. 2026), ryddes også væk.
-			$cat   = ( ! isset( $shops[ $r['shop'] ] ) || self::too_cheap( $offer + [ 'list_price' => (float) $r['list_price'] ] ) ) ? 'exclude' : Classifier::classify( $offer );
+			$cat   = ( ! isset( $shops[ $r['shop'] ] ) || self::too_cheap( $offer + [ 'list_price' => (float) $r['list_price'] ] ) ) ? 'exclude' : self::cat_min( Classifier::classify( $offer ), $offer + [ 'list_price' => (float) $r['list_price'] ] );
 			if ( $cat === $r['category'] ) {
 				continue;
 			}

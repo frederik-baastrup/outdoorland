@@ -51,3 +51,7 @@ Matomo via WordPress-pluginnet "Matomo Analytics" – `inc/consent.php` er klar 
 ## CPU-besparelser (21. nov. 2026, CPU-kvoten ramt)
 
 Én fuld import i døgnet (kl. 05:30; 17:30-kørslen springes over i `Cli::import`, `--force` tvinger), feeds over 50 MB højst én gang i døgnet, varer under 100 kr kun med, når de er på tilbud (`Config::min_price()`, `Importer::too_cheap()`), udsolgt hos alle butikker i over 60 dage → kladde (`ProductSync::daily_cleanup()`), prishistorik over 12 mdr. slettes, WooCommerce Admin/Analytics slået fra (`inc/bots.php`). Robot-403 må aldrig caches. Proshop er fjernet, og fluebinding er udelukket.
+
+## Database over kvoten (26. nov. 2026)
+
+Ejerens valg: fiskeri-småting (kunstagn, kroge/svirvler/forfang/bly, agn/boilies/pellets) er udelukket i `Config::exclude()`; Fodtøj er kun vandre-, trekking- og jagtstøvler/-sko (kategoriens 'not' kræver de ord, også via butikskategori; underkategorierne gummistøvler, vinterstøvler og trailsko er slettet); fiskeri under 150 kr kun på tilbud (`Config::category_min_price()`, `Importer::cat_min()`). Efter reclassify sletter `playform_purge_excluded` (inc/setup.php) kladder, hvis tilbud alle er udelukket, permanent i portioner á 1.000 via cron (postmeta, termer, prishistorik, tilbud), og kører OPTIMIZE til sidst. Slettede /produkt/-adresser svarer 410.
