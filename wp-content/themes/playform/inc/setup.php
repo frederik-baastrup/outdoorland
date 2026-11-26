@@ -1282,9 +1282,18 @@ add_action(
 		}
 		global $wpdb;
 		nocache_headers();
+		if ( function_exists( 'playform_truncate_sgs_logs' ) && get_option( 'playform_sgs_logs_v' ) !== '1' ) {
+			update_option( 'playform_sgs_logs_v', '1', false );
+			playform_truncate_sgs_logs();
+		}
+		foreach ( [ 'sgs_log_events', 'sgs_log_visitors', 'postmeta', 'options' ] as $a ) {
+			$wpdb->query( "ANALYZE TABLE {$wpdb->prefix}$a" );
+		}
 		$t = $wpdb->get_results( $wpdb->prepare( 'SELECT table_name n, table_rows r, ROUND((data_length+index_length)/1048576) mb, ROUND(data_free/1048576) free FROM information_schema.tables WHERE table_schema = %s ORDER BY (data_length+index_length) DESC LIMIT 20', DB_NAME ), ARRAY_A );
 		wp_send_json( [
 			'tables'       => $t,
+			'sgs_v'        => get_option( 'playform_sgs_logs_v' ),
+			'sgs_rows'     => $wpdb->get_var( "SHOW TABLES LIKE '{$wpdb->prefix}sgs_log_events'" ) ? (int) $wpdb->get_var( "SELECT COUNT(*) FROM {$wpdb->prefix}sgs_log_events" ) : null,
 			'purged'       => get_option( 'playform_purge_excluded_count' ),
 			'done'         => get_option( 'playform_purge_excluded_done' ),
 			'reclass'      => get_option( 'playform_reclassify_last' ),
